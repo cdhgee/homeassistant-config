@@ -12,7 +12,6 @@ frontend:
 tts:
   - platform: google_translate
 
-group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
@@ -23,3 +22,5 @@ template: !include templates.yaml
 light: !include lights.yaml
 input_boolean: !include input_boolean.yaml
 cover: !include covers.yaml
+
+group: !include_dir_merge_named group

@@ -1,0 +1,10 @@
+# All switches that control lights
+# This is used for the lights out automation
+
+all_light_switches:
+  name: All light switches
+  entities:
+    - switch.closet
+    - switch.crawlspace
+    - switch.upstairs_bathroom_fan
+    - switch.garage_work_light
