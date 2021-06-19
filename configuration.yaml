@@ -20,7 +20,7 @@ life360: !include life360.yaml
 tplink: !include tplink.yaml
 template: !include templates.yaml
 light: !include lights.yaml
-input_boolean: !include input_boolean.yaml
 cover: !include covers.yaml
 
-group: !include_dir_merge_named group
+group: !include_dir_merge_named group/
+input_boolean: !include_dir_merge_named input_boolean/
