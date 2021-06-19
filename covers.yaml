@@ -1,0 +1,15 @@
+- platform: group
+  name: Living room blinds
+  entities:
+    - cover.living_room_left_blind
+    - cover.living_room_right_blind
+- platform: group
+  name: Family room blinds
+  entities:
+    - cover.family_room_left_blind
+    - cover.family_room_right_blind
+- platform: group
+  name: Kitchen blinds
+  entities:
+    - cover.kitchen_left_blind
+    - cover.kitchen_right_blind
