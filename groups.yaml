@@ -1,0 +1,8 @@
+all_light_switches:
+  name: All light switches
+  entities:
+    - switch.closet
+    - switch.crawlspace
+    - switch.upstairs_bathroom_fan
+    - switch.garage_work_light
+
