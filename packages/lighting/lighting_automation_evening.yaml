@@ -1,0 +1,13 @@
+automation:
+- alias: "Evening scene"
+  description: "Turn on the evening scene when the sun is 7.5° above the horizon"
+  mode: single
+  trigger:
+  - platform: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    below: 7.5
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.evening
