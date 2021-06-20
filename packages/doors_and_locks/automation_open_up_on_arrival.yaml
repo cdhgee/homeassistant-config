@@ -16,11 +16,11 @@ automation:
 
   action:
 
-  - domain: cover
-    entity_id: cover.garage_door
-    type: open
+  - service: cover.open
+    target:
+      entity_id: cover.garage_door
 
-  - domain: lock
-    entity_id: lock.front_door_lock
-    type: unlock
+  - service: lock.unlock
+    target:
+      entity_id: lock.front_door_lock
 
