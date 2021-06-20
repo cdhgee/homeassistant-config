@@ -1,0 +1,13 @@
+automation:
+- alias: "Leave home - lights"
+  description: "Turn on the leave home scene when no-one is home"
+  mode: single
+  trigger:
+  # Trigger if no-one home becomes true
+  - platform: state
+    entity_id: sensor.noone_home
+    to: on
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.leave_home
