@@ -6,21 +6,18 @@ binary_sensor:
       friendly_name: No-one home
       # Set to true if the number of people with state == home is zero
       value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length == 0 }}"
-      device_class: presence
       icon_template: mdi:account-off
     # True if at least one person is home
     anyone_home:
       friendly_name: Anyone home
       # Set to true if the number of people with state == home is greater than zero
       value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length > 0 }}"
-      device_class: presence
       icon_template: mdi:account-multiple-outline
     # True if everyone is home
     everyone_home:
       friendly_name: Everyone home
       # Set to true if the number of people with state == away is zero
       value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'away') | list | length == 0 }}"
-      device_class: presence
       icon_template: mdi:account-multiple
 sensor:
 - platform: template
