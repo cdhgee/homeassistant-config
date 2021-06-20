@@ -1,7 +1,7 @@
 scene:
 - name: Evening
   entities:
-    light.window:
+    light.living_room_window:
       state: on
       brightness: 255
       color_mode: color_temp
@@ -9,7 +9,7 @@ scene:
     light.kitchen_counter:
       state: on
       brightness: 255
-    light.counter_lightstrip:
+    light.kitchen_counter_lightstrip:
       state: on
       brightness: 255
       rgb_color:
