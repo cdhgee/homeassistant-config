@@ -3,10 +3,10 @@ automation:
   description: "Open the garage door and unlock the front door when anyone arrives home"
   mode: single
   trigger:
-    platform: state
+  - platform: state
     entity_id: sensor.number_of_people_home
   condition:
-    condition: template
+  - condition: template
     # Only trigger if the number of people home has increased
     value_template: "{{ (trigger.to_state.state | int) > (trigger.from_state.state | int) }}"
   action:
@@ -16,12 +16,3 @@ automation:
   - service: lock.unlock
     target:
       entity_id: lock.front_door_lock
-  # Only turn on the arrive home scene if the sun is below 7.5°
-  # (between 30 minutes before sunset and 30 minutes after sunrise)
-  - condition: numeric_state
-    entity_id: sun.sun
-    attribute: elevation
-    below: 7.5
-  - service: scene.turn_on
-    target:
-      entity_id: scene.arrive_home
