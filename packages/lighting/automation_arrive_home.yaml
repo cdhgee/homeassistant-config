@@ -6,10 +6,11 @@ automation:
   - platform: state
     entity_id: sensor.number_of_people_home
   condition:
+  # Only trigger if the number of people home has increased AND the sun is
+  # below 7.5° (between 30 minutes before sunset and 30 minutes after sunrise)
   - condition: and
     conditions:
     - condition: template
-      # Only trigger if the number of people home has increased
       value_template: "{{ (trigger.to_state.state | int) > (trigger.from_state.state | int) }}"
     - condition: numeric_state
       entity_id: sun.sun
