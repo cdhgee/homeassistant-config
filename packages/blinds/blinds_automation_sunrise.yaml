@@ -1,0 +1,12 @@
+automation:
+- alias: "Blinds - open at sunrise"
+  description: "Open blinds at sunrise"
+  mode: single
+  trigger:
+  - platform: state
+    entity_id: sun.sun
+    state: above_horizon
+  action:
+  - service: cover.open_cover
+    target:
+      entity_id: cover.living_room_blinds
