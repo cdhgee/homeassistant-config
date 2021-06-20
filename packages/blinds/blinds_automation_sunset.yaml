@@ -1,0 +1,13 @@
+automation:
+- alias: "Blinds - close at sunset"
+  description: "Close blinds at sunset"
+  mode: single
+  trigger:
+  - platform: state
+    entity_id: sun.sun
+    to: below_horizon
+  action:
+  - service: cover.close_cover
+    target:
+    - entity_id: cover.living_room_blinds
+    - entity_id: cover.family_room_blinds
