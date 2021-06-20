@@ -28,6 +28,12 @@ binary_sensor:
       device_class: presence
       icon_template: mdi:account-multiple
 
+sensor:
+
+- platform: template
+
+  sensors:
+
     number_of_people_home:
 
       friendly_name: Number of people home
