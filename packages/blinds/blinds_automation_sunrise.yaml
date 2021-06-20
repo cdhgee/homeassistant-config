@@ -5,7 +5,7 @@ automation:
   trigger:
   - platform: state
     entity_id: sun.sun
-    state: above_horizon
+    to: above_horizon
   action:
   - service: cover.open_cover
     target:
