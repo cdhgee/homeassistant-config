@@ -1,0 +1,19 @@
+binary_sensor:
+- platform: template
+  sensors:
+    noone_home:
+      friendly_name: No-one home
+      entity_id: "{{ expand('group.everyone') }}"
+      value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length == 0 }}"
+      device_class: presence
+    anyone_home:
+      friendly_name: Anyone home
+      entity_id: "{{ expand('group.everyone') }}"
+      value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length > 0 }}"
+      device_class: presence
+    everyone_home:
+      friendly_name: Everyone home
+      entity_id: "{{ expand('group.everyone') }}"
+      value_template: "{{ (expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length) == (expand('group.everyone') | list | length) }}"
+      device_class: presence
+

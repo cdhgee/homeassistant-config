@@ -1,8 +1,0 @@
-binary_sensor:
-- platform: template
-  unique_id: presence
-  sensors:
-    anyone:
-      friendly_name: Anyone home
-      value_template: "{{ is_state('person.david_gee', 'home') or is_state('person.monica_gee', 'home') }}"
-      device_class: presence
