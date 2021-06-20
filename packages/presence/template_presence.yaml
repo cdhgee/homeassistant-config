@@ -5,14 +5,14 @@ binary_sensor:
       friendly_name: No-one home
       value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length == 0 }}"
       device_class: presence
-      icon: mdi:account-off
+      icon_template: mdi:account-off
     anyone_home:
       friendly_name: Anyone home
       value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length > 0 }}"
       device_class: presence
-      icon: mdi:account-multiple-outline
+      icon_template: mdi:account-multiple-outline
     everyone_home:
       friendly_name: Everyone home
       value_template: "{{ (expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length) == (expand('group.everyone') | list | length) }}"
       device_class: presence
-      icon: mdi:account-multiple
+      icon_template: mdi:account-multiple
