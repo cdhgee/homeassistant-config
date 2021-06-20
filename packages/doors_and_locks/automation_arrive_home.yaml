@@ -19,7 +19,7 @@ automation:
   # Only turn on the arrive home scene if the sun is below 7.5°
   # (between 30 minutes before sunset and 30 minutes after sunrise)
   - condition: numeric_state
-    entity: sun.sun
+    entity_id: sun.sun
     attribute: elevation
     below: 7.5
   - service: scene.turn_on
