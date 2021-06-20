@@ -1,0 +1,71 @@
+scene:
+- name: Evening
+  entities:
+    light.window:
+      state: on
+      brightness: 255
+      color_mode: color_temp
+      color_temp: 454
+    light.kitchen_counter:
+      state: on
+      brightness: 255
+    light.counter_lightstrip:
+      state: on
+      brightness: 255
+      color_mode: color_temp
+      effect: none
+    light.family_room_garden:
+      state: on
+      brightness: 255
+    light.family_room_curio:
+      state: on
+      brightness: 255
+    light.master_bedroom_fairy_lights:
+      state: on
+      brightness: 255
+    light.family_room_lamps_left_bottom:
+      state: on
+      brightness: 255
+      color_mode: rgb
+      rgb_color:
+      - 255
+      - 191
+      - 0
+    light.family_room_lamps_left_middle:
+      state: on
+      brightness: 255
+      rgb_color:
+      - 255
+      - 127
+      - 0
+    light.family_room_lamps_left_top:
+      state: on
+      brightness: 255
+      rgb_color:
+      - 255
+      - 0
+      - 63
+    light.family_room_lamps_right_bottom:
+      state: on
+      brightness: 255
+      color_mode: rgb
+      rgb_color:
+      - 255
+      - 0
+      - 63
+    light.family_room_lamps_right_middle:
+      state: on
+      brightness: 255
+      color_mode: rgb
+      rgb_color:
+      - 255
+      - 127
+      - 0
+    light.family_room_lamps_right_top:
+      state: on
+      brightness: 255
+      color_mode: rgb
+      rgb_color:
+      - 255
+      - 191
+      - 0
