@@ -1,5 +1,5 @@
 automation:
-- alias: "Arrive home"
+- alias: "Arrive home - open up"
   description: "Open the garage door and unlock the front door when anyone arrives home"
   mode: single
   trigger:

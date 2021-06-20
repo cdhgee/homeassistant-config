@@ -1,0 +1,21 @@
+automation:
+- alias: "Arrive home - lights"
+  description: "Turn on the arrive home scene when arriving home during darkness"
+  mode: single
+  trigger:
+  - platform: state
+    entity_id: sensor.number_of_people_home
+  condition:
+  - condition: and
+    conditions:
+    - condition: template
+      # Only trigger if the number of people home has increased
+      value_template: "{{ (trigger.to_state.state | int) > (trigger.from_state.state | int) }}"
+    - condition: numeric_state
+      entity_id: sun.sun
+      attribute: elevation
+      below: 7.5
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.arrive_home
