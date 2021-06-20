@@ -10,7 +10,7 @@ automation:
     # Only trigger if the number of people home has increased
     value_template: "{{ (trigger.to_state.state | int) > (trigger.from_state.state | int) }}"
   action:
-  - service: cover.open
+  - service: cover.open_cover
     target:
       entity_id: cover.garage_door
   - service: lock.unlock
