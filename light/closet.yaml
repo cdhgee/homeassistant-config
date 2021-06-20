@@ -1,5 +1,0 @@
-# Manage the closet switch as a light
-
-platform: switch
-name: Closet
-entity_id: switch.closet
