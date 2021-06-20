@@ -2,8 +2,7 @@
 # to be turned on and off as a set
 
 light:
-- entity_id:
-  platform: group
+- platform: group
   name: Family room lamps
   entities:
   - light.family_room_lamps_left_top
