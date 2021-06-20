@@ -12,7 +12,10 @@ scene:
     light.counter_lightstrip:
       state: on
       brightness: 255
-      color_mode: color_temp
+      rgb_color:
+      - 255
+      - 127
+      - 0
       effect: none
     light.family_room_garden:
       state: on
@@ -26,7 +29,6 @@ scene:
     light.family_room_lamps_left_bottom:
       state: on
       brightness: 255
-      color_mode: rgb
       rgb_color:
       - 255
       - 191
@@ -48,7 +50,6 @@ scene:
     light.family_room_lamps_right_bottom:
       state: on
       brightness: 255
-      color_mode: rgb
       rgb_color:
       - 255
       - 0
@@ -64,7 +65,6 @@ scene:
     light.family_room_lamps_right_top:
       state: on
       brightness: 255
-      color_mode: rgb
       rgb_color:
       - 255
       - 191
