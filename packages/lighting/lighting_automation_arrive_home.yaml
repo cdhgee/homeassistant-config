@@ -1,5 +1,5 @@
 automation:
-- alias: "Arrive home - lights"
+- alias: "Lighting - arrive home"
   description: "Turn on the arrive home scene when arriving home during darkness"
   mode: single
   trigger:

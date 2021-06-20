@@ -1,5 +1,5 @@
 automation:
-- alias: "Leave home - lights"
+- alias: "Lighting - leave home"
   description: "Turn on the leave home scene when no-one is home"
   mode: single
   trigger:

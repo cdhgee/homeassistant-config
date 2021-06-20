@@ -1,5 +1,5 @@
 automation:
-- alias: "Lights out at midnight"
+- alias: "Lighting - lights out"
   description: "Turn off all lights and fans at midnight"
   mode: single
   trigger:

@@ -1,5 +1,5 @@
 automation:
-- alias: "Evening scene"
+- alias: "Lighting - evening"
   description: "Turn on the evening scene when the sun is 7.5° above the horizon"
   mode: single
   trigger:
