@@ -1,0 +1,3 @@
+ssl_certificate: /ssl/fullchain.pem
+ssl_key: /ssl/privkey.pem
+server_port: 443
