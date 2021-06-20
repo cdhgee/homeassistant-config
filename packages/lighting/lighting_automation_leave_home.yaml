@@ -5,8 +5,8 @@ automation:
   trigger:
   # Trigger if no-one home becomes true
   - platform: state
-    entity_id: sensor.noone_home
-    to: on
+    entity_id: binary_sensor.noone_home
+    to: "on"
   action:
   - service: scene.turn_on
     target:
