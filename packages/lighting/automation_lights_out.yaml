@@ -1,0 +1,11 @@
+automation:
+- alias: "Lights out at midnight"
+  description: "Turn off all lights and fans at midnight"
+  mode: single
+  trigger:
+  - platform: time
+    at: "00:00:00"
+  action:
+  - service: homeassistant.turn_off
+    target:
+      entity_id: group.all_lights_and_fans
