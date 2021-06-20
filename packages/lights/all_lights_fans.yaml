@@ -1,5 +1,8 @@
-all_lights_fans:
-  name: All lights and fans
+# This group is used by the lights out automation. It allows all lights
+# and switches that control lights to be turned off together.
+
+light:
+- name: All lights and fans
   entities:
   # Basement
   - switch.basement_crawlspace
