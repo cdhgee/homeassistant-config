@@ -1,0 +1,14 @@
+automation:
+- alias: "Doors & locks - lock up"
+  description: "Close the garage door and lock the front door at 2200"
+  mode: single
+  trigger:
+  - platform: time
+    at: "22:00:00"
+  action:
+  - service: cover.close_cover
+    target:
+      entity_id: cover.garage_door
+  - service: lock.lock
+    target:
+      entity_id: lock.front_door_lock
