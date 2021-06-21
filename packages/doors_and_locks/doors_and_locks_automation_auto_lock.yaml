@@ -1,0 +1,35 @@
+automation:
+- alias: "Doors & locks - auto lock"
+  description: "Lock the front door and close the garage after ten minutes"
+  # If any of the triggers occurs again during the delay, restart
+  mode: restart
+  trigger:
+  # Trigger if garage door is opened
+  - platform: state
+    entity_id: cover.garage_door
+    to: open
+  # Trigger if front door is unlocked
+  - platform: state
+    entity_id: lock.front_door
+    to: unlocked
+  # Trigger if front door is closed
+  - platform: state
+    entity_id: binary_sensor.front_door_sensor
+    to: "off"
+  # Trigger if outside mode is turned off
+  - platform: state
+    entity_id: input_boolean.outside
+    to: "off"
+  # Only execute if outside mode is off
+  condition:
+  - condition: state
+    entity_id: input_boolean.outside
+    state: "off"
+  action:
+  - delay: "00:10:00"
+  - service: cover.close_cover
+    target:
+      entity_id: cover.garage_door
+  - service: lock.lock
+    target:
+      entity_id: lock.front_door_lock
