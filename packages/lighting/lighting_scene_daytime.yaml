@@ -1,0 +1,28 @@
+
+scene:
+- name: Daytime
+  entities:
+    light.living_room_entry:
+      state: "off"
+    light.living_room_sun:
+      state: "off"
+    light.master_bedroom_monicas_bedside:
+      state: "off"
+    light.master_bedroom_davids_bedside:
+      state: "off"
+    light.master_bedroom_bedroom:
+      state: "off"
+    light.upstairs_bathroom_mirror:
+      state: "off"
+    light.upstairs_bathroom_shower:
+      state: "off"
+    light.kitchen_skylight:
+      state: "off"
+    light.living_room_window:
+      state: "off"
+    light.family_room_lamps:
+      state: "off"
+    switch.closet:
+      state: "off"
+    light.master_bedroom_fairy_lights:
+      state: "off"
