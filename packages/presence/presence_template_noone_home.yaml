@@ -1,0 +1,9 @@
+binary_sensor:
+- platform: template
+  sensors:
+    # True if no-one is home
+    noone_home:
+      friendly_name: No-one home
+      # Set to true if the number of people with state == home is zero
+      value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length == 0 }}"
+      icon_template: mdi:account-off
