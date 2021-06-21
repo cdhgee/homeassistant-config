@@ -1,0 +1,56 @@
+scene:
+- name: Bedtime
+  entities:
+    # Basement
+    switch.basement_crawlspace:
+      state: "off"
+    light.basement_office:
+      state: "off"
+    light.basement_piano:
+      state: "off"
+    # Family room
+    light.family_room_fireplace:
+      state: "off"
+    light.family_room_overhead:
+      state: "off"
+    light.family_room_tv_lightstrip:
+      state: "off"
+    # Kitchen
+    light.kitchen_bar:
+      state: "off"
+    light.kitchen_sink:
+      state: "off"
+    light.kitchen_skylight:
+      state: "off"
+    # Living room
+    light.living_room_china:
+      state: "off"
+    light.living_room_entry:
+      state: "off"
+    light.living_room_sun:
+      state: "off"
+    # Master bedroom
+    light.master_bedroom_bedroom:
+      state: "off"
+    switch.master_bedroom_closet:
+      state: "off"
+    light.master_bedroom_davids_bedside:
+      state: "on"
+      brightness: 255
+      effect: colorloop
+    light.master_bedroom_fairy_lights:
+      state: "on"
+      brightness: 255
+    # Upstairs bathroom
+    switch.upstairs_bathroom_fan:
+      state: "off"
+    light.upstairs_bathroom_mirror:
+      state: "on"
+    light.upstairs_bathroom_shower:
+      state: "on"
+    # Upstairs hallway
+    light.upstairs_hallway_landing:
+      state: "off"
+    # Garage
+    switch.garage_work_light:
+      state: "off"

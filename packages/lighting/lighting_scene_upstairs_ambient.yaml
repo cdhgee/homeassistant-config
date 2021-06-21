@@ -12,5 +12,5 @@ scene:
     light.master_bedroom_fairy_lights:
       state: "on"
       brightness: 255
-    switch.closet:
+    switch.master_bedroom_closet:
       state: "on"
