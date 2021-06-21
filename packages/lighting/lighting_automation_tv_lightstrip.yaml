@@ -1,0 +1,14 @@
+automation:
+- alias: Lighting - TV lightstrip
+  description: Turn on TV lightstrip color loop
+  trigger:
+  - platform: state
+    entity_id: light.family_room_tv_lightstrip
+    state: "on"
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.family_room_tv_lightstrip
+    data:
+      effect: colorloop
+  mode: single
