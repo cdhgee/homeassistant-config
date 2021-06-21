@@ -1,0 +1,14 @@
+automation:
+- alias: "Doors & locks - outside mode"
+  description: "Turn off outside mode"
+  mode: single
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.noone_home
+    to: "on"
+  - platform: time
+    at: "22:00:00"
+  action:
+  - service: input_boolean.turn_off
+    target:
+      entity_id: input_boolean.outside_mode

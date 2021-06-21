@@ -1,11 +1,19 @@
 automation:
 - alias: "Doors & locks - leave home"
-  description: "Close the garage door, lock the front door, and turn off outside mode when everyone leaves"
+  description: "Close the garage door and lock the front door on leaving"
   mode: single
   trigger:
   - platform: state
-    entity_id: binary_sensor.noone_home
-    to: "on"
+    entity_id: sensor.number_of_people_home
+  condition:
+  # Only trigger if the number of people home has decreased
+  # and outside mode is off
+  - condition: and
+    - condition: template
+      value_template: "{{ (trigger.to_state.state | int) < (trigger.from_state.state | int) }}"
+    - condition: state
+      entity_id: input_boolean.outside_mode
+      state: "off"
   action:
   - service: cover.close_cover
     target:
@@ -13,6 +21,3 @@ automation:
   - service: lock.lock
     target:
       entity_id: lock.front_door_lock
-  - service: input_boolean.turn_off
-    target:
-      entity_id: input_boolean.outside_mode
