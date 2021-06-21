@@ -1,0 +1,7 @@
+scene:
+- name: Arrive home
+  entities:
+    # Basement
+    switch.living_room_entry:
+      state: "on"
+      brightness: 255
