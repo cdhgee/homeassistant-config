@@ -3,6 +3,7 @@
 
 scene:
 - name: Lights out
+  entities:
     # Basement
     switch.basement_crawlspace:
       state: "off"
