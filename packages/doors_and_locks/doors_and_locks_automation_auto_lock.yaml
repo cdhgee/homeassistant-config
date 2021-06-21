@@ -18,12 +18,12 @@ automation:
     to: "off"
   # Trigger if outside mode is turned off
   - platform: state
-    entity_id: input_boolean.outside
+    entity_id: input_boolean.outside_mode
     to: "off"
   # Only execute if outside mode is off
   condition:
   - condition: state
-    entity_id: input_boolean.outside
+    entity_id: input_boolean.outside_mode
     state: "off"
   action:
   - delay: "00:10:00"

@@ -15,4 +15,4 @@ automation:
       entity_id: lock.front_door_lock
   - service: input_boolean.turn_off
     target:
-      entity_id: input_boolean.outside
+      entity_id: input_boolean.outside_mode
