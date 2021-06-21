@@ -7,14 +7,14 @@ scene:
       color_temp: 454
     light.kitchen_counter:
       state: on
-      brightness: 255
+      brightness: 186
     light.kitchen_counter_lightstrip:
       state: on
       brightness: 255
-      # Orange
+      # Red-orange
       rgb_color:
       - 255
-      - 127
+      - 65
       - 0
       effect: none
     light.family_room_garden:
