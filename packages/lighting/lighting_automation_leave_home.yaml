@@ -7,6 +7,10 @@ automation:
   - platform: state
     entity_id: binary_sensor.noone_home
     to: "on"
+  condition:
+  - condition: state
+    entity_id: input_boolean.babysitter_mode
+    state: "off"
   action:
   - service: scene.turn_on
     target:
