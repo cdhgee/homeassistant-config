@@ -8,7 +8,8 @@ automation:
   condition:
   # Only trigger if the number of people home has decreased
   # and outside mode is off
-  - condition: and
+    condition: and
+    conditions:
     - condition: template
       value_template: "{{ (trigger.to_state.state | int) < (trigger.from_state.state | int) }}"
     - condition: state
