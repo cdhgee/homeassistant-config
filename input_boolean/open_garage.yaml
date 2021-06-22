@@ -1,6 +1,0 @@
-# This behaves as a momentary switch in order to allow Alexa to open the
-# garage. It's managed by Node Red.
-
-open_garage:
-  name: Open the garage
-  icon: mdi:garage-open
