@@ -18,9 +18,3 @@ scene: !include scenes.yaml
 life360: !include life360.yaml
 tplink: !include tplink.yaml
 template: !include templates.yaml
-
-cover: !include_dir_list cover/
-group: !include_dir_merge_named group/
-http: !include_dir_merge_named http/
-input_boolean: !include_dir_merge_named input_boolean/
-light: !include_dir_list light/
