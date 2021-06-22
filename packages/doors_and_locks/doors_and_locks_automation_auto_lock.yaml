@@ -27,9 +27,4 @@ automation:
     state: "off"
   action:
   - delay: "00:10:00"
-  - service: cover.close_cover
-    target:
-      entity_id: cover.garage_door
-  - service: lock.lock
-    target:
-      entity_id: lock.front_door_lock
+  - service: script.lock_up

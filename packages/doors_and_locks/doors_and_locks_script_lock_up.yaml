@@ -1,0 +1,11 @@
+  script:
+    doors_and_locks_lock_up:
+      sequence:
+      - alias: "Close the garage door"
+        service: cover.close_cover
+        target:
+          entity_id: cover.garage_door
+      - alias: "Lock the front door"
+        service: lock.lock
+        target:
+          entity_id: lock.front_door_lock

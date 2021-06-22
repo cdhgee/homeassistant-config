@@ -9,6 +9,7 @@ automation:
   - platform: time
     at: "22:00:00"
   action:
+  - service: script.lock_up
   - service: input_boolean.turn_off
     target:
       entity_id: input_boolean.outside_mode

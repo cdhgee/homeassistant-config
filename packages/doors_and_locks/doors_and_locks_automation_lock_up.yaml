@@ -6,9 +6,4 @@ automation:
   - platform: time
     at: "22:00:00"
   action:
-  - service: cover.close_cover
-    target:
-      entity_id: cover.garage_door
-  - service: lock.lock
-    target:
-      entity_id: lock.front_door_lock
+  - service: script.doors_and_locks_lock_up
