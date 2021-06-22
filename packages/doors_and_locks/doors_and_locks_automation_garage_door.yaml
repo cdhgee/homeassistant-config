@@ -1,0 +1,19 @@
+automation:
+- alias: "Doors & locks - garage door"
+  description: "Control garage door"
+  mode: single
+  trigger:
+  - platform: state
+    entity_id: input_select.doors_and_locks_garage_control
+    to:
+    - Open
+    - Close
+  action:
+  - service: "cover.{{ states('input_select.doors_and_locks_garage_control') | lower }}_cover"
+    target:
+      entity_id: cover.garage_door
+  - service: input_select.select_option
+    target:
+      entity_id: input_select.doors_and_locks_garage_control
+    data:
+      option: Neutral
