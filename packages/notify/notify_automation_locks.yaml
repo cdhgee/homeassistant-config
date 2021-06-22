@@ -1,13 +1,11 @@
 automation:
-- alias: "Notify - doors"
-  description: "Send a notification when doors are opened or closed"
+- alias: "Notify - locks"
+  description: "Send a notification when locks are locked or unlocked"
   mode: single
   trigger:
   - platform: state
     entity_id:
-    - binary_sensor.front_door_sensor
-    - binary_sensor.deck_door_sensor
-    - cover.garage_door
+    - lock.front_door_lock
   action:
   - service: script.notify_all_mobile_devices
     data:
