@@ -1,0 +1,8 @@
+  script:
+    doors_and_locks_open_garage:
+      alias: "Doors & locks - open garage"
+      sequence:
+      - alias: "Open the garage door"
+        service: cover.open_cover
+        target:
+          entity_id: cover.garage_door
