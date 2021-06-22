@@ -14,7 +14,7 @@ script:
       data:
         title: "{{ title }}"
         message: "{{ message }}"
-    - service: notify.baller
+    - service: notify.mobile_app_baller
       data:
         title: "{{ title }}"
         message: "{{ message }}"
