@@ -1,7 +1,0 @@
-platform: group
-name: All blinds
-entities:
-- cover.family_room_blinds
-- cover.kitchen_blinds
-- cover.living_room_blinds
-- cover.master_bedroom_blinds

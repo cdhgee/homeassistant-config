@@ -1,0 +1,6 @@
+cover:
+- platform: group
+  name: Family room blinds
+  entities:
+  - cover.family_room_left_blind
+  - cover.family_room_right_blind
