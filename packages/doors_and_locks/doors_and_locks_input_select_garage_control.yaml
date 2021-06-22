@@ -1,0 +1,12 @@
+# This behaves as a momentary switch in order to allow Alexa to close the
+# garage. It's managed by Node Red.
+
+input_select:
+  doors_and_locks_garage_control:
+    name: Garage control
+    icon: mdi:garage
+    options:
+    - Open
+    - Close
+    - Neutral
+    initial: Neutral
