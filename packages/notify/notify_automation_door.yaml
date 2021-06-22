@@ -1,0 +1,16 @@
+automation:
+- alias: "Notify - doors"
+  description: "Send a notification when doors are opened or closed"
+  mode: single
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.front_door_sensor
+    - binary_sensor.deck_door_sensor
+    - cover.garage_door
+    - light.living_room_entry
+  action:
+  - service: script.notify_all_mobile_devices
+    data:
+      title: "Door opened"
+      message: "{{ trigger.entity_id }} is now {{ trigger.to_state }}"
