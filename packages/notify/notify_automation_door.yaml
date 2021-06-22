@@ -13,4 +13,4 @@ automation:
   - service: script.notify_all_mobile_devices
     data:
       title: "Door opened"
-      message: "{{ trigger.entity_id }} is now {{ trigger.to_state }}"
+      message: "{{ trigger.entity_id }} is now {{ trigger.to_state.state }}"
