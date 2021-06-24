@@ -16,4 +16,4 @@ automation:
       entity_id: input_boolean.outside_mode
       state: "off"
   action:
-  - service: doors_and_locks_lock_up
+  - service: script.doors_and_locks_lock_up
