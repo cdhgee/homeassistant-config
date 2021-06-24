@@ -1,0 +1,17 @@
+script:
+  doors_and_locks_open_close_garage:
+    alias: "Doors & locks - open/close garage"
+    fields:
+      action:
+        description: "The new state - open or close"
+        example: "close"
+        selector:
+          select:
+            options:
+            - open
+            - close
+    sequence:
+    - alias: "Open/close the garage door"
+      service: "cover.{{ action | lower }_cover"
+      target:
+        entity_id: cover.garage_door

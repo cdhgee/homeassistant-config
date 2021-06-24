@@ -3,9 +3,9 @@ script:
     alias: "Doors & locks - lock up"
     sequence:
     - alias: "Close the garage door"
-      service: cover.close_cover
-      target:
-        entity_id: cover.garage_door
+      service: script.doors_and_locks_script_open_close_garage
+      variables:
+        action: close
     - alias: "Lock the front door"
       service: lock.lock
       target:
