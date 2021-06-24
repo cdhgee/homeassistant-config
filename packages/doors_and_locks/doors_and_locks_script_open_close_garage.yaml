@@ -12,6 +12,6 @@ script:
             - close
     sequence:
     - alias: "Open/close the garage door"
-      service: "cover.{{ action | lower }_cover"
+      service: "cover.{{ action | lower }}_cover"
       target:
         entity_id: cover.garage_door
