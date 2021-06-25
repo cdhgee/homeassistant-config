@@ -1,4 +1,4 @@
-{% macro door_state(entity_id) -%}{{ 'open' if states(entity_id) == 'on' else 'closed' }}{%- endmacro %}
+#{% macro door_state(entity_id) -%}{{ 'open' if states(entity_id) == 'on' else 'closed' }}{%- endmacro %}
 automation:
 - alias: "Notify - front door left open"
   description: "Send a notification when front door has been left open for one minute or more"
