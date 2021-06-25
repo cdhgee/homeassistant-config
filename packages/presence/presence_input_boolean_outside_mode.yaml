@@ -2,4 +2,3 @@ input_boolean:
   outside_mode:
     name: Outside mode
     icon: mdi:home-export-outline
-    initial: "off"

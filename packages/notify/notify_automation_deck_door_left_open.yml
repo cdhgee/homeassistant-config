@@ -1,0 +1,29 @@
+{% set entity_id = 'binary_sensor.deck_door_sensor' %}
+{% set entity_name = state_attr(entity_id, 'friendly_name') %}
+{% macro door_state(entity_id) -%}{{ 'open' if states(entity_id) == 'on' else 'closed' }}{%- endmacro %}
+automation:
+- alias: "Notify - {{ entity_name | lower }} left open"
+  description: "Send a notification when {{ entity_name | lower }} has been left open for one minute or more"
+  mode: single
+  trigger:
+  - platform: state
+    entity_id: "{{ entity_id }}"
+  - platform: time_pattern
+    # Every five minutes
+    minutes: "/5"
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: input_boolean.outside_mode
+      state: off
+    - condition: state
+    entity_id: "{{ entity_id }}"
+      state: open
+      for:
+        minutes: 1
+  action:
+  - service: script.notify_all_mobile_devices
+    data:
+      title: "{{ entity_name }}"
+      message: "{{ entity_name }} is now {{ door_state(entity_id) }}"
