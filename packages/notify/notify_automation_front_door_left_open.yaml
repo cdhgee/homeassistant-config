@@ -1,6 +1,8 @@
-{% set entity_id = 'binary_sensor.front_door_sensor' %}
-{% set entity_name = state_attr(entity_id, 'friendly_name') %}
-{% macro door_state(entity_id) -%}{{ 'open' if states(entity_id) == 'on' else 'closed' }}{%- endmacro %}
+# These lines are commented out so YAML doesn't see them
+# but they are still parsed by Jinja2 for templating purposes
+#{% set entity_id = 'binary_sensor.front_door_sensor' %}
+#{% set entity_name = state_attr(entity_id, 'friendly_name') %}
+#{% macro door_state(entity_id) -%}{{ 'open' if states(entity_id) == 'on' else 'closed' }}{%- endmacro %}
 automation:
 - alias: "Notify - {{ entity_name | lower }} left open"
   description: "Send a notification when {{ entity_name | lower }} has been left open for one minute or more"
@@ -13,7 +15,7 @@ automation:
     minutes: "/5"
   condition:
   - condition: state
-  entity_id: "{{ entity_id }}"
+    entity_id: "{{ entity_id }}"
     state: open
     for:
       minutes: 1
