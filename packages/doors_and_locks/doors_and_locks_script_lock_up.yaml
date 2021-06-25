@@ -3,9 +3,7 @@ script:
     alias: "Doors & locks - lock up"
     sequence:
     - alias: "Close the garage door"
-      service: script.doors_and_locks_script_open_close_garage
-      variables:
-        action: close
+      service: cover.close_cover
     - alias: "Lock the front door"
       service: lock.lock
       target:
