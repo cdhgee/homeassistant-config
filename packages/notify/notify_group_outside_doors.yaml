@@ -1,7 +1,0 @@
-group:
-  notify_outside_doors:
-    name: Outside doors
-    entities:
-    - binary_sensor.front_door_sensor
-    - binary_sensor.deck_door_sensor
-    - cover.garage_door
