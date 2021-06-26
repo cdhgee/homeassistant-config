@@ -1,0 +1,13 @@
+alert:
+  notify_front_door_unlocked:
+    name: "Front door unlocked"
+    title: "Door unlocked"
+    message: "Front door unlocked for {{ relative_time(states.lock.front_door.last_changed) }}"
+    done_message: "Front door locked"
+    entity_id: binary_sensor.notify_front_door_unlocked_alert
+    state: "on"
+    repeat: 15
+    can_acknowledge: false
+    skip_first: true
+    notifiers:
+    - notify_all_mobile_devices
