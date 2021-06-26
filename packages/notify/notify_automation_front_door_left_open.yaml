@@ -1,4 +1,4 @@
-#{% macro door_state(entity_id) -%}{{ 'open' if states(entity_id) == 'on' else 'closed' }}{%- endmacro %}
+#{% macro door_state(entity_id) -%}{{ 'open' if states(entity_id) == 'on' else 'closed' }} for {{ relative_time(states[entity_id].last_changed) }}{%- endmacro %}
 automation:
 - alias: "Notify - front door left open"
   description: "Send a notification when front door has been left open for one minute or more"
@@ -19,4 +19,4 @@ automation:
   - service: script.notify_all_mobile_devices
     data:
       title: "{{ state_attr('binary_sensor.front_door_sensor', 'friendly_name') }}"
-      message: "{{ state_attr('binary_sensor.front_door_sensor', 'friendly_name') }} is now {{ door_state('binary_sensor.front_door_sensor') }}"
+      message: "{{ state_attr('binary_sensor.front_door_sensor', 'friendly_name') }} {{ door_state('binary_sensor.front_door_sensor') }}"

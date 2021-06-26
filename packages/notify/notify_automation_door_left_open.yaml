@@ -1,0 +1,19 @@
+automation:
+- alias: "Notify - door left open"
+  description: "Send a notification when a door has been left open for one minute or more"
+  mode: single
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.deck_door_sensor
+    - binary_sensor.front_door_sensor
+    to:
+    - "on"
+    - "open"
+    for:
+      minutes: 1
+  action:
+  - service: script.notify_all_mobile_devices
+    data:
+      title: "{{ trigger.to_state.name }}"
+      message: "{{ trigger.to_state.name }} {{ 'open' if trigger.to_state.state == 'on' else closed' }} for {{ trigger.for }}"
