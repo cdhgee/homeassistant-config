@@ -6,7 +6,7 @@ alert:
     done_message: "Garage door closed"
     entity_id: binary_sensor.notify_garage_door_open_alert
     state: "on"
-    repeat: 15gi
+    repeat: 15
     can_acknowledge: false
     skip_first: true
     notifiers:
