@@ -1,0 +1,33 @@
+alert:
+  notify_deck_door_open:
+    name: "Deck door open"
+    title: "Door open"
+    message: "Deck door open for {{ relative_time(states.binary_sensor.deck_door_sensor.last_changed) }}"
+    done_message: "Deck door closed"
+    entity_id: binary_sensor.deck_door_sensor
+    state: "on"
+    repeat: 
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 15
+    - 20
+    - 25
+    - 30
+    - 35
+    - 40
+    - 45
+    - 50
+    - 55
+    - 60
+    can_acknowledge: false 
+    skip_first: true 
+    notifiers:
+    - notify_all_mobile_devices
