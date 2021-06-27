@@ -4,6 +4,8 @@ script:
     sequence:
     - alias: "Close the garage door"
       service: cover.close_cover
+      target:
+        entity_id: cover.garage_door
     - alias: "Lock the front door"
       service: lock.lock
       target:
