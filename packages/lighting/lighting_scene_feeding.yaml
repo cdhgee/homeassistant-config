@@ -59,6 +59,8 @@ scene:
       state: "on"
     light.master_bedroom_monicas_bedside:
       state: "on"
+      effect: colorloop
+      brightness: 127
     # Upstairs bathroom
     switch.upstairs_bathroom_fan:
       state: "off"
