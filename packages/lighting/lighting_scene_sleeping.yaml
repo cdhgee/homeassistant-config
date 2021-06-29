@@ -2,7 +2,7 @@
 # and switches that control lights to be turned off together.
 
 scene:
-- name: Sleep
+- name: Sleeping
   entities:
     # Basement
     switch.basement_crawlspace:
