@@ -5,9 +5,8 @@ scene:
       state: "on"
       brightness: 255
       color_temp: 454
-    light.kitchen_counter:
+    switch.kitchen_counter:
       state: "on"
-      brightness: 186
     light.kitchen_counter_lightstrip:
       state: "on"
       brightness: 255

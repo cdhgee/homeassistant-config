@@ -31,7 +31,7 @@ scene:
     # Kitchen
     light.kitchen_bar:
       state: "off"
-    light.kitchen_counter:
+    switch.kitchen_counter:
       state: "off"
     light.kitchen_counter_lightstrip:
       state: "off"

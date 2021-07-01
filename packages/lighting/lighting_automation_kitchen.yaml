@@ -12,8 +12,8 @@ automation:
           # Set the bar to the same state as the skylight
           state: "{{ states('light.kitchen_skylight') }}"
           brightness: 255
-        light.kitchen_counter:
-          # Set the counter to the same state as the skylight if the sun is up
+        switch.kitchen_counter:
+          # Set the counter to the same state as the skylight if the sun is up=
           # Otherwise, turn it on
           state: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
           # Full brightness if the sun is up, otherwise 70%-ish
