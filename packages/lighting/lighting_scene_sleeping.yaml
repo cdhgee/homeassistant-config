@@ -55,7 +55,7 @@ scene:
       state: "off"
     light.master_bedroom_davids_bedside:
       state: "off"
-    light.master_bedroom_fairy_lights:
+    switch.master_bedroom_fairy_lights:
       state: "off"
     light.master_bedroom_monicas_bedside:
       state: "off"

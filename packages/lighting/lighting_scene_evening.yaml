@@ -22,9 +22,8 @@ scene:
     light.family_room_curio:
       state: "on"
       brightness: 255
-    light.master_bedroom_fairy_lights:
+    switch.master_bedroom_fairy_lights:
       state: "on"
-      brightness: 255
     light.family_room_lamps_left_bottom:
       state: "on"
       brightness: 255

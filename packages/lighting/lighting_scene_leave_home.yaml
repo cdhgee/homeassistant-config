@@ -13,7 +13,7 @@ scene:
       state: "off"
     light.living_room_entry:
       state: "off"
-    light.master_bedroom_fairy_lights:
+    switch.master_bedroom_fairy_lights:
       state: "off"
     switch.upstairs_bathroom_fan:
       state: "off"

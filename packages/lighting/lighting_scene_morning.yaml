@@ -1,9 +1,8 @@
 scene:
 - name: Morning
   entities:
-    light.master_bedroom_fairy_lights:
+    switch.master_bedroom_fairy_lights:
       state: "on"
-      brightness: 255
     light.master_bedroom_monicas_bedside:
       state: "on"
       brightness: 255

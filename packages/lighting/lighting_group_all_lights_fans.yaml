@@ -34,7 +34,7 @@ group:
     - light.master_bedroom_bedroom
     - switch.master_bedroom_closet
     - light.master_bedroom_davids_bedside
-    - light.master_bedroom_fairy_lights
+    - switch.master_bedroom_fairy_lights
     - light.master_bedroom_monicas_bedside
     # Upstairs bathroom
     - switch.upstairs_bathroom_fan

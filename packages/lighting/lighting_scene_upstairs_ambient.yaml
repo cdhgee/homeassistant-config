@@ -9,8 +9,7 @@ scene:
       state: "on"
       brightness: 255
       effect: colorloop
-    light.master_bedroom_fairy_lights:
+    switch.master_bedroom_fairy_lights:
       state: "on"
-      brightness: 255
     switch.master_bedroom_closet:
       state: "on"
