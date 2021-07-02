@@ -16,14 +16,12 @@ automation:
           # Set the counter to the same state as the skylight if the sun is up=
           # Otherwise, turn it on
           state: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
-          # Full brightness if the sun is up, otherwise 70%-ish
-          brightness: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}{{ 186 }}{% else %}{{ 255 }}{% endif %}"
         light.kitchen_counter_lightstrip:
           # Set the counter lightstrip to the same state as the skylight if the sun is up
           # Otherwise, turn it on
           state: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
           brightness: 255
-          # Red-orange if sun is up, otherwise blue-green
+          # Blue-green if sun is up, otherwise red-orange
           rgb_color: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}{{ [255, 65, 0] }}{% else %}{{ [38, 255, 189] }}{% endif %}"
         light.kitchen_sink:
           # Set the sink to the same state as the skylight
