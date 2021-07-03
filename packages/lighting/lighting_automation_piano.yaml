@@ -1,0 +1,14 @@
+automation:
+- alias: Lighting - piano
+  # Turns the piano light off when the office light is turned off
+  description: Keep the piano light in sync
+  trigger:
+  - platform: state
+    entity_id: light.basement_office
+    to: "off"
+  action:
+  - service: light.turn_off
+    target:
+      entity_id:
+      - light.basement_piano
+  mode: single
