@@ -66,6 +66,7 @@ scene:
       state: "off"
     light.upstairs_bathroom_shower:
       state: "on"
+      brightness: 127
     # Upstairs hallway
     light.upstairs_hallway_landing:
       state: "off"
