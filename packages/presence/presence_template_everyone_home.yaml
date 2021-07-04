@@ -5,5 +5,17 @@ binary_sensor:
     everyone_home:
       friendly_name: Everyone home
       # Set to true if the number of people with state == away is zero
-      value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'away') | list | length == 0 }}"
+      value_template: >
+        {{
+          expand('group.everyone') |
+          selectattr('state', 'equalto', 'away') |
+          list |
+          length == 0
+        }}
+      availability_template: >
+        {{
+          expand('group.everyone') |
+          list |
+          length > 0
+        }}
       icon_template: mdi:account-multiple
