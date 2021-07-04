@@ -1,0 +1,13 @@
+automation:
+- alias: Lighting - bathroom fan
+  description: Turn the bathroom fan off after 30 minutes
+  trigger:
+  - platform: state
+    entity_id: light.upstairs_bathroom_lights
+    to: "off"
+    for: "00:30:00"
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.upstairs_bathroom_fan
+  mode: single
