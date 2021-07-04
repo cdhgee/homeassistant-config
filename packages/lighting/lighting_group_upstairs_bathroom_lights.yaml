@@ -1,8 +1,0 @@
-# This group is used by the bathroom fan automation
-light:
-- platform: group
-  name: Upstairs bathroom lights
-  entities:
-  - light.upstairs_bathroom_mirror
-  - light.upstairs_bathroom_shower
-
