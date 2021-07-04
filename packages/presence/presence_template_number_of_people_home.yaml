@@ -6,5 +6,17 @@ sensor:
     number_of_people_home:
       friendly_name: Number of people home
       # Set to the number of people with state == home
-      value_template: "{{ expand('group.everyone') | selectattr('state', 'equalto', 'home') | list | length }}"
+      value_template: >
+        {{
+          expand('group.everyone') |
+          selectattr('state', 'equalto', 'home') |
+          list |
+          length
+        }}
+      availability_template: >
+        {{
+          expand('group.everyone') |
+          list |
+          length > 0
+        }}
       icon_template: mdi:account-multiple
