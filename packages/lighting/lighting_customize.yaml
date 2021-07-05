@@ -20,7 +20,7 @@ homeassistant:
       icon: mdi:floor-lamp
     light.family_room_overhead:
       icon: mdi:track-light
-    light.family_room_tv_light_strip:
+    light.family_room_tv_lightstrip:
       icon: mdi:led-strip
     switch.kitchen_counter:
       icon: mdi:led-strip
