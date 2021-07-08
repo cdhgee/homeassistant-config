@@ -72,3 +72,5 @@ scene:
     # Garage
     switch.garage_work_light:
       state: "off"
+    input_boolean.lighting_after_lights_out:
+      state: "on"

@@ -1,0 +1,15 @@
+scene:
+- name: Lighting - weekday morning
+  entities:
+    switch.master_bedroom_fairy_lights:
+      state: "on"
+    light.master_bedroom_monicas_bedside:
+      state: "on"
+      brightness: 255
+      effect: colorloop
+    light.master_bedroom_davids_bedside:
+      state: "on"
+      brightness: 255
+      effect: colorloop
+    switch.closet:
+      state: "on"
