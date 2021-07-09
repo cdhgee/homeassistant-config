@@ -1,3 +1,4 @@
+automation:
 - alias: Presence - just arrived
   trigger:
   - platform: state
