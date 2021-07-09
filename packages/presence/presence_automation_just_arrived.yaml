@@ -1,0 +1,33 @@
+- alias: Presence - just arrived
+  trigger:
+  - platform: state
+    entity_id: person.david_gee
+    from: not_home
+    to: home
+  - platform: state
+    entity_id: person.monica_gee
+    from: not_home
+    to: home
+  action:
+  - service: input_select.select_option
+    data_template:
+      entity_id: >
+        {% if trigger.entity_id == 'person.david_gee' %}
+          input_select.presence_david_status
+        {% else %}
+          input_select.presence_monica_status
+        {% endif %}
+      option: >
+        {% if trigger.entity_id == 'person.david_gee' %}
+          {% if states.input_select.presence_david_status.state == 'Just left' %}
+            Home
+          {% else %}
+            Just arrived
+          {% endif %}
+        {% else %}
+          {% if states.input_select.presence_monica_status.state == 'Just left' %}
+            Home
+          {% else %}
+            Just arrived
+          {% endif %}
+        {% endif %}
