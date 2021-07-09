@@ -22,7 +22,7 @@ automation:
           state: "{% if is_state('input_boolean.lighting_after_lights_out', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
           brightness: 255
           # Blue-green if sun is up, otherwise red-orange
-          rgb_color: "{% if is_state('input_boolean.lighting_after_lights_out', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}{{ [255, 65, 0] }}{% else %}{{ [38, 255, 189] }}{% endif %}"
+          rgb_color: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}{{ [255, 65, 0] }}{% else %}{{ [38, 255, 189] }}{% endif %}"
         light.kitchen_sink:
           # Set the sink to the same state as the skylight
           state: "{{ states('light.kitchen_skylight') }}"
