@@ -1,0 +1,28 @@
+binary_sensor:
+- platform: template
+  sensors:
+    # This template can be used to trigger arrival events
+    presence_someone_leaving:
+      friendly_name: Someone leaving
+      # Set to true if the number of people that are not home whose last
+      # changed timestamp is less than 5 minutes ago and if the everyone group
+      # has more than zero members (this is reset during group reload)
+      value_template: >
+        {{
+          expand('group.everyone') |
+          selectattr('state', 'equalto', 'not_home') |
+          selectattr('last_changed', 'greaterthan', now() - timedelta(minutes = 5)) |
+          list |
+          length > 0
+          and
+          expand('group.everyone') |
+          list |
+          length > 0
+        }}
+      availability_template: >
+        {{
+          expand('group.everyone') |
+          list |
+          length > 0
+        }}
+      icon_template: mdi:account-off

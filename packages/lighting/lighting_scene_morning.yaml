@@ -1,18 +1,6 @@
 scene:
-- name: Morning
+- name: Lighting - morning
   entities:
-    switch.master_bedroom_fairy_lights:
-      state: "on"
-    light.master_bedroom_monicas_bedside:
-      state: "on"
-      brightness: 255
-      effect: colorloop
-    light.master_bedroom_davids_bedside:
-      state: "on"
-      brightness: 255
-      effect: colorloop
-    switch.closet:
-      state: "on"
     light.living_room_window:
       state: "on"
       brightness: 255
@@ -65,3 +53,5 @@ scene:
       - 191
       - 0
       - 255
+    input_boolean.lighting_after_lights_out:
+      state: "off"

@@ -1,4 +1,38 @@
 homeassistant:
   customize:
+    light.family_room_curio:
+      icon: mdi:lamp
+    light.family_room_garden:
+      icon: mdi:lamp
+    light.family_room_lamps:
+      icon: mdi:floor-lamp
+    light.family_room_lamps_left_top:
+      icon: mdi:floor-lamp
+    light.family_room_lamps_left_middle:
+      icon: mdi:floor-lamp
+    light.family_room_lamps_left_bottom:
+      icon: mdi:floor-lamp
+    light.family_room_lamps_right_top:
+      icon: mdi:floor-lamp
+    light.family_room_lamps_right_middle:
+      icon: mdi:floor-lamp
+    light.family_room_lamps_right_bottom:
+      icon: mdi:floor-lamp
+    light.family_room_overhead:
+      icon: mdi:track-light
+    light.family_room_tv_lightstrip:
+      icon: mdi:led-strip
+    switch.kitchen_counter:
+      icon: mdi:led-strip
+    light.kitchen_counter_lightstrip:
+      icon: mdi:led-strip
+    light.kitchen_skylight:
+      icon: mdi:track-light
+    light.living_room_entry:
+      icon: mdi:track-light
+    light.living_room_sun:
+      icon: mdi:ceiling-light
+    switch.master_bedroom_closet:
+      icon: mdi:led-strip
     switch.master_bedroom_fairy_lights:
       icon: mdi:string-lights

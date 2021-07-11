@@ -1,19 +1,11 @@
 automation:
 - alias: "Lighting - morning"
-  description: "Turn on morning scene on weekdays"
+  description: "Turn on morning scene"
   mode: single
   trigger:
   - platform: time
     at: "07:00:00"
-  condition:
-  - condition: time
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
   action:
   - service: scene.turn_on
     target:
-      entity_id: scene.morning
+      entity_id: scene.lighting_morning
