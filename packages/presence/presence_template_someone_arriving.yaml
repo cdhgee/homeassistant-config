@@ -3,7 +3,7 @@ binary_sensor:
   sensors:
     # This template can be used to trigger arrival events
     presence_someone_arriving:
-      friendly_name: Someone arriving
+      friendly_name: Presence - someone arriving
       # Set to true if the number of people that are home whose last changed
       # timestamp is less than 5 minutes ago and if the everyone group has
       # more than zero members (this is reset during group reload)

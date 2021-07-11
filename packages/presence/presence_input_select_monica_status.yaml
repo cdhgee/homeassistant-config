@@ -1,9 +1,0 @@
-input_select:
-  presence_monica_status:
-    name: Presence - Monica
-    options:
-      - Home
-      - Just arrived
-      - Just left
-      - Away
-      - Extended away
