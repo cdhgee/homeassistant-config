@@ -5,6 +5,7 @@ automation:
   trigger:
   - platform: state
     entity_id: binary_sensor.presence_someone_arriving
+    to: "on"
   condition:
   # Only trigger if the sun is below 7.5°
   # (roughly 30 minutes before/after sunset/sunrise)
