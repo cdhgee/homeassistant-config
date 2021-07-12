@@ -1,6 +1,6 @@
 
 scene:
-- name: Daytime
+- name: Lighting - weekday daytime
   entities:
     light.living_room_entry:
       state: "off"
@@ -17,10 +17,6 @@ scene:
     light.upstairs_bathroom_shower:
       state: "off"
     light.kitchen_skylight:
-      state: "off"
-    light.living_room_window:
-      state: "off"
-    light.family_room_lamps:
       state: "off"
     switch.closet:
       state: "off"
