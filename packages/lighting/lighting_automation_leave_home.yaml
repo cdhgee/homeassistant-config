@@ -5,7 +5,7 @@ automation:
   trigger:
   # Trigger if no-one home becomes true
   - platform: state
-    entity_id: binary_sensor
+    entity_id: binary_sensor.noone_home
     to: "on"
   condition:
   - condition: state
