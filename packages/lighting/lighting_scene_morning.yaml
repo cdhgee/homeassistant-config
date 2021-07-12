@@ -53,5 +53,3 @@ scene:
       - 191
       - 0
       - 255
-    input_boolean.lighting_after_lights_out:
-      state: "off"

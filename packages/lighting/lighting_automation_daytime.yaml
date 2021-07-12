@@ -1,11 +1,14 @@
 automation:
 - alias: "Lighting - daytime"
-  description: "Turn on daytime scene on weekdays"
+  description: "Turn on daytime scene"
   mode: single
   trigger:
   - platform: time
     at: "09:00:00"
-  condition:
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.lighting_daytime
   - condition: time
     weekday:
     - mon
@@ -13,7 +16,6 @@ automation:
     - wed
     - thu
     - fri
-  action:
   - service: scene.turn_on
     target:
-      entity_id: scene.daytime
+      entity_id: scene.lighting_weekday_daytime
