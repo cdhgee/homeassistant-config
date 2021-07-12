@@ -4,21 +4,12 @@ automation:
   mode: single
   trigger:
   - platform: state
-    entity_id: sensor.number_of_people_home
+    entity_id: binary_sensor.presence_someone_leaving
+    to: "on"
   condition:
-  # Only trigger if the number of people home has decreased
-  # and outside mode is off
-    condition: and
-    conditions:
-    - condition: template
-      value_template: <
-        {{
-          (trigger.to_state.state | int) < (trigger.from_state.state | int)
-          and
-          trigger.from_state.state != "unavailable"
-        }}
-    - condition: state
-      entity_id: input_boolean.outside_mode
-      state: "off"
+  # Only execute if outside mode is off
+  - condition: state
+    entity_id: input_boolean.outside_mode
+    state: "off"
   action:
   - service: script.doors_and_locks_lock_up
