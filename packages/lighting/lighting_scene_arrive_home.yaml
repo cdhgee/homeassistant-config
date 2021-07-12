@@ -1,7 +1,6 @@
 scene:
 - name: Lighting - arrive home
   entities:
-    # Basement
     light.living_room_entry:
       state: "on"
       brightness: 255

@@ -4,15 +4,7 @@ automation:
   mode: single
   trigger:
   - platform: state
-    entity_id: sensor.number_of_people_home
-  condition:
-  - condition: template
-    # Only trigger if the number of people home has increased
-    value_template: >
-      {{
-        (trigger.to_state.state | int) > (trigger.from_state.state | int)
-        and
-        trigger.from_state.state != "unavailable"
-      }}
+    entity_id: binary_sensor.presence_someone_arriving
+    to: "on"
   action:
   - service: script.doors_and_locks_open_up
