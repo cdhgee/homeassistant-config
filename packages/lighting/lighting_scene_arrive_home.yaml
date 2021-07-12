@@ -1,5 +1,5 @@
 scene:
-- name: Arrive home
+- name: Lighting - arrive home
   entities:
     # Basement
     light.living_room_entry:

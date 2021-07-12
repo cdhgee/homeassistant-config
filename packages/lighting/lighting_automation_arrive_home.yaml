@@ -4,24 +4,15 @@ automation:
   mode: single
   trigger:
   - platform: state
-    entity_id: sensor.number_of_people_home
+    entity_id: binary_sensor.presence_someone_arriving
   condition:
-  # Only trigger if the number of people home has increased AND the sun is
-  # below 7.5° (between 30 minutes before sunset and 30 minutes after sunrise)
-  - condition: and
-    conditions:
-    - condition: template
-      value_template: >
-        {{
-          (trigger.to_state.state | int) > (trigger.from_state.state | int)
-          and
-          trigger.from_state.state != "unavailable"
-        }}
-    - condition: numeric_state
-      entity_id: sun.sun
-      attribute: elevation
-      below: 7.5
+  # Only trigger if the sun is below 7.5°
+  # (roughly 30 minutes before/after sunset/sunrise)
+  - condition: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    below: 7.5
   action:
   - service: scene.turn_on
     target:
-      entity_id: scene.arrive_home
+      entity_id: scene.lighting_arrive_home
