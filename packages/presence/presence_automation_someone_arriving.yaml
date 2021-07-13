@@ -1,5 +1,6 @@
 automation:
 - alias: Presence - someone arriving
+  mode: restart
   trigger:
   - platform: state
     entity_id: person.david_gee
