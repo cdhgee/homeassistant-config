@@ -4,7 +4,7 @@ automation:
   mode: single
   trigger:
   - platform: state
-    entity_id: binary_sensor.presence_someone_arriving
+    entity_id: input_boolean.presence_someone_arriving
     to: "on"
   condition:
   # Only trigger if the sun is below 7.5°

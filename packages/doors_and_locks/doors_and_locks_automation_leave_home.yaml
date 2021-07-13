@@ -4,7 +4,7 @@ automation:
   mode: single
   trigger:
   - platform: state
-    entity_id: binary_sensor.presence_someone_leaving
+    entity_id: input_boolean.presence_someone_leaving
     to: "on"
   condition:
   # Only execute if outside mode is off
