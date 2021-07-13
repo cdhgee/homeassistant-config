@@ -26,5 +26,6 @@ automation:
     entity_id: input_boolean.outside_mode
     state: "off"
   action:
-  - delay: "00:10:00"
+  - delay:
+      minutes: 10
   - service: script.doors_and_locks_lock_up
