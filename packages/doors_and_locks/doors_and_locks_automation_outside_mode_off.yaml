@@ -4,7 +4,7 @@ automation:
   mode: single
   trigger:
   - platform: state
-    entity_id: binary_sensor.noone_home
+    entity_id: binary_sensor.template_noone_home
     to: "on"
   - platform: time
     at: "22:00:00"

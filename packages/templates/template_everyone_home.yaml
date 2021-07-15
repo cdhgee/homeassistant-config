@@ -2,7 +2,7 @@ binary_sensor:
 - platform: template
   sensors:
     # True if everyone is home
-    everyone_home:
+    template_everyone_home:
       friendly_name: Everyone home
       # Set to true if the number of people with state == away is zero
       value_template: >
