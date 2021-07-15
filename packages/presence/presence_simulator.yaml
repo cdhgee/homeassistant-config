@@ -1,0 +1,7 @@
+input_select:
+  presence_simulator:
+    name: Test person
+    icon: mdi:account
+    options:
+      - home
+      - not_home
