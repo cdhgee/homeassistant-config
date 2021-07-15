@@ -1,5 +1,5 @@
 automation:
-- alias: "Doors & locks - outside mode on"
+- alias: "Outside mode on"
   description: "Turn off outside mode"
   mode: single
   trigger:

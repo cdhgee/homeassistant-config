@@ -1,5 +1,5 @@
 automation:
-- alias: "Lighting - morning"
+- alias: "Morning"
   description: "Turn on morning scene"
   mode: single
   trigger:

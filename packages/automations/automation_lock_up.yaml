@@ -1,5 +1,5 @@
 automation:
-- alias: "Doors & locks - lock up"
+- alias: "Lock up"
   description: "Close the garage door and lock the front door at 2200"
   mode: single
   trigger:

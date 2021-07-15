@@ -1,5 +1,5 @@
 automation:
-  - alias: Presence - someone arriving
+  - alias: Someone arriving
     mode: restart
     trigger:
       - platform: state

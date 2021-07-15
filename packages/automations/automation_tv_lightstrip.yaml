@@ -1,5 +1,5 @@
 automation:
-- alias: Lighting - TV lightstrip
+- alias: TV lightstrip
   description: Turn on TV lightstrip color loop
   trigger:
   - platform: state

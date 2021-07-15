@@ -1,5 +1,5 @@
 automation:
-- alias: Lighting - bathroom fan
+- alias: Bathroom fan
   description: Turn the bathroom fan off after 30 minutes
   trigger:
   - platform: template

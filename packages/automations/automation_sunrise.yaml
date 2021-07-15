@@ -1,6 +1,6 @@
 automation:
-- alias: "Blinds - open at sunrise"
-  description: "Open blinds at sunrise"
+- alias: Sunrise
+  description: Open blinds at sunrise
   mode: single
   trigger:
   - platform: state

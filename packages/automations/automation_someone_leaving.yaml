@@ -1,5 +1,5 @@
 automation:
-  - alias: Presence - someone leaving
+  - alias: Someone leaving
     mode: restart
     trigger:
       - platform: state

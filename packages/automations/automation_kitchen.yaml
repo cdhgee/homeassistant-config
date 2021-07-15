@@ -1,5 +1,5 @@
 automation:
-- alias: Lighting - kitchen
+- alias: Kitchen
   description: Keep the kitchen lights in sync
   trigger:
   - platform: state
