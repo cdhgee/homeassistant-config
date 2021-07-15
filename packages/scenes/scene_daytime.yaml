@@ -1,6 +1,6 @@
 
 scene:
-- name: Lighting - daytime
+- name: Daytime
   entities:
     light.living_room_window:
       state: "off"

@@ -8,7 +8,7 @@ automation:
   action:
   - service: scene.turn_on
     target:
-      entity_id: scene.lighting_daytime
+      entity_id: scene.daytime
   - condition: time
     weekday:
     - mon
@@ -18,4 +18,4 @@ automation:
     - fri
   - service: scene.turn_on
     target:
-      entity_id: scene.lighting_weekday_daytime
+      entity_id: scene.weekday_daytime

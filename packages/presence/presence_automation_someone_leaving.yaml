@@ -48,4 +48,4 @@ automation:
             sequence:
               - service: scene.turn_on
                 target:
-                  entity_id: scene.lighting_leave_home
+                  entity_id: scene.leave_home

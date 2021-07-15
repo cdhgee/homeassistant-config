@@ -1,5 +1,5 @@
 scene:
-- name: Lighting - arrive home
+- name: Arrive home
   entities:
     light.living_room_entry:
       state: "on"

@@ -26,4 +26,4 @@ automation:
             sequence:
               - service: scene.turn_on
                 target:
-                  entity_id: scene.lighting_arrive_home
+                  entity_id: scene.arrive_home

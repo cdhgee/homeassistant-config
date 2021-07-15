@@ -1,5 +1,5 @@
 scene:
-- name: Lighting - leave home
+- name: Leave home
   entities:
     light.kitchen_bar:
       state: "off"

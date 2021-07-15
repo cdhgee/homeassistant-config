@@ -1,6 +1,6 @@
 
 scene:
-- name: Lighting - weekday daytime
+- name: Weekday daytime
   entities:
     light.living_room_entry:
       state: "off"

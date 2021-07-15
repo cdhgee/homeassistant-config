@@ -1,5 +1,5 @@
 scene:
-- name: Lighting - snuggle
+- name: Snuggle
   entities:
     light.living_room_entry:
       state: "on"
