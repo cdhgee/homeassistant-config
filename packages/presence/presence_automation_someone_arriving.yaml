@@ -10,6 +10,10 @@ automation:
         entity_id: person.monica_gee
         from: not_home
         to: home
+      - platform: state
+        entity_id: input_select.presence_simulator
+        from: not_home
+        to: home
     action:
       - service: script.doors_and_locks_open_up
       - choose:

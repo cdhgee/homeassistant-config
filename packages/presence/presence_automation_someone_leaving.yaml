@@ -10,6 +10,10 @@ automation:
         entity_id: person.monica_gee
         from: home
         to: not_home
+      - platform: state
+        entity_id: input_select.presence_simulator
+        from: home
+        to: not_home
     action:
       - choose:
           # If no-one is home then turn off outside mode and lock up
