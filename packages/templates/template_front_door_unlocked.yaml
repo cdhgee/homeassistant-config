@@ -1,0 +1,8 @@
+binary_sensor:
+  - platform: template
+    sensors:
+      # True if at the front door is unlocked and either outside mode is off or no-one is home
+      template_front_door_unlocked:
+        friendly_name: Front door unlocked alert
+        value_template: "{{ is_state('lock.front_door', 'unlocked') and (is_state('input_boolean.outside_mode', 'off') or is_state('binary_sensor.noone_home', 'on')) }}"
+        icon_template: mdi:lock-open
