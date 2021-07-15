@@ -1,5 +1,0 @@
-input_boolean:
-  presence_someone_arriving:
-    name: Presence - someone arriving
-    icon: mdi:account-arrow-left
-    initial: "off"
