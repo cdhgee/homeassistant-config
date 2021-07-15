@@ -1,6 +1,6 @@
 script:
-  doors_and_locks_open_garage:
-    alias: "Doors & locks - open garage"
+  open_garage:
+    alias: "Open garage"
     sequence:
     - alias: "Open the garage door"
       service: cover.open_cover

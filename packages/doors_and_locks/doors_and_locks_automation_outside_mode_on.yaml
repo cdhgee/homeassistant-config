@@ -7,4 +7,4 @@ automation:
     entity_id: input_boolean.outside_mode
     to: "on"
   action:
-  - service: script.doors_and_locks_open_up
+  - service: script.open_up
