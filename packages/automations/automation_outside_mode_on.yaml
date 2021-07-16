@@ -1,10 +1,17 @@
 automation:
-- alias: "Outside mode on"
-  description: "Turn off outside mode"
-  mode: single
-  trigger:
-  - platform: state
-    entity_id: input_boolean.outside_mode
-    to: "on"
-  action:
-  - service: script.open_up
+  - alias: "Outside mode"
+    description: "Manage outside mode"
+    mode: single
+    trigger:
+      - platform: state
+        entity_id: input_boolean.outside_mode
+    action:
+    - choose:
+        - conditions:
+            - condition: state
+              entity_id: input_boolean.outside_mode
+              state: "on"
+          sequence:
+            - service: script.open_up
+      default:
+        - service: script.lock_up

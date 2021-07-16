@@ -1,11 +1,21 @@
 automation:
-- alias: Garage
-  description: Keep the garage light in sync
-  trigger:
-  - platform: state
-    entity_id: cover.garage_door
-  action:
-  - service: "switch.turn_{% if is_state('cover.garage_door', 'open') %}on{% else %}off{% endif %}"
-    target:
-      entity_id: switch.garage_work_light
-  mode: single
+  - alias: Garage
+    description: Keep the garage light in sync
+    mode: single
+    trigger:
+      - platform: state
+        entity_id: cover.garage_door
+    action:
+      - choose:
+          - conditions:
+              - condition: state
+                entity_id: cover.garage_door
+                state: open
+            sequence:
+              - service: switch.turn_on
+                target:
+                  entity_id: switch.garage_work_light
+        default:
+          - service: switch.turn_off
+            target:
+              entity_id: switch.garage_work_light

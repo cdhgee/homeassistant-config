@@ -1,13 +1,12 @@
 automation:
-- alias: Sunset
-  description: Close blinds at sunset
-  mode: single
-  trigger:
-  - platform: state
-    entity_id: sun.sun
-    to: below_horizon
-  action:
-  - service: cover.close_cover
-    target:
-      entity_id:
-      - cover.all_blinds
+  - alias: Sunset
+    description: Close blinds at sunset
+    mode: single
+    trigger:
+      - platform: state
+        entity_id: sun.sun
+        to: below_horizon
+    action:
+      - service: cover.close_cover
+        target:
+          entity_id: cover.all_blinds

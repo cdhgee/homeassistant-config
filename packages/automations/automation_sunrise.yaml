@@ -1,12 +1,12 @@
 automation:
-- alias: Sunrise
-  description: Open blinds at sunrise
-  mode: single
-  trigger:
-  - platform: state
-    entity_id: sun.sun
-    to: above_horizon
-  action:
-  - service: cover.open_cover
-    target:
-      entity_id: cover.family_room_blinds
+  - alias: Sunrise
+    description: Open blinds at sunrise
+    mode: single
+    trigger:
+      - platform: state
+        entity_id: sun.sun
+        to: above_horizon
+    action:
+      - service: cover.open_cover
+        target:
+          entity_id: cover.family_room_blinds

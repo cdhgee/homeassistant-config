@@ -1,30 +1,30 @@
 automation:
-- alias: Kitchen
-  description: Keep the kitchen lights in sync
-  trigger:
-  - platform: state
-    entity_id: light.kitchen_skylight
-  action:
-  - service: scene.apply
-    data:
-      entities:
-        light.kitchen_bar:
-          # Set the bar to the same state as the skylight
-          state: "{{ states('light.kitchen_skylight') }}"
-          brightness: 255
-        switch.kitchen_counter:
-          # Set the counter to the same state as the skylight if the sun is up=
-          # Otherwise, turn it on
-          state: "{% if is_state('input_boolean.after_lights_out', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
-        light.kitchen_counter_lightstrip:
-          # Set the counter lightstrip to the same state as the skylight if the sun is up
-          # Otherwise, turn it on
-          state: "{% if is_state('input_boolean.after_lights_out', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
-          brightness: 255
-          # Blue-green if sun is up, otherwise red-orange
-          rgb_color: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}{{ [255, 65, 0] }}{% else %}{{ [38, 255, 189] }}{% endif %}"
-        light.kitchen_sink:
-          # Set the sink to the same state as the skylight
-          state: "{{ states('light.kitchen_skylight') }}"
-          brightness: 255
-  mode: single
+  - alias: Kitchen
+    description: Keep the kitchen lights in sync
+    mode: single
+    trigger:
+      - platform: state
+        entity_id: light.kitchen_skylight
+    action:
+      - service: scene.apply
+        data:
+          entities:
+            light.kitchen_bar:
+              # Set the bar to the same state as the skylight
+              state: "{{ states('light.kitchen_skylight') }}"
+              brightness: 255
+            switch.kitchen_counter:
+              # Set the counter to the same state as the skylight if the sun is up=
+              # Otherwise, turn it on
+              state: "{% if is_state('input_boolean.after_lights_out', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
+            light.kitchen_counter_lightstrip:
+              # Set the counter lightstrip to the same state as the skylight if the sun is up
+              # Otherwise, turn it on
+              state: "{% if is_state('input_boolean.after_lights_out', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
+              brightness: 255
+              # Blue-green if sun is up, otherwise red-orange
+              rgb_color: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}{{ [255, 65, 0] }}{% else %}{{ [38, 255, 189] }}{% endif %}"
+            light.kitchen_sink:
+              # Set the sink to the same state as the skylight
+              state: "{{ states('light.kitchen_skylight') }}"
+              brightness: 255

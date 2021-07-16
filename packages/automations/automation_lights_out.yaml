@@ -1,15 +1,15 @@
 automation:
-- alias: "Lights out"
-  description: "Turn off all lights and fans at midnight"
-  mode: single
-  trigger:
-  - platform: time
-    at: "00:00:00"
-  condition:
-  - condition: state
-    entity_id: input_boolean.babysitter_mode
-    state: "off"
-  action:
-  - service: scene.turn_on
-    target:
-      entity_id: scene.lights_out
+  - alias: "Lights out"
+    description: "Turn off all lights and fans at midnight"
+    mode: single
+    trigger:
+      - platform: time
+        at: "00:00:00"
+    condition:
+      - condition: state
+        entity_id: input_boolean.babysitter_mode
+        state: "off"
+    action:
+      - service: scene.turn_on
+        target:
+          entity_id: scene.lights_out

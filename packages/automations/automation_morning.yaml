@@ -1,24 +1,24 @@
 automation:
-- alias: "Morning"
-  description: "Turn on morning scene"
-  mode: single
-  trigger:
-  - platform: time
-    at: "07:00:00"
-  action:
-  - service: input_boolean.turn_off
-    target:
-      entity_id: input_boolean.after_lights_out
-  - service: scene.turn_on
-    target:
-      entity_id: scene.morning
-  - condition: time
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-  - service: scene.turn_on
-    target:
-      entity_id: scene.weekday_morning
+  - alias: "Morning"
+    description: "Turn on morning scene"
+    mode: single
+    trigger:
+      - platform: time
+        at: "07:00:00"
+    action:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.after_lights_out
+      - service: scene.turn_on
+        target:
+          entity_id: scene.morning
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      - service: scene.turn_on
+        target:
+          entity_id: scene.weekday_morning
