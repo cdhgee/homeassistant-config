@@ -54,7 +54,9 @@ scene:
     switch.master_bedroom_closet:
       state: "off"
     light.master_bedroom_davids_bedside:
-      state: "off"
+      state: "on"
+      brightness: 127
+      effect: "colorloop"
     switch.master_bedroom_fairy_lights:
       state: "off"
     light.master_bedroom_monicas_bedside:
@@ -65,8 +67,7 @@ scene:
     light.upstairs_bathroom_mirror:
       state: "off"
     light.upstairs_bathroom_shower:
-      state: "on"
-      brightness: 127
+      state: "off"
     # Upstairs hallway
     light.upstairs_hallway_landing:
       state: "off"

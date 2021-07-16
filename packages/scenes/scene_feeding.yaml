@@ -54,13 +54,13 @@ scene:
     switch.master_bedroom_closet:
       state: "off"
     light.master_bedroom_davids_bedside:
-      state: "off"
-    switch.master_bedroom_fairy_lights:
-      state: "on"
-    light.master_bedroom_monicas_bedside:
       state: "on"
       effect: colorloop
       brightness: 127
+    switch.master_bedroom_fairy_lights:
+      state: "on"
+    light.master_bedroom_monicas_bedside:
+      state: "offf"
     # Upstairs bathroom
     switch.upstairs_bathroom_fan:
       state: "off"
