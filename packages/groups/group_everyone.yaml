@@ -5,5 +5,5 @@ group:
   everyone:
     name: Everyone
     entities:
-    - person.david_gee
-    - person.monica_gee
+      - person.david_gee
+      - person.monica_gee

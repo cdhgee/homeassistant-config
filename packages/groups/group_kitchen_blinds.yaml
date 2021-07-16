@@ -1,6 +1,6 @@
 cover:
-- platform: group
-  name: Kitchen blinds
-  entities:
-  - cover.kitchen_left_blind
-  - cover.kitchen_right_blind
+  - platform: group
+    name: Kitchen blinds
+    entities:
+      - cover.kitchen_left_blind
+      - cover.kitchen_right_blind
