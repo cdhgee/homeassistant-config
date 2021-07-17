@@ -1,17 +1,10 @@
 automation:
-  - alias: "Outside mode"
-    description: "Manage outside mode"
+  - alias: "Outside mode on"
+    description: "Unlock front door and open garage door when outside mode turned on"
     mode: single
     trigger:
       - platform: state
         entity_id: input_boolean.outside_mode
+        to: "on"
     action:
-    - choose:
-        - conditions:
-            - condition: state
-              entity_id: input_boolean.outside_mode
-              state: "on"
-          sequence:
-            - service: script.open_up
-      default:
-        - service: script.lock_up
+      - service: script.open_up
