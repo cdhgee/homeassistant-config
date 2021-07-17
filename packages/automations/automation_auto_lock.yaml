@@ -4,24 +4,19 @@ automation:
     # If any of the triggers occurs again during the delay, restart
     mode: restart
     trigger:
-      # Trigger if garage door is opened
-      - platform: state
-        entity_id: cover.garage_door
-        to: open
-      # Trigger if front door is unlocked
-      - platform: state
-        entity_id: lock.front_door
-        to: unlocked
-      # Trigger if front door is closed
-      - platform: state
-        entity_id: binary_sensor.front_door_sensor
-        to: "off"
-    # Only execute if outside mode is off
-    condition:
-      - condition: state
-        entity_id: input_boolean.outside_mode
-        state: "off"
-    action:
-      - delay:
+      - platform: "template"
+        # Only fire if outside mode is off, front door is closed, and
+        # either front door is unlocked or garage door is open
+        value_template: >
+          {{
+            is_state('input_boolean.outside_mode', 'off') and
+            is_state('binary_sensor.front_door_sensor', 'off') and
+            (
+              is_state('lock.front_door', 'unlocked') or
+              is_state('cover.garage_door', 'open')
+            )
+          }}
+        for:
           minutes: 10
+    action:
       - service: script.lock_up
