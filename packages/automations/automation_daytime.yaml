@@ -1,14 +1,18 @@
 automation:
   - alias: "Daytime"
-    description: "Turn on daytime scene"
+    description: "Set daytime scene"
     mode: single
     trigger:
       - platform: time
         at: "09:00:00"
     action:
-      - service: scene.turn_on
-        target:
-          entity_id: scene.daytime
+      - service: scene.apply
+        data:
+          entities:
+            light.living_room_window:
+              state: "off"
+            light.family_room_lamps:
+              state: "off"
       - condition: time
         weekday:
         - mon
@@ -16,6 +20,27 @@ automation:
         - wed
         - thu
         - fri
-      - service: scene.turn_on
-        target:
-          entity_id: scene.weekday_daytime
+      - service: scene.apply
+        data:
+          entities:
+            light.living_room_entry:
+              state: "off"
+            light.living_room_sun:
+              state: "off"
+            light.master_bedroom_monicas_bedside:
+              state: "off"
+            light.master_bedroom_davids_bedside:
+              state: "off"
+            light.master_bedroom_bedroom:
+              state: "off"
+            light.upstairs_bathroom_mirror:
+              state: "off"
+            light.upstairs_bathroom_shower:
+              state: "off"
+            light.kitchen_skylight:
+              state: "off"
+            switch.closet:
+              state: "off"
+            switch.master_bedroom_fairy_lights:
+              state: "off"
+

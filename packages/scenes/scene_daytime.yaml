@@ -1,8 +1,0 @@
-
-scene:
-- name: Daytime
-  entities:
-    light.living_room_window:
-      state: "off"
-    light.family_room_lamps:
-      state: "off"
