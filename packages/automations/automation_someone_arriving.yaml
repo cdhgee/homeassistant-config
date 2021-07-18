@@ -24,6 +24,9 @@ automation:
                 attribute: elevation
                 below: 7.5
             sequence:
-              - service: scene.turn_on
-                target:
-                  entity_id: scene.arrive_home
+              - service: scene.apply
+                data:
+                    entities:
+                      light.living_room_entry:
+                        state: "on"
+                        brightness: 255
