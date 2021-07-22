@@ -13,3 +13,5 @@ scene:
       state: "on"
     switch.master_bedroom_closet:
       state: "on"
+    light.master_bedroom_bedroom:
+      state: "off"
