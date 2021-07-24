@@ -4,13 +4,13 @@ automation:
     mode: single
     trigger:
       - platform: template
-        value_template: >-
-          {{
-            states('light.kitchen_skylight') != states('light.kitchen_bar') or
-            states('light.kitchen_skylight') != states('switch.kitchen_counter') or
-            states('light.kitchen_skylight') != states('light.kitchen_counter_lightstrip') or
-            states('light.kitchen_skylight') != states('light.kitchen_counter_sink')
-          }}
+        value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_bar') }}"
+      - platform: template
+        value_template: "{{ states('light.kitchen_skylight') != states('switch.kitchen_counter') }}"
+      - platform: template
+        value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_counter_lightstrip') }}"
+      - platform: template
+        value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_counter_sink') }}"
     action:
       - service: scene.apply
         data:
