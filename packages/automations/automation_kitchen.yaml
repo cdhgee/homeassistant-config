@@ -3,8 +3,14 @@ automation:
     description: Keep the kitchen lights in sync
     mode: single
     trigger:
-      - platform: state
-        entity_id: light.kitchen_skylight
+      - platform: template
+        value_template: >-
+          {{
+            states('light.kitchen_skylight') != states('light.kitchen_bar') or
+            states('light.kitchen_skylight') != states('switch.kitchen_counter') or
+            states('light.kitchen_skylight') != states('light.kitchen_counter_lightstrip') or
+            states('light.kitchen_skylight') != states('light.kitchen_counter_sink')
+          }}
     action:
       - service: scene.apply
         data:
