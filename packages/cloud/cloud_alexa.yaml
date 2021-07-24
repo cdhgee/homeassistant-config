@@ -1,0 +1,40 @@
+cloud:
+  alexa:
+    filter:
+      include_entities:
+        - climate.hallway
+        - cover.all_blinds
+        - cover.family_room_blinds
+        - cover.kitchen_blinds
+        - cover.living_room_blinds
+        - cover.master_bedroom_blinds
+        - input_boolean.babysitter_mode
+        - input_boolean.outside_mode
+        - light.basement_office
+        - light.basement_piano
+        - light.family_room_fireplace
+        - light.family_room_lamps
+        - light.family_room_overhead
+        - light.guest_bedroom_main_lights
+        - light.kitchen_skylight
+        - light.living_room_entry
+        - light.living_room_sun
+        - light.master_bedroom_bedroom
+        - light.master_bedroom_davids_bedside
+        - light.master_bedroom_fairy_lights
+        - light.master_bedroom_monicas_bedside
+        - light.upstairs_bathroom_mirror
+        - light.upstairs_bathroom_shower
+        - light.upstairs_hallway_landing
+        - scene.bedtime
+        - scene.feeding
+        - scene.lights_out
+        - scene.sleeping
+        - scene.snuggle
+        - scene.upstairs_ambient
+        - script.close_garage
+        - script.open_garage
+        - switch.basement_crawlspace
+        - switch.kitchen_counter
+        - switch.master_bedroom_closet
+        - switch.upstairs_bathroom_fan
