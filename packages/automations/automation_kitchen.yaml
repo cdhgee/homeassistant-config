@@ -10,7 +10,7 @@ automation:
       - platform: template
         value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_counter_lightstrip') }}"
       - platform: template
-        value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_counter_sink') }}"
+        value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_sink') }}"
     action:
       - service: scene.apply
         data:
