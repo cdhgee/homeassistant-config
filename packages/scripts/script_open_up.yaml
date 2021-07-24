@@ -2,10 +2,17 @@ script:
   open_up:
     alias: "Open up"
     sequence:
-    - alias: "Open the garage door"
-      service: cover.open_cover
-      target:
-        entity_id: cover.garage_door
+      - choose:
+          - alias: "Open the garage door if it is closed"
+            # i.e. only trigger the door to move if it is stationary
+            conditions:
+              - condition: state
+                entity_id: cover.garage_door
+                state: closed
+            sequence:
+              - service: cover.open_cover
+                target:
+                  entity_id: cover.garage_door
     - alias: "Unlock the front door"
       service: lock.unlock
       target:
