@@ -13,7 +13,7 @@ script:
               - service: cover.open_cover
                 target:
                   entity_id: cover.garage_door
-    - alias: "Unlock the front door"
-      service: lock.unlock
-      target:
-        entity_id: lock.front_door_lock
+      - alias: "Unlock the front door"
+        service: lock.unlock
+        target:
+          entity_id: lock.front_door_lock
