@@ -6,16 +6,11 @@ automation:
       - platform: state
         entity_id: cover.garage_door
     action:
-      - choose:
-          - conditions:
-              - condition: state
-                entity_id: cover.garage_door
-                state: open
-            sequence:
-              - service: switch.turn_on
-                target:
-                  entity_id: switch.garage_work_light
-        default:
-          - service: switch.turn_off
-            target:
-              entity_id: switch.garage_work_light
+      - service: >-
+          {% if is_state('cover.garage_door', 'open') %}
+            switch.turn_on
+          {% else %}
+            switch.turn_off
+          {% endif %}
+        target:
+          entity_id: switch.garage_work_light
