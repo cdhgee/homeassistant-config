@@ -1,0 +1,4 @@
+cloud:
+  google_actions:
+    filter:
+      include_entities: []
