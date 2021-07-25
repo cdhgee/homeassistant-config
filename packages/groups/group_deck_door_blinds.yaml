@@ -1,0 +1,6 @@
+cover:
+  - platform: group
+    name: Deck door blinds
+    entities:
+      - cover.deck_door_left_blind
+      - cover.deck_door_right_blind

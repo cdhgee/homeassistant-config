@@ -2,6 +2,7 @@ cover:
   - platform: group
     name: All blinds
     entities:
+      - cover.deck_door_blinds
       - cover.family_room_blinds
       - cover.kitchen_blinds
       - cover.living_room_blinds
