@@ -1,4 +1,5 @@
 cloud:
   google_actions:
     filter:
-      include_entities: []
+      include_domains: 
+        - dummy
