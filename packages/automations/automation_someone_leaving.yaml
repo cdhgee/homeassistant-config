@@ -36,7 +36,7 @@ automation:
       - choose:
           - conditions:
               # If no-one is home and babysitter mode is off,
-              # turn off the lights
+              # turn off the lights and resume the thermostat schedule
               - condition: and
                 conditions:
                   - condition: state
@@ -49,3 +49,6 @@ automation:
               - service: scene.turn_on
                 target:
                   entity_id: scene.leave_home
+              - service: ecobee.resume_program
+                data:
+                  entity_id: climate.hallway
