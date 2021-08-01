@@ -1,5 +1,0 @@
-person:
-  - name: Monica Gee
-    id: monica_gee
-    device_trackers:
-      - device_tracker.baller
