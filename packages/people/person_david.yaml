@@ -1,0 +1,5 @@
+person:
+  - name: David Gee
+    id: david_gee
+    device_trackers:
+      - device_tracker.pixel_3a_xl
