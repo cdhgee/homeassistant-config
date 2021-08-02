@@ -1,0 +1,6 @@
+cover:
+  - platform: group
+    name: Family room deck door blinds
+    entities:
+      - cover.family_room_deck_door_left_blind
+      - cover.family_room_deck_door_right_blind
