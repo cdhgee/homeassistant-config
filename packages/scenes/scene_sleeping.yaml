@@ -60,6 +60,7 @@ scene:
         - 255
         - 119
         - 74
+      effect: ""
     switch.master_bedroom_fairy_lights:
       state: "off"
     light.master_bedroom_monicas_bedside:
