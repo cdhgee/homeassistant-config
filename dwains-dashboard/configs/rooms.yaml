@@ -1,0 +1,6 @@
+rooms:
+  - name: Family room
+    light: light.family_room_lights
+    cover: cover.family_room_blinds
+    temperature: sensor.family_room_temperature
+    safety: binary_sensor.family_room_co_smoke_alarm_smoke_alarm_smoke_detected
