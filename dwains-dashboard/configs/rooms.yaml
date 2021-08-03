@@ -3,4 +3,13 @@ rooms:
     light: group.family_room_lights
     cover: group.family_room_blinds
     temperature: sensor.family_room_temperature
-    safety: binary_sensor.family_room_co_smoke_alarm_smoke_alarm_smoke_detected
+    safety: group.family_room_safety
+  - name: Kitchen
+    light: light.kitchen_skylight
+    cover: cover.kitchen_blinds
+    safety: group.kitchen_safety
+  - name: Living room
+    light: group.living_room_lights
+    cover: cover.living_room_blinds
+    temperature: sensor.living_room_temperature
+    climate: climate.hallway

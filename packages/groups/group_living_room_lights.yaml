@@ -1,0 +1,6 @@
+group:
+  living_room_lights:
+    name: Living room lights
+    entities:
+      - light.living_room_sun
+      - light.
