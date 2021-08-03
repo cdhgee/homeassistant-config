@@ -23,7 +23,7 @@ cloud:
         - light.living_room_sun
         - light.master_bedroom_bedroom
         - light.master_bedroom_davids_bedside
-        - light.master_bedroom_fairy_lights
+        - switch.master_bedroom_fairy_lights
         - light.master_bedroom_monicas_bedside
         - light.upstairs_bathroom_mirror
         - light.upstairs_bathroom_shower
