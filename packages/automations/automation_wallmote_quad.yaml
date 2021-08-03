@@ -1,5 +1,6 @@
 automation:
   - alias: Wallmote
+    id: e6253bc7-b598-4fa7-9112-a8f5b464acdb
     mode: single
     trigger:
       platform: event
