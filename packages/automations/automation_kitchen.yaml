@@ -1,5 +1,6 @@
 automation:
   - alias: Kitchen
+    id:3095a99b-396f-4227-b8fd-4cf5cf97fe14
     description: Keep the kitchen lights in sync
     mode: single
     trigger:

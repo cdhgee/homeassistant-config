@@ -1,5 +1,6 @@
 automation:
   - alias: "Morning"
+    id: f5aed56d-35a8-4300-8af9-53ef018d7eed
     description: "Set morning scene"
     mode: single
     trigger:

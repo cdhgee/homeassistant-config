@@ -1,5 +1,6 @@
 automation:
   - alias: Someone leaving
+    id: baf6695f-9c77-4920-8f9e-9cec6786398f
     mode: restart
     trigger:
       - platform: state

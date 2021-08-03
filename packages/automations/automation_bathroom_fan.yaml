@@ -1,5 +1,6 @@
 automation:
   - alias: Bathroom fan
+    id: d1ee0b79-8e9d-46ee-b417-699d60941a5e
     description: Turn the bathroom fan off after 30 minutes
     mode: single
     trigger:

@@ -1,5 +1,6 @@
 automation:
   - alias: Piano
+    id: 8a5c5c0c-d9e6-4a21-af57-7ddace4f35f0
     # Turns the piano light off when the office light is turned off
     description: Keep the piano light in sync
     trigger:

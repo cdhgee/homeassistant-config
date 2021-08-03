@@ -1,5 +1,6 @@
 automation:
   - alias: Sunset
+    id: a16c04b7-28e6-4a71-8a95-02a69609ab72
     description: Close blinds at sunset
     mode: single
     trigger:

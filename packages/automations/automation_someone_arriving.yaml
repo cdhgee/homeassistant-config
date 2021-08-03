@@ -1,5 +1,6 @@
 automation:
   - alias: Someone arriving
+    id: 569067a1-dbd3-47c7-aedc-0e82dfda8c48
     mode: restart
     trigger:
       - platform: state

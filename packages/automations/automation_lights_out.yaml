@@ -1,5 +1,6 @@
 automation:
   - alias: "Lights out"
+    id: f78bb891-53e5-4cb5-b31c-7d76efc67773
     description: "Turn off all lights and fans at midnight"
     mode: single
     trigger:

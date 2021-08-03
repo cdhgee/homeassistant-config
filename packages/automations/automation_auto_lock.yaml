@@ -1,5 +1,6 @@
 automation:
   - alias: "Auto lock"
+    id: 7d8eb4e1-f63f-4bed-a5f1-1b7134bfaf7a
     description: "Lock the front door and close the garage after ten minutes"
     # If any of the triggers occurs again during the delay, restart
     mode: restart

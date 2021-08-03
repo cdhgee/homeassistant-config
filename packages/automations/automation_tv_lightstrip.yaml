@@ -1,5 +1,6 @@
 automation:
   - alias: TV lightstrip
+    id: b8a0a71d-e613-4858-ae4d-1c1124a4f752
     description: Set TV lightstrip to colorloop when turned on
     mode: single
     trigger:

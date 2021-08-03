@@ -1,5 +1,6 @@
 automation:
   - alias: "Daily backup (full)"
+    id: 6a02e20c-07d4-47cd-a3b3-b573c75588b0
     description: "Run daily backup and backup purge at 0500"
     mode: single
     trigger:
