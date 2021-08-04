@@ -3,4 +3,4 @@ group:
     name: Living room lights
     entities:
       - light.living_room_sun
-      - light.
+      - light.living_room_entry
