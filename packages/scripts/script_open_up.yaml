@@ -16,4 +16,4 @@ script:
       - alias: "Unlock the front door"
         service: lock.unlock
         target:
-          entity_id: lock.front_door
+          entity_id: lock.front_door_lock
