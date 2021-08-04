@@ -2,7 +2,7 @@ alert:
   front_door_unlocked:
     name: "Front door unlocked"
     title: "Door unlocked"
-    message: "Front door unlocked for {{ relative_time(states.lock.front_door.last_changed) }}"
+    message: "Front door unlocked for {{ relative_time(states.lock.front_door_lock.last_changed) }}"
     done_message: "Front door locked"
     entity_id: binary_sensor.template_front_door_unlocked
     state: "on"
