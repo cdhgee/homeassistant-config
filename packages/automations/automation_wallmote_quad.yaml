@@ -51,7 +51,7 @@ automation:
               - condition: template
                 value_template: "{{ action_name == 'KeyPressed' and property_key == '004'}}"
             sequence:
-              - service: "{% if is_state('light.upstairs_bathroom_mirror', 'on') or is_state('light.upstairs_bathroom_mirror', 'on') %}light.turn_off{% else %}light.turn_on{% endif %}"
+              - service: "{% if is_state('light.upstairs_bathroom_mirror', 'on') or is_state('light.upstairs_bathroom_shower', 'on') %}light.turn_off{% else %}light.turn_on{% endif %}"
                 target:
                   entity_id:
                     - light.upstairs_bathroom_mirror
