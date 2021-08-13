@@ -1,0 +1,4 @@
+light:
+  - platform: switch
+    name: Kitchen counter
+    entity_id: switch.kitchen_counter
