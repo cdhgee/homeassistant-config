@@ -1,5 +1,5 @@
-group:
-  kitchen_ambient_lights:
+light:
+  - platform: group
     name: Kitchen ambient lights
     entities:
       - light.kitchen_bar
