@@ -1,0 +1,6 @@
+group:
+  family_room_safety:
+    name: Family room safety
+    entities:
+      - binary_sensor.family_room_smoke_detected
+      - binary_sensor.family_room_co_detected
