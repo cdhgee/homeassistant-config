@@ -1,5 +1,5 @@
-group:
-  living_room_lights:
+light:
+  - platform: group
     name: Living room lights
     entities:
       - light.living_room_sun
