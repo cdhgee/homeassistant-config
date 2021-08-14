@@ -1,6 +1,0 @@
-pi_hole:
-  host: 10.0.5.10
-  name: pi0
-  ssl: true
-  verify_ssl: false
-  api_key: !secret pi0_api_key
