@@ -1,6 +1,6 @@
 pi_hole:
   host: pi1.home.gee-family.net
-  name: pi0
+  name: pi1
   ssl: true
   verify_ssl: false
   api_key: !secret pi1_api_key
