@@ -11,7 +11,7 @@ automation:
         value_template: >
           {{
             is_state('input_boolean.outside_mode', 'off') and
-            is_state('binary_sensor.front_door_sensor', 'off') and
+            is_state('binary_sensor.living_room_front_door', 'off') and
             (
               is_state('lock.front_door_lock', 'unlocked') or
               is_state('cover.garage_door', 'open')

@@ -2,7 +2,7 @@ alert:
   deck_door_open:
     name: "Deck door open"
     title: "Door open"
-    message: "Deck door open for {{ relative_time(states.binary_sensor.deck_door_sensor.last_changed) }}"
+    message: "Deck door open for {{ relative_time(states.binary_sensor.family_room_deck_door.last_changed) }}"
     done_message: "Deck door closed"
     entity_id: binary_sensor.template_deck_door_open
     state: "on"
