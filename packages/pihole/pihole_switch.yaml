@@ -1,7 +1,7 @@
 switch:
   - platform: template
     switches:
-      skylight:
+      pihole:
         value_template: "{{ is_state('switch.pi0', 'on') and is_state('switch.pi1', 'on') }}"
         turn_on:
           service: switch.turn_on
@@ -22,7 +22,6 @@ switch:
               entity_id:
                 - switch.pi0
                 - switch.pi1
-    name: Pi-hole
     entities:
       - switch.pi0
       - switch.pi1
