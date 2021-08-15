@@ -1,0 +1,6 @@
+switch:
+  - platform: group
+    name: Pi-hole
+    entities:
+      - switch.pi0
+      - switch.pi1
