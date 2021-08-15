@@ -33,29 +33,27 @@
                   name: Ads blocked today
                 - entity: sensor.pi1_ads_percentage_blocked_today
                   name: Ads % blocked today
-    - type: vertical-stack
-      cards:
-        - type: entities
-          title: Internet Health
-          show_header_toggle: false
-          entities:
-            - entity: sensor.speedtest_download
-              secondary_info: last-changed
-            - entity: sensor.speedtest_ping
-            - entity: sensor.speedtest_upload
-        - type: custom:mini-graph-card
-          name: Bandwidth history
-          entities:
-            - name: Download speed
-              entity: sensor.speedtest_download
-              color: green
-            - name: Upload speed
-              entity: sensor.speedtest_upload
-              color: red
-          hours_to_show: 72
-          points_per_hour: 1
-          hour24: true
-          lower_bound: 0
-          upper_bound: 500
-          show:
-            labels: true
+    - type: entities
+      title: Internet Health
+      show_header_toggle: false
+      entities:
+        - entity: sensor.speedtest_download
+          secondary_info: last-changed
+        - entity: sensor.speedtest_ping
+        - entity: sensor.speedtest_upload
+    - type: custom:mini-graph-card
+      name: Bandwidth history
+      entities:
+        - name: Download speed
+          entity: sensor.speedtest_download
+          color: green
+        - name: Upload speed
+          entity: sensor.speedtest_upload
+          color: red
+      hours_to_show: 72
+      points_per_hour: 1
+      hour24: true
+      lower_bound: 0
+      upper_bound: 500
+      show:
+        labels: true
