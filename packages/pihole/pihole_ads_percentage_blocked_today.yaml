@@ -4,12 +4,19 @@ sensor:
     pihole_ads_percentage_blocked_today:
       friendly_name: Total ads percentage blocked today
       value_template: >
+        {% if
+            (states('sensor.pihole_ads_blocked_today') | int) > 0 and
+            (states('sensor.pihole_dns_queries_today') | int) > 0
+        %}
         {{
           ((10000 * (
             (states('sensor.pihole_ads_blocked_today') | int) /
             (states('sensor.pihole_dns_queries_today') | int)
-          )) | round | int / 100) | string + '%'
+          )) | round | int / 100) | string + ' %'
         }}
+        {% else %}
+        n/a
+        {% endif %}
       availability_template: >
         {{
           (states('sensor.pihole_ads_blocked_today') | int) > 0 and
