@@ -1,0 +1,264 @@
+mode: yaml
+title: Home
+views:
+  - icon: mdi:home-variant
+    title: Dashboard
+    path: default_view
+    badges:
+      - entity: binary_sensor.iss
+      - entity: sun.sun
+      - entity: person.david_gee
+      - entity: person.monica_gee
+    cards:
+      - cards:
+          - entity: weather.home
+            type: custom:weather-card
+            number_of_forecasts: '5'
+          - camera_image: camera.regional_radar
+            entities: []
+            type: picture-glance
+          - camera_image: camera.local_radar
+            entities: []
+            type: picture-glance
+          - card:
+              show_header_toggle: false
+              type: entities
+              entities:
+                - sensor.big_walnut_lsd_status
+                - sensor.delaware
+                - sensor.franklin
+                - sensor.morrow
+                - sensor.nws_alerts
+              title: School/Road/Weather Alerts
+            conditions:
+              - entity: binary_sensor.relevant_alert
+                state: 'on'
+            type: conditional
+        type: vertical-stack
+      - type: entities
+        title: Family room
+        entities:
+          - type: custom:fold-entity-row
+            head:
+              entity: light.family_room_lights
+              name: Lights
+            group_config:
+              secondary_info: last-changed
+          - type: custom:fold-entity-row
+            head:
+              entity: light.family_room_ambient_lights
+              name: Ambient lights
+            group_config:
+              secondary_info: last-changed
+          - entity: binary_sensor.family_room_smoke_detected
+            name: Smoke
+            secondary_info: last-changed
+          - entity: binary_sensor.family_room_co_detected
+            name: Carbon monoxide
+            secondary_info: last-changed
+          - entity: sensor.family_room_temperature
+            name: Temperature
+            secondary_info: last-changed
+          - entity: binary_sensor.family_room_deck_door
+      - type: entities
+        title: Living room
+        entities:
+          - type: custom:fold-entity-row
+            head:
+              entity: light.living_room_lights
+              name: Lights
+            group_config:
+              secondary_info: last-changed
+          - type: custom:fold-entity-row
+            head:
+              entity: light.living_room_ambient_lights
+              name: Ambient lights
+            group_config:
+              secondary_info: last-changed
+          - entity: climate.hallway
+            name: Thermostat
+          - entity: binary_sensor.living_room_front_door
+          - entity: lock.front_door_lock
+      - type: entities
+        title: Kitchen
+        entities:
+          - type: custom:fold-entity-row
+            head:
+              entity: light.kitchen_lights
+              name: Lights
+            group_config:
+              secondary_info: last-changed
+          - type: custom:fold-entity-row
+            head:
+              entity: light.kitchen_ambient_lights
+              name: Ambient lights
+            group_config:
+              secondary_info: last-changed
+        state_color: true
+      - cards:
+          - type: map
+            entities:
+              - entity: person.david_gee
+              - entity: person.monica_gee
+            dark_mode: true
+            title: Family locations
+        type: vertical-stack
+      - type: entities
+        title: Master bedroom
+        entities:
+          - type: custom:fold-entity-row
+            head:
+              entity: light.master_bedroom_lights
+              name: Lights
+            group_config:
+              secondary_info: last-changed
+          - type: custom:fold-entity-row
+            head:
+              entity: light.master_bedroom_ambient_lights
+              name: Ambient lights
+            group_config:
+              secondary_info: last-changed
+          - entity: sensor.master_bedroom_temperature
+            name: Temperature
+            secondary_info: last-changed
+  - icon: mdi:server
+    cards:
+      - show_header_toggle: false
+        type: entities
+        entities:
+          - type: custom:fold-entity-row
+            head:
+              entity: switch.pihole
+            open: true
+            entities:
+              - entity: sensor.pihole_ads_blocked_today
+                secondary_info: last-changed
+              - entity: sensor.pihole_ads_percentage_blocked_today
+                name: Total ads % blocked today
+                secondary_info: last-changed
+              - type: custom:fold-entity-row
+                head:
+                  entity: switch.pi0
+                entities:
+                  - entity: sensor.pi0_ads_blocked_today
+                    name: Ads blocked today
+                  - entity: sensor.pi0_ads_percentage_blocked_today
+                    name: Ads % blocked today
+              - type: custom:fold-entity-row
+                head:
+                  entity: switch.pi1
+                entities:
+                  - entity: sensor.pi1_ads_blocked_today
+                    name: Ads blocked today
+                  - entity: sensor.pi1_ads_percentage_blocked_today
+                    name: Ads % blocked today
+        title: Pi-Hole Stats
+      - show_header_toggle: false
+        type: entities
+        entities:
+          - entity: sensor.speedtest_download
+            secondary_info: last-changed
+          - entity: sensor.speedtest_ping
+          - entity: sensor.speedtest_upload
+        title: Internet Health
+      - name: Bandwidth history
+        type: custom:mini-graph-card
+        entities:
+          - name: Download speed
+            entity: sensor.speedtest_download
+            color: green
+          - name: Upload speed
+            entity: sensor.speedtest_upload
+            color: red
+        hours_to_show: 72
+        points_per_hour: 1
+        hour24: true
+        lower_bound: 0
+        upper_bound: 500
+      - show_header_toggle: false
+        type: entities
+        entities:
+          - entity: sensor.12tb_nas_cpu_temperature
+          - entity: sensor.12tb_nas_cpu_usage
+          - entity: sensor.12tb_nas_free_space_datavol1
+          - entity: sensor.12tb_nas_memory_available
+          - entity: sensor.12tb_nas_memory_usage
+          - entity: sensor.12tb_nas_memory_used
+          - entity: sensor.12tb_nas_network_down_eth0
+          - entity: sensor.12tb_nas_network_down_eth1
+          - entity: sensor.12tb_nas_network_link_eth0
+          - entity: sensor.12tb_nas_network_link_eth1
+          - entity: sensor.12tb_nas_network_up_eth0
+          - entity: sensor.12tb_nas_network_up_eth1
+          - entity: sensor.12tb_nas_smart_status_drive_0_1
+          - entity: sensor.12tb_nas_smart_status_drive_0_2
+          - entity: sensor.12tb_nas_smart_status_drive_0_3
+          - entity: sensor.12tb_nas_smart_status_drive_0_4
+          - entity: sensor.12tb_nas_status
+          - entity: sensor.12tb_nas_system_temperature
+          - entity: sensor.12tb_nas_temperature_drive_0_1
+          - entity: sensor.12tb_nas_temperature_drive_0_2
+          - entity: sensor.12tb_nas_temperature_drive_0_3
+          - entity: sensor.12tb_nas_temperature_drive_0_4
+          - entity: sensor.12tb_nas_used_space_datavol1
+          - entity: sensor.12tb_nas_volume_used_datavol1
+        title: QNAP Storage NAS
+      - show_header_toggle: false
+        type: entities
+        entities:
+          - entity: sensor.vm_nas_1_cpu_temperature
+          - entity: sensor.vm_nas_1_cpu_usage
+          - entity: sensor.vm_nas_1_free_space_datavol1
+          - entity: sensor.vm_nas_1_memory_available
+          - entity: sensor.vm_nas_1_memory_usage
+          - entity: sensor.vm_nas_1_memory_used
+          - entity: sensor.vm_nas_1_network_down_eth0
+          - entity: sensor.vm_nas_1_network_down_eth1
+          - entity: sensor.vm_nas_1_network_link_eth0
+          - entity: sensor.vm_nas_1_network_link_eth1
+          - entity: sensor.vm_nas_1_network_up_eth0
+          - entity: sensor.vm_nas_1_network_up_eth1
+          - entity: sensor.vm_nas_1_smart_status_drive_0_1
+          - entity: sensor.vm_nas_1_smart_status_drive_0_2
+          - entity: sensor.vm_nas_1_status
+          - entity: sensor.vm_nas_1_system_temperature
+          - entity: sensor.vm_nas_1_temperature_drive_0_1
+          - entity: sensor.vm_nas_1_temperature_drive_0_2
+          - entity: sensor.vm_nas_1_used_space_datavol1
+          - entity: sensor.vm_nas_1_volume_used_datavol1
+        title: QNAP VM NAS
+      - show_header_toggle: false
+        type: entities
+        entities:
+          - entity: sensor.danodemano_com
+          - entity: sensor.madhooker_com
+          - entity: sensor.campohioadventure_com
+          - entity: sensor.danbunyard_com
+          - entity: sensor.ha_danodemano_com
+          - entity: sensor.blueiris_danodemano_com
+          - entity: sensor.nextcloud_danodemano_com
+          - entity: sensor.grafana_danodemano_com
+          - entity: sensor.qnap_danodemano_com
+          - entity: sensor.gateway_danodemano_com
+        title: Certificate Expirations
+      - show_header_toggle: false
+        type: entities
+        entities:
+          - binary_sensor.12tb_qnap
+          - binary_sensor.blue_iris
+          - binary_sensor.bunyard_pics
+          - binary_sensor.consolidated_electric_web
+          - binary_sensor.danodemano_mail
+          - binary_sensor.danodemano_ssh
+          - binary_sensor.danodemano_web
+          - binary_sensor.ebill
+          - binary_sensor.grafana
+          - binary_sensor.home_assistant
+          - binary_sensor.home_internet
+          - binary_sensor.madhooker_web
+          - binary_sensor.nextcloud
+          - binary_sensor.routerboard
+        title: Uptime Robot
+    title: Servers
+    path: servers
+    badges: []
