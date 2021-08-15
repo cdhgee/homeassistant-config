@@ -3,4 +3,4 @@ homeassistant:
 
 lovelace:
   mode: storage
-  dashboards: !include_dir_named dashboards
+  dashboards: !include_dir_named dashboards/definitions
