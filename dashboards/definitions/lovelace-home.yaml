@@ -1,4 +1,0 @@
-mode: yaml
-filename: dashboards/yaml/lovelace-home.yaml
-title: Home
-show_in_sidebar: true
