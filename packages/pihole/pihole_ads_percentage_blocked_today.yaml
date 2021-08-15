@@ -9,6 +9,10 @@ sensor:
             (states('sensor.pihole_ads_blocked_today') | int) /
             (states('sensor.pihole_dns_queries_today') | int)
           )) | round | int / 100) | string + '%'
-
+        }}
+      availability_template: >
+        {{
+          (states('sensor.pihole_ads_blocked_today') | int) > 0 and
+          (states('sensor.pihole_dns_queries_today') | int) > 0
         }}
       icon_template: mdi:close-octagon-outline
