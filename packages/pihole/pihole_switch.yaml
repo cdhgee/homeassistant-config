@@ -23,6 +23,3 @@ switch:
               entity_id:
                 - switch.pi0
                 - switch.pi1
-    entities:
-      - switch.pi0
-      - switch.pi1
