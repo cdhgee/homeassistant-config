@@ -1,5 +1,5 @@
-group:
-  family_room_blinds:
+cover:
+  - platform: group
     name: Family room blinds
     entities:
       - cover.family_room_deck_door_blinds
