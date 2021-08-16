@@ -33,6 +33,12 @@ cards:
           name: Ambient lights
         group_config:
           secondary_info: last-changed
+      - type: custom:fold-entity-row
+        head:
+          entity: cover.family_room_blinds
+          name: Blinds
+        group_config:
+          secondary_info: last-changed
       - entity: binary_sensor.family_room_smoke_detected
         name: Smoke
         secondary_info: last-changed
@@ -58,6 +64,8 @@ cards:
           name: Ambient lights
         group_config:
           secondary_info: last-changed
+      - entity: cover.living_room_blinds
+        secondary_info: last-changed
       - entity: climate.hallway
         name: Thermostat
       - entity: binary_sensor.living_room_front_door
@@ -77,6 +85,8 @@ cards:
           name: Ambient lights
         group_config:
           secondary_info: last-changed
+      - entity: cover.kitchen_blinds
+        secondary_info: last-changed
     state_color: true
   - cards:
       - type: map
@@ -101,6 +111,8 @@ cards:
           name: Ambient lights
         group_config:
           secondary_info: last-changed
+      - entity: cover.master_bedroom_blinds
+        secondary_info: last-changed
       - entity: sensor.master_bedroom_temperature
         name: Temperature
         secondary_info: last-changed
