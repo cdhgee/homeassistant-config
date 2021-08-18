@@ -60,9 +60,6 @@ cards:
       - entity: cover.living_room_blinds
         name: Blinds
         secondary_info: last-changed
-      - entity: climate.hallway
-        name: Thermostat
-        secondary_info: last-changed
       - entity: binary_sensor.living_room_front_door
         secondary_info: last-changed
       - entity: lock.front_door_lock
