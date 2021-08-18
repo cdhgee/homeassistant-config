@@ -28,7 +28,7 @@ cards:
         name: Living room
       - entity: sensor.basement_temperature
         name: Basement
-        color: blue
+        color: orange
       - entity: sensor.master_bedroom_temperature
         name: Master bedroom
         color: yellow
