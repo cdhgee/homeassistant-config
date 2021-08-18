@@ -1,0 +1,21 @@
+icon: mdi:weather-cloudy
+title: Weather
+path: weather
+cards:
+  - type: custom:weather-card
+    entity: weather.home
+    number_of_forecasts: 5
+  - type: picture-glance
+    camera_image: camera.regional_radar
+    entities: []
+  - type: picture-glance
+    camera_image: camera.local_radar
+    entities: []
+  - type: entities
+    entities:
+      - entity: sun.sun
+      - entity: sun.sun
+        type: attribute
+        attribute: next_setting
+        name: Next sunset
+    title: Sun
