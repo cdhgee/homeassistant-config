@@ -3,21 +3,9 @@ title: Overview
 path: overview
 badges:
   - entity: binary_sensor.iss
-  - entity: sun.sun
   - entity: person.david_gee
   - entity: person.monica_gee
 cards:
-  - type: vertical-stack
-    cards:
-      - type: custom:weather-card
-        entity: weather.home
-        number_of_forecasts: 5
-      - type: picture-glance
-        camera_image: camera.regional_radar
-        entities: []
-      - type: picture-glance
-        camera_image: camera.local_radar
-        entities: []
   - type: entities
     title: Family room
     entities:
