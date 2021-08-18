@@ -1,0 +1,4 @@
+input_boolean:
+  party_mode:
+    name: Party mode
+    icon: mdi:party-popper
