@@ -14,6 +14,8 @@ system_health:
 
 updater:
 
+wake_on_lan:
+
 webhook:
 
 zone:
