@@ -40,6 +40,7 @@ cards:
         name: Temperature
         secondary_info: last-changed
       - entity: binary_sensor.family_room_deck_door
+        secondary_info: last-changed
   - type: entities
     title: Living room
     entities:
