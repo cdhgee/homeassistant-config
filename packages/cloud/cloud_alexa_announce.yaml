@@ -8,11 +8,14 @@ script:
     sequence:
       - service: notify.alexa_media
         data_template:
+          # If all is set to true in the variables passed in, use the all
+          # media players group instead of the target
           target: >
             {% if all | default(false, true) == true %}
+            media_player.all_alexa_media_players
             {% else %}
             {{ target }}
             {% endif %}
-          message: " {{ message }}"
+          message: "{{ message }}"
           data:
             type: tts
