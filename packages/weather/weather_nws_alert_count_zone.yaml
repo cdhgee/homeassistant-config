@@ -1,7 +1,7 @@
 sensor:
   - platform: rest
     resource: https://api.weather.gov/alerts/active/count
-    name: NWS Alert Count - Zone
+    name: NWS alert count (zone)
     value_template: >
       {% if value_json.zones.ILZ013 is defined %}
         {{ value_json.zones.ILZ013 }}
