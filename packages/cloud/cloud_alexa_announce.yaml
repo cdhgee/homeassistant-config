@@ -1,0 +1,14 @@
+script:
+  cloud_alexa_announce:
+    alias: "Announce using Alexa"
+    # Variables expected to be passed in:
+    # variables:
+    #   target: entity id or list of entity IDs
+    #   message: the message to announce
+    sequence:
+      - service: notify.alexa_media
+        data_template:
+          target: "{{ target }}"
+          message: " {{ message }}"
+          data:
+            type: tts
