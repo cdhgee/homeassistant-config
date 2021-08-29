@@ -14,8 +14,8 @@ automation:
         - condition: or
           conditions:
             - condition: time
-              after: 09:00:00
-              before: 23:00:00
+              after: "09:00:00"
+              before: "23:00:00"
             - condition: template
               value_template: "{{ 'Warning' in states('sensor.weather_alert_event') }}"
     action:
