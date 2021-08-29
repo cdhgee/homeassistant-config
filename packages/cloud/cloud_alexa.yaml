@@ -19,14 +19,17 @@ cloud:
         - input_boolean.outside_mode
         - light.basement_office
         - light.basement_piano
+        - light.crawlspace
         - light.family_room_fireplace
         - light.family_room_lamps
         - light.family_room_overhead
         - light.guest_bedroom_main_lights
+        - light.kitchen_counter
         - light.kitchen_skylight
         - light.living_room_entry
         - light.living_room_sun
         - light.master_bedroom_bedroom
+        - light.master_bedroom_closet
         - light.master_bedroom_davids_bedside
         - light.master_bedroom_fairy_lights
         - light.master_bedroom_monicas_bedside
@@ -41,7 +44,4 @@ cloud:
         - scene.upstairs_ambient
         - script.close_garage
         - script.open_garage
-        - switch.basement_crawlspace
-        - light.kitchen_counter
-        - light.master_bedroom_closet
         - switch.upstairs_bathroom_fan
