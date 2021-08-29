@@ -27,10 +27,14 @@ automation:
       #      - media_player.livingroom_dot
       #      - media_player.master_bedroom_dot
       #    volume_level: 0.9
-      - service:  notify.alexa_media
-        target:
-          - media_player.downstairs_echo_dot
-        message: "Attention!. . . Attention!. . . The National Weather Service has issued a
-        {{ states('sensor.weather_alert_event') }} for your area.
-        It expires at {{ as_timestamp(state_attr('sensor.weather_alert_event', 'features')[0].properties.expires)| timestamp_custom('%-I:%M %p on %-m-%-d-%Y') }}."
+      - service: notify.alexa_media
+        data_template:
+          target:
+            - media_player.downstairs_echo_dot
+          message: >
+            Attention!. . . Attention!. . . The National Weather Service has
+            issued a {{ states('sensor.weather_alert_event') }} for your area.
+            It expires at {{ as_timestamp(state_attr('sensor.weather_alert_event', 'features')[0].properties.expires) | timestamp_custom('%-I:%M %p on %-m-%-d-%Y') }}.
+          data:
+            type: tts
       # - delay: '00:00:10'
