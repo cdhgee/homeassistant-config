@@ -1,7 +1,7 @@
 sensor:
   - platform: rest
-    resource: https://api.weather.gov/alerts/active?zone=ILZ013
-    name: NWS alert event (zone)
+    resource: https://api.weather.gov/alerts/active?zone=ILZ013,ILC043
+    name: Weather alert event
     value_template: >
       {% if value_json.features[0] is defined %}
         {{ value_json['features'][0]['properties'].event }}

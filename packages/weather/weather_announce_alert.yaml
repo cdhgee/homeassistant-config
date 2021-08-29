@@ -1,0 +1,37 @@
+automation:
+  - alias: Announce weather alert
+    id: 16a46ef5-e760-4af5-998f-5da5cdecc57a
+    trigger:
+      - platform: state
+        entity_id: sensor.weather_alert_count
+    condition:
+      condition: and
+      conditions:
+        - condition: numeric_state
+          entity_id: sensor.weather_alert_count
+          above: 0
+          ## Added a time condition because I don't want a non-emergency alert waking me up
+        - condition: or
+          conditions:
+            - condition: time
+              after: '09:00:00'
+              before: '23:00:00'
+            - condition: template
+              value_template: "{{ 'Warning' in states('sensor.weather_alert_event') }}"
+    action:
+      #- service: media_player.volume_set
+      #  data:
+      #    entity_id:
+      #      - media_player.computer_room_dot
+      #      - media_player.kitchen_dot
+      #      - media_player.livingroom_dot
+      #      - media_player.master_bedroom_dot
+      #    volume_level: 0.9
+      - service: media_player.alexa_tts
+        data_template:
+          entity_id:
+            - media_player.downstairs_echo_dot
+          message: "Attention!. . . Attention!. . . The National Weather Service has issued a
+          {{ states('sensor.weather_alert_event') }} for your area.
+          It expires at {{ as_timestamp(state_attr('sensor.weather_alert_event', 'features')[0].properties.expires)| timestamp_custom('%-I:%M %p on %-m-%-d-%Y') }}."
+      # - delay: '00:00:10'
