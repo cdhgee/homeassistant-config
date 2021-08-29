@@ -1,5 +1,10 @@
 cloud:
   alexa:
+    entity_config:
+      cover.family_room_deck_door_blinds:
+        custom_name: Deck door blinds
+      cover.family_room_tv_blinds:
+        custom_name: TV blinds
     filter:
       include_entities:
         - climate.hallway
