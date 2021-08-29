@@ -1,0 +1,18 @@
+script:
+  weather_persistent_notification_zone:
+    alias: NWS weather alert persistent notification (zone)
+    sequence:
+        # Dismiss any current alert so the UI isn't filled up with these if
+        # there are more than one. Only show the latest alert.
+      - service: persistent_notification.dismiss
+        data:
+          notification_id: "nws_alert"
+        ## Create a new persistant notification in the UI for a new alert
+      - service_template: >
+          {% if states('sensor.nws_alert_event_zone') != 'None' %}
+            persistent_notification.create
+          {% endif %}
+        data_template:
+          notification_id: "nws_alert"
+          message: "{{ state_attr('sensor.nws_alert_event_zone', 'features')[0].properties.description }}"
+          title: '{{ states('sensor.nws_alert_event_zone') }}'
