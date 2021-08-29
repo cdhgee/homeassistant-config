@@ -8,7 +8,11 @@ script:
     sequence:
       - service: notify.alexa_media
         data_template:
-          target: "{{ target }}"
+          target: >
+            {% if all | default(false, true) == true %}
+            {% else %}
+            {{ target }}
+            {% endif %}
           message: " {{ message }}"
           data:
             type: tts
