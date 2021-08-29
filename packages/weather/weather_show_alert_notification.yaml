@@ -1,7 +1,7 @@
 automation:
   - alias: Show persistent weather alert notification
     id: fc965ca8-10d3-4d0c-8d73-d2583db82971
-    sequence:
+    action:
         # Dismiss any current alert so the UI isn't filled up with these if
         # there are more than one. Only show the latest alert.
       - service: persistent_notification.dismiss
