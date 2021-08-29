@@ -15,4 +15,4 @@ script:
         data_template:
           notification_id: "nws_alert"
           message: "{{ state_attr('sensor.nws_alert_event_zone', 'features')[0].properties.description }}"
-          title: '{{ states('sensor.nws_alert_event_zone') }}'
+          title: "{{ states('sensor.nws_alert_event_zone') }}"
