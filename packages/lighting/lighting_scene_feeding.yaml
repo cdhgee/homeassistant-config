@@ -56,14 +56,20 @@ scene:
     light.master_bedroom_davids_bedside:
       state: "on"
       brightness: 127
-      effect: colorloop
+      effect: none
+      hs_color:
+        - 30
+        - 43
     switch.master_bedroom_fairy_lights:
-      state: "on"
+      state: "off"
     light.master_bedroom_monicas_bedside:
       state: "on"
       brightness: 127
-      effect: "colorloop"
-    # Upstairs bathroom
+      effect: none
+      hs_color:
+        - 30
+        - 43
+      # Upstairs bathroom
     switch.upstairs_bathroom_fan:
       state: "off"
     light.upstairs_bathroom_mirror:
