@@ -2,7 +2,7 @@ scene:
 - name: Bedtime
   entities:
     # Basement
-    switch.basement_crawlspace:
+    light.basement_crawlspace:
       state: "off"
     light.basement_office:
       state: "off"
@@ -32,25 +32,33 @@ scene:
     # Master bedroom
     light.master_bedroom_bedroom:
       state: "off"
-    switch.master_bedroom_closet:
+    light.master_bedroom_closet:
       state: "off"
     light.master_bedroom_davids_bedside:
       state: "on"
-      brightness: 255
-      effect: colorloop
+      brightness: 84
+      rgb_color:
+        - 255
+        - 119
+        - 74
+      effect: none
     light.master_bedroom_monicas_bedside:
       state: "on"
-      brightness: 255
-      effect: colorloop
-    switch.master_bedroom_fairy_lights:
-      state: "on"
+      brightness: 84
+      rgb_color:
+        - 255
+        - 119
+        - 74
+      effect: none
+    light.master_bedroom_fairy_lights:
+      state: "off"
     # Upstairs bathroom
     switch.upstairs_bathroom_fan:
       state: "off"
     light.upstairs_bathroom_mirror:
-      state: "on"
+      state: "off"
     light.upstairs_bathroom_shower:
-      state: "on"
+      state: "off"
     # Upstairs hallway
     light.upstairs_hallway_landing:
       state: "off"

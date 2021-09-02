@@ -7,7 +7,7 @@ scene:
     # Master bedroom
     light.master_bedroom_bedroom:
       state: "off"
-    switch.master_bedroom_closet:
+    light.master_bedroom_closet:
       state: "off"
     light.master_bedroom_davids_bedside:
       state: "on"
@@ -17,7 +17,7 @@ scene:
         - 119
         - 74
       effect: ""
-    switch.master_bedroom_fairy_lights:
+    light.master_bedroom_fairy_lights:
       state: "off"
     light.master_bedroom_monicas_bedside:
       state: "off"
