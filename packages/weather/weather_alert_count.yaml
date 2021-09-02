@@ -13,4 +13,4 @@ sensor:
     headers:
       User-Agent: Homeassistant
       Accept: application/ld+json
-    scan_interval: 15
+    scan_interval: 60
