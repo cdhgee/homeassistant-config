@@ -4,50 +4,6 @@
 scene:
 - name: Sleeping
   entities:
-    # Basement
-    switch.basement_crawlspace:
-      state: "off"
-    light.basement_office:
-      state: "off"
-    light.basement_piano:
-      state: "off"
-    # Family room
-    light.family_room_curio:
-      state: "off"
-    light.family_room_fireplace:
-      state: "off"
-    light.family_room_garden:
-      state: "off"
-    # Lamps are a sub-group
-    light.family_room_lamps:
-      state: "off"
-    light.family_room_overhead:
-      state: "off"
-    light.family_room_tv_lightstrip:
-      state: "off"
-    # Guest bedroom
-    light.guest_bedroom_main_lights:
-      state: "off"
-    # Kitchen
-    light.kitchen_bar:
-      state: "off"
-    switch.kitchen_counter:
-      state: "off"
-    light.kitchen_counter_lightstrip:
-      state: "off"
-    light.kitchen_sink:
-      state: "off"
-    light.kitchen_skylight:
-      state: "off"
-    # Living room
-    light.living_room_china:
-      state: "off"
-    light.living_room_entry:
-      state: "off"
-    light.living_room_sun:
-      state: "off"
-    light.living_room_window:
-      state: "off"
     # Master bedroom
     light.master_bedroom_bedroom:
       state: "off"
@@ -71,10 +27,4 @@ scene:
     light.upstairs_bathroom_mirror:
       state: "off"
     light.upstairs_bathroom_shower:
-      state: "off"
-    # Upstairs hallway
-    light.upstairs_hallway_landing:
-      state: "off"
-    # Garage
-    switch.garage_work_light:
       state: "off"
