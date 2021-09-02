@@ -1,0 +1,6 @@
+switch:
+  - platform: wake_on_lan
+    name: Wake-on-LAN - vincent
+    mac: !secret wake_on_lan_vincent_mac
+    host: !secret wake_on_lan_vincent_host
+    broadcast_address: !secret wake_on_lan_vincent_broadcast_address
