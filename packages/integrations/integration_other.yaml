@@ -10,6 +10,8 @@ my:
 
 ssdp:
 
+stream:
+
 system_health:
 
 updater:
