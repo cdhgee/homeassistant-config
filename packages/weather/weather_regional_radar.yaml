@@ -1,5 +1,4 @@
-
 camera:
-  platform: generic
-  name: Regional radar
-  still_image_url: https://s.w-x.co/staticmaps/wu/wu/wxtype1200_cur/usdsm/animate.png
+  - platform: generic
+    name: Regional radar
+    still_image_url: https://s.w-x.co/staticmaps/wu/wu/wxtype1200_cur/usdsm/animate.png
