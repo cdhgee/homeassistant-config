@@ -1,6 +1,6 @@
 cover:
   - platform: group
-    name: Non-party mode blinds
+    name: All blinds (non-party mode)
     entities:
       - cover.family_room_tv_blinds
       - cover.kitchen_blinds

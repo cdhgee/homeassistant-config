@@ -14,7 +14,7 @@ automation:
         target:
           entity_id: >
             {% if is_state('input_boolean.party_mode', 'on') %}
-              cover.non_party_mode_blinds
+              cover.all_blinds_non_party_mode
             {% else %}
               cover.all_blinds
             {% endif %}
