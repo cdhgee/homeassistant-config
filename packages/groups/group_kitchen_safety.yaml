@@ -1,6 +1,0 @@
-group:
-  kitchen_safety:
-    name: Kitchen safety
-    entities:
-      - binary_sensor.kitchen_co_smoke_alarm_smoke_alarm_smoke_detected
-      - binary_sensor.kitchen_co_smoke_alarm_co_alarm_carbon_monoxide_detected

@@ -32,9 +32,9 @@ group:
       - light.living_room_window
       # Master bedroom
       - light.master_bedroom_bedroom
-      - switch.master_bedroom_closet
+      - light.master_bedroom_closet
       - light.master_bedroom_davids_bedside
-      - switch.master_bedroom_fairy_lights
+      - light.master_bedroom_fairy_lights
       - light.master_bedroom_monicas_bedside
       # Upstairs bathroom
       - switch.upstairs_bathroom_fan
