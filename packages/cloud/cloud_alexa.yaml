@@ -17,6 +17,7 @@ cloud:
         - cover.master_bedroom_blinds
         - input_boolean.babysitter_mode
         - input_boolean.outside_mode
+        - input_boolean.party_mode
         - light.basement_office
         - light.basement_piano
         - light.crawlspace
