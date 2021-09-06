@@ -1,4 +1,5 @@
 camera:
-  platform: generic
-  name: Living room
-  stream_source: !secret security_camera_living_room_stream_source
+  - platform: generic
+    name: Living room
+    stream_source: !secret security_camera_living_room_stream_source
+    still_image_url: notused
