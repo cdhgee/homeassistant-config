@@ -6,41 +6,32 @@ group:
     name: All lights and fans
     entities:
       # Basement
-      - switch.basement_crawlspace
+      - light.basement_crawlspace
       - light.basement_office
       - light.basement_piano
-      # Family room
       - light.family_room_curio
       - light.family_room_fireplace
       - light.family_room_garden
-      # Lamps are a sub-group
       - light.family_room_lamps
       - light.family_room_overhead
       - light.family_room_tv_lightstrip
-      # Guest bedroom
+      - light.garage_work_light
       - light.guest_bedroom_main_lights
-      # Kitchen
       - light.kitchen_bar
-      - switch.kitchen_counter
+      - light.kitchen_counter
       - light.kitchen_counter_lightstrip
       - light.kitchen_sink
       - light.kitchen_skylight
-      # Living room
       - light.living_room_china
       - light.living_room_entry
       - light.living_room_sun
       - light.living_room_window
-      # Master bedroom
       - light.master_bedroom_bedroom
       - light.master_bedroom_closet
       - light.master_bedroom_davids_bedside
       - light.master_bedroom_fairy_lights
       - light.master_bedroom_monicas_bedside
-      # Upstairs bathroom
-      - switch.upstairs_bathroom_fan
       - light.upstairs_bathroom_mirror
       - light.upstairs_bathroom_shower
-      # Upstairs hallway
+      - switch.upstairs_bathroom_fan
       - light.upstairs_hallway_landing
-      # Garage
-      - switch.garage_work_light
