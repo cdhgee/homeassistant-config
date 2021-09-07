@@ -1,0 +1,119 @@
+icon: mdi:home-variant
+title: Rooms
+path: rooms
+badges:
+  - entity: binary_sensor.iss
+  - entity: person.david_gee
+  - entity: person.monica_gee
+cards:
+  - type: entities
+    title: Family room
+    entities:
+      - type: custom:fold-entity-row
+        head:
+          entity: light.family_room_lights
+          name: Lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - type: custom:fold-entity-row
+        head:
+          entity: light.family_room_ambient_lights
+          name: Ambient lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - type: custom:fold-entity-row
+        head:
+          entity: cover.family_room_blinds
+          name: Blinds
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - entity: binary_sensor.family_room_smoke_detected
+        name: Smoke
+        secondary_info: last-changed
+      - entity: binary_sensor.family_room_co_detected
+        name: Carbon monoxide
+        secondary_info: last-changed
+      - entity: sensor.family_room_temperature
+        name: Temperature
+        secondary_info: last-changed
+      - entity: binary_sensor.family_room_deck_door
+        secondary_info: last-changed
+  - type: entities
+    title: Living room
+    entities:
+      - type: custom:fold-entity-row
+        head:
+          entity: light.living_room_lights
+          name: Lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - type: custom:fold-entity-row
+        head:
+          entity: light.living_room_ambient_lights
+          name: Ambient lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - entity: cover.living_room_blinds
+        name: Blinds
+        secondary_info: last-changed
+      - entity: binary_sensor.living_room_front_door
+        secondary_info: last-changed
+      - entity: lock.front_door_lock
+        secondary_info: last-changed
+  - type: entities
+    title: Kitchen
+    entities:
+      - type: custom:fold-entity-row
+        head:
+          entity: light.kitchen_lights
+          name: Lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - type: custom:fold-entity-row
+        head:
+          entity: light.kitchen_ambient_lights
+          name: Ambient lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - entity: cover.kitchen_blinds
+        secondary_info: last-changed
+        name: Blinds
+    state_color: true
+  - cards:
+      - type: map
+        entities:
+          - entity: person.david_gee
+          - entity: person.monica_gee
+        dark_mode: true
+        title: Family locations
+    type: vertical-stack
+  - type: entities
+    title: Master bedroom
+    entities:
+      - type: custom:fold-entity-row
+        head:
+          entity: light.master_bedroom_lights
+          name: Lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - type: custom:fold-entity-row
+        head:
+          entity: light.master_bedroom_ambient_lights
+          name: Ambient lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - entity: cover.master_bedroom_blinds
+        secondary_info: last-changed
+        name: Blinds
+      - entity: sensor.master_bedroom_temperature
+        name: Temperature
+        secondary_info: last-changed
