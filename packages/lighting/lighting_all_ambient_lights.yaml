@@ -1,5 +1,5 @@
-group:
-  all_ambient_lights:
+light:
+  - platform: group
     name: All ambient lights
     entities:
       - light.family_room_curio

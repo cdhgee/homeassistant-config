@@ -1,6 +1,6 @@
-group:
-  all_main_lights:
-    name: All manual lights
+light:
+  - platform: group
+    name: All main lights
     entities:
       - light.basement_crawlspace
       - light.basement_office
