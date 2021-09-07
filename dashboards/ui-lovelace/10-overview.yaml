@@ -46,6 +46,8 @@ cards:
         secondary_info: last-changed
       - entity: binary_sensor.living_room_front_door
         secondary_info: last-changed
+      - entity: binary_sensor.family_room_deck_door
+        secondary_info: last-changed
       - entity: cover.garage_door
         secondary_info: last-changed
   - type: entities
