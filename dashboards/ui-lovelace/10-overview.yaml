@@ -25,6 +25,7 @@ cards:
           secondary_info: last-changed
   - type: entities
     title: Blinds
+    entities:
       - type: custom:fold-entity-row
         head:
           entity: cover.all_blinds
