@@ -52,9 +52,9 @@ cards:
     title: Climate & comfort
     entities:
       - entity: climate.hallway
-        title: HVAC
+        name: HVAC
       - entity: sensor.hallway_humidity
-        title: Indoor humidity
+        name: Indoor humidity
       - entity: sensor.home_realfeel_temperature
         name: Outdoor temperature
         secondary_info: last-changed
