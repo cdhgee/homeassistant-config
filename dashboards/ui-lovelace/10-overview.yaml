@@ -49,6 +49,17 @@ cards:
       - entity: cover.garage_door
         secondary_info: last-changed
   - type: entities
+    title: Climate & comfort
+    entities:
+      - entity: climate.hallway
+        title: HVAC
+      - entity: sensor.hallway_humidity
+        title: Indoor humidity
+      - entity: sensor.home_realfeel_temperature
+        title: Outdoor temperature
+        secondary_info: last-changed
+      - entity: switch.upstairs_bathroom_fan
+  - type: entities
     title: Modes
     show_header_toggle: false
     entities:
