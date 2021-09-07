@@ -50,6 +50,7 @@ cards:
         secondary_info: last-changed
   - type: entities
     title: Modes
+    show_header_toggle: false
     entities:
       - entity: input_boolean.outside_mode
       - entity: input_boolean.party_mode
