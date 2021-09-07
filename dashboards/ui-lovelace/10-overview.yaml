@@ -56,9 +56,10 @@ cards:
       - entity: sensor.hallway_humidity
         title: Indoor humidity
       - entity: sensor.home_realfeel_temperature
-        title: Outdoor temperature
+        name: Outdoor temperature
         secondary_info: last-changed
       - entity: switch.upstairs_bathroom_fan
+        name: Bathroom fan
   - type: entities
     title: Modes
     show_header_toggle: false
