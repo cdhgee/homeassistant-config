@@ -1,0 +1,4 @@
+light:
+  - platform: switch
+    name: Garage work light
+    entity_id: switch.garage_work_light
