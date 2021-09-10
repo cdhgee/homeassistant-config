@@ -8,3 +8,13 @@ cards:
     camera_image: camera.living_room
     camera_view: live
     entities: []
+  - type: picture-glance
+    title: Front
+    camera_image: camera.front
+    camera_view: live
+    entities: []
+  - type: picture-glance
+    title: Driveway
+    camera_image: camera.driveway
+    camera_view: live
+    entities: []
