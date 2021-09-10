@@ -1,0 +1,5 @@
+camera:
+  - platform: generic
+    name: Front
+    stream_source: !secret security_camera_front_stream_source
+    still_image_url: notused

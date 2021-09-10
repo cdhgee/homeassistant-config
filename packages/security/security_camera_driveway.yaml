@@ -1,0 +1,5 @@
+camera:
+  - platform: generic
+    name: Driveway
+    stream_source: !secret security_camera_driveway_stream_source
+    still_image_url: notused
