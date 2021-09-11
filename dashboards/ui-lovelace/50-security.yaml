@@ -9,12 +9,12 @@ cards:
     camera_view: live
     entities: []
   - type: picture-glance
-    title: Front
-    camera_image: camera.front
+    title: Family room
+    camera_image: camera.family_room
     camera_view: live
     entities: []
   - type: picture-glance
-    title: Driveway
-    camera_image: camera.driveway
+    title: Julia's room
+    camera_image: camera.julias_room
     camera_view: live
     entities: []
