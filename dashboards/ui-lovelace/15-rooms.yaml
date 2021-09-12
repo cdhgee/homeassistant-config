@@ -1,4 +1,4 @@
-icon: mdi:home-variant
+icon: mdi:lightbulb
 title: Rooms
 path: rooms
 badges:
@@ -117,3 +117,16 @@ cards:
       - entity: sensor.master_bedroom_temperature
         name: Temperature
         secondary_info: last-changed
+  - type: entities
+    title: Upstairs bathroom
+    entities:
+      - type: custom:fold-entity-row
+        head:
+          entity: light.upstairs_bathroom_lights
+          name: Lights
+          secondary_info: last-changed
+        group_config:
+          secondary_info: last-changed
+      - entity: switch.upstairs_bathroom_fan
+        secondary_info: last-changed
+
