@@ -6,8 +6,8 @@ automation:
     trigger:
       - platform: state
         entity_id:
-          - light.basement_office
-          - light.basement_piano
+          - light.upstairs_bathroom_mirror
+          - light.upstairs_bathroom_shower
         to: "on"
     action:
       - service: light.turn_on
