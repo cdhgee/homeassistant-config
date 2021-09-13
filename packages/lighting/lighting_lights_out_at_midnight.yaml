@@ -1,5 +1,5 @@
 automation:
-  - alias: "Lights out"
+  - alias: "Lights out at midnight"
     id: f78bb891-53e5-4cb5-b31c-7d76efc67773
     description: "Turn off all lights and fans at midnight"
     mode: single
@@ -11,6 +11,4 @@ automation:
         entity_id: input_boolean.babysitter_mode
         state: "off"
     action:
-      - service: scene.turn_on
-        target:
-          entity_id: scene.lights_out
+      - service: scene.lighting_lights_out
