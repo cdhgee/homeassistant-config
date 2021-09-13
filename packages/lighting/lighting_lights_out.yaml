@@ -54,7 +54,13 @@ script:
           light.master_bedroom_closet:
             state: "off"
           light.master_bedroom_davids_bedside:
-            state: "off"
+            state: "on"
+            brightness: 84
+            rgb_color:
+              - 255
+              - 119
+              - 74
+            effect: "none"
           light.master_bedroom_fairy_lights:
             state: "off"
           light.master_bedroom_monicas_bedside:
