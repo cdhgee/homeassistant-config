@@ -39,10 +39,10 @@ cloud:
         - light.upstairs_hallway_landing
         - scene.bedtime
         - scene.feeding
-        - scene.lights_out
         - scene.sleeping
         - scene.snuggle
         - scene.upstairs_ambient
         - script.close_garage
+        - script.lighting_lights_out
         - script.open_garage
         - switch.upstairs_bathroom_fan
