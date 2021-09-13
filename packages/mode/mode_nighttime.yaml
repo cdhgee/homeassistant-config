@@ -1,3 +1,4 @@
 input_boolean:
-  after_lights_out:
-    name: After lights out
+  nighttime_mode:
+    name: Nighttime mode
+    icon: mdi:dark_mode

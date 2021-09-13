@@ -2,14 +2,16 @@ automation:
   - alias: Dim at night
     id: 6372eaab-b9b7-4568-bdaf-e36ede643921
     description: Dim lights to 25% when turned on during nighttime
-    mode: single
+    mode: parallel
     trigger:
       - platform: state
-        entity_id: light.basement_office
+        entity_id:
+          - light.basement_office
+          - light.basement_piano
         to: "on"
     action:
       - service: light.turn_on
         target:
-          entity_id: light.basement_office
+          entity_id: "{{ trigger.entity_id }}"
         data:
           brightness_pct: 25

@@ -10,7 +10,7 @@ automation:
       # Resume kitchen lights sync if daytime
       - service: input_boolean.turn_off
         target:
-          entity_id: input_boolean.after_lights_out
+          entity_id: input_boolean.nighttime_mode
       - service: scene.apply
         data:
           entities:

@@ -72,5 +72,5 @@ scene:
     # Garage
     switch.garage_work_light:
       state: "off"
-    input_boolean.after_lights_out:
+    input_boolean.mode_nighttime:
       state: "on"
