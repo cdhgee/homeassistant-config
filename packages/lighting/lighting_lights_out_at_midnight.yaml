@@ -11,4 +11,4 @@ automation:
         entity_id: input_boolean.babysitter_mode
         state: "off"
     action:
-      - service: scene.lighting_lights_out
+      - service: script.lighting_lights_out
