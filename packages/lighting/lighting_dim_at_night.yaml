@@ -9,9 +9,13 @@ automation:
           - light.upstairs_bathroom_mirror
           - light.upstairs_bathroom_shower
         to: "on"
+    condition:
+      condition: state
+      entity_id: input_boolean.nighttime_mode
+      state: "on"
     action:
       - service: light.turn_on
         target:
           entity_id: "{{ trigger.entity_id }}"
         data:
-          brightness_pct: 25
+          brightness: 15
