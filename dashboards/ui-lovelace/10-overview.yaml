@@ -28,7 +28,7 @@ cards:
       - entity: scene.sleeping
       - entity: scene.snuggle
       - entity: scene.upstairs_ambient
-      - entity: scene.lights_out
+      - entity: script.lighting_lights_out
   - type: entities
     title: Blinds
     entities:
