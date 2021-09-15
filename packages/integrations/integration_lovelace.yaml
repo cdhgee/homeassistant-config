@@ -13,6 +13,8 @@ lovelace:
       type: module
     - url: /hacsfiles/lovelace-fold-entity-row/fold-entity-row.js
       type: module
+    - url: /hacsfiles/lovelace-layout-card/layout-card.js
+      type: module
     - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
       type: module
     - url: /hacsfiles/numberbox-card/numberbox-card.js
