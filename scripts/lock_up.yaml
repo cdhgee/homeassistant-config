@@ -1,19 +1,18 @@
-lock_up:
-  alias: "Lock up"
+alias: "Lock up"
 
-  sequence:
-    - choose:
-        - alias: "Close the garage door if it open"
-          # i.e. only trigger the door to move if it is stationary
-          conditions:
-            - condition: state
+sequence:
+  - choose:
+      - alias: "Close the garage door if it open"
+        # i.e. only trigger the door to move if it is stationary
+        conditions:
+          - condition: state
+            entity_id: cover.garage_door
+            state: open
+        sequence:
+          - service: cover.close_cover
+            target:
               entity_id: cover.garage_door
-              state: open
-          sequence:
-            - service: cover.close_cover
-              target:
-                entity_id: cover.garage_door
-    - alias: "Lock the front door"
-      service: lock.lock
-      target:
-        entity_id: lock.front_door_lock
+  - alias: "Lock the front door"
+    service: lock.lock
+    target:
+      entity_id: lock.front_door_lock

@@ -1,8 +1,7 @@
-open_garage:
-  alias: "Open garage"
+alias: "Open garage"
 
-  sequence:
-  - alias: "Open the garage door"
-    service: cover.open_cover
-    target:
-      entity_id: cover.garage_door
+sequence:
+- alias: "Open the garage door"
+  service: cover.open_cover
+  target:
+    entity_id: cover.garage_door
