@@ -1,4 +1,0 @@
-input_boolean:
-  nighttime_mode:
-    name: Nighttime mode
-    icon: mdi:dark_mode

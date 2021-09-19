@@ -1,5 +1,0 @@
-input_boolean:
-  guest_mode:
-    name: Guest mode
-    icon: mdi:account-group
-    initial: "off"

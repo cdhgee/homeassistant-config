@@ -1,0 +1,9 @@
+---
+# The input_boolean integration allows users to specify a boolean value. It
+# can be used as a helper elsewhere in Home Assistant.
+#
+# This loads my input booleans.
+#
+# https://www.home-assistant.io/integrations/input_boolean/
+#
+input_boolean: !include_dir_named ../entities/input_booleans
