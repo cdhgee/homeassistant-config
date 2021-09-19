@@ -1,0 +1,17 @@
+alias: Piano
+id: 8a5c5c0c-d9e6-4a21-af57-7ddace4f35f0
+description: Keep the piano light in sync
+
+mode: single
+
+# Turns the piano light off when the office light is turned off
+trigger:
+  - platform: state
+    entity_id: light.basement_office
+    to: "off"
+
+action:
+  - service: light.turn_off
+    target:
+      entity_id:
+        - light.basement_piano

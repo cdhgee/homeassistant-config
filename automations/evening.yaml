@@ -1,0 +1,88 @@
+alias: "Evening"
+id: 2b2c0215-2c95-4ff2-acf4-b3fc209f0ad9
+description: "Set the evening scene when the sun drops below 7.5° above the horizon"
+
+mode: single
+
+trigger:
+  - platform: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    below: 7.5
+
+action:
+  - service: scene.apply
+    data:
+      entities:
+        light.living_room_window:
+          state: "on"
+          brightness: 255
+          color_temp: 454
+        switch.kitchen_counter:
+          state: "on"
+        light.kitchen_counter_lightstrip:
+          state: "on"
+          brightness: 255
+          # Red  -orange
+          rgb_color:
+            - 255
+            - 65
+            - 0
+          effect: none
+        light.family_room_garden:
+          state: "on"
+          brightness: 255
+        light.family_room_curio:
+          state: "on"
+          brightness: 255
+        switch.master_bedroom_fairy_lights:
+          state: "on"
+        light.family_room_lamps_left_bottom:
+          state: "on"
+          brightness: 255
+          # Yellow
+          rgb_color:
+            - 255
+            - 191
+            - 0
+        light.family_room_lamps_left_middle:
+          state: "on"
+          brightness: 255
+          # Orange
+          rgb_color:
+            - 255
+            - 127
+            - 0
+        light.family_room_lamps_left_top:
+          state: "on"
+          brightness: 255
+          # Pink
+          rgb_color:
+            - 255
+            - 0
+            - 63
+        light.family_room_lamps_right_bottom:
+          state: "on"
+          brightness: 255
+          # Pink
+          rgb_color:
+            - 255
+            - 0
+            - 63
+        light.family_room_lamps_right_middle:
+          state: "on"
+          brightness: 255
+          # Orange
+          rgb_color:
+            - 255
+            - 127
+            - 0
+        light.family_room_lamps_right_top:
+          state: "on"
+          brightness: 255
+          # Yellow
+          rgb_color:
+            - 255
+            - 191
+            - 0
+

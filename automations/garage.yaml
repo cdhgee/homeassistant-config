@@ -1,0 +1,19 @@
+alias: Garage
+id: 7aaa5486-c720-4a85-a7ee-c3056254da7f
+description: Keep the garage light in sync
+
+mode: single
+
+trigger:
+  - platform: state
+    entity_id: cover.garage_door
+
+action:
+  - service: >-
+      {% if is_state('cover.garage_door', 'open') %}
+        switch.turn_on
+      {% else %}
+        switch.turn_off
+      {% endif %}
+    target:
+      entity_id: switch.garage_work_light

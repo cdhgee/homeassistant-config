@@ -1,0 +1,39 @@
+alias: Kitchen
+id: 3095a99b-396f-4227-b8fd-4cf5cf97fe14
+description: Keep the kitchen lights in sync
+
+mode: single
+
+trigger:
+  - platform: template
+    value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_bar') }}"
+  - platform: template
+    value_template: "{{ states('light.kitchen_skylight') != states('switch.kitchen_counter') }}"
+  - platform: template
+    value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_counter_lightstrip') }}"
+  - platform: template
+    value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_sink') }}"
+
+action:
+  - service: scene.apply
+    data:
+      entities:
+        light.kitchen_bar:
+          # Set the bar to the same state as the skylight
+          state: "{{ states('light.kitchen_skylight') }}"
+          brightness: 255
+        switch.kitchen_counter:
+          # Set the counter to the same state as the skylight if the sun is up=
+          # Otherwise, turn it on
+          state: "{% if is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
+        light.kitchen_counter_lightstrip:
+          # Set the counter lightstrip to the same state as the skylight if the sun is up
+          # Otherwise, turn it on
+          state: "{% if is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
+          brightness: 255
+          # Blue-green if sun is up, otherwise red-orange
+          rgb_color: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}{{ [255, 65, 0] }}{% else %}{{ [38, 255, 189] }}{% endif %}"
+        light.kitchen_sink:
+          # Set the sink to the same state as the skylight
+          state: "{{ states('light.kitchen_skylight') }}"
+          brightness: 255

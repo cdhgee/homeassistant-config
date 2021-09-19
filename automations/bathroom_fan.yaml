@@ -1,0 +1,21 @@
+alias: Bathroom fan
+id: d1ee0b79-8e9d-46ee-b417-699d60941a5e
+description: Turn the bathroom fan off after 30 minutes
+
+mode: single
+
+trigger:
+  - platform: template
+    value_template: >
+      {{
+        is_state('switch.upstairs_bathroom_fan', 'on') and
+        is_state('light.upstairs_bathroom_mirror', 'off') and
+        is_state('light.upstairs_bathroom_shower', 'off')
+      }}
+    for:
+      minutes: 30
+
+action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.upstairs_bathroom_fan

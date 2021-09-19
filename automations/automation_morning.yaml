@@ -1,0 +1,92 @@
+alias: "Morning"
+id: f5aed56d-35a8-4300-8af9-53ef018d7eed
+description: "Set morning scene"
+
+mode: single
+
+trigger:
+  - platform: time
+    at: "07:00:00"
+
+action:
+  # Resume kitchen lights sync if daytime
+  - service: input_boolean.turn_off
+    target:
+      entity_id: input_boolean.nighttime_mode
+  - service: scene.apply
+    data:
+      entities:
+        light.living_room_window:
+          state: "on"
+          brightness: 255
+          color_temp: 153
+        light.family_room_lamps_left_bottom:
+          state: "on"
+          brightness: 255
+          # Pink
+          rgb_color:
+            - 191
+            - 0
+            - 255
+        light.family_room_lamps_left_middle:
+          state: "on"
+          brightness: 255
+          # Blue
+          rgb_color:
+            - 0
+            - 0
+            - 255
+        light.family_room_lamps_left_top:
+          state: "on"
+          brightness: 255
+          # Purple
+          rgb_color:
+            - 127
+            - 0
+            - 255
+        light.family_room_lamps_right_bottom:
+          state: "on"
+          brightness: 255
+          # Blue
+          rgb_color:
+            - 0
+            - 0
+            - 255
+        light.family_room_lamps_right_middle:
+          state: "on"
+          brightness: 255
+          # Purple
+          rgb_color:
+            - 127
+            - 0
+            - 255
+        light.family_room_lamps_right_top:
+          state: "on"
+          brightness: 255
+          # Pink
+          rgb_color:
+            - 191
+            - 0
+            - 255
+  - condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  - service: scene.apply
+    data:
+      entities:
+        switch.master_bedroom_fairy_lights:
+          state: "on"
+        light.master_bedroom_monicas_bedside:
+          state: "on"
+          brightness: 255
+          effect: colorloop
+        light.master_bedroom_davids_bedside:
+          state: "on"
+          brightness: 255
+          effect: colorloop
+        switch.closet:
+          state: "on"
