@@ -1,5 +1,2 @@
-input_boolean:
-  babysitter_mode:
-    name: Babysitter mode
-    icon: mdi:baby-bottle
-    initial: "off"
+name: Babysitter mode
+icon: mdi:baby-bottle
