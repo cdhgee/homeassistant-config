@@ -1,0 +1,7 @@
+name: all_mobile_devices
+
+platform: group
+
+services:
+- service: mobile_app_pixel_3a_xl
+- service: mobile_app_baller

@@ -1,5 +1,0 @@
-light:
-  - platform: group
-    name: Living room ambient lights
-    entities:
-      - light.living_room_window

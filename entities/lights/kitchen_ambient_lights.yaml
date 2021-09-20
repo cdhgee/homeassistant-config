@@ -1,6 +1,7 @@
-light:
-  - platform: group
     name: Kitchen ambient lights
+
+    platform: group
+
     entities:
       - light.kitchen_bar
       - light.kitchen_counter

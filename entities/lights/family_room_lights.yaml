@@ -1,0 +1,7 @@
+name: Family room lights
+
+platform: group
+
+entities:
+  - light.family_room_overhead
+  - light.family_room_fireplace

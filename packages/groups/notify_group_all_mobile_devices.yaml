@@ -1,6 +1,0 @@
-notify:
-- platform: group
-  name: notify_all_mobile_devices
-  services:
-  - service: mobile_app_pixel_3a_xl
-  - service: mobile_app_baller

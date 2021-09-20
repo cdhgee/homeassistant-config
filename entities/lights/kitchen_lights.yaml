@@ -1,0 +1,6 @@
+name: Kitchen lights
+
+platform: group
+
+entities:
+  - light.kitchen_skylight

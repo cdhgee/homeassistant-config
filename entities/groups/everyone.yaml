@@ -1,0 +1,5 @@
+name: Everyone
+
+entities:
+  - person.david_gee
+  - person.monica_gee

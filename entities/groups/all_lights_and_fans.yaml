@@ -1,20 +1,33 @@
-name: All ambient lights
-
-platform: group
+name: All lights and fans
 
 entities:
+  # Basement
+  - light.basement_crawlspace
+  - light.basement_office
+  - light.basement_piano
   - light.family_room_curio
+  - light.family_room_fireplace
   - light.family_room_garden
   - light.family_room_lamps
+  - light.family_room_overhead
   - light.family_room_tv_lightstrip
   - light.garage_work_light
+  - light.guest_bedroom_main_lights
   - light.kitchen_bar
   - light.kitchen_counter
   - light.kitchen_counter_lightstrip
   - light.kitchen_sink
+  - light.kitchen_skylight
   - light.living_room_china
+  - light.living_room_entry
+  - light.living_room_sun
   - light.living_room_window
+  - light.master_bedroom_bedroom
   - light.master_bedroom_closet
   - light.master_bedroom_davids_bedside
   - light.master_bedroom_fairy_lights
   - light.master_bedroom_monicas_bedside
+  - light.upstairs_bathroom_mirror
+  - light.upstairs_bathroom_shower
+  - switch.upstairs_bathroom_fan
+  - light.upstairs_hallway_landing

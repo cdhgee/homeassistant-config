@@ -1,9 +1,0 @@
-# This group is used by the presence automation. It defines the list of
-# person entities to track.
-
-group:
-  everyone:
-    name: Everyone
-    entities:
-      - person.david_gee
-      - person.monica_gee

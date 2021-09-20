@@ -1,5 +1,7 @@
-platform: group
 name: All main lights
+
+platform: group
+
 entities:
   - light.basement_crawlspace
   - light.basement_office
