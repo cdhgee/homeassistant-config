@@ -1,3 +1,0 @@
-binary_sensor:
-  - name: ISS
-    platform: iss
