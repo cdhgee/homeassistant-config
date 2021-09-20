@@ -1,0 +1,6 @@
+---
+# This handles the loading automations
+#
+# https://www.home-assistant.io/integrations/media_player
+
+automation: !include_dir_list ../entities/media_players
