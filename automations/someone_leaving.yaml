@@ -23,7 +23,7 @@ action:
       # If no-one is home then turn off outside mode and lock up
       - conditions:
           - condition: state
-            entity_id: binary_sensor.template_noone_home
+            entity_id: binary_sensor.no_one_home
             state: "on"
         sequence:
           - service: input_boolean.turn_off
@@ -44,7 +44,7 @@ action:
           - condition: and
             conditions:
               - condition: state
-                entity_id: binary_sensor.template_noone_home
+                entity_id: binary_sensor.no_one_home
                 state: "on"
               - condition: state
                 entity_id: input_boolean.babysitter_mode

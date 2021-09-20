@@ -1,6 +1,6 @@
-alias: "Morning"
+alias: Morning
 id: 4873afa8-1895-4612-afa8-b5b5f4da15c0
-description: "Set morning scene"
+description: Set morning scene
 
 mode: single
 
@@ -13,61 +13,10 @@ action:
   - service: input_boolean.turn_off
     target:
       entity_id: input_boolean.nighttime_mode
-  - service: scene.apply
-    data:
-      entities:
-        light.living_room_window:
-          state: "on"
-          brightness: 255
-          color_temp: 153
-        light.family_room_lamps_left_bottom:
-          state: "on"
-          brightness: 255
-          # Pink
-          rgb_color:
-            - 191
-            - 0
-            - 255
-        light.family_room_lamps_left_middle:
-          state: "on"
-          brightness: 255
-          # Blue
-          rgb_color:
-            - 0
-            - 0
-            - 255
-        light.family_room_lamps_left_top:
-          state: "on"
-          brightness: 255
-          # Purple
-          rgb_color:
-            - 127
-            - 0
-            - 255
-        light.family_room_lamps_right_bottom:
-          state: "on"
-          brightness: 255
-          # Blue
-          rgb_color:
-            - 0
-            - 0
-            - 255
-        light.family_room_lamps_right_middle:
-          state: "on"
-          brightness: 255
-          # Purple
-          rgb_color:
-            - 127
-            - 0
-            - 255
-        light.family_room_lamps_right_top:
-          state: "on"
-          brightness: 255
-          # Pink
-          rgb_color:
-            - 191
-            - 0
-            - 255
+  - service: scene.turn_on
+    target:
+      entity_id: scene.morning
+
   - condition: time
     weekday:
       - mon
@@ -76,17 +25,5 @@ action:
       - thu
       - fri
   - service: scene.apply
-    data:
-      entities:
-        switch.master_bedroom_fairy_lights:
-          state: "on"
-        light.master_bedroom_monicas_bedside:
-          state: "on"
-          brightness: 255
-          effect: colorloop
-        light.master_bedroom_davids_bedside:
-          state: "on"
-          brightness: 255
-          effect: colorloop
-        switch.closet:
-          state: "on"
+    target:
+      entity_id: scene.weekday_morning
