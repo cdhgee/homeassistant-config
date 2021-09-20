@@ -43,6 +43,6 @@ cloud:
         - scene.snuggle
         - scene.upstairs_ambient
         - script.close_garage
-        - script.lighting_lights_out
+        - script.lights_out
         - script.open_garage
         - switch.upstairs_bathroom_fan

@@ -12,4 +12,4 @@ condition:
     entity_id: input_boolean.babysitter_mode
     state: "off"
 action:
-  - service: script.lighting_lights_out
+  - service: script.lights_out
