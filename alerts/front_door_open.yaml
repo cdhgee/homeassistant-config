@@ -1,0 +1,11 @@
+name: "Front door open"
+title: "Door open"
+message: "Front door open for {{ relative_time(states.binary_sensor.living_room_front_door.last_changed) }}"
+done_message: "Front door closed"
+entity_id: binary_sensor.template_front_door_open
+state: "on"
+repeat: 2
+can_acknowledge: false
+skip_first: true
+notifiers:
+  - notify_all_mobile_devices
