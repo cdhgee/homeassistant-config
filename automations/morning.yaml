@@ -24,6 +24,6 @@ action:
       - wed
       - thu
       - fri
-  - service: scene.apply
+  - service: scene.turn_on
     target:
       entity_id: scene.weekday_morning
