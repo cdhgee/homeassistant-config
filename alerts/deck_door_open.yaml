@@ -1,13 +1,11 @@
-alert:
-  deck_door_open:
-    name: "Deck door open"
-    title: "Door open"
-    message: "Deck door open for {{ relative_time(states.binary_sensor.family_room_deck_door.last_changed) }}"
-    done_message: "Deck door closed"
-    entity_id: binary_sensor.template_deck_door_open
-    state: "on"
-    repeat: 2
-    can_acknowledge: false
-    skip_first: true
-    notifiers:
-      - notify_all_mobile_devices
+name: "Deck door open"
+title: "Door open"
+message: "Deck door open for {{ relative_time(states.binary_sensor.family_room_deck_door.last_changed) }}"
+done_message: "Deck door closed"
+entity_id: binary_sensor.template_deck_door_open
+state: "on"
+repeat: 2
+can_acknowledge: false
+skip_first: true
+notifiers:
+  - notify_all_mobile_devices
