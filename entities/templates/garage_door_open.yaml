@@ -1,4 +1,4 @@
-unqiue_id: b89972c2-31fa-43aa-a12c-618178af0927
+unique_id: b89972c2-31fa-43aa-a12c-618178af0927
 
 binary_sensor:
   - name: Garage door open

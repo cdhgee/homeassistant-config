@@ -1,4 +1,4 @@
-unqiue_id: 6bc2f1cd-c749-4b30-b29a-c06f90abf121
+unique_id: 6bc2f1cd-c749-4b30-b29a-c06f90abf121
 
 binary_sensor:
   - name: Deck door open

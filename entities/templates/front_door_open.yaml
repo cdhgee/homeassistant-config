@@ -1,4 +1,4 @@
-unqiue_id: 60f1aa14-befd-4acb-8c90-2efcb987d6d9
+unique_id: 60f1aa14-befd-4acb-8c90-2efcb987d6d9
 
 binary_sensor:
   - name: Front door open

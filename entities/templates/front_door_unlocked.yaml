@@ -1,4 +1,4 @@
-unqiue_id: 45be6554-301c-4a60-99c3-85cc229e6960
+unique_id: 45be6554-301c-4a60-99c3-85cc229e6960
 
 binary_sensor:
   - name: Front door unlocked
