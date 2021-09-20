@@ -1,0 +1,9 @@
+---
+# The input_boolean integration allows users to specify a value from a list.
+# It can be used as a helper elsewhere in Home Assistant.
+#
+# This loads my input selects.
+#
+# https://www.home-assistant.io/integrations/input_select/
+#
+input_select: !include_dir_named ../entities/input_selects

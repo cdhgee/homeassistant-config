@@ -1,0 +1,5 @@
+name: Test person
+icon: mdi:account
+options:
+  - home
+  - not_home
