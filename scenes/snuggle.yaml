@@ -1,0 +1,9 @@
+name: Snuggle
+
+entities:
+  light.living_room_entry:
+    state: "on"
+    brightness: 127
+  light.living_room_sun:
+    state: "on"
+    brightness: 51

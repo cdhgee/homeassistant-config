@@ -1,0 +1,68 @@
+name: Bedtime
+unique_id: 7f486bf1-acd3-4a33-be87-32e992d7f640
+
+entities:
+  # Basement
+  light.basement_crawlspace:
+    state: "off"
+  light.basement_office:
+    state: "off"
+  light.basement_piano:
+    state: "off"
+  # Family room
+  light.family_room_fireplace:
+    state: "off"
+  light.family_room_overhead:
+    state: "off"
+  light.family_room_tv_lightstrip:
+    state: "off"
+  # Kitchen
+  light.kitchen_bar:
+    state: "off"
+  light.kitchen_sink:
+    state: "off"
+  light.kitchen_skylight:
+    state: "off"
+  # Living room
+  light.living_room_china:
+    state: "off"
+  light.living_room_entry:
+    state: "off"
+  light.living_room_sun:
+    state: "off"
+  # Master bedroom
+  light.master_bedroom_bedroom:
+    state: "off"
+  light.master_bedroom_closet:
+    state: "off"
+  light.master_bedroom_davids_bedside:
+    state: "on"
+    brightness: 84
+    rgb_color:
+      - 255
+      - 119
+      - 74
+    effect: none
+  light.master_bedroom_monicas_bedside:
+    state: "on"
+    brightness: 84
+    rgb_color:
+      - 255
+      - 119
+      - 74
+    effect: none
+  light.master_bedroom_fairy_lights:
+    state: "off"
+  # Upstairs bathroom
+  switch.upstairs_bathroom_fan:
+    state: "off"
+  light.upstairs_bathroom_mirror:
+    state: "off"
+  light.upstairs_bathroom_shower:
+    state: "off"
+  # Upstairs hallway
+  light.upstairs_hallway_landing:
+    state: "off"
+  # Garage
+  switch.garage_work_light:
+    state: "off"

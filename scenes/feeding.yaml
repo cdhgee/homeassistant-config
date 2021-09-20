@@ -1,0 +1,29 @@
+name: Feeding
+
+entities:
+  light.master_bedroom_bedroom:
+    state: "off"
+  switch.master_bedroom_closet:
+    state: "off"
+  light.master_bedroom_davids_bedside:
+    state: "on"
+    brightness: 127
+    effect: none
+    hs_color:
+      - 30
+      - 43
+  switch.master_bedroom_fairy_lights:
+    state: "off"
+  light.master_bedroom_monicas_bedside:
+    state: "on"
+    brightness: 127
+    effect: none
+    hs_color:
+      - 30
+      - 43
+  switch.upstairs_bathroom_fan:
+    state: "off"
+  light.upstairs_bathroom_mirror:
+    state: "off"
+  light.upstairs_bathroom_shower:
+    state: "off"

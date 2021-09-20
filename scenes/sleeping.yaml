@@ -1,0 +1,27 @@
+name: Sleeping
+
+entities:
+  # Master bedroom
+  light.master_bedroom_bedroom:
+    state: "off"
+  light.master_bedroom_closet:
+    state: "off"
+  light.master_bedroom_davids_bedside:
+    state: "on"
+    brightness: 84
+    rgb_color:
+      - 255
+      - 119
+      - 74
+    effect: "none"
+  light.master_bedroom_fairy_lights:
+    state: "off"
+  light.master_bedroom_monicas_bedside:
+    state: "off"
+  # Upstairs bathroom
+  switch.upstairs_bathroom_fan:
+    state: "off"
+  light.upstairs_bathroom_mirror:
+    state: "off"
+  light.upstairs_bathroom_shower:
+    state: "off"

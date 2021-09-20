@@ -1,0 +1,17 @@
+name: Upstairs ambient
+
+entities:
+  light.master_bedroom_monicas_bedside:
+    state: "on"
+    brightness: 255
+    effect: colorloop
+  light.master_bedroom_davids_bedside:
+    state: "on"
+    brightness: 255
+    effect: colorloop
+  switch.master_bedroom_fairy_lights:
+    state: "on"
+  switch.master_bedroom_closet:
+    state: "on"
+  light.master_bedroom_bedroom:
+    state: "off"
