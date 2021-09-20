@@ -1,4 +1,0 @@
-light:
-  - platform: switch
-    name: Master bedroom closet
-    entity_id: switch.master_bedroom_closet

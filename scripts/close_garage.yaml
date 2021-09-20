@@ -1,7 +1,7 @@
 alias: "Close garage"
 
 sequence:
-- alias: "Close the garage door"
-  service: cover.close_cover
-  target:
-    entity_id: cover.garage_door
+  - alias: "Close the garage door"
+    service: cover.close_cover
+    target:
+      entity_id: cover.garage_door

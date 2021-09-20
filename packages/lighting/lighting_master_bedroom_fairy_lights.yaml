@@ -1,4 +1,0 @@
-light:
-  - platform: switch
-    name: Master bedroom fairy lights
-    entity_id: switch.master_bedroom_fairy_lights

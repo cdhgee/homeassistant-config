@@ -1,0 +1,5 @@
+name: Master bedroom fairy lights
+
+platform: switch
+
+entity_id: switch.master_bedroom_fairy_lights
