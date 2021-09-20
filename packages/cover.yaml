@@ -1,0 +1,8 @@
+---
+# Covers are an interface to control covers such as blinds or garage doors.
+#
+# This loads my sensor configurations
+#
+# https://www.home-assistant.io/integrations/cover/
+#
+cover: !include_dir_list ../entities/covers
