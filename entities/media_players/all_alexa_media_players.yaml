@@ -1,0 +1,12 @@
+name: All Alexa media players
+unique_id: e4b704e3-c417-4bfa-9ba8-fbb83a1d5671
+
+platform: group
+
+entities:
+  - media_player.basement_echo_dot
+  - media_player.bedroom_left_echo_dot
+  - media_player.bedroom_right_echo_dot
+  - media_player.family_room_echo_dot
+  - media_player.living_room_echo_dot
+  - media_player.kitchen_echo

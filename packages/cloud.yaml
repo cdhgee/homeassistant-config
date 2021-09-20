@@ -1,0 +1,13 @@
+cloud:
+
+  alexa:
+
+    entity_config: !include_dir_merge_named ../alexa/entity_config
+    filter:
+      include_entities: ../alexa/filter/include
+
+  google_actions:
+
+    filter:
+      include_domains:
+        - dummy
