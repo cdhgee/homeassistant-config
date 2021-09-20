@@ -1,0 +1,21 @@
+unique_id: ebc8108a-b4bc-4a8a-aaf9-84ad98bd8a1e
+
+binary_sensor:
+
+  - name: No-one home
+    unique_id: abe317e3-e48c-4712-9323-6a92c0765657
+    # Set to true if the number of people with state == home is zero
+    state: >
+      {{
+        expand('group.everyone') |
+        selectattr('state', 'equalto', 'home') |
+        list |
+        length == 0
+      }}
+    availability: >
+      {{
+        expand('group.everyone') |
+        list |
+        length > 0
+      }}
+    icon: mdi:account-off
