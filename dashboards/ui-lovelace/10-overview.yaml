@@ -2,7 +2,6 @@ icon: mdi:home-variant
 title: Overview
 path: overview
 badges:
-  - entity: binary_sensor.iss
   - entity: person.david_gee
   - entity: person.monica_gee
 cards:

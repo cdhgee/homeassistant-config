@@ -7,6 +7,6 @@ binary_sensor:
     state: >
       {{
         is_state('lock.front_door_lock', 'unlocked') and
-        (is_state('input_boolean.outside_mode', 'off') or is_state('binary_sensor.template_noone_home', 'on'))
+        (is_state('input_boolean.outside_mode', 'off') or is_state('binary_sensor.no_one_home', 'on'))
       }}
     icon: mdi:lock-open

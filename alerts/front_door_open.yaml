@@ -2,7 +2,7 @@ name: "Front door open"
 title: "Door open"
 message: "Front door open for {{ relative_time(states.binary_sensor.living_room_front_door.last_changed) }}"
 done_message: "Front door closed"
-entity_id: binary_sensor.template_front_door_open
+entity_id: binary_sensor.front_door_open
 state: "on"
 repeat: 2
 can_acknowledge: false

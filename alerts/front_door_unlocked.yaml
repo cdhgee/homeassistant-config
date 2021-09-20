@@ -2,7 +2,7 @@ name: "Front door unlocked"
 title: "Door unlocked"
 message: "Front door unlocked for {{ relative_time(states.lock.front_door_lock.last_changed) }}"
 done_message: "Front door locked"
-entity_id: binary_sensor.template_front_door_unlocked
+entity_id: binary_sensor.front_door_unlocked
 state: "on"
 repeat: 15
 can_acknowledge: false
