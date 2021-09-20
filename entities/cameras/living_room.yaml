@@ -1,0 +1,6 @@
+name: Living room
+
+platform: generic
+
+stream_source: !secret security_camera_living_room_stream_source
+still_image_url: notused

@@ -1,5 +1,0 @@
-camera:
-  - platform: generic
-    name: Julia's room
-    stream_source: !secret security_camera_julias_room_stream_source
-    still_image_url: notused
