@@ -9,7 +9,7 @@ trigger:
     at: "05:00:00"
 
 action:
-  - service: auto_backup.snapshot_full
+  - service: auto_backup.backup_full
     data:
       name: "Daily Backup - {{ now().strftime('%Y-%m-%d') }}"
       keep_days: 14
