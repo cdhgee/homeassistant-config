@@ -1,0 +1,12 @@
+unqiue_id: 6bc2f1cd-c749-4b30-b29a-c06f90abf121
+
+binary_sensor:
+  - name: Deck door open
+    unique_id: fa52c105-9e96-4f01-b255-3b4f634b7efe
+      # True if at the deck door is open for more than one minute
+    state: >
+      {{
+        is_state('binary_sensor.family_room_deck_door', 'open') and
+        (now() - states.binary_sensor.family_room_deck_door.last_changed > timedelta(minutes = 1))
+      }}
+    icon: mdi:door-open
