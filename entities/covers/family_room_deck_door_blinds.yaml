@@ -1,0 +1,7 @@
+name: Family room deck door blinds
+
+platform: group
+
+entities:
+  - cover.family_room_deck_door_left_blind
+  - cover.family_room_deck_door_right_blind

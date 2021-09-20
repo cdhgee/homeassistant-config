@@ -1,6 +1,0 @@
-cover:
-  - platform: group
-    name: Family room TV blinds
-    entities:
-      - cover.family_room_tv_left_blind
-      - cover.family_room_tv_right_blind

@@ -1,0 +1,9 @@
+name: All blinds (non-party mode)
+
+platform: group
+
+entities:
+  - cover.family_room_tv_blinds
+  - cover.kitchen_blinds
+  - cover.living_room_blinds
+  - cover.master_bedroom_blinds
