@@ -2,19 +2,4 @@ icon: mdi:cctv
 title: Security
 path: security
 badges: []
-cards:
-  - type: picture-glance
-    title: Living room
-    camera_image: camera.living_room
-    camera_view: live
-    entities: []
-  - type: picture-glance
-    title: Family room
-    camera_image: camera.family_room
-    camera_view: live
-    entities: []
-  - type: picture-glance
-    title: Julia's room
-    camera_image: camera.julia_s_room
-    camera_view: live
-    entities: []
+cards: !include_dir_list ../cards/06-security

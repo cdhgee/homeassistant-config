@@ -1,0 +1,5 @@
+type: entities
+title: Wake-on-LAN
+show_header_toggle: false
+entities:
+  - entity: switch.wake_on_lan_vincent

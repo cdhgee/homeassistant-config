@@ -2,40 +2,4 @@ icon: mdi:server
 title: Servers
 path: servers
 badges: []
-cards:
-  - type: entities
-    title: Pi-Hole Stats
-    show_header_toggle: false
-    entities:
-      - type: custom:fold-entity-row
-        head:
-          entity: switch.pihole
-        open: true
-        entities:
-          - entity: sensor.total_ads_blocked_today
-            secondary_info: last-changed
-          - entity: sensor.total_ads_percentage_blocked_today
-            name: Total ads % blocked today
-            secondary_info: last-changed
-          - type: custom:fold-entity-row
-            head:
-              entity: switch.pi0
-            entities:
-              - entity: sensor.pi0_ads_blocked_today
-                name: Ads blocked today
-              - entity: sensor.pi0_ads_percentage_blocked_today
-                name: Ads % blocked today
-          - type: custom:fold-entity-row
-            head:
-              entity: switch.pi1
-            entities:
-              - entity: sensor.pi1_ads_blocked_today
-                name: Ads blocked today
-              - entity: sensor.pi1_ads_percentage_blocked_today
-                name: Ads % blocked today
-  - type: entities
-    title: Wake-on-LAN
-    show_header_toggle: false
-    entities:
-      - entity: switch.wake_on_lan_vincent
-
+cards: !include_dir_list ../cards/05-servers

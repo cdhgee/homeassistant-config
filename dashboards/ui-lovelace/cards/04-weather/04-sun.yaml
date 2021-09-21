@@ -1,0 +1,8 @@
+type: entities
+entities:
+  - entity: sun.sun
+  - entity: sun.sun
+    type: attribute
+    attribute: next_setting
+    name: Next sunset
+title: Sun
