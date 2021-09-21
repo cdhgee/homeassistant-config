@@ -1,0 +1,12 @@
+type: entities
+title: Climate & comfort
+entities:
+  - entity: climate.hallway
+    name: HVAC
+  - entity: sensor.hallway_humidity
+    name: Indoor humidity
+  - entity: sensor.home_realfeel_temperature
+    name: Outdoor temperature
+    secondary_info: last-changed
+  - entity: switch.upstairs_bathroom_fan
+    name: Bathroom fan

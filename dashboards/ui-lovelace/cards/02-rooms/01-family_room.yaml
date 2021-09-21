@@ -1,0 +1,35 @@
+type: entities
+title: Family room
+entities:
+  - type: custom:fold-entity-row
+    head:
+      entity: light.family_room_lights
+      name: Lights
+      secondary_info: last-changed
+    group_config:
+      secondary_info: last-changed
+  - type: custom:fold-entity-row
+    head:
+      entity: light.family_room_ambient_lights
+      name: Ambient lights
+      secondary_info: last-changed
+    group_config:
+      secondary_info: last-changed
+  - type: custom:fold-entity-row
+    head:
+      entity: cover.family_room_blinds
+      name: Blinds
+      secondary_info: last-changed
+    group_config:
+      secondary_info: last-changed
+  - entity: binary_sensor.family_room_smoke_detected
+    name: Smoke
+    secondary_info: last-changed
+  - entity: binary_sensor.family_room_co_detected
+    name: Carbon monoxide
+    secondary_info: last-changed
+  - entity: sensor.family_room_temperature
+    name: Temperature
+    secondary_info: last-changed
+  - entity: binary_sensor.family_room_deck_door
+    secondary_info: last-changed

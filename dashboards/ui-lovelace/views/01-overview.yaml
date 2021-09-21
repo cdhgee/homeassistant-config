@@ -1,0 +1,7 @@
+icon: mdi:home-variant
+title: Overview
+path: overview
+badges:
+  - entity: person.david_gee
+  - entity: person.monica_gee
+cards: !include_dir_list ../cards/01-overview

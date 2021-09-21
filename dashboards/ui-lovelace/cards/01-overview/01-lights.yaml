@@ -1,0 +1,23 @@
+type: entities
+title: Lights
+entities:
+  - type: custom:fold-entity-row
+    head:
+      entity: light.all_main_lights
+      name: Lights
+      secondary_info: last-changed
+    group_config:
+      secondary_info: last-changed
+  - type: custom:fold-entity-row
+    head:
+      entity: light.all_ambient_lights
+      name: Ambient lights
+      secondary_info: last-changed
+    group_config:
+      secondary_info: last-changed
+  - entity: scene.bedtime
+  - entity: scene.feeding
+  - entity: scene.sleeping
+  - entity: scene.snuggle
+  - entity: scene.upstairs_ambient
+  - entity: script.lights_out

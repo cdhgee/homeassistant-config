@@ -1,0 +1,8 @@
+icon: mdi:lightbulb
+title: Rooms
+path: rooms
+badges:
+  - entity: binary_sensor.iss
+  - entity: person.david_gee
+  - entity: person.monica_gee
+cards: !include_dir_list ../cards/02-rooms

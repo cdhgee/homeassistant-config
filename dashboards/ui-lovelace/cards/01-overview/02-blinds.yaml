@@ -1,0 +1,10 @@
+type: entities
+title: Blinds
+entities:
+  - type: custom:fold-entity-row
+    head:
+      entity: cover.all_blinds
+      name: Blinds
+      secondary_info: last-changed
+    group_config:
+      secondary_info: last-changed

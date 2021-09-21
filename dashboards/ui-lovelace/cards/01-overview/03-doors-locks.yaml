@@ -1,0 +1,11 @@
+type: entities
+title: Doors & locks
+entities:
+  - entity: lock.front_door_lock
+    secondary_info: last-changed
+  - entity: binary_sensor.living_room_front_door
+    secondary_info: last-changed
+  - entity: binary_sensor.family_room_deck_door
+    secondary_info: last-changed
+  - entity: cover.garage_door
+    secondary_info: last-changed
