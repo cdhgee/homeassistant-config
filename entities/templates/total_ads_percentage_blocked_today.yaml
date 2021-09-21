@@ -21,4 +21,4 @@ sensor:
         (states('sensor.total_dns_queries_today') | int) > 0
       }}
     icon: mdi:close-octagon-outline
-    unit_of_measurement: percentage
+    unit_of_measurement: "%"
