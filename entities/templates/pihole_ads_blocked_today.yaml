@@ -1,0 +1,16 @@
+unique_id: acb15385-8b17-4906-8aee-525aef9bed9d
+
+sensor:
+  - name: Total ads blocked today
+    unique_id: 2398c7fa-cdc1-40ad-9a7b-5c1cdc9278e5
+    state: >-
+      {{
+        (states('sensor.pi0_ads_blocked_today') | int) +
+        (states('sensor.pi1_ads_blocked_today') | int)
+      }}
+    availability: >-
+      {{
+        (states('sensor.pi0_ads_blocked_today') | int) > 0 and
+        (states('sensor.pi1_ads_blocked_today') | int) > 0
+      }}
+    icon: mdi:close-octagon-outline

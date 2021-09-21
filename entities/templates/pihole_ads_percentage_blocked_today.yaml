@@ -1,0 +1,25 @@
+unique_id: e19891fd-6403-4686-96a2-841e63e91f8a
+
+sensor:
+  - name: Total ads percentage blocked today
+    unique_id: 33178e5e-3f44-4424-afe8-39fee79bb672
+    state: >
+      {% if
+          (states('sensor.pihole_ads_blocked_today') | int) > 0 and
+          (states('sensor.pihole_dns_queries_today') | int) > 0
+      %}
+      {{
+        ((10000 * (
+          (states('sensor.pihole_ads_blocked_today') | int) /
+          (states('sensor.pihole_dns_queries_today') | int)
+        )) | round | int / 100) | string + ' %'
+      }}
+      {% else %}
+      n/a
+      {% endif %}
+    availability: >
+      {{
+        (states('sensor.pihole_ads_blocked_today') | int) > 0 and
+        (states('sensor.pihole_dns_queries_today') | int) > 0
+      }}
+    icon: mdi:close-octagon-outline
