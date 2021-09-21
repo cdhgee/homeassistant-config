@@ -1,0 +1,14 @@
+alias: Renew TLS certificate
+id: b88b7d8c-e3ab-4f23-8b2b-609123c2cdb5
+description: Renew the Home Assistant TLS certificate when needed
+
+mode: single
+
+trigger:
+  - platform: time
+    at: "00:04:05"
+
+action:
+  - service: hassio.addon_start
+    data:
+      addon: core_letsencrypt
