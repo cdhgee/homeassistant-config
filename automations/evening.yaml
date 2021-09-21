@@ -12,5 +12,5 @@ trigger:
 
 action:
   - service: scene.turn_on
-    data:
-      entities: scene.evening
+    target:
+      entity_id: scene.evening
