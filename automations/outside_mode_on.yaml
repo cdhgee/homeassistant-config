@@ -1,6 +1,6 @@
-alias: "Outside mode on"
+alias: Outside mode on
 id: 44bb74bb-a9e7-4429-b14d-6d4faf2f00a7
-description: "Unlock front door and open garage door when outside mode turned on"
+description: Unlock front door and open garage door when outside mode turned on
 
 mode: single
 

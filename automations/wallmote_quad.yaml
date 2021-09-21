@@ -10,7 +10,7 @@ trigger:
   event_data:
     domain: zwave_js
     node_id: 26
-    command_class_name: "Central Scene"
+    command_class_name: Central Scene
 
 action:
   - variables:

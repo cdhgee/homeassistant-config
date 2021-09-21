@@ -1,6 +1,8 @@
 alias: Announce weather alert
 id: 16a46ef5-e760-4af5-998f-5da5cdecc57a
 
+mode: single
+
 trigger:
   - platform: state
     entity_id: sensor.weather_alert_count

@@ -1,6 +1,8 @@
 alias: Show persistent weather alert notification
 id: fc965ca8-10d3-4d0c-8d73-d2583db82971
 
+mode: single
+
 trigger:
   platform: state
   entity_id: sensor.weather_alert_count
