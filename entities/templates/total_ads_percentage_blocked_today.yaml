@@ -9,13 +9,11 @@ sensor:
           (states('sensor.total_dns_queries_today') | int) > 0
       %}
       {{
-        ((10000 * (
-          (states('sensor.total_ads_blocked_today') | int) /
-          (states('sensor.total_dns_queries_today') | int)
-        )) | round | int / 100) | string + ' %'
+        (states('sensor.total_ads_blocked_today') | int) /
+        (states('sensor.total_dns_queries_today') | int)
       }}
       {% else %}
-      n/a
+      0
       {% endif %}
     availability: >
       {{
@@ -23,3 +21,4 @@ sensor:
         (states('sensor.total_dns_queries_today') | int) > 0
       }}
     icon: mdi:close-octagon-outline
+    unit_of_measurement: percentage
