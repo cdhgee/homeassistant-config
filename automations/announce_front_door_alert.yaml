@@ -1,0 +1,26 @@
+alias: Announce front door alert
+id: 16a46ef5-e760-4af5-998f-5da5cdecc57a
+
+mode: single
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.living_room_front_door
+    to: "on"
+    for:
+      minutes: 1
+
+action:
+  - repeat:
+      sequence:
+        - service: script.alexa_announce
+          data:
+            target: media_player.living_room_echo_dot
+            message: >
+              The test door has been open for {{ relative_time(trigger.to_state.last_changed) }}.
+        - delay:
+            seconds: 30
+      until:
+        - condition: state
+          entity_id: binary_sensor.living_room_front_door
+          state: "off"
