@@ -1,0 +1,19 @@
+alias: Master bedroom Wallmote Quad controller
+id: e6253bc7-b598-4fa7-9112-a8f5b464acdb
+description: Master bedroom Wallmote Quad controller
+
+mode: single
+
+trigger:
+  platform: event
+  event_type: zwave_js_value_notification
+  event_data:
+    domain: zwave_js
+    node_id: 26
+    command_class_name: Central Scene
+
+action:
+  - variables:
+      action_name: "{{ trigger.event.data.value }}"
+      property_key: "{{ trigger.event.data.property_key }}"
+  - choose: !include_dir_list ../wallmote_quad/master_bedroom

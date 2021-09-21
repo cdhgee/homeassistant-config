@@ -1,0 +1,7 @@
+conditions:
+  - condition: template
+    value_template: "{{ action_name == 'KeyPressed' and property_key == '003'}}"
+sequence:
+  - service: light.toggle
+    target:
+      entity_id: light.kitchen_skylight

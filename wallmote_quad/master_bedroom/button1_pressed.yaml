@@ -1,0 +1,7 @@
+conditions:
+  - condition: template
+    value_template: "{{ action_name == 'KeyPressed' and property_key == '001'}}"
+sequence:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.feeding
