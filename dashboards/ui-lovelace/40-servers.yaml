@@ -12,9 +12,9 @@ cards:
           entity: switch.pihole
         open: true
         entities:
-          - entity: sensor.pihole_ads_blocked_today
+          - entity: sensor.total_ads_blocked_today
             secondary_info: last-changed
-          - entity: sensor.pihole_ads_percentage_blocked_today
+          - entity: sensor.total_ads_percentage_blocked_today
             name: Total ads % blocked today
             secondary_info: last-changed
           - type: custom:fold-entity-row
