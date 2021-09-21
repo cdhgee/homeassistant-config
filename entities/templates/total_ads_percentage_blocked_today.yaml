@@ -9,8 +9,10 @@ sensor:
           (states('sensor.total_dns_queries_today') | int) > 0
       %}
       {{
-        (states('sensor.total_ads_blocked_today') | int) /
-        (states('sensor.total_dns_queries_today') | int)
+        ((10000 * (
+          (states('sensor.total_ads_blocked_today') | int) /
+          (states('sensor.total_dns_queries_today') | int)
+        )) | round | int / 100)
       }}
       {% else %}
       0
