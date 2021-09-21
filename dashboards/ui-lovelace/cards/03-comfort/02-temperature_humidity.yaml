@@ -1,0 +1,13 @@
+type: custom:mini-graph-card
+name: Hallway temperature and humidity
+entities:
+  - entity: sensor.hallway_temperature
+    name: Temperature
+    unit: °F
+  - entity: sensor.hallway_humidity
+    y_axis: secondary
+    name: Humidity
+    unit: '%'
+show:
+  labels: true
+  labels_secondary: true
