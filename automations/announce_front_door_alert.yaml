@@ -17,7 +17,7 @@ action:
           data:
             target: media_player.living_room_echo_dot
             message: >
-              The test door has been open for {{ relative_time(trigger.to_state.last_changed) }}.
+              The front door has been open for {{ relative_time(trigger.to_state.last_changed) }}.
         - delay:
             seconds: 30
       until:
