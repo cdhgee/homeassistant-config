@@ -1,4 +1,7 @@
 conditions:
   - condition: template
     value_template: "{{ action_name == 'KeyHeldDown' and property_key == '001'}}"
-sequence: []
+sequence:
+  - service: light.toggle
+    target:
+      entity_id: light.master_bedroom_fairy_lights
