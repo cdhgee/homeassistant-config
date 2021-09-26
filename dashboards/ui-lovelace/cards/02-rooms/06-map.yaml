@@ -1,6 +1,0 @@
-type: map
-entities:
-  - entity: person.david_gee
-  - entity: person.monica_gee
-dark_mode: true
-title: Family locations

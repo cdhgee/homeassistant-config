@@ -1,0 +1,9 @@
+type: custom:auto-entities
+card:
+  type: entities
+  title: Living room
+filter:
+  include:
+    - group: light.living_room_lights
+      options:
+        secondary_info: last-changed
