@@ -2,4 +2,4 @@ icon: mdi:cctv
 title: Security
 path: security
 badges: []
-cards: !include_dir_list ../cards/06-security
+cards: !include_dir_list ../cards/07-security
