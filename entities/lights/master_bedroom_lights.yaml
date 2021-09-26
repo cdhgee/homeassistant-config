@@ -1,6 +1,6 @@
-    name: Master bedroom lights
+name: Master bedroom lights
 
-    platform: group
+platform: group
 
-    entities:
-      - light.master_bedroom_bedroom
+entities:
+  - light.master_bedroom_bedroom

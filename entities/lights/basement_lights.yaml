@@ -1,0 +1,7 @@
+name: Basement lights
+
+platform: group
+
+entities:
+  - light.basement_office
+  - light.basement_piano

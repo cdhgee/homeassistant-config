@@ -1,9 +1,9 @@
-    name: Family room ambient lights
+name: Family room ambient lights
 
-    platform: group
+platform: group
 
-    entities:
-      - light.family_room_lamps
-      - light.family_room_curio
-      - light.family_room_garden
-      - light.family_room_tv_lightstrip
+entities:
+  - light.family_room_lamps
+  - light.family_room_curio
+  - light.family_room_garden
+  - light.family_room_tv_lightstrip

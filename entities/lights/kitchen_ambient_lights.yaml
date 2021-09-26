@@ -1,9 +1,9 @@
-    name: Kitchen ambient lights
+name: Kitchen ambient lights
 
-    platform: group
+platform: group
 
-    entities:
-      - light.kitchen_bar
-      - light.kitchen_counter
-      - light.kitchen_counter_lightstrip
-      - light.kitchen_sink
+entities:
+  - light.kitchen_bar
+  - light.kitchen_counter
+  - light.kitchen_counter_lightstrip
+  - light.kitchen_sink
