@@ -1,4 +1,5 @@
 icon: mdi:thermometer
 title: Comfort
 path: comfort
-cards: !include_dir_list ../cards/03-comfort
+badges: []
+cards: !include_dir_list ../cards/04-comfort
