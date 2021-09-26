@@ -1,5 +1,5 @@
 icon: mdi:string-lights
 title: Lights
-path: lights
+path: ambient-lights
 badges: []
 cards: !include_dir_list ../cards/03-ambient-lights
