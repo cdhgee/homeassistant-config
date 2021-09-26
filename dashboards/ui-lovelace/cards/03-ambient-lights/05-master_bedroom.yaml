@@ -2,6 +2,7 @@ type: custom:auto-entities
 card:
   type: entities
   title: Master bedroom
+  show_header_toggle: true
 filter:
   include:
     - group: light.master_bedroom_ambient_lights

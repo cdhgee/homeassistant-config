@@ -2,6 +2,7 @@ type: custom:auto-entities
 card:
   type: entities
   title: Family room
+  show_header_toggle: true
 filter:
   include:
     - group: light.family_room_lights
