@@ -1,0 +1,9 @@
+type: custom:auto-entities
+card:
+  type: entities
+  title: Basement
+filter:
+  include:
+    - group: light.basement_ambient_lights
+      options:
+        secondary_info: last-changed

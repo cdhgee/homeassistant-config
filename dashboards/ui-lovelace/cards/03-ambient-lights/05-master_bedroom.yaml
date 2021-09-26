@@ -1,0 +1,9 @@
+type: custom:auto-entities
+card:
+  type: entities
+  title: Master bedroom
+filter:
+  include:
+    - group: light.master_bedroom_ambient_lights
+      options:
+        secondary_info: last-changed

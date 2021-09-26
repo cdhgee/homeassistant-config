@@ -1,0 +1,9 @@
+type: custom:auto-entities
+card:
+  type: entities
+  title: Upstairs bathroom
+filter:
+  include:
+    - group: light.upstairs_bathroom_ambient_lights
+      options:
+        secondary_info: last-changed
