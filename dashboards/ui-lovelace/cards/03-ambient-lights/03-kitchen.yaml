@@ -3,6 +3,7 @@ card:
   type: entities
   title: Kitchen
   show_header_toggle: true
+show_empty: false
 filter:
   include:
     - group: light.kitchen_ambient_lights

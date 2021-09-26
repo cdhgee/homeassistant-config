@@ -3,6 +3,7 @@ card:
   type: entities
   title: Upstairs bathroom
   show_header_toggle: true
+show_empty: false
 filter:
   include:
     - group: light.upstairs_bathroom_lights

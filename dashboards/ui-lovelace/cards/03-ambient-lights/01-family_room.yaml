@@ -3,6 +3,7 @@ card:
   type: entities
   title: Family room
   show_header_toggle: true
+show_empty: false
 filter:
   include:
     - group: light.family_room_ambient_lights

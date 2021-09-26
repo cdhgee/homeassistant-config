@@ -3,6 +3,7 @@ card:
   type: entities
   title: Master bedroom
   show_header_toggle: true
+show_empty: false
 filter:
   include:
     - group: light.master_bedroom_lights
