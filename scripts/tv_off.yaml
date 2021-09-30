@@ -1,0 +1,21 @@
+alias: "TV off"
+
+sequence:
+  - service: remote.send_command
+    data:
+      device: living_room_xbox
+      command: power_off
+    target:
+      entity_id: remote.family_room_remote
+  - service: remote.send_command
+    data:
+      device: living_room_tv
+      command: power_off
+    target:
+      entity_id: remote.family_room_remote
+  - service: remote.send_command
+    data:
+      device: living_room_receiver
+      command: power_off
+    target:
+      entity_id: remote.family_room_remote
