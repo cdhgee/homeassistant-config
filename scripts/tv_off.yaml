@@ -7,12 +7,16 @@ sequence:
       command: power_off
     target:
       entity_id: remote.family_room_remote
+  - delay:
+      milliseconds: 500
   - service: remote.send_command
     data:
       device: living_room_tv
       command: power_off
     target:
       entity_id: remote.family_room_remote
+  - delay:
+      milliseconds: 500
   - service: remote.send_command
     data:
       device: living_room_receiver
