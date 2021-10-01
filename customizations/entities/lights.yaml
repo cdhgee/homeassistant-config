@@ -1,3 +1,6 @@
+light.deck_gazebo:
+  icon: mdi:string-lights
+
 light.family_room_curio:
   icon: mdi:lamp
 
