@@ -1,0 +1,41 @@
+alias: "Start casting"
+
+sequence:
+  - service: remote.send_command
+    data:
+      device: living_room_xbox
+      command: power_on
+    target:
+      entity_id: remote.family_room_remote
+  - delay:
+      milliseconds: 250
+  - service: remote.send_command
+    data:
+      device: living_room_tv
+      command: power_on
+    target:
+      entity_id: remote.family_room_remote
+  - delay:
+      milliseconds: 250
+  - service: remote.send_command
+    data:
+      device: living_room_receiver
+      command: power_on
+    target:
+      entity_id: remote.family_room_remote
+  - delay:
+      milliseconds: 250
+  - service: remote.send_command
+    data:
+      device: living_room_receiver
+      command: input_cbl_sat
+    target:
+      entity_id: remote.family_room_remote
+  - delay:
+      milliseconds: 250
+  - service: remote.send_command
+    data:
+      device: living_room_tv
+      command: input_hdmi1
+    target:
+      entity_id: remote.family_room_remote
