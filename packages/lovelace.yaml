@@ -25,7 +25,7 @@ lovelace:
   dashboards:
     front-door-lock: # Needs to contain a hyphen (-)
       mode: yaml
-      filename: packages/keymaster/km_frontdoor/km_frontdoor_lovelace
+      filename: keymaster/km_frontdoor/km_frontdoor_lovelace
       title: Front door
       icon: mdi:tools
       show_in_sidebar: true
