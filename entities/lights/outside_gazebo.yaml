@@ -1,0 +1,5 @@
+name: Gazebo
+
+platform: switch
+
+entity_id: switch.outside_gazebo
