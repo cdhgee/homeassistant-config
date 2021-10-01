@@ -3,4 +3,3 @@ name: Gazebo
 platform: switch
 
 entity_id: switch.deck_gazebo
-icon: mdi:string-lights
