@@ -1,4 +1,4 @@
-alias: "Watch Xbox"
+alias: "Xbox on"
 
 sequence:
   - service: remote.send_command
