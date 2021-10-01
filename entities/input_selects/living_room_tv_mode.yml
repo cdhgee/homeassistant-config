@@ -1,0 +1,7 @@
+name: Living room TV mode
+icon: mdi:television
+options:
+  - "Off"
+  - "Xbox"
+  - "Cast"
+  - "Music"
