@@ -1,0 +1,5 @@
+name: Outside ambient lights
+
+platform: group
+
+entities: []
