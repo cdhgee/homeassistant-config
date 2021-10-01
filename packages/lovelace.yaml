@@ -21,3 +21,12 @@ lovelace:
       type: module
     - url: /hacsfiles/weather-card/weather-card.js
       type: module
+
+  dashboards:
+    front-door-lock: # Needs to contain a hyphen (-)
+      mode: yaml
+      filename: packages/keymaster/km_frontdoor/km_frontdoor_lovelace
+      title: Front door
+      icon: mdi:tools
+      show_in_sidebar: true
+      require_admin: true
