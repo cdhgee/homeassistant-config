@@ -1,0 +1,7 @@
+conditions:
+  - condition: state
+    entity_id: input_select.family_room_tv_mode
+    state: "Off"
+sequence:
+  - service: script.tv_off
+

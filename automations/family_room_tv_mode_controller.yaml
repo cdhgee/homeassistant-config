@@ -1,0 +1,11 @@
+alias: Family room TV mode controller
+id: e3bbdcde-195c-43b4-b285-a2511a6f6b4e
+
+mode: single
+
+trigger:
+  platform: state
+  entity_id: input_select.family_room_tv_mode
+
+action:
+  - choose: !include_dir_list ../family_room_tv

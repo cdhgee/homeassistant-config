@@ -1,0 +1,7 @@
+conditions:
+  - condition: state
+    entity_id: input_select.family_room_tv_mode
+    state: "Xbox"
+sequence:
+  - service: script.xbox_on
+
