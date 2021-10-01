@@ -1,0 +1,6 @@
+name: Julia's bedroom lights
+
+platform: group
+
+entities:
+  - light.julia_s_bedroom_lights
