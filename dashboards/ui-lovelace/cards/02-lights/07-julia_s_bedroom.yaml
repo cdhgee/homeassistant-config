@@ -1,0 +1,11 @@
+type: custom:auto-entities
+card:
+  type: entities
+  title: Julia's bedroom
+  show_header_toggle: true
+show_empty: false
+filter:
+  include:
+    - group: light.julia_s_bedroom_lights
+      options:
+        secondary_info: last-changed
