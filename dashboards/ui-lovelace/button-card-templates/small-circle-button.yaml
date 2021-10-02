@@ -1,0 +1,9 @@
+small-circle-button:
+  template: circle-button
+  color_type: card
+  styles:
+    card:
+      - width: 45px
+      - height: 45px
+    icon:
+      - width: 25px
