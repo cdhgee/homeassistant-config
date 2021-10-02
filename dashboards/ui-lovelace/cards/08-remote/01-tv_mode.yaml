@@ -1,0 +1,78 @@
+type: horizontal-stack
+cards:
+  - type: custom:button-card
+    color_type: blank-card
+  - type: custom:button-card
+    template: large-circle-button
+    entity: input_select.family_room_tv_mode
+    icon: mdi:power
+    state:
+      - value: "Off"
+        styles:
+          icon:
+            - color: rgb(255,255,255)
+          card:
+            - background: rgb(200, 0,0)
+    tap_action:
+      action: call-service
+      service: input_select.select_option
+      service_data:
+        entity_id: input_select.family_room_tv_mode
+        option: "Off"
+  - type: custom:button-card
+    template: large-circle-button
+    entity: input_select.family_room_tv_mode
+    icon: mdi:cast-connected
+    state:
+      - value: Chromecast
+        styles:
+          icon:
+            - color: rgb(255,255,255)
+          card:
+            - background: rgb(0,128,0)
+    tap_action:
+      action: call-service
+      service: input_select.select_option
+      service_data:
+        entity_id: input_select.family_room_tv_mode
+        option: Chromecast
+  - color_type: card
+    show_name: false
+    entity: input_select.family_room_tv_mode
+    template: large-circle-button
+    type: custom:button-card
+    icon: mdi:microsoft-xbox
+    state:
+      - value: Xbox
+        styles:
+          icon:
+            - color: rgb(255,255,255)
+          card:
+            - background: rgb(0,128,0)
+    tap_action:
+      action: call-service
+      service: input_select.select_option
+      service_data:
+        entity_id: input_select.family_room_tv_mode
+        option: Xbox
+  - color_type: card
+    show_name: false
+    entity: input_select.family_room_tv_mode
+    template: large-circle-button
+    type: custom:button-card
+    icon: mdi:laptop-windows
+    state:
+      - value: PC
+        styles:
+          icon:
+            - color: rgb(255,255,255)
+          card:
+            - background: rgb(0,128,0)
+    tap_action:
+      action: call-service
+      service: remote.turn_on
+      service_data:
+        entity_id: remote.harmony_hub
+        activity: PC
+  - type: custom:button-card
+    color_type: blank-card
