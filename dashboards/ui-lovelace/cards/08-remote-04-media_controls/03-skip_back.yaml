@@ -1,0 +1,6 @@
+type: custom:button-card
+template: small-circle-button
+icon: mdi:skip-backward
+tap_action:
+  action: call-service
+  service: script.skip_back

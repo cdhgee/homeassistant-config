@@ -1,0 +1,6 @@
+type: custom:button-card
+template: small-circle-button
+icon: mdi:pause
+tap_action:
+  action: call-service
+  service: script.pause
