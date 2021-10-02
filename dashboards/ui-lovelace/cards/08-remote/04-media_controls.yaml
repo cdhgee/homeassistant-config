@@ -1,0 +1,55 @@
+type: conditional
+conditions:
+  - entity: input_select.family_room_tv_mode
+    state_not: "Off"
+card:
+  type: vertical-stack
+  cards:
+    - type: horizontal-stack
+      cards:
+        - type: custom:button-card
+          color_type: blank-card
+        - type: custom:button-card
+          template: small-circle-button
+          icon: mdi:skip-backward
+          tap_action:
+            action: call-service
+            service: script.skip_back
+        - type: custom:button-card
+          template: small-circle-button
+          icon: mdi:skip-previous
+          tap_action:
+            action: call-service
+            service: script.skip_previous
+        - type: custom:button-card
+          template: small-circle-button
+          icon: mdi:stop
+          tap_action:
+            action: call-service
+            service: script.stop
+        - type: custom:button-card
+          template: small-circle-button
+          icon: mdi:pause
+          tap_action:
+            action: call-service
+            service: script.pause
+        - type: custom:button-card
+          template: small-circle-button
+          icon: mdi:play
+          tap_action:
+            action: call-service
+            service: script.play
+        - type: custom:button-card
+          template: small-circle-button
+          icon: mdi:skip
+          tap_action:
+            action: call-service
+            service: script.skip_next
+        - type: custom:button-card
+          template: small-circle-button
+          icon: mdi:skip-forward
+          tap_action:
+            action: call-service
+            service: script.skip_forward
+        - type: custom:button-card
+          color_type: blank-card
