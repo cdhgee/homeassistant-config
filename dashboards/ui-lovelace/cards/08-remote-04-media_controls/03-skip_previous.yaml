@@ -1,4 +1,4 @@
-type: custom:button card
+type: custom:button-card
 template: small-circle-button
 icon: mdi:skip-previous
 tap_action:
