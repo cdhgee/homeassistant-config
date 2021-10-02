@@ -1,0 +1,56 @@
+type: conditional
+conditions:
+  - entity: input_select.family_room_tv_mode
+    state_not: "Off"
+card:
+  type: vertical-stack
+  cards:
+    - type: horizontal-stack
+      cards:
+        - type: custom:button-card
+          color_type: blank-card
+        - type: custom:button-card
+          template:
+            - small-circle-button
+            - red-icon
+          entity: input_select.family_room_tv_mode
+          icon: mdi:volume-off
+          tap_action:
+            action: call-service
+            service: script.media_mute
+            service_data:
+              entity_id: media_player.receiver
+        - type: custom:button-card
+          template: small-circle-button
+          entity: sensor.harmony_activity
+          icon: mdi:volume-minus
+          tap_action:
+            action: call-service
+            service: media_player.volume_down
+            service_data:
+              entity_id: media_player.receiver
+          hold_action:
+            action: call-service
+            repeat: 500
+            service: media_player.volume_down
+            service_data:
+              entity_id: media_player.receiver
+        - type: custom:button-card
+          template: small-circle-button
+          entity: sensor.harmony_activity
+          icon: mdi:volume-plus
+          tap_action:
+            action: call-service
+            service: media_player.volume_up
+            service_data:
+              entity_id: media_player.receiver
+          hold_action:
+            action: call-service
+            repeat: 500
+            service: media_player.volume_up
+            service_data:
+              entity_id: media_player.receiver
+        - type: custom:button-card
+          color_type: blank-card
+    - type: custom:gap-card
+      height: 10
