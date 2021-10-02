@@ -2,5 +2,5 @@ icon: mdi:remote-tv
 title: Remote
 path: remote
 badges: []
-layout: vertical-stack
+layout: custom:vertical-layout
 cards: !include_dir_list ../cards/08-remote
