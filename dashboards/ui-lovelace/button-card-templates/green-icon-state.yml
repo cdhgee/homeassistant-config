@@ -1,0 +1,8 @@
+green-icon-state:
+  state:
+    - id: primary
+      styles:
+        icon:
+          - color: rgb(255, 255, 255)
+        card:
+          - background: rgb(0, 128, 0)

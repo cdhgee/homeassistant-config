@@ -1,0 +1,8 @@
+red-icon-state:
+  state:
+    - id: primary
+      styles:
+        icon:
+          - color: rgb(255, 255, 255)
+        card:
+          - background: rgb(200, 0, 0)
