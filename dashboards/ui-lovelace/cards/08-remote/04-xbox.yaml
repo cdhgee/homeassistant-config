@@ -6,14 +6,14 @@ card:
   type: vertical-stack
   cards:
     - type: horizontal-stack
-      cards: !include_dir_list ../08-remote-05-xbox/01
+      cards: !include_dir_list ../08-remote-04-xbox/01
     - type: custom:gap-card
       height: 10
     - type: horizontal-stack
-      cards: !include_dir_list ../08-remote-05-xbox/02
+      cards: !include_dir_list ../08-remote-04-xbox/02
     - type: horizontal-stack
-      cards: !include_dir_list ../08-remote-05-xbox/03
+      cards: !include_dir_list ../08-remote-04-xbox/03
     - type: horizontal-stack
-      cards: !include_dir_list ../08-remote-05-xbox/04
+      cards: !include_dir_list ../08-remote-04-xbox/04
     - type: custom:gap-card
       height: 10
