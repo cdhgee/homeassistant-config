@@ -1,0 +1,6 @@
+type: custom:button-card
+template: small-circle-button
+icon: mdi:arrow-left-drop-circle-outline
+tap_action:
+  action: call-service
+  service: script.xbox_left

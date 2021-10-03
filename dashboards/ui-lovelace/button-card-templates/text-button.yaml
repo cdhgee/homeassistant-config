@@ -1,0 +1,3 @@
+text-button:
+  show_label: true
+  show_icon: false

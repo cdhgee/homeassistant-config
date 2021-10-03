@@ -1,0 +1,8 @@
+type: custom:button-card
+template:
+  - small-circle-button
+  - text-button
+label: OK
+tap_action:
+  action: call-service
+  service: script.xbox_ok

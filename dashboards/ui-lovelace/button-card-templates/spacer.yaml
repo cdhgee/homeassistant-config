@@ -1,5 +1,4 @@
 spacer:
-  type: custom:button-card
   color_type: blank-card
   styles:
     card:

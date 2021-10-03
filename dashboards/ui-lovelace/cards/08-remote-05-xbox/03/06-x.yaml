@@ -1,0 +1,9 @@
+type: custom:button-card
+template: small-circle-button
+icon: mdi:alpha-x
+styles:
+  icon:
+    - color: rgb(2, 82, 255)
+tap_action:
+  action: call-service
+  service: script.xbox_x
