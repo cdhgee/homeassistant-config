@@ -1,9 +1,6 @@
 type: custom:button-card
 template: small-circle-button
-icon: mdi:alpha-x
-styles:
-  icon:
-    - color: rgb(200, 0, 0)
+icon: mdi:arrow-down-drop-circle-outline
 tap_action:
   action: call-service
-  service: script.xbox_x
+  service: script.xbox_down
