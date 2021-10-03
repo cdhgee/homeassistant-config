@@ -1,0 +1,6 @@
+type: custom:button-card
+template: large-circle-button
+icon: mdi:microsoft-xbox
+tap_action:
+  action: call-service
+  service: script.xbox_xbox

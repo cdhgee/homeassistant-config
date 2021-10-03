@@ -1,0 +1,9 @@
+type: conditional
+conditions:
+  - entity: input_select.family_room_tv_mode
+    state: "Xbox"
+card:
+  type: vertical-stack
+  cards:
+    - type: horizontal-stack
+      cards: !include_dir_list ../08-remote-05-xbox/top-row

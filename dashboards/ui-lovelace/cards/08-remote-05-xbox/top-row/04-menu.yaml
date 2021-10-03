@@ -1,0 +1,6 @@
+type: custom:button-card
+template: small-circle-button
+icon: mdi:menu
+tap_action:
+  action: call-service
+  service: script.xbox_menu
