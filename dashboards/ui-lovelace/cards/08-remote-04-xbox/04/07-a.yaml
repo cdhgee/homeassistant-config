@@ -6,4 +6,9 @@ styles:
     - color: rgb(0, 128, 0)
 tap_action:
   action: call-service
-  service: script.xbox_a
+  service: remote.send_command
+  target:
+    entity_id: remote.family_room_remote
+  data:
+    device: family_room_xbox
+    command: a

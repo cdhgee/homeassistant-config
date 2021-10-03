@@ -3,4 +3,9 @@ template: small-circle-button
 icon: mdi:menu
 tap_action:
   action: call-service
-  service: script.xbox_menu
+  service: remote.send_command
+  target:
+    entity_id: remote.family_room_remote
+  data:
+    device: family_room_xbox
+    command: menu
