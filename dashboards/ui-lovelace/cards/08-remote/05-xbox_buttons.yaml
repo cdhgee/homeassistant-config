@@ -7,3 +7,7 @@ card:
   cards:
     - type: horizontal-stack
       cards: !include_dir_list ../08-remote-05-xbox/top-row
+    - type: horizontal-stack
+      cards: !include_dir_list ../08-remote-05-xbox/bottom-row
+    - type: custom:gap-card
+      height: 10

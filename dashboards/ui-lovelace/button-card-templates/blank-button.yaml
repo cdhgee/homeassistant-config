@@ -1,0 +1,5 @@
+blank-button:
+  color_type: blank-card
+  styles:
+    card:
+      - width: 45px
