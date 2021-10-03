@@ -7,3 +7,5 @@ card:
   cards:
     - type: horizontal-stack
       cards: !include_dir_list ../08-remote-04-media_controls
+    - type: custom:gap-card
+      height: 10
