@@ -1,0 +1,9 @@
+alias: "Start Plex"
+
+sequence:
+  - service: media_player.play_media
+    target:
+      entity_id: media_player.davids_xbox
+    data:
+      media_content_id: 9NBLGGH3ZZVF
+      media_content_type: ""
