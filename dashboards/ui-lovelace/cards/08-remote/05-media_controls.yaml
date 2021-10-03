@@ -6,6 +6,6 @@ card:
   type: vertical-stack
   cards:
     - type: horizontal-stack
-      cards: !include_dir_list ../08-remote-04-media_controls
+      cards: !include_dir_list ../08-remote-05-media_controls
     - type: custom:gap-card
       height: 10

@@ -13,7 +13,7 @@ card:
           template:
             - small-circle-button
             - red-icon
-          icon: mdi:volume-off
+          icon: mdi:volume-mute
           tap_action:
             action: call-service
             service: script.mute
