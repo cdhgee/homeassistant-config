@@ -1,0 +1,9 @@
+alias: "Volume up"
+
+sequence:
+  - service: remote.send_command
+    data:
+      device: family_room_receiver
+      command: volume_up
+    target:
+      entity_id: remote.family_room_remote

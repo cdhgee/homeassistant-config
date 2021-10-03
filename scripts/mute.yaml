@@ -1,0 +1,9 @@
+alias: "Mute"
+
+sequence:
+  - service: remote.send_command
+    data:
+      device: family_room_receiver
+      command: mute
+    target:
+      entity_id: remote.family_room_remote

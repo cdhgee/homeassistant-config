@@ -1,0 +1,9 @@
+alias: "Volume down"
+
+sequence:
+  - service: remote.send_command
+    data:
+      device: family_room_receiver
+      command: volume_down
+    target:
+      entity_id: remote.family_room_remote

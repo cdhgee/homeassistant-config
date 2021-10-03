@@ -3,7 +3,7 @@ alias: "Xbox on"
 sequence:
   - service: remote.send_command
     data:
-      device: living_room_xbox
+      device: family_room_xbox
       command: power_on
     target:
       entity_id: remote.family_room_remote
@@ -11,7 +11,7 @@ sequence:
       milliseconds: 250
   - service: remote.send_command
     data:
-      device: living_room_tv
+      device: family_room_tv
       command: power_on
     target:
       entity_id: remote.family_room_remote
@@ -19,7 +19,7 @@ sequence:
       milliseconds: 250
   - service: remote.send_command
     data:
-      device: living_room_receiver
+      device: family_room_receiver
       command: power_on
     target:
       entity_id: remote.family_room_remote
@@ -27,7 +27,7 @@ sequence:
       milliseconds: 250
   - service: remote.send_command
     data:
-      device: living_room_receiver
+      device: family_room_receiver
       command: input_dvd
     target:
       entity_id: remote.family_room_remote
@@ -35,7 +35,7 @@ sequence:
       milliseconds: 250
   - service: remote.send_command
     data:
-      device: living_room_tv
+      device: family_room_tv
       command: input_hdmi1
     target:
       entity_id: remote.family_room_remote
