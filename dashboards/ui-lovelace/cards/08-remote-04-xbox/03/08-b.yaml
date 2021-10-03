@@ -7,8 +7,7 @@ styles:
 tap_action:
   action: call-service
   service: remote.send_command
-  target:
+  service_data:
     entity_id: remote.family_room_remote
-  data:
     device: family_room_xbox
     command: b

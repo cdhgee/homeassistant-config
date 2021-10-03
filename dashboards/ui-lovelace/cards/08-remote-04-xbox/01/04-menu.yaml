@@ -5,8 +5,6 @@ tap_action:
   action: call-service
   service: remote.send_command
   service_data:
-    target:
-      entity_id: remote.family_room_remote
-    data:
-      device: family_room_xbox
-      command: menu
+    entity_id: remote.family_room_remote
+    device: family_room_xbox
+    command: menu
