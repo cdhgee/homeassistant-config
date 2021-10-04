@@ -1,6 +1,6 @@
 type: custom:button-card
 template: small-circle-button
-icon: mdi:plex
+icon: mdi:youtube
 tap_action:
   action: call-service
   service: remote.send_command
