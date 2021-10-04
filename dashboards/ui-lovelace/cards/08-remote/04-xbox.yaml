@@ -19,6 +19,13 @@ card:
       cards: !include_dir_list ../08-remote-04-xbox/04
     - type: custom:gap-card
       height: 10
+    # Media controls
+    - type: horizontal-stack
+      cards: !include_dir_list ../08-remote-04-xbox/0
+    - type: custom:gap-card
+      height: 10
     # Individual app buttons
     - type: horizontal-stack
-      cards: !include_dir_list ../08-remote-04-xbox/05
+      cards: !include_dir_list ../08-remote-04-xbox/06
+    - type: custom:gap-card
+      height: 10
