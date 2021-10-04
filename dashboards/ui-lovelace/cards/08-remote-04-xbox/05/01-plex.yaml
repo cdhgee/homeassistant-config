@@ -1,0 +1,10 @@
+type: custom:button-card
+template: small-circle-button
+icon: mdi:plex
+tap_action:
+  action: call-service
+  service: remote.send_command
+  service_data:
+    entity_id: remote.davids_xbox_remote
+    media_content_id: 9NBLGGH3ZZVF
+    media_content_type: app

@@ -5,10 +5,12 @@ conditions:
 card:
   type: vertical-stack
   cards:
+    # View / Xbox / menu buttons
     - type: horizontal-stack
       cards: !include_dir_list ../08-remote-04-xbox/01
     - type: custom:gap-card
       height: 10
+    # Xbox controller buttons
     - type: horizontal-stack
       cards: !include_dir_list ../08-remote-04-xbox/02
     - type: horizontal-stack
@@ -17,3 +19,6 @@ card:
       cards: !include_dir_list ../08-remote-04-xbox/04
     - type: custom:gap-card
       height: 10
+    # Individual app buttons
+    - type: horizontal-stack
+      cards: !include_dir_list ../08-remote-04-xbox/05
