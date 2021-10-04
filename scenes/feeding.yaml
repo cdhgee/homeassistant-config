@@ -3,7 +3,7 @@ name: Feeding
 entities:
   light.master_bedroom_bedroom:
     state: "off"
-  switch.master_bedroom_closet:
+  light.master_bedroom_closet:
     state: "off"
   light.master_bedroom_davids_bedside:
     state: "on"
@@ -12,8 +12,8 @@ entities:
     hs_color:
       - 30
       - 43
-  switch.master_bedroom_fairy_lights:
-    state: "off"
+  light.master_bedroom_fairy_lights:
+    state: "on"
   light.master_bedroom_monicas_bedside:
     state: "on"
     brightness: 127
