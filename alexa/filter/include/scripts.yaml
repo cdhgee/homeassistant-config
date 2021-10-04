@@ -1,3 +1,12 @@
 - script.close_garage
 - script.lights_out
+- script.mute
 - script.open_garage
+- script.tv_off
+- script.volume_down
+- script.volume_up
+- script.xbox_netflix
+- script.xbox_on
+- script.xbox_pause
+- script.xbox_play
+- script.xbox_plex
