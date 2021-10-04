@@ -1,0 +1,4 @@
+alpha-button:
+  template:
+    - small-circle-button
+    - large-icon

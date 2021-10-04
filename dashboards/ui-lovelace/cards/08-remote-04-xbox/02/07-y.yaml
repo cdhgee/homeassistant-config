@@ -1,5 +1,5 @@
 type: custom:button-card
-template: small-circle-button
+template: alpha-button
 icon: mdi:alpha-y
 styles:
   icon:

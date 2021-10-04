@@ -1,8 +1,8 @@
 large-circle-button:
-  template: circle-button
+  template:
+    - circle-button
+    - large-icon
   styles:
     card:
       - width: 55px
       - height: 55px
-    icon:
-      - width: 35px
