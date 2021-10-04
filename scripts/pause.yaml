@@ -1,0 +1,9 @@
+alias: "Pause"
+
+sequence:
+  - service: remote.send_command
+    data:
+      device: family_room_xbox
+      command: pause
+    target:
+      entity_id: remote.family_room_remote
