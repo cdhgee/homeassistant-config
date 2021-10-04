@@ -1,0 +1,8 @@
+alias: "Xbox Hulu"
+
+sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.davids_xbox
+      media_content_id: 9WZDNCRFJ3L1
+      media_content_type: app
