@@ -5,4 +5,8 @@ template:
 label: OK
 tap_action:
   action: call-service
-  service: script.xbox_ok
+  service: remote.send_command
+  service_data:
+    entity_id: remote.family_room_remote
+    device: family_room_xbox
+    command: select
