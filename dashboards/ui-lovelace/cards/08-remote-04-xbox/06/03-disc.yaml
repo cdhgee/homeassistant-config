@@ -3,8 +3,4 @@ template: small-circle-button
 icon: mdi:disc
 tap_action:
   action: call-service
-  service: media_player.play_media
-  service_data:
-    entity_id: media_player.davids_xbox
-    media_content_id: 9NBLGGH4VVD4
-    media_content_type: app
+  service: script.xbox_bluray

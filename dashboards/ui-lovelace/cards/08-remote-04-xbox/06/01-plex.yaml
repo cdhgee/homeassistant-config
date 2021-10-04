@@ -3,8 +3,4 @@ template: small-circle-button
 icon: mdi:plex
 tap_action:
   action: call-service
-  service: media_player.play_media
-  service_data:
-    entity_id: media_player.davids_xbox
-    media_content_id: 9NBLGGH3ZZVF
-    media_content_type: app
+  service: script.xbox_plex
