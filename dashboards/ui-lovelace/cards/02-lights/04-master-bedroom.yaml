@@ -1,0 +1,40 @@
+type: custom:auto-entities
+card:
+  type: entities
+  title: Master bedroom
+  show_header_toggle: false
+filter:
+  include:
+    - entity_id: light.master_bedroom_lights
+      type: custom:fold-entity-row
+      open: true
+      head:
+        entity: light.master_bedroom_lights
+        name: Lights
+        secondary_info: last-changed
+      group_config:
+        secondary_info: last-changed
+    - entity_id: light.master_bedroom_ambient_lights
+      type: custom:fold-entity-row
+      head:
+        entity: light.master_bedroom_ambient_lights
+        name: Ambient lights
+        secondary_info: last-changed
+      group_config:
+        secondary_info: last-changed
+    - entity_id: cover.master_bedroom_blinds
+      options:
+        name: Blinds
+        secondary_info: last-changed
+    - entity_id: sensor.master_bedroom_temperature
+      options:
+        name: Temperature
+        secondary_info: last-changed
+    - entity_id: binary_sensor.master_bedroom_smoke_detected
+      options:
+        name: Smoke
+        secondary_info: last-changed
+    - entity_id: binary_sensor.master_bedroom_co_detected
+      options:
+        name: Carbon monoxide
+        secondary_info: last-changed
