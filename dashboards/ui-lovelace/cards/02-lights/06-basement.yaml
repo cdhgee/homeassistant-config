@@ -14,14 +14,14 @@ filter:
         secondary_info: last-changed
       group_config:
         secondary_info: last-changed
-    - entity_id: light.basement_ambient_lights
-      type: custom:fold-entity-row
-      head:
-        entity: light.basement_ambient_lights
-        name: Ambient lights
-        secondary_info: last-changed
-      group_config:
-        secondary_info: last-changed
+    # - entity_id: light.basement_ambient_lights
+    #   type: custom:fold-entity-row
+    #   head:
+    #     entity: light.basement_ambient_lights
+    #     name: Ambient lights
+    #     secondary_info: last-changed
+    #   group_config:
+    #     secondary_info: last-changed
     - entity_id: cover.basement_blinds
       options:
         name: Blinds
@@ -29,6 +29,10 @@ filter:
     - entity_id: sensor.basement_temperature
       options:
         name: Temperature
+        secondary_info: last-changed
+    - entity_id: switch.basement_fan
+      options:
+        name: Fan
         secondary_info: last-changed
     - entity_id: binary_sensor.basement_smoke_detected
       options:
