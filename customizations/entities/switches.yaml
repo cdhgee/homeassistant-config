@@ -1,2 +1,5 @@
 switch.basement_fan:
   icon: mdi:fan
+
+switch.upstairs_bathroom_fan:
+  icon: mdi:fan
