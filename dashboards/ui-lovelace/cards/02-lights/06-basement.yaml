@@ -2,10 +2,39 @@ type: custom:auto-entities
 card:
   type: entities
   title: Basement
-  show_header_toggle: true
-show_empty: false
+  show_header_toggle: false
 filter:
   include:
-    - group: light.basement_lights
+    - entity_id: light.basement_lights
+      type: custom:fold-entity-row
+      open: true
+      head:
+        entity: light.basement_lights
+        name: Lights
+        secondary_info: last-changed
+      group_config:
+        secondary_info: last-changed
+    - entity_id: light.basement_ambient_lights
+      type: custom:fold-entity-row
+      head:
+        entity: light.basement_ambient_lights
+        name: Ambient lights
+        secondary_info: last-changed
+      group_config:
+        secondary_info: last-changed
+    - entity_id: cover.basement_blinds
       options:
+        name: Blinds
+        secondary_info: last-changed
+    - entity_id: sensor.basement_temperature
+      options:
+        name: Temperature
+        secondary_info: last-changed
+    - entity_id: binary_sensor.basement_smoke_detected
+      options:
+        name: Smoke
+        secondary_info: last-changed
+    - entity_id: binary_sensor.basement_co_detected
+      options:
+        name: Carbon monoxide
         secondary_info: last-changed
