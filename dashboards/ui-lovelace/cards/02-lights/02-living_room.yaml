@@ -2,9 +2,39 @@ type: custom:auto-entities
 card:
   type: entities
   title: Living room
-  show_header_toggle: true
+  show_header_toggle: false
 filter:
   include:
-    - group: light.living_room_lights
+    - entity_id: light.living_room_lights
+      type: custom:fold-entity-row
+      open: true
+      head:
+        entity: light.living_room_lights
+        name: Lights
+        secondary_info: last-changed
+      group_config:
+        secondary_info: last-changed
+    - entity_id: light.living_room_ambient_lights
+      type: custom:fold-entity-row
+      head:
+        entity: light.living_room_ambient_lights
+        name: Ambient lights
+        secondary_info: last-changed
+      group_config:
+        secondary_info: last-changed
+    - entity_id: cover.living_room_blinds
       options:
+        name: Blinds
+        secondary_info: last-changed
+    - entity_id: sensor.living_room_temperature
+      options:
+        name: Temperature
+        secondary_info: last-changed
+    - entity_id: binary_sensor.living_room_smoke_detected
+      options:
+        name: Smoke
+        secondary_info: last-changed
+    - entity_id: binary_sensor.living_room_co_detected
+      options:
+        name: Carbon monoxide
         secondary_info: last-changed
