@@ -15,9 +15,3 @@ entities:
       secondary_info: last-changed
     group_config:
       secondary_info: last-changed
-  - entity: scene.bedtime
-  - entity: scene.feeding
-  - entity: scene.sleeping
-  - entity: scene.snuggle
-  - entity: scene.upstairs_ambient
-  - entity: script.lights_out

@@ -1,0 +1,10 @@
+type: custom:auto-entities
+card:
+  type: entities
+  show_header_toggle: false
+  title: Fans
+filter:
+  include:
+    - entity_id: switch.*fan
+sort:
+  method: friendly_name

@@ -8,5 +8,3 @@ entities:
   - entity: sensor.home_realfeel_temperature
     name: Outdoor temperature
     secondary_info: last-changed
-  - entity: switch.upstairs_bathroom_fan
-    name: Bathroom fan
