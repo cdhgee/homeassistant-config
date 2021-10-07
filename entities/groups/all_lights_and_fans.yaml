@@ -1,7 +1,6 @@
 name: All lights and fans
 
 entities:
-  # Basement
   - light.basement_crawlspace
   - light.basement_office
   - light.basement_piano
@@ -12,7 +11,7 @@ entities:
   - light.family_room_overhead
   - light.family_room_tv_lightstrip
   - light.garage_work_light
-  - light.guest_bedroom_main_lights
+  - light.julia_s_bedroom_ceiling_light
   - light.kitchen_bar
   - light.kitchen_counter
   - light.kitchen_counter_lightstrip
