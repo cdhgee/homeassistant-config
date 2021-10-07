@@ -1,6 +1,6 @@
 type: custom:button-card
 template: small-circle-button
-icon: mdi:amazon
+icon: fab:amazon
 tap_action:
   action: call-service
   service: script.xbox_primevideo
