@@ -1,6 +1,6 @@
 type: custom:button-card
 template:
-  - small-circle-button
+  - small-button
   - text-button
 label: OK
 tap_action:

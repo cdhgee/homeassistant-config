@@ -3,7 +3,7 @@ show_name: false
 entity: input_select.family_room_tv_mode
 template:
   - green-icon-state
-  - large-circle-button
+  - large-button
 icon: mdi:microsoft-xbox
 state:
   - id: primary

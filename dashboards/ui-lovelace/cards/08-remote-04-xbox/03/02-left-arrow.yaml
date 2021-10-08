@@ -1,5 +1,5 @@
 type: custom:button-card
-template: small-circle-button
+template: small-button
 icon: mdi:arrow-left-drop-circle-outline
 tap_action:
   action: call-service
