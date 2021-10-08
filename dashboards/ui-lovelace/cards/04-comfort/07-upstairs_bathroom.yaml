@@ -1,0 +1,5 @@
+type: entities
+title: Upstairs bathroom
+entities:
+  - entity: switch.upstairs_bathroom_fan
+    name: Fan

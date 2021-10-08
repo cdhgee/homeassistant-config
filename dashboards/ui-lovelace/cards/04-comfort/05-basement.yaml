@@ -3,6 +3,8 @@ title: Basement
 entities:
   - entity: sensor.basement_temperature
     name: Temperature
+  - entity: switch.basement_fan
+    name: Fan
 footer:
   type: graph
   entity: sensor.basement_temperature
