@@ -1,0 +1,10 @@
+type: entities
+title: Basement
+entities:
+  - entity: sensor.basement_temperature
+    name: Temperature
+footer:
+  type: graph
+  entity: sensor.basement_temperature
+  hours_to_show: 24
+  detail: 1

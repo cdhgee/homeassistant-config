@@ -1,0 +1,10 @@
+type: entities
+title: Julia's bedroom
+entities:
+  - entity: sensor.julia_s_bedroom_temperature
+    name: Temperature
+footer:
+  type: graph
+  entity: sensor.julia_s_bedroom_temperature
+  hours_to_show: 24
+  detail: 1
