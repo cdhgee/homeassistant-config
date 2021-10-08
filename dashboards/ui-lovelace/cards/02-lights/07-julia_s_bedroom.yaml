@@ -2,39 +2,10 @@ type: custom:auto-entities
 card:
   type: entities
   title: Julia's bedroom
-  show_header_toggle: false
+  show_header_toggle: true
+show_empty: false
 filter:
   include:
-    - entity_id: light.julia_s_bedroom_lights
-      type: custom:fold-entity-row
-      open: true
-      head:
-        entity: light.julia_s_bedroom_lights
-        name: Lights
-        secondary_info: last-changed
-      group_config:
-        secondary_info: last-changed
-    # - entity_id: light.julia_s_bedroom_ambient_lights
-    #   type: custom:fold-entity-row
-    #   head:
-    #     entity: light.julia_s_bedroom_ambient_lights
-    #     name: Ambient lights
-    #     secondary_info: last-changed
-    #   group_config:
-    #     secondary_info: last-changed
-    - entity_id: cover.julia_s_bedroom_blinds
+    - group: light.julia_s_bedroom_lights
       options:
-        name: Blinds
-        secondary_info: last-changed
-    - entity_id: sensor.julia_s_bedroom_temperature
-      options:
-        name: Temperature
-        secondary_info: last-changed
-    - entity_id: binary_sensor.julia_s_bedroom_smoke_detected
-      options:
-        name: Smoke
-        secondary_info: last-changed
-    - entity_id: binary_sensor.julia_s_bedroom_co_detected
-      options:
-        name: Carbon monoxide
         secondary_info: last-changed

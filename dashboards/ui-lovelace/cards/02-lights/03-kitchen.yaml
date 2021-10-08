@@ -2,39 +2,10 @@ type: custom:auto-entities
 card:
   type: entities
   title: Kitchen
-  show_header_toggle: false
+  show_header_toggle: true
+show_empty: false
 filter:
   include:
-    - entity_id: light.kitchen_lights
-      type: custom:fold-entity-row
-      open: true
-      head:
-        entity: light.kitchen_lights
-        name: Lights
-        secondary_info: last-changed
-      group_config:
-        secondary_info: last-changed
-    - entity_id: light.kitchen_ambient_lights
-      type: custom:fold-entity-row
-      head:
-        entity: light.kitchen_ambient_lights
-        name: Ambient lights
-        secondary_info: last-changed
-      group_config:
-        secondary_info: last-changed
-    - entity_id: cover.kitchen_blinds
+    - group: light.kitchen_lights
       options:
-        name: Blinds
-        secondary_info: last-changed
-    - entity_id: sensor.kitchen_temperature
-      options:
-        name: Temperature
-        secondary_info: last-changed
-    - entity_id: binary_sensor.kitchen_smoke_detected
-      options:
-        name: Smoke
-        secondary_info: last-changed
-    - entity_id: binary_sensor.kitchen_co_detected
-      options:
-        name: Carbon monoxide
         secondary_info: last-changed
