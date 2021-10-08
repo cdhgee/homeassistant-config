@@ -1,6 +1,6 @@
-large-circle-button:
+large-button:
   template:
-    - circle-button
+    - button
     - large-icon
   styles:
     card:

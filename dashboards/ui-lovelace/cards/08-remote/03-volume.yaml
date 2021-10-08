@@ -11,20 +11,20 @@ card:
           color_type: blank-card
         - type: custom:button-card
           template:
-            - small-circle-button
+            - small-button
             - red-icon
           icon: mdi:volume-mute
           tap_action:
             action: call-service
             service: script.mute
         - type: custom:button-card
-          template: small-circle-button
+          template: small-button
           icon: mdi:volume-minus
           tap_action:
             action: call-service
             service: script.volume_down
         - type: custom:button-card
-          template: small-circle-button
+          template: small-button
           icon: mdi:volume-plus
           tap_action:
             action: call-service

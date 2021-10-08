@@ -1,10 +1,9 @@
-circle-button:
+button:
   color_type: card
   show_name: false
   styles:
     card:
       - background: rgba(255, 255, 255, 0.45)
-      - border-radius: 50%
       - box-shadow: none
     icon:
       - color: "#303741"

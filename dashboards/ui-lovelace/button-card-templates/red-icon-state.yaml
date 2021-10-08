@@ -5,4 +5,4 @@ red-icon-state:
         icon:
           - color: rgb(255, 255, 255)
         card:
-          - background: rgb(200, 0, 0)
+          - background: rgba(200, 0, 0, 0.5)

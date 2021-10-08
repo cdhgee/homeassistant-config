@@ -1,4 +1,4 @@
 alpha-button:
   template:
-    - small-circle-button
+    - small-button
     - large-icon

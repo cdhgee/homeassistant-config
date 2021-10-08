@@ -1,4 +1,4 @@
 red-icon:
   styles:
     icon:
-      - color: rgb(200, 0, 0)
+      - color: rgba(200, 0, 0, 0.5)

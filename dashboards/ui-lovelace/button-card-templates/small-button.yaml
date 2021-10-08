@@ -1,6 +1,6 @@
-small-circle-button:
+small-button:
   template:
-    - circle-button
+    - button
     - small-icon
   color_type: card
   styles:
