@@ -5,4 +5,4 @@ green-icon-state:
         icon:
           - color: rgb(255, 255, 255)
         card:
-          - background: rgb(0, 128, 0)
+          - background: rgb(0, 128, 0, 0.5)
