@@ -1,12 +1,10 @@
 type: entities
-title: Living room
+title: Family room
 entities:
-  - entity: sensor.living_room_temperature
+  - entity: sensor.family_room_temperature
     name: Temperature
-  - entity: sensor.hallway_humidity
-    name: Humidity
 footer:
   type: graph
-  entity: sensor.living_room_temperature
+  entity: sensor.family_room_temperature
   hours_to_show: 24
   detail: 1
