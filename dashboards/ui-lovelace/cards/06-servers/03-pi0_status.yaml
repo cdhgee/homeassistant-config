@@ -1,0 +1,15 @@
+type: grid
+cards:
+  - type: custom:mini-graph-card
+    entities:
+      - sensor.pi0_cpu_load
+  - type: custom:mini-graph-card
+    entities:
+      - sensor.pi0_ram_used
+  - type: custom:mini-graph-card
+    entities:
+      - sensor.pi0_used
+  - type: custom:mini-graph-card
+    entities:
+      - sensor.pi0_thread
+columns: 2
