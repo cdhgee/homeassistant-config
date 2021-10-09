@@ -1,3 +1,4 @@
 automations.yaml
+secrets.yaml
 secrets_unredacted.yaml
 .storage/
