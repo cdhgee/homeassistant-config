@@ -1,0 +1,19 @@
+unique_id: f2b9bc89-ecb1-41e2-8391-4f8227cf8fc7
+
+sensor:
+  - name: Number of ambient lights on
+    unique_id: 55a8eb87-bcec-4a4e-90d6-18928c39e13e
+    state: >
+      {%
+        set lights = expand(state_attr('light.all_ambient_lights', 'entity_id')) |
+        map(attribute='entity_id') |
+        list
+      %}
+      {{
+        states.light |
+        selectattr('state', 'eq', 'on') |
+        selectattr('entity_id', 'in', lights) |
+        list |
+        count
+      }}
+    icon: mdi:lightbulb-group
