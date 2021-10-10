@@ -1,10 +1,12 @@
 type: grid
 cards:
   - type: custom:button-card
+    template: dashboard-lights-tile
     tap_action:
       navigation_path: /lovelace/lights
     entity: sensor.number_of_lights_on
   - type: custom:button-card
+    template: dashboard-lights-tile
     tap_action:
       navigation_path: /lovelace/ambient-lights
     entity: sensor.number_of_ambient_lights_on
