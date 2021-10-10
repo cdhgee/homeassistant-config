@@ -1,0 +1,6 @@
+dashboard-tile:
+  tap_action:
+    action: navigate
+  show_label: true
+  layout: icon_name_state2nd
+  aspect_ratio: 2/1
