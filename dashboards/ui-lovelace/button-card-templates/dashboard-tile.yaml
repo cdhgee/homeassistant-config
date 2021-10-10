@@ -5,6 +5,8 @@ dashboard-tile:
   layout: icon_name_state2nd
   aspect_ratio: 2/1
   styles:
+    name:
+      - font-size: var(--paper-font-body1_-_font-size)
     state:
       - font-size: var(--paper-font-body1_-_font-size)
     label:
