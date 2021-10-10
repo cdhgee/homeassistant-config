@@ -4,3 +4,5 @@ template: dashboard-tile
 tap_action:
   navigation_path: /hassio/dashboard
 entity: binary_sensor.updater
+show_label: false
+show_state: true
