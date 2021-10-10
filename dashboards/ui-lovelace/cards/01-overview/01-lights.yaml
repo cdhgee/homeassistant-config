@@ -1,6 +1,7 @@
 type: grid
 title: Lights
 columns: 2
+square: false
 cards:
   - type: custom:button-card
     template: dashboard-lights-tile
