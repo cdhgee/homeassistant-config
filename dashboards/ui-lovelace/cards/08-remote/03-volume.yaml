@@ -6,30 +6,6 @@ card:
   type: vertical-stack
   cards:
     - type: horizontal-stack
-      cards:
-        - type: custom:button-card
-          color_type: blank-card
-        - type: custom:button-card
-          template:
-            - small-button
-            - red-icon
-          icon: mdi:volume-mute
-          tap_action:
-            action: call-service
-            service: script.mute
-        - type: custom:button-card
-          template: small-button
-          icon: mdi:volume-minus
-          tap_action:
-            action: call-service
-            service: script.volume_down
-        - type: custom:button-card
-          template: small-button
-          icon: mdi:volume-plus
-          tap_action:
-            action: call-service
-            service: script.volume_up
-        - type: custom:button-card
-          color_type: blank-card
+      cards: !include_dir_list ../08-remote-03-volume
     - type: custom:gap-card
       height: 10

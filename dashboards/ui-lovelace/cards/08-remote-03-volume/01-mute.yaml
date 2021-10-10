@@ -1,0 +1,8 @@
+type: custom:button-card
+template:
+  - small-button
+  - red-icon
+icon: mdi:volume-mute
+tap_action:
+  action: call-service
+  service: script.mute

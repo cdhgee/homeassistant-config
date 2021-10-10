@@ -1,0 +1,6 @@
+type: custom:button-card
+template: small-button
+icon: mdi:volume-minus
+tap_action:
+  action: call-service
+  service: script.volume_down
