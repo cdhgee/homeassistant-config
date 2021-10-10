@@ -1,14 +1,11 @@
-type: entities
-title: Lights
-entities:
-  - type: grid
-    cards:
-      - type: custom:button-card
-        tap_action:
-          navigation_path: /lovelace/lights
-        entity: sensor.number_of_lights_on
-      - type: custom:button-card
-        tap_action:
-          navigation_path: /lovelace/ambient-lights
-        entity: sensor.number_of_ambient_lights_on
-    columns: 2
+type: grid
+cards:
+  - type: custom:button-card
+    tap_action:
+      navigation_path: /lovelace/lights
+    entity: sensor.number_of_lights_on
+  - type: custom:button-card
+    tap_action:
+      navigation_path: /lovelace/ambient-lights
+    entity: sensor.number_of_ambient_lights_on
+columns: 2
