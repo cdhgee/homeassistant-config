@@ -1,0 +1,6 @@
+type: custom:button-card
+name: Main
+template: dashboard-lights-tile
+tap_action:
+  navigation_path: /lovelace/lights
+entity: sensor.number_of_lights_on

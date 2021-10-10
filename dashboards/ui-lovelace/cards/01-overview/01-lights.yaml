@@ -2,16 +2,4 @@ type: grid
 title: Lights
 columns: 2
 square: false
-cards:
-  - type: custom:button-card
-    template: dashboard-lights-tile
-    tap_action:
-      navigation_path: /lovelace/lights
-    entity: sensor.number_of_lights_on
-    name: Main
-  - type: custom:button-card
-    template: dashboard-lights-tile
-    tap_action:
-      navigation_path: /lovelace/ambient-lights
-    entity: sensor.number_of_ambient_lights_on
-    name: Ambient
+cards: !include_dir_list ../01-overview-lights
