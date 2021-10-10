@@ -1,0 +1,5 @@
+type: grid
+title: Home Assistant
+columns: 2
+square: false
+cards: !include_dir_list ../01-overview-02-home-assistant

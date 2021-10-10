@@ -1,0 +1,6 @@
+type: custom:button-card
+name: Core
+template: dashboard-tile
+tap_action:
+  navigation_path: /hassio/dashboard
+entity: sensor.updater
