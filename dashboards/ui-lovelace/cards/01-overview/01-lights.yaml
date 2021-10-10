@@ -2,4 +2,4 @@ type: grid
 title: Lights
 columns: 2
 square: false
-cards: !include_dir_list ../01-overview-lights
+cards: !include_dir_list ../01-overview-01-lights
