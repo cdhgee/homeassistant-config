@@ -1,6 +1,6 @@
 unique_id: cf05ec3d-9171-49cf-bf40-7064e9a770fe
 
-binary_sensor:
+sensor:
   - name: Number of lights on
     unique_id: a8a09b3c-d7cc-4c7d-9d20-cf026a9a2d9a
     state: >
