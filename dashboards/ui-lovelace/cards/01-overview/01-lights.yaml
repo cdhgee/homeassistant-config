@@ -1,17 +1,14 @@
 type: entities
 title: Lights
 entities:
-  - type: custom:fold-entity-row
-    head:
-      entity: light.all_main_lights
-      name: Lights
-      secondary_info: last-changed
-    group_config:
-      secondary_info: last-changed
-  - type: custom:fold-entity-row
-    head:
-      entity: light.all_ambient_lights
-      name: Ambient lights
-      secondary_info: last-changed
-    group_config:
-      secondary_info: last-changed
+  - type: grid
+    cards:
+      - type: custom:button-card
+        tap_action:
+          navigation_path: /lovelace/lights
+        entity: sensor.number_of_lights_on
+      - type: custom:button-card
+        tap_action:
+          navigation_path: /lovelace/ambient-lights
+        entity: sensor.number_of_ambient_lights_on
+    columns: 2
