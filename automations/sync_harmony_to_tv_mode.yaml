@@ -1,0 +1,16 @@
+alias: Sync Harmony to TV mode
+id: 9ba75daf-ebf9-4f20-89e3-0b1dacbe2294
+description: Sync family room Harmony hub to TV mode
+
+mode: single
+
+trigger:
+  - platform: state
+    entity_id:
+      - switch.family_room_hub_music
+      - switch.family_room_hub_watch_a_movie
+      - switch.family_room_hub_chromecast
+      - remote.family_room_hub
+
+action:
+  - choose: !include_dir_list ../family_room_harmony_hub

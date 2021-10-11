@@ -1,0 +1,10 @@
+conditions:
+  - condition: state
+    entity_id: remote.family_room_hub
+    state: "off"
+sequence:
+  - service: input_select.select_option
+    data:
+      option: "Off"
+    target:
+      entity_id: input_select.family_room_tv_mode

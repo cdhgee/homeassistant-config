@@ -1,0 +1,10 @@
+conditions:
+  - condition: state
+    entity_id: switch.family_room_hub_watch_a_movie
+    state: "on"
+sequence:
+  - service: input_select.select_option
+    data:
+      option: Xbox
+    target:
+      entity_id: input_select.family_room_tv_mode
