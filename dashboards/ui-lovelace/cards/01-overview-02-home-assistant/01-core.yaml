@@ -1,6 +1,6 @@
 type: custom:button-card
 name: Core
-template: wide-dashboard-tile
+template: dashboard-tile
 tap_action:
   navigation_path: /hassio/dashboard
 entity: binary_sensor.updater

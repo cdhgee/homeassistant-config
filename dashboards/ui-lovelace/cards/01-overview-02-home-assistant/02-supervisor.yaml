@@ -1,6 +1,6 @@
 type: custom:button-card
-name: HACS
-template: wide-dashboard-tile
+name: Supervisor
+template: dashboard-tile
 tap_action:
   navigation_path: /hassio/dashboard
 entity: sensor.supervisor_updates
