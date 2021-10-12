@@ -8,4 +8,4 @@ trigger:
   entity_id: input_select.family_room_tv_mode
 
 action:
-  - choose: !include_dir_list ../family_room_tv
+  - choose: !include_dir_list ../automation-choose/family_room_tv

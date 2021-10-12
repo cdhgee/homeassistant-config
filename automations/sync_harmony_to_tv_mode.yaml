@@ -13,4 +13,4 @@ trigger:
       - remote.family_room_hub
 
 action:
-  - choose: !include_dir_list ../family_room_harmony_hub
+  - choose: !include_dir_list ../automation-choose/family_room_harmony_hub
