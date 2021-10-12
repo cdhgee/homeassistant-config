@@ -1,5 +1,5 @@
 type: grid
 title: Lights
-columns: 1
+columns: 2
 square: false
 cards: !include_dir_list ../01-overview-01-lights
