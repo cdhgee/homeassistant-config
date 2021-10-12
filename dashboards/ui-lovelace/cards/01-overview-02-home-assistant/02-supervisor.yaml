@@ -6,3 +6,4 @@ tap_action:
 entity: sensor.supervisor_updates
 show_label: false
 show_state: true
+aspect_ratio: 4/1
