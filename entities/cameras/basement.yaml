@@ -4,6 +4,3 @@ platform: generic
 
 stream_source: !secret security_camera_basement_stream_source
 still_image_url: notused
-authentication: basic
-username: !secret security_camera_basement_username
-password: !secret security_camera_basement_password
