@@ -1,0 +1,8 @@
+type: custom:button-card
+name: HACS
+template: dashboard-tile
+tap_action:
+  navigation_path: /hassio/dashboard
+entity: sensor.supervisor_updates
+show_label: false
+show_state: true
