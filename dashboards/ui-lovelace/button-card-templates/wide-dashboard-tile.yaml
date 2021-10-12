@@ -1,0 +1,3 @@
+wide-dashboard-tile:
+  template: dashboard-tile
+  aspect_ratio: 4/1
