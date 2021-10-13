@@ -5,12 +5,12 @@ sensor:
     unique_id: f19b1521-a2be-47a4-a8a0-78e6e9929d9e
     state: >
       {{
-        (states('sensor.pi0_dns_queries_today') | int) +
+        (states('sensor.pihole_a_dns_queries_today') | int) +
         (states('sensor.pi1_dns_queries_today') | int)
       }}
     availability: >
       {{
-        (states('sensor.pi0_dns_queries_today') | int) > 0 and
+        (states('sensor.pihole_a_dns_queries_today') | int) > 0 and
         (states('sensor.pi1_dns_queries_today') | int) > 0
       }}
     icon: mdi:comment-question-outline
