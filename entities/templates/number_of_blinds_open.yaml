@@ -1,0 +1,19 @@
+unique_id: ef67fc50-e52e-4c27-8727-7b1d75413c71
+
+sensor:
+  - name: Number of blinds open
+    unique_id: f3b9d073-c2fe-46bc-a8ed-6a0421f6a715
+    state: >
+      {%
+        set blinds = expand(state_attr('cover.all_blinds', 'entity_id')) |
+        map(attribute='entity_id') |
+        list
+      %}
+      {{
+        states.cover |
+        selectattr('state', 'eq', 'open') |
+        selectattr('entity_id', 'in', blinds) |
+        list |
+        count
+      }}
+    icon: mdi:window-open
