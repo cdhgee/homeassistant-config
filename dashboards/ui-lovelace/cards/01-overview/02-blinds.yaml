@@ -5,7 +5,7 @@ square: false
 cards:
   - type: custom:button-card
     name: Blinds
-    template: dashboard-lights-tile
+    template: dashboard-blinds-tile
     tap_action:
       navigation_path: /lovelace/lights
     entity: sensor.number_of_blinds_open
