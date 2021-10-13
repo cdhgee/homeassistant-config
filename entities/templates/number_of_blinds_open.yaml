@@ -9,11 +9,16 @@ sensor:
         map(attribute='entity_id') |
         list
       %}
-      {{
-        states.cover |
+      {% set count = states.cover |
         selectattr('state', 'eq', 'open') |
         selectattr('entity_id', 'in', blinds) |
         list |
         count
-      }}
-    icon: mdi:window-open
+      %}
+      {{ count }}
+    icon: >
+      {% if count > 0 %}
+      mdi:window-open
+      {% else %}
+      mdi:window-closed
+      {% endif %}
