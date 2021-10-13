@@ -17,6 +17,17 @@ sensor:
       %}
       {{ count }}
     icon: >
+      {%
+        set blinds = expand(state_attr('cover.all_blinds', 'entity_id')) |
+        map(attribute='entity_id') |
+        list
+      %}
+      {% set count = states.cover |
+        selectattr('state', 'eq', 'open') |
+        selectattr('entity_id', 'in', blinds) |
+        list |
+        count
+      %}
       {% if count > 0 %}
       mdi:window-open
       {% else %}
