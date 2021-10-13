@@ -14,11 +14,11 @@ entities:
         secondary_info: last-changed
       - type: custom:fold-entity-row
         head:
-          entity: switch.pi0
+          entity: switch.pihole_a
         entities:
-          - entity: sensor.pi0_ads_blocked_today
+          - entity: sensor.pihole_a_ads_blocked_today
             name: Ads blocked today
-          - entity: sensor.pi0_ads_percentage_blocked_today
+          - entity: sensor.pihole_a_ads_percentage_blocked_today
             name: Ads % blocked today
       - type: custom:fold-entity-row
         head:
