@@ -22,9 +22,9 @@ entities:
             name: Ads % blocked today
       - type: custom:fold-entity-row
         head:
-          entity: switch.pi1
+          entity: switch.pihole_b
         entities:
-          - entity: sensor.pi1_ads_blocked_today
+          - entity: sensor.pihole_b_ads_blocked_today
             name: Ads blocked today
-          - entity: sensor.pi1_ads_percentage_blocked_today
+          - entity: sensor.pihole_b_ads_percentage_blocked_today
             name: Ads % blocked today
