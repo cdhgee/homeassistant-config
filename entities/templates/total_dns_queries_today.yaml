@@ -6,11 +6,11 @@ sensor:
     state: >
       {{
         (states('sensor.pihole_a_dns_queries_today') | int) +
-        (states('sensor.pi1_dns_queries_today') | int)
+        (states('sensor.pihole_b_dns_queries_today') | int)
       }}
     availability: >
       {{
         (states('sensor.pihole_a_dns_queries_today') | int) > 0 and
-        (states('sensor.pi1_dns_queries_today') | int) > 0
+        (states('sensor.pihole_b_dns_queries_today') | int) > 0
       }}
     icon: mdi:comment-question-outline

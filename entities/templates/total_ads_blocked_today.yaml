@@ -6,12 +6,12 @@ sensor:
     state: >-
       {{
         (states('sensor.pihole_a_ads_blocked_today') | int) +
-        (states('sensor.pi1_ads_blocked_today') | int)
+        (states('sensor.pihole_b_ads_blocked_today') | int)
       }}
     availability: >-
       {{
         (states('sensor.pihole_a_ads_blocked_today') | int) > 0 and
-        (states('sensor.pi1_ads_blocked_today') | int) > 0
+        (states('sensor.pihole_b_ads_blocked_today') | int) > 0
       }}
     icon: mdi:close-octagon-outline
     unit_of_measurement: ads
