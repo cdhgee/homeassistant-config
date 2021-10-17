@@ -1,5 +1,2 @@
-type: grid
-title: Lights
-columns: 2
-square: false
+type: vertical-stack
 cards: !include_dir_list ../01-overview-01-lights

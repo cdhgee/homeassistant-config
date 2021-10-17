@@ -1,5 +1,3 @@
-type: grid
+type: vertical-stack
 title: Home Assistant
-columns: 2
-square: false
-cards: !include_dir_list ../01-overview-02-home-assistant
+cards: !include_dir_list ../01-overview-03-home-assistant

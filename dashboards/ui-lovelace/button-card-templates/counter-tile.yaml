@@ -1,0 +1,12 @@
+counter-tile:
+  tap_action:
+    action: navigate
+  state:
+    - value: 0
+      styles:
+        icon:
+          - color: "var(--paper-item-icon-color, #44739e)"
+    - operator: default
+      styles:
+        icon:
+          - color: "var(--paper-item-icon-active-color, #fdd835)"

@@ -1,13 +1,6 @@
 dashboard-lights-tile:
-  template: dashboard-tile
+  template:
+    - dashboard-tile
+    - counter-tile
   label: >
     [[[ return (entity.state == 0) ? "Off" : entity.state + " on";]]]
-  state:
-    - value: 0
-      styles:
-        icon:
-          - color: "var(--paper-item-icon-color, #44739e)"
-    - operator: default
-      styles:
-        icon:
-          - color: "var(--paper-item-icon-active-color, #fdd835)"

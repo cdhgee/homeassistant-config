@@ -1,11 +1,6 @@
-type: grid
-title: Blinds
-columns: 2
-square: false
-cards:
-  - type: custom:button-card
-    name: Blinds
-    template: dashboard-blinds-tile
-    tap_action:
-      navigation_path: /lovelace/lights
-    entity: sensor.number_of_blinds_open
+type: custom:button-card
+name: Blinds
+template: dashboard-blinds-tile
+tap_action:
+  navigation_path: /lovelace/blinds
+entity: sensor.number_of_blinds_open

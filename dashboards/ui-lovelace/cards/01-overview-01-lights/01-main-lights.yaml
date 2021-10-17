@@ -1,5 +1,5 @@
 type: custom:button-card
-name: Main
+name: Main lights
 template: dashboard-lights-tile
 tap_action:
   navigation_path: /lovelace/lights
