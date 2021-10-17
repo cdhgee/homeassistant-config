@@ -1,8 +1,8 @@
 type: custom:button-card
-name: Core
-template: dashboard-tile
+name: HA core
+template:
+  - dashboard-tile
+  - update-counter-tile
 tap_action:
   navigation_path: /hassio/dashboard
 entity: binary_sensor.updater
-show_label: false
-show_state: true

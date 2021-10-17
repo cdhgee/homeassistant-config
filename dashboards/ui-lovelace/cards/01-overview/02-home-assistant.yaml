@@ -1,3 +1,2 @@
 type: vertical-stack
-title: Home Assistant
 cards: !include_dir_list ../01-overview-03-home-assistant

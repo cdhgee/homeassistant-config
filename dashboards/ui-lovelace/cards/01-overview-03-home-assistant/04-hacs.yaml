@@ -1,8 +1,8 @@
 type: custom:button-card
 name: HACS
-template: dashboard-tile
+template:
+  - dashboard-tile
+  - update-counter-tile
 tap_action:
   navigation_path: /hacs/entry
 entity: sensor.hacs
-show_label: false
-show_state: true

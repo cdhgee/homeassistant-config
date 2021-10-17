@@ -1,8 +1,8 @@
 type: custom:button-card
-name: Supervisor
-template: dashboard-tile
+name: HA supervisor
+template:
+  - dashboard-tile
+  - update-counter-tile
 tap_action:
   navigation_path: /hassio/dashboard
 entity: sensor.supervisor_updates
-show_label: false
-show_state: true
