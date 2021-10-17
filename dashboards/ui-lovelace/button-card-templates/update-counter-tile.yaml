@@ -1,6 +1,6 @@
 update-counter-tile:
   label: >
     [[[
-      console.write(entity);
-      return (entity.state == 0 || entity.state == false || entity.state == "off") ? "Up-to-date" : "Update available";
+      return entity.state;
+      //return (entity.state == 0 || entity.state == false || entity.state == "off") ? "Up-to-date" : "Update available";
     ]]]
