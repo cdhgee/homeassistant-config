@@ -1,0 +1,3 @@
+update-counter-tile:
+  label: >
+    [[[ return (entity.state == 0) ? "Up-to-date" : "Update available"; ]]]

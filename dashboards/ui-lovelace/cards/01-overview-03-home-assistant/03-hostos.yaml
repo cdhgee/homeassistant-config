@@ -1,0 +1,8 @@
+type: custom:button-card
+name: HA host OS
+template:
+  - dashboard-tile
+  - update-counter-tile
+tap_action:
+  navigation_path: /hassio/dashboard
+entity: sensor.host_os_updates
