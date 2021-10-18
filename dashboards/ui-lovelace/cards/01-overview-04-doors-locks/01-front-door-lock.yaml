@@ -1,0 +1,4 @@
+type: custom:button-card
+template:
+  - dashboard-tile
+entity: lock.front_door_lock
