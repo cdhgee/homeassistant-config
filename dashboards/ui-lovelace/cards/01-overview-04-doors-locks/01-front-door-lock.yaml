@@ -1,4 +1,7 @@
 type: custom:button-card
 template:
   - dashboard-tile
+  - state-tile
 entity: lock.front_door_lock
+label: >
+  [[[ return entity.last_changed; ]]]
