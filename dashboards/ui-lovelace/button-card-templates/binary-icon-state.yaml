@@ -1,10 +1,6 @@
 binary-icon-state:
   state:
-    - state: "on"
-      styles:
-        icon:
-          - color: var(--paper-item-icon-active-color)
-    - state: true
+    - value: "on"
       styles:
         icon:
           - color: var(--paper-item-icon-active-color)
