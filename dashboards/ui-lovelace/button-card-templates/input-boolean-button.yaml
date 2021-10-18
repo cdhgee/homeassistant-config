@@ -1,8 +1,8 @@
 input-boolean-button:
   template: binary-icon-state
   tap_action:
-  action: call-service
-  service: input_boolean.toggle
-  service_data:
-    entity_id: >
-      [[[ return entity.entity_id; ]]]
+    action: call-service
+    service: input_boolean.toggle
+    service_data:
+      entity_id: >
+        [[[ return entity.entity_id; ]]]
