@@ -2,7 +2,5 @@ type: custom:button-card
 template:
   - dashboard-tile
   - state-tile
-  - binary-icon-state
+  - input-boolean-button
 entity: input_boolean.guest_mode
-tap_action:
-  action: input_boolean.toggle
