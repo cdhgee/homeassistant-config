@@ -18,3 +18,10 @@ label: >
       entity.attributes.hvac_action;
     }
   ]]]
+styles:
+  icon:
+    - color: >
+        [[[
+          if(entity.attributes.hvac_action != "idle") return "var(--paper-item-icon-active-color)";
+          else return "var(--paper-item-color)";
+        ]]]
