@@ -1,0 +1,10 @@
+type: custom:button-card
+template:
+  - dashboard-tile
+  - state-tile
+entity: cover.garage_door
+tap_action:
+  action: call-service
+  service: cover.toggle
+  service-data:
+    entity_id: "[[[ return entity.entity_id; ]]]"
