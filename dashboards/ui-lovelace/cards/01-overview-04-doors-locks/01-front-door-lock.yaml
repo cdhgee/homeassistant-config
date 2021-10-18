@@ -3,5 +3,8 @@ template:
   - dashboard-tile
   - state-tile
 entity: lock.front_door_lock
-label: >
-  [[[ return entity.last_changed; ]]]
+action: call-service
+service: >
+  [[[ return (entity.state == "locked") ? "lock.unlock" : "lock.lock"; ]]]
+service_data:
+  target: lock.front_door_lock
