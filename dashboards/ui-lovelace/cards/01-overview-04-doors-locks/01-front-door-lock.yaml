@@ -4,7 +4,6 @@ template:
   - state-tile
 entity: lock.front_door_lock
 action: call-service
-service: >
-  [[[ return (entity.state == "locked") ? "lock.unlock" : "lock.lock"; ]]]
+service: switch.toggle
 service_data:
-  target: lock.front_door_lock
+  target: switch.front_door_lock
