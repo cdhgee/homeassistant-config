@@ -1,2 +1,2 @@
 type: vertical-stack
-entities: !include_dir_list ../01-overview-04-doors-locks
+cards: !include_dir_list ../01-overview-04-doors-locks
