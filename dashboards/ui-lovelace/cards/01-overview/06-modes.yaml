@@ -1,11 +1,2 @@
-type: custom:auto-entities
-card:
-  type: entities
-  show_header_toggle: false
-  title: Modes
-filter:
-  include:
-    - entity_id: input_boolean.*mode
-  exclude: []
-sort:
-  method: friendly_name
+type: vertical-stack
+cards: !include_dir_list ../01-overview-06-modes

@@ -1,0 +1,8 @@
+type: custom:button-card
+template:
+  - dashboard-tile
+  - state-tile
+  - binary-icon-state
+entity: input_boolean.babysitter_mode
+tap_action:
+  action: input_boolean.toggle
