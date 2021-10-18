@@ -3,7 +3,9 @@ template:
   - dashboard-tile
   - state-tile
 entity: lock.front_door_lock
-action: call-service
-service: switch.toggle
-service_data:
-  target: switch.front_door_lock
+tap_action:
+  action: call-service
+  service: >
+    [[[ return (entity.state == "locked") ? "lock.unlock" : "lock.lock"; ]]]
+  service_data:
+    entity_id: "[[[ return entity.entity_id; ]]]"
