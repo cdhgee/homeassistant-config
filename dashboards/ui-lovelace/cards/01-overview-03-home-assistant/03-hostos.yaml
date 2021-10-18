@@ -5,4 +5,4 @@ template:
   - update-counter-tile
 tap_action:
   navigation_path: /hassio/dashboard
-entity: sensor.host_os_updates
+entity: binary_sensor.host_os_updates

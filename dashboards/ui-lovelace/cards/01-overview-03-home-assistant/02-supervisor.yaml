@@ -5,4 +5,4 @@ template:
   - update-counter-tile
 tap_action:
   navigation_path: /hassio/dashboard
-entity: sensor.supervisor_updates
+entity: binary_sensor.supervisor_updates
