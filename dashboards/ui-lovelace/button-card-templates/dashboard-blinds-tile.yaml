@@ -3,4 +3,4 @@ dashboard-blinds-tile:
     - dashboard-tile
     - counter-tile
   label: >
-    [[[ return (entity.state == 0) ? "All closed" : entity.state + " open";]]]
+    [[[ return (entity.state == 0) ? "All closed" : entity.state + " open"; ]]]
