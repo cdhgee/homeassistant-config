@@ -3,6 +3,7 @@ name: HA supervisor
 template:
   - dashboard-tile
   - update-counter-tile
+  - binary-icon-state
 tap_action:
   navigation_path: /hassio/dashboard
 entity: binary_sensor.supervisor_updates
