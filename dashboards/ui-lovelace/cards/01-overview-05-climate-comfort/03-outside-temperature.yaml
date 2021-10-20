@@ -1,0 +1,8 @@
+type: custom:button-card
+template:
+  - dashboard-tile
+  - state-tile
+name: Outside temperature
+entity: sensor.home_realfeel_temperature
+tap_action:
+  action: none
