@@ -2,29 +2,8 @@ type: entities
 title: Pi-Hole Stats
 show_header_toggle: false
 entities:
-  - type: custom:fold-entity-row
-    head:
-      entity: switch.pihole
-    open: true
-    entities:
-      - entity: sensor.total_ads_blocked_today
-        secondary_info: last-changed
-      - entity: sensor.total_ads_percentage_blocked_today
-        name: Total ads % blocked today
-        secondary_info: last-changed
-      - type: custom:fold-entity-row
-        head:
-          entity: switch.pihole_a
-        entities:
-          - entity: sensor.pihole_a_ads_blocked_today
-            name: Ads blocked today
-          - entity: sensor.pihole_a_ads_percentage_blocked_today
-            name: Ads % blocked today
-      - type: custom:fold-entity-row
-        head:
-          entity: switch.pihole_b
-        entities:
-          - entity: sensor.pihole_b_ads_blocked_today
-            name: Ads blocked today
-          - entity: sensor.pihole_b_ads_percentage_blocked_today
-            name: Ads % blocked today
+  - entity: switch.pihole_a
+  - entity: sensor.pihole_a_ads_blocked_today
+    name: Ads blocked today
+  - entity: sensor.pihole_a_ads_percentage_blocked_today
+    name: Ads % blocked today
