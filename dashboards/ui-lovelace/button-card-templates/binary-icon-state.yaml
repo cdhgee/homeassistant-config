@@ -1,6 +1,6 @@
 binary-icon-state:
   state:
-    - value: "on"
+    - value: on|open|unlocked
       styles:
         icon:
           - color: var(--paper-item-icon-active-color)
