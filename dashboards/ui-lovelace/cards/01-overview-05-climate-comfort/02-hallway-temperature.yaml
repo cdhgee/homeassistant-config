@@ -1,0 +1,7 @@
+type: custom:button-card
+template:
+  - dashboard-tile
+name: Hallway temperature
+entity: sensor.hallway_temperature
+tap_action:
+  action: none

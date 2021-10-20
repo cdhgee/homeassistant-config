@@ -1,0 +1,9 @@
+type: custom:button-card
+template:
+  - dashboard-tile
+entity: binary_sensor.living_room_front_door
+name: Front door
+label: >
+  [[[ return (entity.state == "on") ? "Open" : "Closed"; ]]]
+tap_action:
+  action: none
