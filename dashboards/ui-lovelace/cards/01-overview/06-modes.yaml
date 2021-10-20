@@ -1,2 +1,0 @@
-type: vertical-stack
-cards: !include_dir_list ../01-overview-06-modes
