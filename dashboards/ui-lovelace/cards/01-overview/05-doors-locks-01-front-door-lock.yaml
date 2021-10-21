@@ -3,10 +3,8 @@ template:
   - dashboard-tile
   - state-tile
   - binary-icon-state
+  - tap-service
 entity: lock.front_door_lock
 tap_action:
-  action: call-service
   service: >
     [[[ return (entity.state == "locked") ? "lock.unlock" : "lock.lock"; ]]]
-  service_data:
-    entity_id: "[[[ return entity.entity_id; ]]]"

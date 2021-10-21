@@ -1,9 +1,5 @@
 dashboard-scene-tile:
   template:
     - dashboard-tile
-  tap_action:
-    action: call-service
-    service_data:
-      entity_id: >
-        [[[ return entity.entity_id; ]]]
+    - tap-service
   icon: mdi:palette
