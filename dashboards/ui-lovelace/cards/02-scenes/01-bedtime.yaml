@@ -1,5 +1,4 @@
 type: custom:button-card
 template:
   - dashboard-scene-tile
-name: Bedtime
 entity: scene.bedtime

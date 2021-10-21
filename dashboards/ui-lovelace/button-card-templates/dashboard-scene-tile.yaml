@@ -6,3 +6,4 @@ dashboard-scene-tile:
     service_data:
       entity_id: >
         [[[ return entity.entity_id; ]]]
+  icon: mdi:palette
