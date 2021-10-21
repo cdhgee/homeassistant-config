@@ -3,3 +3,5 @@ dashboard-scene-tile:
     - dashboard-tile
     - tap-service
   icon: mdi:palette
+  tap_action:
+    service: scene.turn_on
