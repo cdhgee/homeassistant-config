@@ -1,0 +1,4 @@
+type: custom:button-card
+template:
+  - dashboard-scene-tile
+entity: scene.lights_out
