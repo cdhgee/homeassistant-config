@@ -1,6 +1,6 @@
 tap-service:
   tap_action:
-  action: call-service
-  service_data:
-    entity_id: >
-      [[[ return entity.entity_id; ]]]
+    action: call-service
+    service_data:
+      entity_id: >
+        [[[ return entity.entity_id; ]]]
