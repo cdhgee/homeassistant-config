@@ -1,0 +1,8 @@
+type: custom:button-card
+template:
+  - dashboard-tile
+name: Scenes
+icon: mdi:palette
+tap_action:
+  action: navigate
+  navigation_path: /lovelace/scenes
