@@ -1,5 +1,5 @@
-icon: mdi:palette
-title: Scenes
-path: scenes
+icon: mdi:window-open
+title: Blinds
+path: blinds
 badges: []
 cards: !include_dir_list ../cards/blinds
