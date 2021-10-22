@@ -1,0 +1,4 @@
+type: custom:button-card
+template:
+  - dashboard-blinds-tile
+entity: cover.family_room_deck_door_blinds
