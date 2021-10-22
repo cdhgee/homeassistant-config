@@ -1,9 +1,6 @@
 type: custom:button-card
 template:
   - dashboard-tile
+  - door-sensor
 entity: binary_sensor.front_door_open
 name: Front door
-label: >
-  [[[ return (entity.state == "on") ? "Open" : "Closed"; ]]]
-tap_action:
-  action: none
