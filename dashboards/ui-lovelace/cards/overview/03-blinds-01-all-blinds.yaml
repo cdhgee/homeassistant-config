@@ -1,6 +1,6 @@
 type: custom:button-card
 name: Blinds
-template: dashboard-blinds-tile
+template: dashboard-blinds-counter-tile
 tap_action:
   navigation_path: /lovelace/blinds
 entity: sensor.number_of_blinds_open
