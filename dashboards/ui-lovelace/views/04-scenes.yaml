@@ -1,5 +1,8 @@
 icon: mdi:palette
 title: Scenes
 path: scenes
+type: custom:masonry-layout
+layout:
+  max_cols: 4
 badges: []
 cards: !include_dir_list ../cards/scenes
