@@ -1,6 +1,7 @@
 type: custom:button-card
 template:
   - dashboard-tile
+  - binary-icon-state
   - state-tile
   - tap-service
 entity: cover.garage_door
