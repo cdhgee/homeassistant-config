@@ -1,0 +1,5 @@
+icon: mdi:palette
+title: Scenes
+path: scenes
+badges: []
+cards: !include_dir_list ../cards/scenes

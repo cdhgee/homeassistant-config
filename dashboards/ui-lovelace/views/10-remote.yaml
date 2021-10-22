@@ -4,4 +4,4 @@ path: remote
 badges: []
 cards:
   - type: vertical-stack
-    cards: !include_dir_list ../cards/08-remote
+    cards: !include_dir_list ../cards/remote

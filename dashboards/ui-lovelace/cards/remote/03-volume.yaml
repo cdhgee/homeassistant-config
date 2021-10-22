@@ -6,6 +6,6 @@ card:
   type: vertical-stack
   cards:
     - type: horizontal-stack
-      cards: !include_dir_list ../08-remote-03-volume
+      cards: !include_dir_list ../remote-volume
     - type: custom:gap-card
       height: 10

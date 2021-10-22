@@ -2,4 +2,4 @@ icon: mdi:server
 title: Servers
 path: servers
 badges: []
-cards: !include_dir_list ../cards/06-servers
+cards: !include_dir_list ../cards/servers

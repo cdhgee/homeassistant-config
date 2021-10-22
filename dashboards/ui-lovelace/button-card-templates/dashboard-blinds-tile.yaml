@@ -1,6 +1,8 @@
 dashboard-blinds-tile:
   template:
     - dashboard-tile
-    - counter-tile
-  label: >
-    [[[ return (entity.state == 0) ? "All closed" : entity.state + " open"; ]]]
+    - state-tile
+    - binary-icon-state
+    - tap-service
+  tap_action:
+    service: cover.toggle

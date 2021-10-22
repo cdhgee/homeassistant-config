@@ -2,4 +2,4 @@ icon: mdi:lightbulb
 title: Lights
 path: lights
 badges: []
-cards: !include_dir_list ../cards/02-lights
+cards: !include_dir_list ../cards/lights

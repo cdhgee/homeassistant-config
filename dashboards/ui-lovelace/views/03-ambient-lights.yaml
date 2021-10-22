@@ -2,4 +2,4 @@ icon: mdi:string-lights
 title: Lights
 path: ambient-lights
 badges: []
-cards: !include_dir_list ../cards/03-ambient-lights
+cards: !include_dir_list ../cards/ambient-lights

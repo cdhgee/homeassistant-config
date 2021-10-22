@@ -5,4 +5,4 @@ type: custom:masonry-layout
 layout:
   max_cols: 4
 badges: []
-cards: !include_dir_list ../cards/01-overview
+cards: !include_dir_list ../cards/overview

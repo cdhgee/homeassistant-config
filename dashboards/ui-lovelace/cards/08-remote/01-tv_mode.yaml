@@ -1,2 +1,0 @@
-type: horizontal-stack
-cards: !include_dir_list ../08-remote-01-tv_mode

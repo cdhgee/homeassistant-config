@@ -1,0 +1,4 @@
+type: custom:button-card
+template:
+  - dashboard-blinds-tile
+entity: cover.master_bedroom_blinds

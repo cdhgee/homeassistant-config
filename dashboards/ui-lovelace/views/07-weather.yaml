@@ -2,4 +2,4 @@ icon: mdi:weather-cloudy
 title: Weather
 path: weather
 badges: []
-cards: !include_dir_list ../cards/05-weather
+cards: !include_dir_list ../cards/weather
