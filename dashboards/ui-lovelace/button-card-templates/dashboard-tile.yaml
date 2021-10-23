@@ -1,6 +1,8 @@
 dashboard-tile:
   tap_action:
     action: navigate
+  hold_action:
+    action: more-info
   show_label: true
   layout: icon_name_state2nd
   aspect_ratio: 4/1

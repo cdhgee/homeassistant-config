@@ -6,4 +6,3 @@ dashboard-scene-tile:
   icon: mdi:palette
   tap_action:
     service: scene.turn_on
-  layout: icon_name
