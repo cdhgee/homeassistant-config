@@ -3,7 +3,7 @@ template:
   - dashboard-tile
 entity: climate.hallway
 tap_action:
-  action: none
+  navigation_path: /lovelace/comfort
 label: >
   [[[
     if(entity.state == "off") {
