@@ -8,4 +8,4 @@ trigger:
   - platform: state
     entity_id: sensor.number_of_people_home
 
-action: !include_dir_list ../presence_manager
+action: !include_dir_list ../presence-manager
