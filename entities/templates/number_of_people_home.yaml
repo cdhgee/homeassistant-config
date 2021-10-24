@@ -10,6 +10,6 @@ sensor:
         list |
         count
         +
-        1 if is_state('input_boolean.babysitter_mode', 'on') else 0
+        (1 if is_state('input_boolean.babysitter_mode', 'on') else 0)
       }}
     icon: mdi:account-group
