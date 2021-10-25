@@ -1,6 +1,6 @@
-alias: Someone leaving
+alias: Presence manager
 id: baf6695f-9c77-4920-8f9e-9cec6786398f
-description: Someone leaving
+description: Presence manager
 
 mode: restart
 
