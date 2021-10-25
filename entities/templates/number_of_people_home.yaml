@@ -9,7 +9,5 @@ sensor:
         selectattr('state', 'eq', 'home') |
         list |
         count
-        +
-        (1 if is_state('input_boolean.babysitter_mode', 'on') else 0)
       }}
     icon: mdi:account-group
