@@ -1,0 +1,17 @@
+# Lock up when leaving if someone is still home and outside mode is off
+conditions:
+  - condition: state
+    entity_id: sensor.people_home
+    state:
+      - someone
+  - condition: state
+    entity_id: input_boolean.outside_mode
+    state:
+      - "off"
+  - condition: template
+    value_template: >
+      {{
+        arriving == false
+      }}
+sequence:
+  - service: script.lock_up
