@@ -1,15 +1,17 @@
 # Lock up when leaving if no-one (or babysitter) home
 conditions:
-  - condition: state
-    entity_id: sensor.people_home
-    state:
-      - no-one
-      - babysitter
-  - condition: template
-    value_template: >
-      {{
-        arriving == false
-      }}
+  - condition: and
+    conditions:
+      - condition: state
+        entity_id: sensor.people_home
+        state:
+          - no-one
+          - babysitter
+      - condition: template
+        value_template: >
+          {{
+            departing == true
+          }}
 sequence:
   - service: script.lock_up
   - service: ecobee.resume_program

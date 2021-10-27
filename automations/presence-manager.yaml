@@ -15,4 +15,9 @@ action:
           (trigger.to_state.state | int) >
           (trigger.from_state.state | int)
         }}
+      departing: >
+        {{
+          (trigger.to_state.state | int) <
+          (trigger.from_state.state | int)
+        }}
   - choose: !include_dir_list ../automation-choose/presence-manager
