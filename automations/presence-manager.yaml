@@ -8,18 +8,22 @@ trigger:
   - platform: state
     entity_id: sensor.number_of_people_home
 
+condition:
+  - condition: template
+    value_template: >
+      {{
+        not(trigger.from_state.state == 'unavailable')
+      }}
+
 action:
   - variables:
       arriving: >
         {{
           (trigger.to_state.state | int) >
-          (trigger.from_state.state | int) and
-          not(is_state('trigger.from_state', 'unavailable'))
+          (trigger.from_state.state | int)
         }}
       departing: >
         {{
           (trigger.to_state.state | int) <
-          (trigger.from_state.state | int) and
-          not(is_state('trigger.from_state', 'unavailable'))
-        }}
+          (trigger.from_state.state | int)
   - choose: !include_dir_list ../automation-choose/presence-manager
