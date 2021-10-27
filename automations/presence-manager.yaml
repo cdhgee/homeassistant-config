@@ -13,11 +13,13 @@ action:
       arriving: >
         {{
           (trigger.to_state.state | int) >
-          (trigger.from_state.state | int)
+          (trigger.from_state.state | int) and
+          not(is_state('trigger.from_state', 'unavailable'))
         }}
       departing: >
         {{
           (trigger.to_state.state | int) <
-          (trigger.from_state.state | int)
+          (trigger.from_state.state | int) and
+          not(is_state('trigger.from_state', 'unavailable'))
         }}
   - choose: !include_dir_list ../automation-choose/presence-manager
