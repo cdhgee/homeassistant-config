@@ -3,7 +3,7 @@ name: HA host OS
 template:
   - dashboard-tile
   - update-counter-tile
-  - binary-icon-state
+  - binary-entity
 
 tap_action:
   navigation_path: /hassio/dashboard

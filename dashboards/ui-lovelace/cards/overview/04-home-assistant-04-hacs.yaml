@@ -3,7 +3,7 @@ name: HACS
 template:
   - dashboard-tile
   - update-counter-tile
-  - binary-icon-state
+  - binary-entity
 tap_action:
   navigation_path: /hacs/entry
 entity: sensor.hacs

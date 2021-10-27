@@ -1,7 +1,0 @@
-binary-icon-state:
-  state:
-    - value: on|open|unlocked
-      operator: regex
-      styles:
-        icon:
-          - color: var(--paper-item-icon-active-color)

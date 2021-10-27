@@ -2,7 +2,7 @@ dashboard-blinds-tile:
   template:
     - dashboard-tile
     - state-tile
-    - binary-icon-state
+    - binary-entity
   tap_action:
     service: toggle
   styles:

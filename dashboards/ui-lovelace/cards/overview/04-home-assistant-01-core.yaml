@@ -3,7 +3,7 @@ name: HA core
 template:
   - dashboard-tile
   - update-counter-tile
-  - binary-icon-state
+  - binary-entity
 tap_action:
   navigation_path: /hassio/dashboard
 entity: binary_sensor.updater

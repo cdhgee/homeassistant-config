@@ -2,7 +2,7 @@ type: custom:button-card
 template:
   - dashboard-tile
   - state-tile
-  - binary-icon-state
+  - binary-entity
   - tap-service
 entity: lock.front_door_lock
 tap_action:
