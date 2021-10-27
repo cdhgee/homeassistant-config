@@ -1,7 +1,0 @@
-name: Family room blinds
-
-platform: group
-
-entities:
-  - cover.family_room_deck_door_blinds
-  - cover.family_room_tv_blinds
