@@ -1,7 +1,7 @@
 type: custom:auto-entities
 card:
   type: vertical-stack
-  name: Outside
+  title: Outside
 card_param: cards
 filter:
   include:
