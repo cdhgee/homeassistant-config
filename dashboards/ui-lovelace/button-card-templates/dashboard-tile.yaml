@@ -17,14 +17,11 @@ dashboard-tile:
     name:
       - font-size: 1.1em
       - place-self: start
-      - padding-left: 20px
     state:
       - font-size: 1.5em
       - place-self: start
-      - padding-left: 20px
     label:
       - font-size: 1.5em
       - place-self: start
-      - padding-left: 20px
     icon:
       - color: var(--paper-item-icon-color)
