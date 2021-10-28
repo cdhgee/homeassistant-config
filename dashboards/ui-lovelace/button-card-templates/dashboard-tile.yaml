@@ -3,15 +3,26 @@ dashboard-tile:
     action: navigate
   hold_action:
     action: more-info
-  show_label: true
-  layout: icon_name_state2nd
+  show_label: false
+  show_state: true
+  #layout: icon_name_state2nd
   aspect_ratio: 4/1
   styles:
+    grid:
+      - grid-template-rows: 40% 1fr
+      - grid-template-columns: 1fr 80px
+      - grid-template-areas: "'n i' 's unused'"
     name:
-      - font-size: var(--paper-font-body1_-_font-size)
+      - font-size: 1.1em
+      - place-self: start
+      - padding-left: 20px
     state:
-      - font-size: var(--paper-font-body1_-_font-size)
+      - font-size: 1.5em
+      - place-self: start
+      - padding-left: 20px
     label:
-      - font-size: var(--paper-font-body1_-_font-size)
+      - font-size: 1.5em
+      - place-self: start
+      - padding-left: 20px
     icon:
       - color: var(--paper-item-icon-color)

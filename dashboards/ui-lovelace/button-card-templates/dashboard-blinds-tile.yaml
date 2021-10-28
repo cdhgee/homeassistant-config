@@ -5,20 +5,3 @@ dashboard-blinds-tile:
     - binary-entity
   tap_action:
     action: toggle
-  styles:
-    grid:
-      - grid-template-rows: 40% 1fr
-      - grid-template-columns: 1fr 80px
-      - grid-template-areas: "'n i' 's unused'"
-    name:
-      - font-size: 1.1em
-      - place-self: start
-      - padding-left: 20px
-    state:
-      - font-size: 1.5em
-      - place-self: start
-      - padding-left: 20px
-    label:
-      - font-size: 1.5em
-      - place-self: start
-      - padding-left: 20px
