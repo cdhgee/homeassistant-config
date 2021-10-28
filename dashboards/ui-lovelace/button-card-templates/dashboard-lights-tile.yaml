@@ -2,7 +2,6 @@ dashboard-lights-tile:
   template:
     - dashboard-tile
     - counter-tile
-  show_label: true
-  show_state: false
+    - label-tile
   label: >
     [[[ return (entity.state == 0) ? "Off" : entity.state + " on";]]]
