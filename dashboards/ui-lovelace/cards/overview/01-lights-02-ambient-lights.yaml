@@ -1,6 +1,6 @@
 type: custom:button-card
 name: Ambient lights
-template: dashboard-lights-tile
+template: dashboard-lights-counter-tile
 tap_action:
   navigation_path: /lovelace/ambient-lights
 entity: sensor.number_of_ambient_lights_on

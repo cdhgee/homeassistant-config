@@ -1,7 +1,6 @@
 dashboard-lights-tile:
   template:
     - dashboard-tile
-    - counter-tile
-    - label-tile
-  label: >
-    [[[ return (entity.state == 0) ? "Off" : entity.state + " on";]]]
+    - binary-entity
+  tap_action:
+    action: toggle

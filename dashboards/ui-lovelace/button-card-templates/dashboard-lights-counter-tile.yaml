@@ -1,0 +1,7 @@
+dashboard-lights-counter-tile:
+  template:
+    - dashboard-tile
+    - counter-tile
+    - label-tile
+  label: >
+    [[[ return (entity.state == 0) ? "Off" : entity.state + " on";]]]
