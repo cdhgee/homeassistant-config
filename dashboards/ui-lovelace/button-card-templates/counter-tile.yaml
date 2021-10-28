@@ -1,4 +1,6 @@
 counter-tile:
+  template:
+    - label-tile
   tap_action:
     action: navigate
   state:
