@@ -7,11 +7,13 @@ dashboard-tile:
   show_state: true
   #layout: icon_name_state2nd
   aspect_ratio: 4/1
+  # icon size is controlled through grid column width
+  size: 100%
   styles:
     grid:
       - grid-template-rows: 40% 1fr
-      - grid-template-columns: 1fr 80px
-      - grid-template-areas: "'n i' 's unused'"
+      - grid-template-columns: 20px 1fr 32px 20px
+      - grid-template-areas: "'lpadding n i rpadding' 'lpadding s s rpadding'"
     name:
       - font-size: 1.1em
       - place-self: start

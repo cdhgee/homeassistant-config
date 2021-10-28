@@ -3,4 +3,4 @@ label-tile:
   show_state: false
   styles:
     grid:
-      - grid-template-areas: "'n i' 'l unused'"
+      - grid-template-areas: "'lpadding n i rpadding' 'lpadding l l rpadding'"
