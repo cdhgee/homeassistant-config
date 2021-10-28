@@ -12,7 +12,7 @@ dashboard-tile:
   styles:
     grid:
       - grid-template-rows: 40% 1fr
-      - grid-template-columns: 20px 1fr min-content 20px
+      - grid-template-columns: 20px 1fr 32px 20px
       - grid-template-areas: "'lpadding n i rpadding' 'lpadding s s rpadding'"
     name:
       - font-size: 1.1em
@@ -25,4 +25,3 @@ dashboard-tile:
       - place-self: start
     icon:
       - color: var(--paper-item-icon-color)
-      - width: 32px
