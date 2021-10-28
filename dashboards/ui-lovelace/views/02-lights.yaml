@@ -3,12 +3,7 @@ title: Lights
 path: lights
 badges: []
 type: panel
-cards:
-  - type: custom:auto-entities
-    card:
-      type: custom:layout-card
-      layout_type: masonry
-      layout:
-        max_cols: 4
-    filter:
-      include: !include_dir_list ../cards/lights
+layout: custom:masonry-layout
+layout:
+  max_cols: 4
+cards: !include_dir_list ../cards/lights
