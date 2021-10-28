@@ -25,6 +25,7 @@ dashboard-tile:
       - place-self: start
     icon:
       - color: var(--paper-item-icon-color)
-      - margin-right: 0
+      - margin: 0
+      - width: 32px
     img_cell:
       - justify-content: end
