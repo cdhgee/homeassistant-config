@@ -22,6 +22,7 @@ dashboard-tile:
     label:
       - font-size: 1.5em
       - place-self: start
+      - grid-area: s
     icon:
       - color: var(--paper-item-icon-color)
       - margin-right: 0

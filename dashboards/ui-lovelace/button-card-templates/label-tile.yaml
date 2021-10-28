@@ -1,6 +1,3 @@
 label-tile:
   show_label: true
   show_state: false
-  styles:
-    grid:
-      - grid-template-areas: "'lpadding n i rpadding' 'lpadding l l rpadding'"
