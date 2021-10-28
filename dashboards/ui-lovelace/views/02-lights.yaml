@@ -2,8 +2,7 @@ icon: mdi:lightbulb
 title: Lights
 path: lights
 badges: []
-type: panel
-layout: custom:masonry-layout
+type: custom:masonry-layout
 layout:
   max_cols: 4
 cards: !include_dir_list ../cards/lights
