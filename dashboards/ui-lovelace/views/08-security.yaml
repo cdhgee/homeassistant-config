@@ -1,5 +1,23 @@
 icon: mdi:cctv
 title: Security
 path: security
-badges: []
-cards: !include_dir_list ../cards/security
+type: panel
+cards:
+  - type: custom:auto-entities
+    card:
+      type: custom:layout-card
+      layout_type: masonry
+      layout:
+        max_cols: 4
+    filter:
+      include:
+        - domain: camera
+          options:
+            type: picture-entity
+            entity: this.entity_id
+            camera_view: live
+            show_state: false
+      exclude:
+        - entity_id: camera.*radar*
+    sort:
+      method: name
