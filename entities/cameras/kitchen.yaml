@@ -3,7 +3,4 @@ name: Kitchen
 platform: generic
 
 stream_source: !secret security_camera_kitchen_stream_source
-authentication: digest
-username: !secret security_camera_kitchen_username
-password: !secret security_camera_kitchen_password
 still_image_url: notused
