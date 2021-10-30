@@ -4,7 +4,7 @@ path: lights
 badges: []
 type: panel
 cards:
-  -  type: custom:auto-entities
+  - type: custom:auto-entities
     card:
       type: custom:layout-card
       layout_type: masonry
@@ -21,4 +21,3 @@ cards:
               - dashboard-lights-tile
     sort:
       method: name
-
