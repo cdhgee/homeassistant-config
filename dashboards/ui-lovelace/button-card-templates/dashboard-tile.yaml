@@ -5,9 +5,9 @@ dashboard-tile:
     action: more-info
   show_label: false
   show_state: true
-  #layout: icon_name_state2nd
   aspect_ratio: 4/1
   size: 32px
+  color: auto
   styles:
     grid:
       - grid-template-rows: 40% 1fr
@@ -24,7 +24,6 @@ dashboard-tile:
       - place-self: start
       - grid-area: s
     icon:
-      - color: var(--paper-item-icon-color)
       - margin-right: 0
     img_cell:
       - justify-content: end
