@@ -1,0 +1,56 @@
+light.basement_office:
+  name: Office
+
+light.basement_piano:
+  name: Piano
+
+light.crawlspace:
+  name: Crawlspace
+
+light.family_room_fireplace:
+  name: Fireplace
+
+light.family_room_lamps:
+  name: Lamps
+
+light.family_room_overhead:
+  name: Overhead
+
+light.julia_s_bedroom_ceiling_light:
+  name: Julia's bedroom ceiling light
+
+light.kitchen_counter:
+  name: Counter
+
+light.kitchen_skylight:
+  name: Skylight
+
+light.living_room_entry:
+  name: Entry
+
+light.living_room_sun:
+  name: Sunlight
+
+light.master_bedroom_bedroom:
+  name: Bedroom
+
+light.master_bedroom_closet:
+  name: Closet
+
+light.master_bedroom_davids_bedside:
+  name: David's bedside
+
+light.master_bedroom_fairy_lights:
+  name: Fairy lights
+
+light.master_bedroom_monicas_bedside:
+  name: Monica's bedside
+
+light.upstairs_bathroom_mirror:
+  name: Mirror
+
+light.upstairs_bathroom_shower:
+  name: Shower
+
+light.upstairs_hallway_landing:
+  name: Landing
