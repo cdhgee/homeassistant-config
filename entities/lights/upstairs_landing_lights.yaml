@@ -1,0 +1,6 @@
+name: Upstairs landing lights
+
+platform: group
+
+entities:
+  - light.upstairs_hallway_landing
