@@ -5,7 +5,7 @@ conditions:
       - condition: state
         entity_id: sensor.people_home
         state:
-          - no-one
+          - babysitter
       - condition: template
         value_template: >
           {{
@@ -13,12 +13,6 @@ conditions:
           }}
 sequence:
   - service: script.lock_up
-  - service: ecobee.resume_program
-    data:
-      entity_id: climate.hallway
   - service: input_boolean.turn_off
     target:
       entity_id: input_boolean.outside_mode
-  - service: light.turn_off
-    target:
-      entity_id: light.all_main_lights
