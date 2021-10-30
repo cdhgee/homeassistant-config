@@ -16,3 +16,4 @@ entities:
   - light.upstairs_bathroom_mirror
   - light.upstairs_bathroom_shower
   - light.upstairs_hallway_landing
+  - light.outside_gazebo
