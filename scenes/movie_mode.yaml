@@ -1,0 +1,13 @@
+name: Movie mode
+
+entities:
+  light.family_room_lamps:
+    state: "on"
+    color_temp: 400
+    brightness_pct: 50
+  light.all_main_lights:
+    state: "off"
+  light.family_room_curio:
+    state: "off"
+  light.family_room_garden:
+    state: "off"
