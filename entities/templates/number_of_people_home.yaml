@@ -10,4 +10,8 @@ sensor:
         list |
         count
       }}
+    availability: >-
+      {{
+        not is_state("group.everyone", "unavailable")
+      }}
     icon: mdi:account-group
