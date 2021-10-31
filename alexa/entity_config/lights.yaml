@@ -19,9 +19,6 @@ light.family_room_overhead:
 light.julia_s_bedroom_ceiling_light:
   name: Julia's bedroom ceiling light
 
-light.kitchen_counter:
-  name: Counter
-
 light.kitchen_skylight:
   name: Skylight
 
