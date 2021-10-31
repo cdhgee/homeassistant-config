@@ -17,4 +17,8 @@ sensor:
       {% else %}
         everyone
       {% endif %}
+    availability: >-
+      {{
+        not is_state("group.everyone", "unavailable")
+      }}
     icon: mdi:account-group
