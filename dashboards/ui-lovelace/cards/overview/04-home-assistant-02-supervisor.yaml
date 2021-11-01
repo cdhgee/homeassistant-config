@@ -2,8 +2,8 @@ type: custom:button-card
 name: HA supervisor
 template:
   - dashboard-tile
-  - update-counter-tile
   - binary-entity
+  - update-tile
 tap_action:
   navigation_path: /hassio/dashboard
 entity: binary_sensor.supervisor_updates

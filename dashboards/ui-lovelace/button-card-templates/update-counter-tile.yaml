@@ -1,5 +1,0 @@
-update-counter-tile:
-  label: >
-    [[[
-      return (entity.state == 0 || entity.state == false || entity.state == "off") ? "Up-to-date" : "Update available";
-    ]]]
