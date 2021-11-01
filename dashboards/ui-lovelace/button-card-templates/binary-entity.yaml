@@ -7,13 +7,5 @@ binary-entity:
           - color: var(--paper-item-icon-active-color)
         label:
           - color: var(--paper-item-icon-active-color)
-  state:
-    - value: on|open|unlocked
-      operator: regex
-      styles:
-        state:
-          - color: var(--paper-item-icon-active-color)
-        label:
-          - color: var(--paper-item-icon-active-color)
   tap_action:
     action: toggle

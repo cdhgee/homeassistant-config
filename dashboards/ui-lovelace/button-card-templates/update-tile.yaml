@@ -7,3 +7,23 @@ update-tile:
     ]]]
   tap_action:
     action: navigate
+  state:
+    - value: 0
+      operator: ">"
+      styles:
+        state:
+          - color: var(--paper-item-icon-active-color)
+        label:
+          - color: var(--paper-item-icon-active-color)
+    - value: true
+      styles:
+        state:
+          - color: var(--paper-item-icon-active-color)
+        label:
+          - color: var(--paper-item-icon-active-color)
+    - value: "on"
+      styles:
+        state:
+          - color: var(--paper-item-icon-active-color)
+        label:
+          - color: var(--paper-item-icon-active-color)
