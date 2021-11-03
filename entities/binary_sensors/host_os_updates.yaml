@@ -4,4 +4,4 @@ platform: command_line
 
 command: >
   curl http://supervisor/os/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq '{"newest_version":.data.version_latest,"current_version":.data.version,"update_available":.data.update_available}'
-value_template: "{{ value_json.update_available }}"
+value_template: "{{ value_json.update_available | bool }}"
