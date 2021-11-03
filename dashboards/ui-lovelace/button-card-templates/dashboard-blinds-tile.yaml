@@ -1,7 +1,6 @@
 dashboard-blinds-tile:
   template:
     - dashboard-tile
-    - state-tile
     - binary-entity
   tap_action:
     action: toggle

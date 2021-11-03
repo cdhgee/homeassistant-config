@@ -1,6 +1,5 @@
 type: custom:button-card
 template:
   - dashboard-tile
-  - state-tile
-  - input-boolean-button
+  - binary-entity
 entity: input_boolean.nighttime_mode
