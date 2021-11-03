@@ -3,6 +3,7 @@ name: HA host OS
 template:
   - dashboard-tile
   - update-tile
+  - state-tile
 tap_action:
   navigation_path: /hassio/dashboard
 entity: binary_sensor.host_os_updates
