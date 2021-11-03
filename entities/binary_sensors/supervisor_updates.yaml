@@ -4,5 +4,7 @@ name: Supervisor updates
 platform: command_line
 
 command: >
-  curl http://supervisor/supervisor/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq '{"newest_version":.data.version_latest,"current_version":.data.version,"update_available":.data.update_available,"addons":[.data.addons[] | select(.update_available)]}'
-value_template: "{{ value_json.update_available }}"
+  curl http://supervisor/supervisor/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq '.data.update_available'
+device_class: update
+payload_on: "true"
+payload_off: "false"
