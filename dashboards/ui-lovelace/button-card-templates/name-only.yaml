@@ -1,2 +1,4 @@
 name-only:
-  layout: icon_name
+  styles:
+    grid:
+      - grid-template-areas: "'lpadding n i rpadding' 'lpadding unused unused rpadding'"
