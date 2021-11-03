@@ -1,4 +1,6 @@
 name-only:
+  show_label: false
+  show_state: false
   styles:
     grid:
       - grid-template-areas: "'lpadding n i rpadding' 'lpadding unused unused rpadding'"
