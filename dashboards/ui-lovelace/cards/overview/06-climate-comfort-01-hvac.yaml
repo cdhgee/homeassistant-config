@@ -1,6 +1,7 @@
 type: custom:button-card
 template:
   - dashboard-tile
+  - label-tile
 entity: climate.hallway
 tap_action:
   navigation_path: /lovelace/comfort
