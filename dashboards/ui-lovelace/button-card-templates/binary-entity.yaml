@@ -1,6 +1,6 @@
 binary-entity:
   state:
-    - value: on
+    - value: "on"
       styles:
         state:
           - color: var(--paper-item-icon-active-color)
