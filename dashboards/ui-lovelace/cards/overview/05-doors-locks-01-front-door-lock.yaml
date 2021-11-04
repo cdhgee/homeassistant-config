@@ -1,5 +1,5 @@
 type: custom:button-card
 template:
   - dashboard-tile
-  - binary-entity
+  - door-or-lock
 entity: lock.front_door_lock

@@ -1,8 +1,5 @@
 type: custom:button-card
 template:
   - dashboard-tile
-  - binary-entity
-  - tap-service
+  - door-or-lock
 entity: cover.garage_door
-tap_action:
-  service: cover.toggle

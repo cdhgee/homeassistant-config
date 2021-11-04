@@ -1,7 +1,6 @@
 binary-entity:
   state:
-    - value: on|open|unlocked
-      operator: regex
+    - value: on
       styles:
         state:
           - color: var(--paper-item-icon-active-color)

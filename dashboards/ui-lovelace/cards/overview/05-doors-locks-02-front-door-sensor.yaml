@@ -1,6 +1,7 @@
 type: custom:button-card
 template:
   - dashboard-tile
+  - door-or-lock
   - door-sensor
 entity: binary_sensor.front_door_open
 name: Front door
