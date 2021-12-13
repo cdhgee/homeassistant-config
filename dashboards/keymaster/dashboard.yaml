@@ -1,2 +1,2 @@
 title: Front door
-views: !include ../../packages/keymaster/km_frontdoor/km_frontdoor_lovelace
+views: !include ../../packages/keymaster/front_door/front_door_lovelace
