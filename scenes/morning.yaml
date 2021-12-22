@@ -53,3 +53,6 @@ entities:
       - 191
       - 0
       - 255
+  light.living_room_christmas_tree:
+    state: "on"
+    # No brightness because it's really a switch

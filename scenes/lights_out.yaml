@@ -33,6 +33,8 @@ entities:
     state: "off"
   light.living_room_china:
     state: "off"
+  light.living_room_christmas_tree:
+    state: "off"
   light.living_room_entry:
     state: "off"
   light.living_room_sun:
@@ -44,6 +46,10 @@ entities:
   light.master_bedroom_closet:
     state: "off"
   light.master_bedroom_davids_bedside:
+    state: "off"
+  light.master_bedroom_fairy_lights:
+    state: "off"
+  light.master_bedroom_monicas_bedside:
     state: "on"
     brightness: 84
     rgb_color:
@@ -51,10 +57,6 @@ entities:
       - 119
       - 74
     effect: "none"
-  light.master_bedroom_fairy_lights:
-    state: "off"
-  light.master_bedroom_monicas_bedside:
-    state: "off"
   switch.upstairs_bathroom_fan:
     state: "off"
   light.upstairs_bathroom_mirror:
