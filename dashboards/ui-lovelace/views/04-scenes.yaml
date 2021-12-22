@@ -19,5 +19,7 @@ cards:
             entity_id: this.entity_id
             template:
               - dashboard-scene-tile
+      exclude:
+        - name: /^.* - .*$/
     sort:
       method: name
