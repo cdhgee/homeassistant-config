@@ -45,7 +45,7 @@ light.kitchen_skylight:
   icon: mdi:track-light
 
 light.living_room_christmas_tree:
-  icon: fas:tree-christmas
+  icon: mdi:pine-tree
 
 light.living_room_entry:
   icon: mdi:track-light
