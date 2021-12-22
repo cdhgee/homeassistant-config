@@ -13,6 +13,7 @@ entities:
   - light.kitchen_counter_lightstrip
   - light.kitchen_sink
   - light.living_room_china
+  - light.living_room_christmas_tree
   - light.living_room_window
   - light.master_bedroom_closet
   - light.master_bedroom_davids_bedside
