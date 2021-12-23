@@ -1,4 +1,4 @@
-automations.yaml
-secrets.yaml
-secrets_unredacted.yaml
-.storage/
+/automations.yaml
+/secrets.yaml
+/secrets_unredacted.yaml
+/.storage/
