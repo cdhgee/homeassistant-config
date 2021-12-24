@@ -1,4 +1,6 @@
 door-sensor:
+  template:
+    - label-tile
   label: >
     [[[ return (entity.state == "on") ? "Open" : "Closed"; ]]]
   tap_action:
