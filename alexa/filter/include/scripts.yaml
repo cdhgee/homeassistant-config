@@ -1,7 +1,7 @@
-- script.close_garage
+#- script.close_garage
 - script.lights_out
 - script.mute
-- script.open_garage
+#- script.open_garage
 - script.tv_off
 - script.volume_down
 - script.volume_up
