@@ -8,7 +8,6 @@ entities:
   light.master_bedroom_davids_bedside:
     state: "on"
     brightness: 127
-    effect: none
     hs_color:
       - 30
       - 43
@@ -17,7 +16,6 @@ entities:
   light.master_bedroom_monicas_bedside:
     state: "on"
     brightness: 127
-    effect: none
     hs_color:
       - 30
       - 43

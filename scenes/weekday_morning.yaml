@@ -6,10 +6,8 @@ entities:
   light.master_bedroom_monicas_bedside:
     state: "on"
     brightness: 255
-    effect: colorloop
   light.master_bedroom_davids_bedside:
     state: "on"
     brightness: 255
-    effect: colorloop
   light.closet:
     state: "on"

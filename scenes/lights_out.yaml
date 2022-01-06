@@ -56,7 +56,6 @@ entities:
       - 255
       - 119
       - 74
-    effect: "none"
   switch.upstairs_bathroom_fan:
     state: "off"
   light.upstairs_bathroom_mirror:
