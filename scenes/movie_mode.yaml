@@ -4,7 +4,11 @@ entities:
   light.family_room_lamps:
     state: "on"
     color_temp: 400
-    brightness_pct: 50
+    brightness: 127
+  light.family_room_tv_lightstrip:
+    state: "on"
+    color_temp: 400
+    brightness: 127
   light.all_main_lights:
     state: "off"
   light.family_room_curio:
