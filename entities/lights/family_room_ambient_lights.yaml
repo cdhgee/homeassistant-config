@@ -5,5 +5,6 @@ platform: group
 entities:
   - light.family_room_lamps
   - light.family_room_curio
+  - light.family_room_curio_light
   - light.family_room_garden
   - light.family_room_tv_lightstrip
