@@ -1,0 +1,7 @@
+name: Daytime lamps
+
+entities:
+  light.family_room_lamps:
+    state: "on"
+    color_temp: 400
+    brightness: 255
