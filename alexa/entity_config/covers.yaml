@@ -1,0 +1,5 @@
+# Treat the garage door as a blind instead of a garage door
+# Otherwise Alexa requires a voice PIN to use every time
+cover.garage_door:
+  name: Garage
+  display_categories: EXTERIOR_BLIND
