@@ -9,6 +9,8 @@ entities:
     state: "off"
   light.family_room_curio:
     state: "off"
+  light.family_room_curio_light:
+    state: "off"
   light.family_room_fireplace:
     state: "off"
   light.family_room_garden:
