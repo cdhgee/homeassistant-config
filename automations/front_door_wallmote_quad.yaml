@@ -1,0 +1,19 @@
+alias: Front door wallmote quad
+id: 345e2139-7242-4898-bfed-3df8f6f7edbf
+description: Front door wallmote quad controller
+
+mode: single
+
+trigger:
+  platform: event
+  event_type: zwave_js_value_notification
+  event_data:
+    domain: zwave_js
+    node_id: 31
+    command_class_name: Central Scene
+
+action:
+  - variables:
+      action_name: "{{ trigger.event.data.value }}"
+      property_key: "{{ trigger.event.data.property_key }}"
+  - choose: !include_dir_list ../automation-choose/front_door_wallmote_quad

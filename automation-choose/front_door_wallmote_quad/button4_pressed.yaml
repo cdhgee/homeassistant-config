@@ -1,0 +1,7 @@
+conditions:
+  - condition: template
+    value_template: "{{ action_name == 'KeyPressed' and property_key == '004'}}"
+sequence:
+  - service: input_boolean.turn_off
+    target:
+      entity_id: input_boolean.outside_mode

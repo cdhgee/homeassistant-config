@@ -1,0 +1,4 @@
+conditions:
+  - condition: template
+    value_template: "{{ action_name == 'KeyHeldDown' and property_key == '003'}}"
+sequence: []
