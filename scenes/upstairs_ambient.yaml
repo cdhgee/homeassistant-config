@@ -4,12 +4,14 @@ entities:
   light.master_bedroom_monicas_bedside:
     state: "on"
     brightness: 255
+    color: teal
   light.master_bedroom_davids_bedside:
     state: "on"
     brightness: 255
-  switch.master_bedroom_fairy_lights:
+    color: teal
+  light.master_bedroom_fairy_lights:
     state: "on"
-  switch.master_bedroom_closet:
+  light.master_bedroom_closet:
     state: "on"
   light.master_bedroom_bedroom:
     state: "off"
