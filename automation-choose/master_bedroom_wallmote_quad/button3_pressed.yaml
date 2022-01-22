@@ -2,6 +2,6 @@ conditions:
   - condition: template
     value_template: "{{ action_name == 'KeyPressed' and property_key == '003'}}"
 sequence:
-  - service: light.toggle
+  - service: scene.turn_on
     target:
-      entity_id: light.kitchen_skylight
+      entity_id: scene.upstairs_ambient

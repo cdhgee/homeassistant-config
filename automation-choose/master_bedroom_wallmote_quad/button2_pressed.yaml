@@ -2,6 +2,4 @@ conditions:
   - condition: template
     value_template: "{{ action_name == 'KeyPressed' and property_key == '002'}}"
 sequence:
-  - service: scene.turn_on
-    target:
-      entity_id: scene.sleeping
+  - service: script.lights_out
