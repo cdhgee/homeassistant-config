@@ -1,4 +1,7 @@
+/.HA_VERSION
+/.cloud/
 /automations.yaml
+/scenes.yaml
 /secrets.yaml
 /secrets_unredacted.yaml
 /.storage/
