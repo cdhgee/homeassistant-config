@@ -2,4 +2,4 @@ conditions:
   - condition: template
     value_template: "{{ action_name == 'KeyPressed' and property_key == '002'}}"
 sequence:
-  - service: script.close_garage
+  - service: script.lock_up
