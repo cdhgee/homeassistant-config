@@ -2,6 +2,4 @@ conditions:
   - condition: template
     value_template: "{{ action_name == 'KeyPressed' and property_key == '002'}}"
 sequence:
-  - service: cover.close_cover
-    target:
-      entity_id: cover.garage_door
+  - service: script.close_garage

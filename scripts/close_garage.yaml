@@ -1,7 +1,10 @@
 alias: "Close garage"
 
 sequence:
-  - alias: "Close the garage door"
-    service: cover.close_cover
+  - conditions:
+      - condition: state
+        entity_id: cover.garage_door
+        state: open
+  - service: cover.close_cover
     target:
       entity_id: cover.garage_door
