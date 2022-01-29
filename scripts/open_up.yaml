@@ -9,11 +9,10 @@ sequence:
     service: lock.unlock
     target:
       entity_id: script.unlock_front_door
-  - conditions:
-      - condition: numeric_state
-        entity_id: sun.sun
-        attribute: elevation
-        below: 7.5
+  - condition: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    below: 7.5
   - service: scene.turn_on
     target:
       entity_id: scene.arrive_home
