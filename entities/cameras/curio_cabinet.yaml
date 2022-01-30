@@ -1,6 +1,0 @@
-name: Curio cabinet
-
-platform: generic
-
-stream_source: !secret security_camera_curio_cabinet_stream_source
-still_image_url: notused
