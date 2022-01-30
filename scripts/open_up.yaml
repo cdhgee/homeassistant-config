@@ -8,4 +8,4 @@ sequence:
   - alias: "Unlock the front door"
     service: lock.unlock
     target:
-      entity_id: script.unlock_front_door
+      entity_id: lock.front_door_lock
