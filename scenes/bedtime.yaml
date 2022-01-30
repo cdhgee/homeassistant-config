@@ -16,10 +16,6 @@ entities:
   light.family_room_tv_lightstrip:
     state: "off"
   # Kitchen
-  light.kitchen_bar:
-    state: "off"
-  light.kitchen_sink:
-    state: "off"
   light.kitchen_skylight:
     state: "off"
   # Living room
@@ -36,18 +32,12 @@ entities:
     state: "off"
   light.master_bedroom_davids_bedside:
     state: "on"
-    brightness: 84
-    rgb_color:
-      - 255
-      - 119
-      - 74
+    brightness: 127
+    color_name: teal
   light.master_bedroom_monicas_bedside:
     state: "on"
-    brightness: 84
-    rgb_color:
-      - 255
-      - 119
-      - 74
+    brightness: 127
+    color_name: teal
   light.master_bedroom_fairy_lights:
     state: "off"
   # Upstairs bathroom
