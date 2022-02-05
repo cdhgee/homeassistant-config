@@ -5,14 +5,8 @@ description: Keep the kitchen lights in sync
 mode: single
 
 trigger:
-  - platform: template
-    value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_bar') }}"
-  - platform: template
-    value_template: "{{ states('light.kitchen_skylight') != states('switch.kitchen_counter') }}"
-  - platform: template
-    value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_counter_lightstrip') }}"
-  - platform: template
-    value_template: "{{ states('light.kitchen_skylight') != states('light.kitchen_sink') }}"
+  - platform: state
+    entity_id: light.kitchen_skylight
 
 action:
   - service: scene.apply
@@ -22,17 +16,17 @@ action:
           # Set the bar to the same state as the skylight
           state: "{{ states('light.kitchen_skylight') }}"
           brightness: 255
-        switch.kitchen_counter:
+        light.kitchen_counter:
           # Set the counter to the same state as the skylight if the sun is up=
           # Otherwise, turn it on
-          state: "{% if is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
+          state: "{% is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5 | iff('on', states('light.kitchen_skylight')) %}"
         light.kitchen_counter_lightstrip:
           # Set the counter lightstrip to the same state as the skylight if the sun is up
           # Otherwise, turn it on
-          state: "{% if is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5 %}on{% else %}{{ states('light.kitchen_skylight') }}{% endif %}"
+          state: "{% is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5 | iff('on', states('light.kitchen_skylight')) %}"
           brightness: 255
           # Blue-green if sun is up, otherwise red-orange
-          rgb_color: "{% if state_attr('sun.sun', 'elevation') < 7.5 %}{{ [255, 65, 0] }}{% else %}{{ [38, 255, 189] }}{% endif %}"
+          rgb_color: "{% state_attr('sun.sun', 'elevation') < 7.5 | iff([255, 65, 0], [38, 255, 189]) %}"
         light.kitchen_sink:
           # Set the sink to the same state as the skylight
           state: "{{ states('light.kitchen_skylight') }}"
