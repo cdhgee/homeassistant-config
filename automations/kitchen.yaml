@@ -19,14 +19,14 @@ action:
         light.kitchen_counter:
           # Set the counter to the same state as the skylight if the sun is up=
           # Otherwise, turn it on
-          state: "{% is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5 | iff('on', states('light.kitchen_skylight')) %}"
+          state: "{{ (is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5) | iif('on', states('light.kitchen_skylight')) }}"
         light.kitchen_counter_lightstrip:
           # Set the counter lightstrip to the same state as the skylight if the sun is up
           # Otherwise, turn it on
-          state: "{% is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5 | iff('on', states('light.kitchen_skylight')) %}"
+          state: "{{ (is_state('input_boolean.nighttime_mode', 'off') and state_attr('sun.sun', 'elevation') < 7.5) | iif('on', states('light.kitchen_skylight')) }}"
           brightness: 255
           # Blue-green if sun is up, otherwise red-orange
-          rgb_color: "{% state_attr('sun.sun', 'elevation') < 7.5 | iff([255, 65, 0], [38, 255, 189]) %}"
+          rgb_color: "{{ (state_attr('sun.sun', 'elevation') < 7.5) | iif([255, 65, 0], [38, 255, 189]) }}"
         light.kitchen_sink:
           # Set the sink to the same state as the skylight
           state: "{{ states('light.kitchen_skylight') }}"
