@@ -61,16 +61,16 @@ entities:
   light.family_room_lamps_right_middle:
     state: "on"
     brightness: 255
-    # Orange
-    rgb_color:
-      - 255
-      - 127
-      - 0
-  light.family_room_lamps_right_top:
-    state: "on"
-    brightness: 255
     # Yellow
     rgb_color:
       - 255
       - 191
+      - 0
+  light.family_room_lamps_right_top:
+    state: "on"
+    brightness: 255
+    # Orange
+    rgb_color:
+      - 255
+      - 127
       - 0
