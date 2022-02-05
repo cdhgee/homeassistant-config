@@ -2,7 +2,7 @@ alias: Front door wallmote quad
 id: 345e2139-7242-4898-bfed-3df8f6f7edbf
 description: Front door wallmote quad controller
 
-mode: single
+mode: parallel
 
 trigger:
   platform: event
