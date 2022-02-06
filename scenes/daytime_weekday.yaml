@@ -1,4 +1,4 @@
-name: Weekday daytime
+name: Daytime - weekday
 
 entities:
   light.living_room_entry:
