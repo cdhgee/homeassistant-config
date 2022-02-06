@@ -15,15 +15,6 @@ action:
       entity_id: input_boolean.nighttime_mode
   - service: scene.turn_on
     target:
-      entity_id: scene.morning
+      entity_id: scene.morning_common
 
-  - condition: time
-    weekday:
-      - mon
-      - tue
-      - wed
-      - thu
-      - fri
-  - service: scene.turn_on
-    target:
-      entity_id: scene.weekday_morning
+  - choose: !include_dir_list ../automation-choose/morning-scenes
