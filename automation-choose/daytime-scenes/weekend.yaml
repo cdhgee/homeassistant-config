@@ -1,0 +1,9 @@
+conditions:
+  - condition: time
+    weekday:
+      - sat
+      - sun
+  - sequence:
+      - service: scene.turn_on
+        target:
+          entity_id: scene.weekend_daytime

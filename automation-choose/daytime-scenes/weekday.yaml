@@ -1,0 +1,12 @@
+conditions:
+  - condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  - sequence:
+      - service: scene.turn_on
+        target:
+          entity_id: scene.weekday_daytime

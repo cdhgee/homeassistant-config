@@ -11,15 +11,6 @@ trigger:
 action:
   - service: scene.turn_on
     target:
-      entity_id: scene.daytime
+      entity_id: scene.daytime_common
 
-  - condition: time
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-  - service: scene.turn_on
-    target:
-      entity_id: scene.weekday_daytime
+  - choose: !include_dir_list ../automation-choose/daytime-scenes
