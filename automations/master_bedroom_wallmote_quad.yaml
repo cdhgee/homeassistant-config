@@ -16,4 +16,4 @@ action:
   - variables:
       action_name: "{{ trigger.event.data.value }}"
       property_key: "{{ trigger.event.data.property_key }}"
-  - choose: !include_dir_list ../automation-choose/master_bedroom_wallmote_quad
+  - choose: !include_dir_list ../choose/master_bedroom_wallmote_quad

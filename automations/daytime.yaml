@@ -13,4 +13,4 @@ action:
     target:
       entity_id: scene.daytime_common
 
-  - choose: !include_dir_list ../automation-choose/daytime-scenes
+  - choose: !include_dir_list ../choose/daytime-scenes

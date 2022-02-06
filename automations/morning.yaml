@@ -17,4 +17,4 @@ action:
     target:
       entity_id: scene.morning_common
 
-  - choose: !include_dir_list ../automation-choose/morning-scenes
+  - choose: !include_dir_list ../choose/morning-scenes
