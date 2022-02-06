@@ -1,0 +1,11 @@
+name: Daytime - common
+
+entities:
+  light.family_room_ambient_lights:
+    state: "off"
+  light.kitchen_ambient_lights:
+    state: "off"
+  light.living_room_ambient_lights:
+    state: "off"
+  light.master_bedroom_ambient_lights:
+    state: "off"
