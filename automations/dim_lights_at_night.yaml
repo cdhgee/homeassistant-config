@@ -1,6 +1,6 @@
 alias: Dim lights at night
 id: 6372eaab-b9b7-4568-bdaf-e36ede643921
-description: Dim lights to 25% when turned on during nighttime
+description: Dim lights to 6% (15/255) when turned on during nighttime
 
 mode: parallel
 
