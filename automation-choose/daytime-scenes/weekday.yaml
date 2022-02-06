@@ -6,7 +6,7 @@ conditions:
       - wed
       - thu
       - fri
-  - sequence:
-      - service: scene.turn_on
-        target:
-          entity_id: scene.weekday_daytime
+sequence:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.weekday_daytime
