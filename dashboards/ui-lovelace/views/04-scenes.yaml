@@ -18,7 +18,7 @@ cards:
             type: custom:button-card
             entity_id: this.entity_id
             template:
-              - dashboard-scene-tile
+              - scene
       exclude:
         - name: /^.* - .*$/
     sort:

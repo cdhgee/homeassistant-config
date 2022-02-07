@@ -18,6 +18,6 @@ cards:
             type: custom:button-card
             entity_id: this.entity_id
             template:
-              - dashboard-lights-tile
+              - light
     sort:
       method: name

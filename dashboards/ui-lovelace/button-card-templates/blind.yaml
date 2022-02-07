@@ -1,4 +1,4 @@
-dashboard-lights-tile:
+blind:
   template:
     - base-tile
     - binary-entity
