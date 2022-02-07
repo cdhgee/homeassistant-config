@@ -1,28 +1,6 @@
 type: custom:button-card
 template:
-  - base-tile
-  - label-tile
+  - climate-summary
 entity: climate.hallway
 tap_action:
   navigation_path: /lovelace/comfort
-label: >
-  [[[
-    if(entity.state == "off") {
-      return "Off";
-    }
-    else {
-      return entity.state[0].toUpperCase() +
-      entity.state.substr(1).toLowerCase() +
-      " set to " +
-      entity.attributes.temperature +
-      ", " +
-      entity.attributes.hvac_action;
-    }
-  ]]]
-styles:
-  icon:
-    - color: >
-        [[[
-          if(entity.attributes.hvac_action != "idle") return "var(--paper-item-icon-active-color)";
-          else return "var(--paper-item-color)";
-        ]]]
