@@ -1,4 +1,4 @@
-dashboard-tile:
+base-tile:
   tap_action:
     action: navigate
   hold_action:

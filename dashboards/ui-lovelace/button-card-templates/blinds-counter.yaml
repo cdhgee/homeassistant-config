@@ -1,6 +1,5 @@
-dashboard-blinds-counter-tile:
+blinds-counter-tile:
   template:
-    - dashboard-tile
     - counter-tile
   label: >
     [[[ return (entity.state == 0) ? "All closed" : entity.state + " open"; ]]]
