@@ -1,6 +1,7 @@
 climate-summary:
   template:
     - base-tile
+    - label-tile
   label: >
     [[[
       if(entity.state == "off") {
