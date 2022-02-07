@@ -1,6 +1,6 @@
 type: custom:button-card
 template:
-  - dashboard-lights-counter-tile
+  - lights-counter
 name: Main lights
 tap_action:
   navigation_path: /lovelace/lights
