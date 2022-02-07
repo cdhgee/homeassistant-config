@@ -1,4 +1,4 @@
-blinds-counter-tile:
+blinds-counter:
   template:
     - counter-tile
   label: >
