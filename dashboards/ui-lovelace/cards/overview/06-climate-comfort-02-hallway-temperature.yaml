@@ -1,6 +1,6 @@
 type: custom:button-card
 template:
-  - dashboard-tile
+  - base-tile
 name: Hallway temperature
 entity: sensor.hallway_temperature
 tap_action:

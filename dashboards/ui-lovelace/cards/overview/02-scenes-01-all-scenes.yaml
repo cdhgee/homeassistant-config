@@ -1,6 +1,6 @@
 type: custom:button-card
 template:
-  - dashboard-tile
+  - base-tile
   - name-only
 name: Scenes
 icon: mdi:palette

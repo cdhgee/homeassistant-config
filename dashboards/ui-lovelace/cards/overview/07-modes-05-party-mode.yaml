@@ -1,5 +1,5 @@
 type: custom:button-card
 template:
-  - dashboard-tile
+  - base-tile
   - binary-entity
 entity: input_boolean.party_mode

@@ -1,6 +1,6 @@
 type: custom:button-card
 template:
-  - dashboard-tile
+  - base-tile
   - door-or-lock
   - door-sensor
 entity: binary_sensor.deck_door_open
