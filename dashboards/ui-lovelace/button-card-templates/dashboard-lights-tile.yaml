@@ -1,6 +1,6 @@
 dashboard-lights-tile:
   template:
-    - dashboard-tile
+    - base-tile
     - binary-entity
   tap_action:
     action: toggle

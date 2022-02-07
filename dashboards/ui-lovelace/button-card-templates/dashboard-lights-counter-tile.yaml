@@ -1,6 +1,6 @@
 dashboard-lights-counter-tile:
   template:
-    - dashboard-tile
+    - base-tile
     - counter-tile
     - label-tile
   label: >

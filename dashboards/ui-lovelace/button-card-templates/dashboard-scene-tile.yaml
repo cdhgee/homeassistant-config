@@ -1,6 +1,6 @@
 dashboard-scene-tile:
   template:
-    - dashboard-tile
+    - base-tile
     - tap-service
     - name-only
   icon: mdi:palette
