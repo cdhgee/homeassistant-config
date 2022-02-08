@@ -1,6 +1,6 @@
 update-tile:
   template:
-    - base-tile
+    - base
     - label-tile
   label: >
     [[[

@@ -1,5 +1,5 @@
 type: custom:button-card
 template:
-  - base-tile
+  - base
   - door-or-lock
 entity: lock.front_door_lock

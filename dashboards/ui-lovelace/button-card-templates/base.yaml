@@ -1,4 +1,4 @@
-base-tile:
+base:
   tap_action:
     action: navigate
   hold_action:

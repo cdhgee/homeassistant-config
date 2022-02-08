@@ -1,6 +1,6 @@
 scene:
   template:
-    - base-tile
+    - base
     - tap-service
     - name-only
   icon: mdi:palette

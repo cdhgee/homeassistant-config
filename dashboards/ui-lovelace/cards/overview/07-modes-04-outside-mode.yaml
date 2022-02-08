@@ -1,5 +1,5 @@
 type: custom:button-card
 template:
-  - base-tile
+  - base
   - binary-entity
 entity: input_boolean.outside_mode

@@ -1,6 +1,6 @@
 blind:
   template:
-    - base-tile
+    - base
     - binary-entity
   tap_action:
     action: toggle

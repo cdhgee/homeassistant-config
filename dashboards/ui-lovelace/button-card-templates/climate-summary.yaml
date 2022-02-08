@@ -1,6 +1,6 @@
 climate-summary:
   template:
-    - base-tile
+    - base
     - label-tile
   label: >
     [[[

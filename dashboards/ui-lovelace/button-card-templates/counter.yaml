@@ -1,6 +1,6 @@
 counter:
   template:
-    - base-tile
+    - base
     - label-tile
   tap_action:
     action: navigate

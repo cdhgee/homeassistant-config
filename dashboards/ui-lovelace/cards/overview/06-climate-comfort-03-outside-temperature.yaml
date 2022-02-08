@@ -1,6 +1,6 @@
 type: custom:button-card
 template:
-  - base-tile
+  - base
 name: Outside temperature
 entity: sensor.home_realfeel_temperature
 tap_action:
