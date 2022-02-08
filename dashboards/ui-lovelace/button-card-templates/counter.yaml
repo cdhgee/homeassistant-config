@@ -1,4 +1,4 @@
-counter-tile:
+counter:
   template:
     - base-tile
     - label-tile

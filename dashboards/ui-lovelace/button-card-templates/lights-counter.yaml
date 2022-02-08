@@ -1,6 +1,6 @@
 lights-counter:
   template:
-    - counter-tile
+    - counter
     - label-tile
   label: >
     [[[ return (entity.state == 0) ? "Off" : entity.state + " on";]]]

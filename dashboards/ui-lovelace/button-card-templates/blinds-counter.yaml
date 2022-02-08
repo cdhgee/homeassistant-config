@@ -1,5 +1,5 @@
 blinds-counter:
   template:
-    - counter-tile
+    - counter
   label: >
     [[[ return (entity.state == 0) ? "All closed" : entity.state + " open"; ]]]
