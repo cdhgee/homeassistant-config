@@ -1,0 +1,23 @@
+conditions:
+  - condition: state
+    entity_id: light.kitchen_skylight
+    state: "on"
+sequence:
+  - service: scene.apply
+    data:
+      entities:
+        light.kitchen_bar:
+          state: "on"
+          brightness: 255
+        light.kitchen_counter:
+          state: "on"
+        light.kitchen_counter_lightstrip:
+          # Mid-white
+          state: "on"
+          color_temp: 250
+          brightness: 255
+          # Blue-green if sun is up, otherwise red-orange
+        light.kitchen_sink:
+          # Set the sink to the same state as the skylight
+          state: "on"
+          brightness: 255
