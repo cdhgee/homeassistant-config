@@ -14,15 +14,15 @@ action:
       entities:
         light.kitchen_bar:
           state: >
-            {{ is_state("light.kitchen_skylight", "on") || iif("on", "off") }}
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
           brightness: 255
         light.kitchen_counter:
           state: >
-            {{ is_state("light.kitchen_skylight", "on") || iif("on", "off") }}
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
           brightness: 255
         light.kitchen_counter_lightstrip:
           state: >
-            {{ (is_state("light.kitchen_skylight", "on")) or (state_attr('sun.sun', 'elevation') < 7.5) || iif("on", "off") }}
+            {{ (is_state("light.kitchen_skylight", "on")) or (state_attr('sun.sun', 'elevation') < 7.5) | iif("on", "off") }}
           rgb_color:
             - 255
             - 65
@@ -33,5 +33,5 @@ action:
             {{ (state_attr('sun.sun', 'elevation') < 7.5) | iif("rgb", "color_temp") }}
         light.kitchen_sink:
           state: >
-            {{ is_state("light.kitchen_skylight", "on") || iif("on", "off") }}
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
           brightness: 255
