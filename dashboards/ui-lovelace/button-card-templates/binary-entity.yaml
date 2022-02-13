@@ -4,8 +4,6 @@ binary-entity:
       value: >
         [[[ return ["on", "open"].includes(entity.state); ]]]
       styles:
-        name:
-          - color: var(--paper-item-icon-active-color)
         state:
           - color: var(--paper-item-icon-active-color)
         label:
