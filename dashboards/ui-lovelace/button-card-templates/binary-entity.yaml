@@ -2,11 +2,15 @@ binary-entity:
   state:
     - operator: template
       value: >
-        [[[ ["on", "open"].includes(entity.state); ]]]
+        [[[ return ["on", "open"].includes(entity.state); ]]]
       styles:
+        name:
+          - color: var(--paper-item-icon-active-color)
         state:
           - color: var(--paper-item-icon-active-color)
         label:
+          - color: var(--paper-item-icon-active-color)
+        icon:
           - color: var(--paper-item-icon-active-color)
   tap_action:
     action: toggle
