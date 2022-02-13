@@ -9,4 +9,4 @@ trigger:
     entity_id: light.kitchen_skylight
 
 action:
-  - choose: !include_dir_list ../choose/kitchen_lights
+  - choose: !include_dir_list ../choose/kitchen-lights
