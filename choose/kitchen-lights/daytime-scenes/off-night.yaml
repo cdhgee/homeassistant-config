@@ -5,7 +5,7 @@ conditions:
         entity_id: light.kitchen_skylight
         state: "off"
       - condition: template
-        entity_id: >
+        value_template: >
           {{ state_attr('sun.sun', 'elevation') < 7.5 }}
 sequence:
   - service: scene.apply
