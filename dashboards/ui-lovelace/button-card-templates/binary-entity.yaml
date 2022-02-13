@@ -1,6 +1,8 @@
 binary-entity:
   state:
-    - value: "on"
+    - operator: template
+      value: >
+        [[[ entity.state in ("on", "open") ]]]
       styles:
         state:
           - color: var(--paper-item-icon-active-color)
