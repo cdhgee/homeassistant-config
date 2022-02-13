@@ -2,7 +2,7 @@ binary-entity:
   state:
     - operator: template
       value: >
-        [[[ entity.state in ("on", "open") ]]]
+        [[[ ["on", "open"].includes(entity.state); ]]]
       styles:
         state:
           - color: var(--paper-item-icon-active-color)
