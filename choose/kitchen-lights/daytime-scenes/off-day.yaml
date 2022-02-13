@@ -1,4 +1,4 @@
-condition:
+conditions:
   - condition: and
     conditions:
       - condition: state
