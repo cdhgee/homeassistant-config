@@ -27,7 +27,7 @@ action:
             - 255
             - 146
             - 255
-          color_temp: 250
+          color_temp: 325
           brightness: 255
           color_mode: >
             {{ ((state_attr('sun.sun', 'elevation') < 7.5) and (is_state("light.kitchen_skylight", "off"))) | iif("rgb", "color_temp") }}
