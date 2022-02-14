@@ -30,7 +30,7 @@ action:
           color_temp: 250
           brightness: 255
           color_mode: >
-            {{ ((state_attr('sun.sun', 'elevation') < 7.5) and (is_state("light.kitchen_skylight", "off")) | iif("rgb", "color_temp") }}
+            {{ ((state_attr('sun.sun', 'elevation') < 7.5) and (is_state("light.kitchen_skylight", "off"))) | iif("rgb", "color_temp") }}
         light.kitchen_sink:
           state: >
             {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
