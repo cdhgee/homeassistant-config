@@ -3,5 +3,5 @@ name: Family room TV blinds
 platform: group
 
 entities:
-  - cover.family_room_tv_left_blind
-  - cover.family_room_tv_right_blind
+  - cover.family_room_tv_blinds_left
+  - cover.family_room_tv_blinds_right
