@@ -23,8 +23,8 @@ action:
         cover.{{
           trigger.to_state.entity_id |
           regex_replace(
-            find=''^sensor\.(.+)_remote_action$'',
-            replace=''cover.\\1'',
+            find="^sensor\.(.+)_remote_action$",
+            replace="cover.\\1",
             ignorecase=True
           )
         }}
