@@ -30,11 +30,11 @@ entities:
     state: "off"
   light.master_bedroom_closet:
     state: "off"
-  light.master_bedroom_davids_bedside:
+  light.master_bedroom_david_s_bedside:
     state: "on"
     brightness: 127
     color_name: teal
-  light.master_bedroom_monicas_bedside:
+  light.master_bedroom_monica_s_bedside:
     state: "on"
     brightness: 127
     color_name: teal

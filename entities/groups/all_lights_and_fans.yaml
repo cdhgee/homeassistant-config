@@ -23,9 +23,9 @@ entities:
   - light.living_room_window
   - light.master_bedroom_bedroom
   - light.master_bedroom_closet
-  - light.master_bedroom_davids_bedside
+  - light.master_bedroom_david_s_bedside
   - light.master_bedroom_fairy_lights
-  - light.master_bedroom_monicas_bedside
+  - light.master_bedroom_monica_s_bedside
   - light.upstairs_bathroom_mirror
   - light.upstairs_bathroom_shower
   - switch.upstairs_bathroom_fan

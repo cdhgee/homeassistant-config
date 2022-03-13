@@ -9,7 +9,7 @@ entities:
     state: "off"
   switch.basement_crawlspace:
     state: "off"
-  light.master_bedroom_davids_bedside:
+  light.master_bedroom_david_s_bedside:
     state: "off"
   light.living_room_entry:
     state: "off"
@@ -23,7 +23,7 @@ entities:
     state: "off"
   light.upstairs_bathroom_mirror:
     state: "off"
-  light.master_bedroom_monicas_bedside:
+  light.master_bedroom_monica_s_bedside:
     state: "off"
   light.basement_work_area_office:
     state: "off"

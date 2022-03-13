@@ -34,13 +34,13 @@ light.master_bedroom_bedroom:
 light.master_bedroom_closet:
   name: Closet
 
-light.master_bedroom_davids_bedside:
+light.master_bedroom_david_s_bedside:
   name: David's bedside
 
 light.master_bedroom_fairy_lights:
   name: Fairy lights
 
-light.master_bedroom_monicas_bedside:
+light.master_bedroom_monica_s_bedside:
   name: Monica's bedside
 
 light.upstairs_bathroom_mirror:
