@@ -7,8 +7,10 @@ trigger:
   - platform: state
     entity_id:
       - sensor.family_room_deck_door_blinds_remote_action
-      - sensor.kitchen_blinds_remote_action
       - sensor.family_room_tv_blinds_remote_action
+      - sensor.kitchen_blinds_remote_action
+      - sensor.living_room_blinds_remote_action
+      - sensor.master_bedroom_blinds_remote_action
     to:
       - open
       - close
@@ -20,7 +22,7 @@ action:
       cover.{{ trigger.to_state.state }}_cover
     target:
       entity_id: >
-        cover.{{
+        {{
           trigger.to_state.entity_id |
           regex_replace(
             find="^sensor\.(.+)_remote_action$",
