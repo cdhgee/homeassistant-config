@@ -15,8 +15,4 @@ action:
   - service: cover.close_cover
     target:
       entity_id: >
-        {% if is_state('input_boolean.party_mode', 'on') %}
-          cover.all_blinds_non_party_mode
-        {% else %}
-          cover.all_blinds
-        {% endif %}
+        cover.{{ is_state('input_boolean.party_mode', 'on') | iif("all_blinds_non_party_mode", "all_blinds") }}
