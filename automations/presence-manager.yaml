@@ -12,7 +12,8 @@ condition:
   - condition: template
     value_template: >
       {{
-        not(trigger.from_state.state == 'unavailable')
+        not(trigger.from_state.state == "unavailable") and
+        not(trigger.to_state.state == "unavailable")
       }}
 
 action:
