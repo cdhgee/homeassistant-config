@@ -19,7 +19,7 @@ cards:
             entity_id: this.entity_id
             template:
               - scene
-      exclude:
-        - name: /^.* - .*$/
+    # exclude:
+    #   - name: /^.* - .*$/
     sort:
       method: name
