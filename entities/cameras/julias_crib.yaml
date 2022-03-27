@@ -3,4 +3,3 @@ name: Julia's crib
 platform: generic
 
 stream_source: !secret security_camera_julias_crib_stream_source
-still_image_url: notused

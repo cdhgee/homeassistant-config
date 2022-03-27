@@ -3,4 +3,3 @@ name: Basement
 platform: generic
 
 stream_source: !secret security_camera_basement_stream_source
-still_image_url: notused
