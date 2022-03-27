@@ -7,6 +7,7 @@
         background-color: transparent !important;
         box-shadow: none !important;
       }
+    ha-markdown$: |
       h1 {
         font-weight: normal;
       }
