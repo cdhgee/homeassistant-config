@@ -2,5 +2,7 @@ icon: mdi:lightbulb
 title: Lights
 path: lights
 badges: []
-type: custom:vertical-layout
-cards: !include_dir_merge_list ../cards/lights
+type: panel
+cards:
+  - type: vertical-stack
+    cards: !include_dir_merge_list ../cards/lights
