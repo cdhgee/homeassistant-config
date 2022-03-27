@@ -7,6 +7,9 @@
         background-color: transparent !important;
         box-shadow: none !important;
       }
+      h1 {
+        font-weight: normal;
+      }
 - type: custom:auto-entities
   card:
     type: custom:layout-card
