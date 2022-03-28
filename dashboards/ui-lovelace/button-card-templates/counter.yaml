@@ -4,20 +4,3 @@ counter:
     - label-tile
   tap_action:
     action: navigate
-  state:
-    - value: 0
-      styles:
-        label:
-          - color: "var(--paper-item-icon-color, #44739e)"
-        state:
-          - color: "var(--paper-item-icon-color, #44739e)"
-        icon:
-          - color: "var(--paper-item-icon-color, #44739e)"
-    - operator: default
-      styles:
-        label:
-          - color: "var(--paper-item-icon-active-color, #fdd835)"
-        state:
-          - color: "var(--paper-item-icon-active-color, #fdd835)"
-        icon:
-          - color: "var(--paper-item-icon-active-color, #fdd835)"
