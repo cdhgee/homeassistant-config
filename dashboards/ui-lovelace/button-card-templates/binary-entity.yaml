@@ -2,7 +2,7 @@ binary-entity:
   state:
     - operator: template
       value: >
-        [[[ return ["on", "open"].includes(entity.state); ]]]
+        [[[ return ["on", "open", "unlocked"].includes(entity.state); ]]]
       styles:
         name:
           - color: var(--secondary-background-color)

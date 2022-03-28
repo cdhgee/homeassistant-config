@@ -1,16 +1,3 @@
 door-or-lock:
-  styles:
-    card:
-      - box-shadow: inset 0px 0px 2px 2px rgb(0, 255, 0, 0.5)
-  state:
-    - value: on|open|unlocked
-      operator: regex
-      styles:
-        card:
-          - box-shadow: inset 0px 0px 2px 2px rgb(255, 0, 0, 0.5)
-        state:
-          - color: rgb(255, 0, 0)
-        label:
-          - color: rgb(255, 0, 0)
-  tap_action:
-    action: toggle
+  template:
+    - binary-entity
