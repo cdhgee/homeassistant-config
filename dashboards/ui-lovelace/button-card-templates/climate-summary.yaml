@@ -21,19 +21,19 @@ climate-summary:
       - color: >
           [[[
             if(entity.attributes.hvac_action != "idle") return "var(--secondary-background-color)";
-            else return "var(--paper-item-color)";
+            else return "var(--paper-item-active-color)";
           ]]]
     label:
       - color: >
           [[[
             if(entity.attributes.hvac_action != "idle") return "var(--secondary-background-color)";
-            else return "var(--paper-item-color)";
+            else return "var(--paper-item-active-color)";
           ]]]
     name:
       - color: >
           [[[
             if(entity.attributes.hvac_action != "idle") return "var(--secondary-background-color)";
-            else return "var(--paper-item-color)";
+            else return "var(--paper-item-active-color)";
           ]]]
     card:
       - color: >
