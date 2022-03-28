@@ -4,26 +4,25 @@ climate-summary:
     - label-tile
   label: >
     [[[
-      switch(entity.state){
-        case "off":
-          return "Off";
-          break;
+      if(entity.state == "off") return "Off";
+      else {
+        switch(entity.attributes.hvac_action){
 
-        case "idle":
-          return entity.state[0].toUpperCase() +
-          entity.state.substr(1).toLowerCase() +
-          " set to " +
-          entity.attributes.temperature +
-          ", " +
-          entity.attributes.hvac_action;
-          break;
+          case "idle":
+            return "Set to " +
+            entity.attributes.temperature +
+            " °F, idle";
+            break;
 
-        default:
-          return entity.hvac_action[0].toUpperCase() +
-          entity.hvac_action.substr(1).toLowerCase() +
-          " to " +
-          entity.attributes.temperature;
-          break;
+          default:
+            return entity.attributes.hvac_action[0].toUpperCase() +
+            entity.attributes.hvac_action.substr(1).toLowerCase() +
+            " to " +
+            entity.attributes.temperature +
+            " °F";
+            break;
+
+        }
       }
     ]]]
   styles:
