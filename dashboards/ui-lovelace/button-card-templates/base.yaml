@@ -11,8 +11,8 @@ base:
   styles:
     grid:
       - grid-template-rows: 40% 1fr
-      - grid-template-columns: 20px 1fr 32px 10px
-      - grid-template-areas: "'lpadding n i rpadding' 'lpadding s s rpadding'"
+      - grid-template-columns: 10px 32px 10px 1fr 10px
+      - grid-template-areas: "'lpad i mpad n rpad' 'lpad i mpad s rpad'"
     name:
       - font-size: 1.1em
       - place-self: start
