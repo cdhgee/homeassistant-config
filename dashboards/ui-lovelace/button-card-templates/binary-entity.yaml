@@ -4,11 +4,15 @@ binary-entity:
       value: >
         [[[ return ["on", "open"].includes(entity.state); ]]]
       styles:
+        name:
+          - color: var(--secondary-background-color)
         state:
-          - color: var(--paper-item-icon-active-color)
+          - color: var(--secondary-background-color)
         label:
-          - color: var(--paper-item-icon-active-color)
+          - color: var(--secondary-background-color)
         icon:
-          - color: var(--paper-item-icon-active-color)
+          - color: var(--secondary-background-color)
+        card:
+          - background-color: var(--light-primary-color)
   tap_action:
     action: toggle
