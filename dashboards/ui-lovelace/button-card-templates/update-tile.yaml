@@ -11,20 +11,18 @@ update-tile:
   state:
     - value: 0
       operator: ">"
-      styles:
+      styles: &activecard
+        name:
+          - color: var(--secondary-background-color)
         state:
-          - color: var(--paper-item-icon-active-color)
+          - color: var(--secondary-background-color)
         label:
-          - color: var(--paper-item-icon-active-color)
+          - color: var(--secondary-background-color)
+        icon:
+          - color: var(--secondary-background-color)
+        card:
+          - background-color: var(--light-primary-color)
     - value: true
-      styles:
-        state:
-          - color: var(--paper-item-icon-active-color)
-        label:
-          - color: var(--paper-item-icon-active-color)
+      styles: *activecard
     - value: "on"
-      styles:
-        state:
-          - color: var(--paper-item-icon-active-color)
-        label:
-          - color: var(--paper-item-icon-active-color)
+      styles: *activecard
