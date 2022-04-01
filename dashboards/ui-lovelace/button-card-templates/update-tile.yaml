@@ -11,17 +11,7 @@ update-tile:
   state:
     - value: 0
       operator: ">"
-      styles: &activecard
-        name:
-          - color: var(--secondary-background-color)
-        state:
-          - color: var(--secondary-background-color)
-        label:
-          - color: var(--secondary-background-color)
-        icon:
-          - color: var(--secondary-background-color)
-        card:
-          - background-color: var(--light-primary-color)
+      styles: *activecard
     - value: true
       styles: *activecard
     - value: "on"
