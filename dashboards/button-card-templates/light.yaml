@@ -17,7 +17,6 @@ light:
       - margin-right: auto
       - margin-left: 0
     name:
-      - font-weight: bold
       - place-self: start
     state:
       - place-self: start
