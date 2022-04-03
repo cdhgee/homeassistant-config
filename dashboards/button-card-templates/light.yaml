@@ -2,5 +2,33 @@ light:
   template:
     - base
     - binary-entity
-  tap_action:
-    action: toggle
+  show_state: true
+  aspect_ratio: 3/2
+  hold_action:
+    action: more-info
+  size: 36px
+  styles:
+    card:
+      - padding: 10px
+    grid:
+      - grid-template-rows: 36px auto min-content min-content min-content
+      - grid-template-columns: 1fr
+      - grid-template-areas: "'i' 'padding' 'n' 's' 'l'"
+    img_cell:
+      - justify-content: start
+    icon:
+      - margin-right: auto
+      - margin-left: 0
+    name:
+      - font-weight: bold
+      - place-self: start
+    state:
+      - place-self: start
+    label:
+      - place-self: start
+  name: |
+    [[[
+      var pos = entity.attributes.friendly_name.lastIndexOf("-");
+      if(pos === -1) return entity.attributes.friendly_name;
+      else return entity.attributes.friendly_name.substr(pos + 2, 1).toUpperCase() + entity.attributes.friendly_name.substr(pos + 3);
+    ]]]

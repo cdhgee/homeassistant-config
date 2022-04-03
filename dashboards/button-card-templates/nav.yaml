@@ -1,0 +1,5 @@
+nav:
+  template:
+    - base
+  tap_action:
+    action: navigate
