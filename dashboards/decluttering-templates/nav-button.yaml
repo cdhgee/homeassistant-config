@@ -1,0 +1,9 @@
+nav-button:
+  card:
+    type: custom:button-card
+    template:
+      - nav
+    icon: "[[icon]]"
+    name: "[[name]]"
+    tap_action:
+      navigation_path: "[[path]]"
