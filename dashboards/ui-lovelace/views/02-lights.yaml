@@ -1,8 +1,20 @@
-icon: mdi:lightbulb
+icon: mdi:lightbulb-group
 title: Lights
 path: lights
 badges: []
-type: panel
+type: custom:grid-layout
+layout:
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 cards:
-  - type: vertical-stack
-    cards: !include_dir_merge_list ../cards/lights
+  - type: custom:decluttering-card
+    template: light-group
+    variables:
+      - group: light.all_upstairs_main_lights
+  - type: custom:decluttering-card
+    template: light-group
+    variables:
+      - group: light.all_ground_floor_main_lights
+  - type: custom:decluttering-card
+    template: light-group
+    variables:
+      - group: light.all_basement_main_lights
