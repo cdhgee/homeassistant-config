@@ -5,6 +5,8 @@ lovelace:
       type: module
     - url: /hacsfiles/button-card/button-card.js
       type: module
+    - url: /hacsfiles/decluttering-card/decluttering-card.js
+      type: module
     - url: /hacsfiles/hass-hue-icons/hass-hue-icons.js
       type: module
     - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
