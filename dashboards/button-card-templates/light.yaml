@@ -2,10 +2,7 @@ light:
   template:
     - base
     - binary-entity
-  show_state: true
   aspect_ratio: 3/2
-  hold_action:
-    action: more-info
   size: 36px
   styles:
     card:
