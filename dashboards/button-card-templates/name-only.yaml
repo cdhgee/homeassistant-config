@@ -1,6 +1,3 @@
 name-only:
   show_label: false
   show_state: false
-  styles:
-    grid:
-      - grid-template-areas: "'lpad i mpad n rpad' 'lpad i mpad unused rpad'"
