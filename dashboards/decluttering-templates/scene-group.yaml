@@ -5,4 +5,4 @@ scene-group:
     variables:
       - filter-criteria: domain
       - filter-value: scene
-      - template: light
+      - template: scene
