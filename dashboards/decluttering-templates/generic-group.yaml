@@ -1,0 +1,21 @@
+generic-group:
+  default:
+    - sort: name
+  card:
+    type: custom:auto-entities
+    card:
+      type: custom:layout-card
+      layout_type: custom:grid-layout
+      layout:
+        grid-template-columns: "[[columns]]"
+    card_param: cards
+    filter:
+      include:
+        - "[[filter-criteria]]": "[[filter-value]]"
+          options:
+            type: custom:button-card
+            entity_id: this.entity_id
+            template:
+              - "[[template]]"
+    sort:
+      method: "[[sort]]"

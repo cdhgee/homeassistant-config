@@ -1,7 +1,6 @@
 scene:
   template:
     - base
-    - tap-service
     - name-only
   icon: mdi:palette
   tap_action:

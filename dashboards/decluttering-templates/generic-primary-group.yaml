@@ -1,0 +1,9 @@
+generic-onecol-group:
+  card:
+    type: custom:decluttering-card
+    template: generic-group
+    variables:
+      - columns: repeat(auto-fit, minmax(min(100%/2, 175px), 1fr))
+      - filter-criteria: "[[filter-criteria]]"
+      - filter-value: "[[filter-value]]"
+      - template: "[[template]]"

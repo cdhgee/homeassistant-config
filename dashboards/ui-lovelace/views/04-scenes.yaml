@@ -1,25 +1,11 @@
 icon: mdi:palette
 title: Scenes
 path: scenes
+type: custom:grid-layout
+layout:
+  grid-template-columns: repeat(auto-fit, minmax(min(100%/2, 175px), 1fr))
 badges: []
-type: panel
 cards:
-  - type: custom:auto-entities
-    card:
-      type: custom:layout-card
-      layout_type: masonry
-      layout:
-        max_cols: 4
-    card_param: cards
-    filter:
-      include:
-        - domain: scene
-          options:
-            type: custom:button-card
-            entity_id: this.entity_id
-            template:
-              - scene
-    # exclude:
-    #   - name: /^.* - .*$/
-    sort:
-      method: name
+  - type: custom:decluttering-card
+    template: scene-group
+    variables:

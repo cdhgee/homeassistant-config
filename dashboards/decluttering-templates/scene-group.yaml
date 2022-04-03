@@ -1,0 +1,8 @@
+scene-group:
+  card:
+    type: custom:decluttering-card
+    template: generic-primary-group
+    variables:
+      - filter-criteria: domain
+      - filter-value: scene
+      - template: light
