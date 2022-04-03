@@ -1,4 +1,4 @@
-generic-twocol-group:
+generic-secondary-group:
   card:
     type: custom:decluttering-card
     template: generic-group

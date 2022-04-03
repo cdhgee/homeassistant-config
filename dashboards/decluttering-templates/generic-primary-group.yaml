@@ -1,4 +1,4 @@
-generic-onecol-group:
+generic-primary-group:
   card:
     type: custom:decluttering-card
     template: generic-group
