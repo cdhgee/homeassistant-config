@@ -53,7 +53,7 @@ cards:
     template: nav-button
     variables:
       - name: Updates
-        icon: mdi:arrow-up-bold-box
+      - icon: mdi:arrow-up-bold-box
       - path: updates
   - type: custom:decluttering-card
     template: nav-button
