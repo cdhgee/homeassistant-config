@@ -1,0 +1,17 @@
+light-group:
+  card:
+    type: custom:auto-entities
+    card:
+      type: custom:layout-card
+      layout_type: custom:grid-layout
+      layout:
+        grid-template-columns: 1fr 1fr
+    card_param: cards
+    filter:
+      include:
+        - group: "[[group]]"
+          options:
+            type: custom:button-card
+            entity_id: this.entity_id
+            template:
+              - light

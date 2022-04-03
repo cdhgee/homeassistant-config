@@ -1,3 +1,4 @@
 title: Overview
-button_card_templates: !include_dir_merge_named dashboards/ui-lovelace/button-card-templates
+button_card_templates: !include_dir_merge_named dashboards/button-card-templates
+decluttering_templates: !include_dir_merge_named dashboards/decluttering-templates
 views: !include_dir_list dashboards/ui-lovelace/views
