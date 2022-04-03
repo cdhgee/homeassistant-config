@@ -6,3 +6,5 @@ scene:
   tap_action:
     action: call-service
     service: scene.turn_on
+    service_data:
+      entity_id: entity
