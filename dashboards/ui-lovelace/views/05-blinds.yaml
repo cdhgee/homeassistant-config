@@ -1,22 +1,12 @@
 icon: mdi:window-open
 title: Blinds
 path: blinds
+type: custom:grid-layout
+layout:
+  grid-template-columns: repeat(auto-fit, minmax(min(100%/2, 175px), 1fr))
+  # Use margin = 0 here because margin is applied by the nested grid-card
+  margin: 0
 badges: []
-type: panel
 cards:
-  - type: custom:auto-entities
-    card:
-      type: custom:layout-card
-      layout_type: masonry
-      layout:
-        max_cols: 4
-    filter:
-      include:
-        - group: cover.all_blinds
-          options:
-            type: custom:button-card
-            entity_id: this.entity_id
-            template:
-              - blind
-    sort:
-      method: name
+  - type: custom:decluttering-card
+    template: blinds-group
