@@ -1,4 +1,4 @@
-cover-group:
+blinds-group:
   card:
     type: custom:decluttering-card
     template: generic-primary-group
