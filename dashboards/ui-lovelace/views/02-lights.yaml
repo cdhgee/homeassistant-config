@@ -5,6 +5,8 @@ badges: []
 type: custom:grid-layout
 layout:
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  # Use margin = 0 here because margin is applied by the nested grid-card
+  margin: 0
 cards:
   - type: custom:decluttering-card
     template: light-group

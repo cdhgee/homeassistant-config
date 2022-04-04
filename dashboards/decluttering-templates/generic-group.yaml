@@ -8,6 +8,7 @@ generic-group:
       layout_type: custom:grid-layout
       layout:
         grid-template-columns: "[[columns]]"
+        margin: 0
     card_param: cards
     filter:
       include:
