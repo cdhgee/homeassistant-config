@@ -1,0 +1,17 @@
+name: All ground floor ambient lights
+
+platform: group
+
+entities:
+  - light.family_room_curio
+  - light.family_room_curio_light
+  - light.family_room_garden
+  - light.family_room_lamps
+  - light.family_room_tv_lightstrip
+  - light.kitchen_bar
+  - light.kitchen_counter
+  - light.kitchen_counter_lightstrip
+  - light.kitchen_sink
+  - light.living_room_china
+  - light.living_room_christmas_tree
+  - light.living_room_window

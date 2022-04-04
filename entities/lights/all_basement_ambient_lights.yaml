@@ -1,0 +1,5 @@
+name: All basement ambient lights
+
+platform: group
+
+entities: []
