@@ -1,22 +1,22 @@
 icon: mdi:lightbulb-group
 title: Lights
 path: lights
+type: panel
 badges: []
-type: custom:grid-layout
-layout:
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-  # Use margin = 0 here because margin is applied by the nested grid-card
-  margin: 0
 cards:
   - type: custom:decluttering-card
-    template: light-group
+    template: one-col-grid
     variables:
-      - group: light.all_upstairs_main_lights
-  - type: custom:decluttering-card
-    template: light-group
-    variables:
-      - group: light.all_ground_floor_main_lights
-  - type: custom:decluttering-card
-    template: light-group
-    variables:
-      - group: light.all_basement_main_lights
+      - cards:
+          - type: custom:decluttering-card
+            template: light-group
+            variables:
+              - group: light.all_upstairs_main_lights
+          - type: custom:decluttering-card
+            template: light-group
+            variables:
+              - group: light.all_ground_floor_main_lights
+          - type: custom:decluttering-card
+            template: light-group
+            variables:
+              - group: light.all_basement_main_lights

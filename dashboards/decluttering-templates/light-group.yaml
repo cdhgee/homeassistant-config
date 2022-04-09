@@ -1,7 +1,7 @@
 light-group:
   card:
     type: custom:decluttering-card
-    template: generic-secondary-group
+    template: generic-group
     variables:
       - filter-criteria: group
       - filter-value: "[[group]]"
