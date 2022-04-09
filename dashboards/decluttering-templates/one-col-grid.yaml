@@ -3,9 +3,9 @@ one-col-grid:
     type: custom:mod-card
     card_mod:
       style:
-        layout-card $ grid-layout $: |
-          #root > * {
-            margin-bottom: 0px !important;
+        .: |
+          layout-card {
+            --masonry-view-card-margin: 4px 4px 0px 4px;
           }
     card:
       type: custom:layout-card
