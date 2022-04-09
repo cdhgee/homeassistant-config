@@ -1,7 +1,17 @@
 one-col-grid:
   card:
-    type: custom:decluttering-card
-    template: grid
-  variables:
-    - cards: "[[cards]]"
-    - columns: 1fr
+    type: custom:mod-card
+    card_mod:
+      style:
+        layout-card $ grid-layout $: |
+          #root > * {
+            margin-bottom: 0px !important;
+          }
+    card:
+      type: custom:layout-card
+      layout_type: custom:grid-layout
+      layout:
+        grid-template-columns: 1fr
+        margin: 0
+        card_margin: 0
+      cards: "[[cards]]"
