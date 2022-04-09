@@ -1,4 +1,4 @@
-one-col-grid:
+grid:
   card:
     type: custom:mod-card
     card_mod:
