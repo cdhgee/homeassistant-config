@@ -1,0 +1,18 @@
+one-col-grid:
+  card:
+    type: custom:mod-card
+    card_mod:
+      style:
+        layout-card $ grid-layout $: |
+          #root > * {
+            margin-bottom: 0px !important;
+          }
+    card:
+      type: custom:layout-card
+      layout_type: custom:grid-layout
+      layout:
+        grid-template-columns: "[[columns]]"
+        mediaquery: "[[mediaquery]]"
+        margin: 0
+        card_margin: 0
+      cards: "[[cards]]"
