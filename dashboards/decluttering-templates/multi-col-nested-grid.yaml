@@ -2,9 +2,9 @@ multi-col-nested-grid:
   card:
     type: custom:decluttering-card
     template: nested-grid
-  variables:
-    - cards: "[[cards]]"
-    - columns: repeat(auto-fill, minmax(200px, 1fr))
-    - mediaquery:
-        "(max-width: 800px)":
-          grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+    variables:
+      - cards: "[[cards]]"
+      - columns: repeat(auto-fill, minmax(200px, 1fr))
+      - mediaquery:
+          "(max-width: 800px)":
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
