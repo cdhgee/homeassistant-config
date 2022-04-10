@@ -1,8 +1,7 @@
-icon: mdi:palette
-title: Scenes
-path: scenes
+icon: mdi:arrow-up-bold-box
+title: Updates
+path: updates
 type: panel
-badges: []
 cards:
   - type: custom:decluttering-card
     template: one-col-grid
@@ -12,5 +11,5 @@ cards:
             template: auto-entities-buttons
             variables:
               - filter-criteria: domain
-              - filter-value: scene
-              - button-template: scene
+              - filter-value: update
+              - button-template: update

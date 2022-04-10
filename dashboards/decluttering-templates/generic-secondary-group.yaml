@@ -1,9 +1,0 @@
-generic-secondary-group:
-  card:
-    type: custom:decluttering-card
-    template: generic-group
-    variables:
-      - columns: 1fr 1fr
-      - filter-criteria: "[[filter-criteria]]"
-      - filter-value: "[[filter-value]]"
-      - template: "[[template]]"

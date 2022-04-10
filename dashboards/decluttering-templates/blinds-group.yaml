@@ -1,8 +1,0 @@
-blinds-group:
-  card:
-    type: custom:decluttering-card
-    template: generic-primary-group
-    variables:
-      - filter-criteria: group
-      - filter-value: cover.all_blinds
-      - template: blind

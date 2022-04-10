@@ -1,8 +1,8 @@
 light-group:
   card:
     type: custom:decluttering-card
-    template: generic-group
+    template: auto-entities-buttons
     variables:
       - filter-criteria: group
       - filter-value: "[[group]]"
-      - template: light
+      - button-template: light
