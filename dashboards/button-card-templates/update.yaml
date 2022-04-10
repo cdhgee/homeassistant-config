@@ -6,7 +6,7 @@ update:
   show_label: true
   name: |
     [[[
-      return entity.attributes.friendly_name.replace(/^(Home Assistant )?(.+): Update( Available)?$/, "$2");
+      return entity.attributes.friendly_name.replace(/^(Home Assistant )?([^:]+):? Update( Available)?$/, "$2");
     ]]]
   label: |
     [[[
