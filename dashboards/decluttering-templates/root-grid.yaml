@@ -6,6 +6,10 @@ root-grid:
       - layout:
           grid-template-columns: "[[columns]]"
           mediaquery: "[[mediaquery]]"
+          # Set margin to 0 and padding to 4px otherwise
+          # vertical scroll bar appears in panel mode
+          margin: 0
+          padding: 4px
       - cards: "[[cards]]"
       - card_mod_style:
           .: |
