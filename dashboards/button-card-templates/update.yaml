@@ -1,3 +1,17 @@
 update:
   template:
     - base
+    - binary-entity
+  show_state: false
+  show_label: true
+  name: |
+    [[[
+      return entity.attributes.friendly_name.replace(/^(Home Assistant )?(.+): Update$/, "$2");
+    ]]]
+  label: |
+    [[[
+      var current = entity.attributes.installed_version;
+      var available = entity.attributes.latest_version;
+      if(current === available) return "Up-to-date";
+      else return "Update available: " + available;
+    ]]]
