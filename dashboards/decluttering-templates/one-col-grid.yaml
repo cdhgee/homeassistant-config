@@ -1,7 +1,7 @@
 one-col-grid:
   card:
     type: custom:decluttering-card
-    template: grid
+    template: root-grid
     variables:
       - columns: 1fr
       - cards: "[[cards]]"

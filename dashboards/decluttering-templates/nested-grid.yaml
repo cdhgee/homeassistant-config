@@ -1,0 +1,16 @@
+nested-grid:
+  card:
+    type: custom:decluttering-card
+    template: grid
+    variables:
+      - layout:
+          grid-template-columns: "[[columns]]"
+          mediaquery: "[[mediaquery]]"
+          margin: 0
+          card_margin: 0
+      - card_mod_style:
+          .: |
+            layout-card {
+              --masonry-view-card-margin: 4px 4px 0px 4px;
+            }
+      - cards: "[[cards]]"
