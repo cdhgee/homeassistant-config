@@ -5,6 +5,7 @@ nested-grid:
     variables:
       - layout:
           grid-template-columns: "[[columns]]"
+          row-gap: 4px
           mediaquery: "[[mediaquery]]"
           margin: 0
           card_margin: 0
