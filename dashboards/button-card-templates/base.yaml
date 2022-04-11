@@ -18,7 +18,7 @@ base:
       - place-self: start
     state:
       - place-self: start
-      - font-size: 80%;
+      - font-size: 80%
     label:
       - place-self: start
-      - font-size: 80%;
+      - font-size: 80%
