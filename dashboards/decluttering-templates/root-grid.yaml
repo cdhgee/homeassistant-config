@@ -8,11 +8,7 @@ root-grid:
           mediaquery: "[[mediaquery]]"
           # Set margin to 0 and padding to 4px otherwise
           # vertical scroll bar appears in panel mode
-          margin: 0
+          margin: 0px
           padding: 4px
+          card_margin: 4px
       - cards: "[[cards]]"
-      - card_mod_style:
-          .: |
-            layout-card {
-              --masonry-view-card-margin: 4px 4px 4px 4px;
-            }

@@ -10,7 +10,7 @@ auto-entities-buttons:
           "(max-width: 800px)":
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
         margin: 0
-        card_margin: 0
+        card_margin: 4px
     card_param: cards
     filter:
       include:

@@ -5,7 +5,7 @@ type: panel
 badges: []
 cards:
   - type: custom:decluttering-card
-    template: multi-col-root-grid
+    template: multi-col-grid
     variables:
       - cards:
           - type: custom:decluttering-card
