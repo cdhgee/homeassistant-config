@@ -8,16 +8,17 @@ base:
     grid:
       - grid-template-rows: 36px auto min-content min-content min-content
       - grid-template-columns: 1fr
-      - grid-template-areas: "'i' 'padding' 'n' 's' 'l'"
+      - grid-template-areas: "'i' 'padding' 's' 'l' 'n'"
     img_cell:
       - justify-content: start
     icon:
       - margin-right: auto
       - margin-left: 0
     name:
-      - font-weight: bold
       - place-self: start
     state:
       - place-self: start
+      - font-size: 80%;
     label:
       - place-self: start
+      - font-size: 80%;
