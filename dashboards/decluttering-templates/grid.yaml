@@ -1,10 +1,10 @@
 grid:
   card:
-    type: custom:mod-card
-    card_mod:
-      style: "[[card_mod_style]]"
-    card:
-      type: custom:layout-card
-      layout_type: custom:grid-layout
-      layout: "[[layout]]"
-      cards: "[[cards]]"
+    #type: custom:mod-card
+    #card_mod:
+    #  style: "[[card_mod_style]]"
+    #card:
+    type: custom:layout-card
+    layout_type: custom:grid-layout
+    layout: "[[layout]]"
+    cards: "[[cards]]"
