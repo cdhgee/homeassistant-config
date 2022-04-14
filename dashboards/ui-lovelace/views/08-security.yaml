@@ -1,6 +1,6 @@
 icon: mdi:cctv
-title: Security
-path: security
+title: cameras
+path: cameras
 type: panel
 cards:
   - type: custom:auto-entities

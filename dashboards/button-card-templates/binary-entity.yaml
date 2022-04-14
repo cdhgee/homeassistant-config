@@ -14,6 +14,19 @@ binary-entity:
           - color: var(--secondary-background-color)
         card:
           - background-color: var(--light-primary-color)
+    - operator: ==
+      value: unavailable
+      styles:
+        name:
+          - color: var(--secondary-background-color)
+        state:
+          - color: var(--secondary-background-color)
+        label:
+          - color: var(--secondary-background-color)
+        icon:
+          - color: var(--secondary-background-color)
+        card:
+          - background-color: rgba(206, 206, 206, 0.33)
   tap_action:
     action: toggle
   hold_action:
