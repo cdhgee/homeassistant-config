@@ -42,15 +42,21 @@ cards:
           - type: custom:decluttering-card
             template: nav-button
             variables:
-              - name: Comfort & weather
+              - name: Heating & cooling
               - icon: mdi:thermometer
-              - path: comfort-weather
+              - path: heating-cooling
+          - type: custom:decluttering-card
+            template: nav-button
+            variables:
+              - name: Weather
+              - icon: mdi:weather-cloudy
+              - path: weather
           - type: custom:decluttering-card
             template: nav-button
             variables:
               - name: Cameras
               - icon: mdi:cctv
-              - path: asdf
+              - path: cameras
           - type: custom:decluttering-card
             template: nav-button
             variables:

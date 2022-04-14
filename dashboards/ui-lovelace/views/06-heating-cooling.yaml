@@ -1,0 +1,5 @@
+icon: mdi:thermometer
+title: Heating & cooling
+path: heating-cooling
+badges: []
+cards: !include_dir_list ../cards/heating-cooling
