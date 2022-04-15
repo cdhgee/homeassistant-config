@@ -6,9 +6,14 @@ cards:
   - type: custom:auto-entities
     card:
       type: custom:layout-card
-      layout_type: masonry
+      layout_type: custom:grid-layout
       layout:
-        max_cols: 3
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr))
+        mediaquery:
+          "(max-width: 800px)":
+            grid-template-columns: 1fr 1fr
+          "(max-width: 400px)":
+            grid-template-columns: 1fr
     filter:
       include:
         - domain: camera
