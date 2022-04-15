@@ -13,10 +13,6 @@ cards:
             variables:
               - name: Lights
               - entity: sensor.number_of_lights_on
-              - label: |
-                  [[[
-                    return entity.state == 0 ? "All off" : entity.state + " on";
-                  ]]]
               - icon: mdi:lightbulb-group
               - path: lights
           - type: custom:decluttering-card
@@ -26,7 +22,7 @@ cards:
               - icon: mdi:palette
               - path: scenes
           - type: custom:decluttering-card
-            template: nav-button
+            template: nav-entity
             variables:
               - name: Blinds
               - entity: sensor.number_of_blinds_open

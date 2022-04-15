@@ -6,7 +6,6 @@ nav-entity:
     entity: "[[entity]]"
     icon: "[[icon]]"
     name: "[[name]]"
-    label: "[[label]]"
-    show_label: true
+    show_state: true
     tap_action:
       navigation_path: "[[path]]"
