@@ -9,11 +9,12 @@ sensor:
         map(attribute='entity_id') |
         list
       %}
-      {{
-        states.light |
+      {%
+        set lights_on = states.light |
         selectattr('state', 'eq', 'on') |
         selectattr('entity_id', 'in', lights) |
         list |
         count
-      }}
+      %}
+      {{ iif(lights_on == 0, 'All off', lights_on | string + ' on') }}
     icon: mdi:lightbulb-group
