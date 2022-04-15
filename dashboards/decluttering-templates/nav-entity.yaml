@@ -9,7 +9,7 @@ nav-entity:
     entity: "[[entity]]"
     icon: "[[icon]]"
     name: "[[name]]"
-    hold: "[[hold]]"
+    hold_action: "[[hold]]"
     show_state: true
     tap_action:
       navigation_path: "[[path]]"
