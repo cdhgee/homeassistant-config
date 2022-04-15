@@ -19,8 +19,7 @@ cards:
                   action: call-service
                   service: light.turn_off
                   service_data:
-                    target:
-                      entity_id: entity
+                    entity_id: entity
           - type: custom:decluttering-card
             template: nav-entity
             variables:
@@ -32,8 +31,7 @@ cards:
                   action: call-service
                   service: light.turn_off
                   service_data:
-                    target:
-                      entity_id: entity
+                    entity_id: entity
           - type: custom:decluttering-card
             template: nav-button
             variables:
