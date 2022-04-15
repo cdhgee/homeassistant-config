@@ -1,4 +1,7 @@
 nav-entity:
+  default:
+    - hold:
+        action: more-info
   card:
     type: custom:button-card
     template:
@@ -6,6 +9,7 @@ nav-entity:
     entity: "[[entity]]"
     icon: "[[icon]]"
     name: "[[name]]"
+    hold: "[[hold]]"
     show_state: true
     tap_action:
       navigation_path: "[[path]]"
