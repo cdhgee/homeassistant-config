@@ -1,0 +1,12 @@
+nav-entity:
+  card:
+    type: custom:button-card
+    template:
+      - nav
+    entity: "[[entity]]"
+    icon: "[[icon]]"
+    name: "[[name]]"
+    label: "[[label]]"
+    show_label: true
+    tap_action:
+      navigation_path: "[[path]]"
