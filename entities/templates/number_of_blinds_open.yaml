@@ -15,7 +15,7 @@ sensor:
         list |
         count
       %}
-      {{ count }}
+      {{ iif(count == 0, 'All closed', count | string + ' open') }}
     icon: >
       {%
         set blinds = expand(state_attr('cover.all_blinds', 'entity_id')) |

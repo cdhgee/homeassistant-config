@@ -16,6 +16,13 @@ cards:
               - icon: mdi:lightbulb-group
               - path: lights
           - type: custom:decluttering-card
+            template: nav-entity
+            variables:
+              - name: Lights
+              - entity: sensor.number_of_ambient_lights_on
+              - icon: mdi:string-lights
+              - path: ambient-lights
+          - type: custom:decluttering-card
             template: nav-button
             variables:
               - name: Scenes
@@ -26,10 +33,6 @@ cards:
             variables:
               - name: Blinds
               - entity: sensor.number_of_blinds_open
-              - label: |
-                  [[[
-                    return entity.state == 0 ? "All closed" : entity.state + " open";
-                  ]]]
               - icon: mdi:window-open
               - path: blinds
           - type: custom:decluttering-card
