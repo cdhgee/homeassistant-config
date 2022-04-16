@@ -8,4 +8,4 @@ single-outer-grid:
           grid-template-columns: 1fr
           margin: 0
           padding: 4px
-          card_margin: 4px
+          card_margin: 0
