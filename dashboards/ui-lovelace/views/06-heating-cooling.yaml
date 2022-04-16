@@ -1,5 +1,25 @@
 icon: mdi:thermometer
 title: Heating & cooling
 path: heating-cooling
+type: panel
 badges: []
-cards: !include_dir_list ../cards/heating-cooling
+cards:
+  - type: custom:decluttering-card
+    template: one-col-grid
+    variables:
+      - cards:
+          - type: custom:decluttering-card
+            template: multi-col-grid
+            variables:
+              - columns: 1fr 1fr
+              - cards:
+                  - type: thermostat
+                    entity: climate.hallway
+                  - type: custom:weather-card
+                    entity: weather.hallway
+                    number_of_forecasts: "5"
+          - type: custom:decluttering-card
+            template: auto-entities-graph
+            variables:
+              - filter-criteria: entity_id
+              - filter-value: "*temperature"
