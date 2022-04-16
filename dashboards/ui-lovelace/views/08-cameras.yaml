@@ -10,10 +10,10 @@ cards:
       layout:
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr))
         mediaquery:
-          "(max-width: 800px)":
-            grid-template-columns: 1fr 1fr
           "(max-width: 400px)":
             grid-template-columns: 1fr
+          "(max-width: 800px)":
+            grid-template-columns: 1fr 1fr
     filter:
       include:
         - domain: camera
