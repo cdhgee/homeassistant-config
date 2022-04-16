@@ -4,7 +4,7 @@ path: updates
 type: panel
 cards:
   - type: custom:decluttering-card
-    template: one-col-grid
+    template: single-outer-grid
     variables:
       - cards:
           - type: custom:decluttering-card
