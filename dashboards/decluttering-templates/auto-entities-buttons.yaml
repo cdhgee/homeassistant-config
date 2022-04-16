@@ -20,5 +20,7 @@ auto-entities-buttons:
             entity_id: this.entity_id
             template:
               - "[[button-template]]"
+      exclude:
+        - state: unavailable
     sort:
       method: "[[sort]]"
