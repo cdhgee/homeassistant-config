@@ -1,0 +1,9 @@
+name: Inside temperature sensors
+
+entities:
+  - sensor.master_bedroom_temperature
+  - sensor.julia_s_bedroom_temperature
+  - sensor.family_room_temperature
+  - sensor.hallway_temperature
+  - sensor.living_room_temperature
+  - sensor.basement_temperature
