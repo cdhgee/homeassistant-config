@@ -4,10 +4,12 @@ multi-col-grid:
     - mediaquery:
         "(max-width: 800px)":
           grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+    - base: root
   card:
     type: custom:decluttering-card
-    template: root-grid
+    template: "[[base]]-grid"
     variables:
       - cards: "[[cards]]"
       - columns: "[[columns]]"
       - mediaquery: "[[mediaquery]]"
+      - spacing: "[[spacing]]"

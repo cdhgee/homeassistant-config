@@ -1,4 +1,6 @@
-root-grid:
+main-grid:
+  default:
+    - card_margin: 0px
   card:
     type: custom:decluttering-card
     template: grid
@@ -10,5 +12,5 @@ root-grid:
           # vertical scroll bar appears in panel mode
           margin: 0px
           padding: 4px
-          card_margin: 4px
+          card_margin: "[[card_margin]]"
       - cards: "[[cards]]"
