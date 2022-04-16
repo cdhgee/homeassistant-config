@@ -21,5 +21,5 @@ cards:
           - type: custom:decluttering-card
             template: auto-entities-graph
             variables:
-              - filter-criteria: entity_id
-              - filter-value: "*temperature"
+              - filter-criteria: group
+              - filter-value: group.inside_temperature_sensors
