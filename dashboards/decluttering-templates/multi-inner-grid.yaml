@@ -7,8 +7,8 @@ multi-inner-grid:
       - layout:
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
           mediaquery:
-          "(max-width: 800px)":
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+            "(max-width: 800px)":
+              grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
           margin: 0
           padding: 0
           card_margin: 4px

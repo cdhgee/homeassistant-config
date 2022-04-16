@@ -1,4 +1,4 @@
-multi-outer-grid:
+single-outer-grid:
   card:
     type: custom:decluttering-card
     template: grid
