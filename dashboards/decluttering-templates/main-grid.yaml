@@ -1,16 +1,10 @@
 main-grid:
   default:
     - card_margin: 0px
+    - layout-type: multi
   card:
     type: custom:decluttering-card
-    template: grid
+    template: "[[layout-type]]-grid"
     variables:
-      - layout:
-          grid-template-columns: "[[columns]]"
-          mediaquery: "[[mediaquery]]"
-          # Set margin to 0 and padding to 4px otherwise
-          # vertical scroll bar appears in panel mode
-          margin: 0px
-          padding: 4px
-          card_margin: "[[card_margin]]"
+      - card_margin: "[[card_margin]]"
       - cards: "[[cards]]"
