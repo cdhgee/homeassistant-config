@@ -1,7 +1,9 @@
 auto-entities-buttons:
   card:
-    type: custom:decluttering-card
-    template: multi-inner-grid
+    type: custom:auto-entities
+    card:
+      type: custom:decluttering-card
+      template: multi-inner-grid
     card_param: cards
     filter:
       include:
