@@ -12,7 +12,9 @@ cards:
             template: multi-inner-grid
             variables:
               - columns: 1fr 1fr
-              - mediaquery: null
+              - mediaquery:
+                  "(max-width: 800px)":
+                    grid-template-columns: 1fr
               - cards:
                   - type: thermostat
                     entity: climate.hallway
