@@ -2,9 +2,3 @@ light:
   template:
     - base
     - binary-entity
-  name: |
-    [[[
-      var pos = entity.attributes.friendly_name.lastIndexOf("-");
-      if(pos === -1) return entity.attributes.friendly_name;
-      else return entity.attributes.friendly_name.substr(pos + 2, 1).toUpperCase() + entity.attributes.friendly_name.substr(pos + 3);
-    ]]]
