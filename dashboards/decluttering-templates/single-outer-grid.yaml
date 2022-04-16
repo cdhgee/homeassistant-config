@@ -1,0 +1,11 @@
+multi-outer-grid:
+  card:
+    type: custom:decluttering-card
+    template: grid
+    variables:
+      - cards: "[[cards]]"
+      - layout:
+          grid-template-columns: 1fr
+          margin: 0
+          padding: 4px
+          card_margin: 4px
