@@ -10,6 +10,7 @@ light.family_room_garden:
 
 light.family_room_lamps:
   icon: mdi:floor-lamp
+  friendly_name: Lamps
 
 light.family_room_lamps_left_top:
   icon: mdi:floor-lamp
