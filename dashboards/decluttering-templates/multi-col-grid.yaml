@@ -1,12 +1,13 @@
 multi-col-grid:
   default:
-    - base-type: root
+    - columns: repeat(auto-fill, minmax(200px, 1fr))
+    - mediaquery:
+        "(max-width: 800px)":
+          grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
   card:
     type: custom:decluttering-card
-    template: "[[base-type]]-grid"
+    template: root-grid
     variables:
       - cards: "[[cards]]"
-      - columns: repeat(auto-fill, minmax(200px, 1fr))
-      - mediaquery:
-          "(max-width: 800px)":
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+      - columns: "[[columns]]"
+      - mediaquery: "[[mediaquery]]"
