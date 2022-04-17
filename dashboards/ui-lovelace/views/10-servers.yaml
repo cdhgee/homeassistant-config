@@ -14,3 +14,12 @@ cards:
               - filter-criteria: group
               - filter-value: group.glances_sensors
               - sort: name
+          - type: custom:decluttering-card
+            template: multi-inner-grid
+            variables:
+              - cards:
+                  - type: custom:button--card
+                    template:
+                      - base
+                      - binary-entity
+                    entity: switch.wake_on_lan_vincent
