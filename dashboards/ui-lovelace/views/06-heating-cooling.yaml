@@ -9,6 +9,11 @@ cards:
     variables:
       - cards:
           - type: custom:decluttering-card
+            template: auto-entities-graph
+            variables:
+              - filter-criteria: group
+              - filter-value: group.inside_temperature_sensors
+          - type: custom:decluttering-card
             template: multi-inner-grid
             variables:
               - columns: 1fr 1fr
@@ -27,8 +32,3 @@ cards:
                   - type: picture-glance
                     camera_image: camera.local_radar
                     entities: []
-          - type: custom:decluttering-card
-            template: auto-entities-graph
-            variables:
-              - filter-criteria: group
-              - filter-value: group.inside_temperature_sensors
