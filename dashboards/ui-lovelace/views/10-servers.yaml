@@ -13,3 +13,4 @@ cards:
             variables:
               - filter-criteria: group
               - filter-value: group.glances_sensors
+              - sort: name
