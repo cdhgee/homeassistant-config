@@ -24,3 +24,4 @@ auto-entities-graph:
         - state: unavailable
     sort:
       method: "[[sort]]"
+      ignore_case: true
