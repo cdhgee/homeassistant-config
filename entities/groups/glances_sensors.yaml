@@ -1,0 +1,7 @@
+name: Glances sensors
+
+entities:
+  - sensor.pi0_cpu_load
+  - sensor.pi0_ram_used
+  - sensor.pi0_used
+  - sensor.pi0_thread

@@ -2,4 +2,14 @@ icon: mdi:server
 title: Servers
 path: servers
 badges: []
-cards: !include_dir_list ../cards/servers
+type: panel
+cards:
+  - type: custom:decluttering-card
+    template: single-outer-grid
+    variables:
+      - cards:
+          - type: custom:decluttering-card
+            template: auto-entities-graph
+            variables:
+              - filter-criteria: group
+              - filter-value: group.glances_sensors
