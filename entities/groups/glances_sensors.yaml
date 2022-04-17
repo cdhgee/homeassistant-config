@@ -2,12 +2,13 @@ name: Glances sensors
 
 entities:
   - sensor.pi0_cpu_load
+  - sensor.pi0_cpu_thermal_1_temperature
   - sensor.pi0_ram_used
   - sensor.pi0_used
   - sensor.pi0_thread
   - sensor.pi3_cpu_load
+  - sensor.pi3_cpu_thermal_1_temperature
   - sensor.pi3_ram_used
   - sensor.pi3_share_used
   - sensor.pi3_thread
   - sensor.pi3_containers_active
-  - sensor.pi3_cpu_thermal_1_temperature
