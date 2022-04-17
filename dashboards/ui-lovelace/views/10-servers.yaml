@@ -23,3 +23,8 @@ cards:
                       - base
                       - binary-entity
                     entity: switch.wake_on_lan_vincent
+                  - type: custom:button-card
+                    template:
+                      - base
+                      - binary-entity
+                    entity: switch.pihole_a
