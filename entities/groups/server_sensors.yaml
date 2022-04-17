@@ -1,4 +1,4 @@
-name: Glances sensors
+name: Server sensors
 
 entities:
   - sensor.pi0_cpu_load
@@ -13,3 +13,5 @@ entities:
   - sensor.pi3_share_used
   - sensor.pi3_thread
   - sensor.pi3_containers_active
+  - sensor.pihole_a_ads_blocked_today
+  - sensor.pihole_a_ads_percentage_blocked_today

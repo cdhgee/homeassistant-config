@@ -12,7 +12,7 @@ cards:
             template: auto-entities-graph
             variables:
               - filter-criteria: group
-              - filter-value: group.glances_sensors
+              - filter-value: group.server_sensors
               - sort: name
           - type: custom:decluttering-card
             template: multi-inner-grid
@@ -28,15 +28,3 @@ cards:
                       - base
                       - binary-entity
                     entity: switch.pihole_a
-                  - type: custom:mini-graph-card
-                    entities:
-                      - sensor.pihole_a_ads_blocked_today
-                    points_per_hour: 1
-                  - type: custom:mini-graph-card
-                    entities:
-                      - sensor.pihole_a_ads_blocked_today
-                    points_per_hour: 1
-                  - type: custom:mini-graph-card
-                    entities:
-                      - sensor.pihole_a_ads_percentage_blocked_today
-                    points_per_hour: 1
