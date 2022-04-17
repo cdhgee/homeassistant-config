@@ -1,0 +1,4 @@
+generic-entity:
+  template: base
+  show_state: true
+  show_label: false
