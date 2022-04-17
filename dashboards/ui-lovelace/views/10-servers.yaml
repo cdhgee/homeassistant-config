@@ -28,3 +28,15 @@ cards:
                       - base
                       - binary-entity
                     entity: switch.pihole_a
+                  - type: custom:mini-graph-card
+                    entities:
+                      - sensor.pihole_a_ads_blocked_today
+                    points_per_hour: 1
+                  - type: custom:mini-graph-card
+                    entities:
+                      - sensor.pihole_a_ads_blocked_today
+                    points_per_hour: 1
+                  - type: custom:mini-graph-card
+                    entities:
+                      - sensor.pihole_a_ads_percentage_blocked_today
+                    points_per_hour: 1
