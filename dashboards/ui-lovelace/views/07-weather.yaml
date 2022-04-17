@@ -1,5 +1,0 @@
-icon: mdi:weather-cloudy
-title: Weather
-path: weather
-badges: []
-cards: !include_dir_list ../cards/weather

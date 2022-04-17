@@ -36,4 +36,3 @@ binary-entity:
     action: toggle
   hold_action:
     action: more-info
-  show_state: true

@@ -1,4 +1,4 @@
 light:
   template:
-    - base
+    - generic-entity
     - binary-entity
