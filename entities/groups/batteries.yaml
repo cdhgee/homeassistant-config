@@ -1,0 +1,10 @@
+name: Batteries
+
+entities:
+  - sensor.family_room_tv_blinds_remote_battery
+  - sensor.family_room_deck_door_blinds_remote_battery
+  - sensor.master_bedroom_blinds_remote_battery
+  - sensor.front_door_lock_battery_level
+  - sensor.front_door_wallmote_quad_battery_level
+  - sensor.living_room_front_door_battery_level
+  - sensor.deck_door_sensor_battery_level
