@@ -8,3 +8,4 @@ entities:
   - sensor.front_door_wallmote_quad_battery_level
   - sensor.living_room_front_door_battery_level
   - sensor.deck_door_sensor_battery_level
+  - sensor.master_bedroom_wallmote_quad_battery_level
