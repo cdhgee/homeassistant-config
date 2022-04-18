@@ -6,3 +6,4 @@ light-group:
       - filter-criteria: group
       - filter-value: "[[group]]"
       - button-template: light
+      - sort: name
