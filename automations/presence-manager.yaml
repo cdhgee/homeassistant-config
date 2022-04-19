@@ -6,7 +6,7 @@ mode: queued
 
 trigger:
   - platform: state
-    entity_id: sensor.number_of_people_home
+    entity_id: zone.home
 
 condition:
   - condition: template
