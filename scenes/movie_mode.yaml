@@ -11,7 +11,7 @@ entities:
     brightness: 127
   light.all_main_lights:
     state: "off"
-  light.family_room_curio:
+  light.family_room_curio_lamp:
     state: "off"
   light.family_room_curio_light:
     state: "off"

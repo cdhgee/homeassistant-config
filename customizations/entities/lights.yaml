@@ -2,7 +2,7 @@ light.outside_gazebo:
   icon: mdi:string-lights
   friendly_name: Gazebo
 
-light.family_room_curio:
+light.family_room_curio_lamp:
   icon: mdi:lamp
 
 light.family_room_garden:

@@ -4,7 +4,7 @@ entities:
   - light.basement_crawlspace
   - light.basement_office
   - light.basement_piano
-  - light.family_room_curio
+  - light.family_room_curio_lamp
   - light.family_room_fireplace
   - light.family_room_garden
   - light.family_room_lamps
