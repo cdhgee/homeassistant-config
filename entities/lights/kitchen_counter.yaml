@@ -1,5 +1,0 @@
-name: Kitchen counter
-
-platform: switch
-
-entity_id: switch.kitchen_counter

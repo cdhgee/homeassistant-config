@@ -1,5 +1,0 @@
-name: Living room Christmas tree
-
-platform: switch
-
-entity_id: switch.christmas_tree
