@@ -1,6 +1,0 @@
-name: All outside main lights
-
-platform: group
-
-entities:
-  - light.outside_gazebo
