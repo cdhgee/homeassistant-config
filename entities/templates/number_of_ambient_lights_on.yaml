@@ -5,14 +5,14 @@ sensor:
     unique_id: 55a8eb87-bcec-4a4e-90d6-18928c39e13e
     state: >
       {%
-        set lights = expand(state_attr('light.all_ambient_lights', 'entity_id')) |
+        set ambient_lights = expand('light.all_ambient_lights') |
         map(attribute='entity_id') |
         list
       %}
       {%
         set ambient_lights_on = states.light |
         selectattr('state', 'eq', 'on') |
-        selectattr('entity_id', 'in', lights) |
+        selectattr('entity_id', 'in', ambient_lights) |
         list |
         count
       %}

@@ -5,7 +5,7 @@ sensor:
     unique_id: a8a09b3c-d7cc-4c7d-9d20-cf026a9a2d9a
     state: >
       {%
-        set lights = expand(state_attr('light.all_main_lights', 'entity_id')) |
+        set lights = expand('light.all_main_lights') |
         map(attribute='entity_id') |
         list
       %}
