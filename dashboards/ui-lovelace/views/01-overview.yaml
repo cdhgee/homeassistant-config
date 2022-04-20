@@ -80,7 +80,7 @@ cards:
             template: nav-button
             variables:
               - name: Modes
-              - icon: mdi:checkbox-marked-circle
+              - icon: mdi:order-bool-ascending-variant
               - path: modes
           - type: custom:decluttering-card
             template: nav-button
@@ -94,9 +94,3 @@ cards:
               - name: Servers
               - icon: mdi:server
               - path: servers
-          - type: custom:decluttering-card
-            template: nav-button
-            variables:
-              - name: Mode controls
-              - icon: mdi:order-bool-ascending-variant
-              - path: modes
