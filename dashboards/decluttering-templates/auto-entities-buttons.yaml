@@ -18,8 +18,7 @@ auto-entities-buttons:
           options:
             type: custom:button-card
             entity: this.entity_id
-            template:
-              - "[[button-template]]"
+            template: "[[button-template]]"
       exclude:
         - state: unavailable
     sort:
