@@ -1,6 +1,0 @@
-name: Outside lights
-
-platform: group
-
-entities:
-  - light.outside_gazebo
