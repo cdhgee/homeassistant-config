@@ -16,10 +16,11 @@ cards:
             template: light-group
             variables:
               - group: light.all_ground_floor_ambient_lights
-          - type: custom:decluttering-card
-            template: light-group
-            variables:
-              - group: light.all_basement_ambient_lights
+          # There aren't any basement ambient lights at present
+          #- type: custom:decluttering-card
+          #  template: light-group
+          #  variables:
+          #    - group: light.all_basement_ambient_lights
           - type: custom:decluttering-card
             template: light-group
             variables:
