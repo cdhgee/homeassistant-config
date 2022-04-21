@@ -1,8 +1,0 @@
-name: All basement main lights
-
-platform: group
-
-entities:
-  - light.basement_crawlspace
-  - light.basement_office
-  - light.basement_piano

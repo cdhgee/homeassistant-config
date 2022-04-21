@@ -1,7 +1,0 @@
-name: Living room lights
-
-platform: group
-
-entities:
-  - light.living_room_sun
-  - light.living_room_entry

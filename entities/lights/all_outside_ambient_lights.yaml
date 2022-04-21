@@ -1,6 +1,0 @@
-name: All outside ambient lights
-
-platform: group
-
-entities:
-  - light.garage_work_light

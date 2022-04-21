@@ -1,7 +1,0 @@
-name: Upstairs bathroom lights
-
-platform: group
-
-entities:
-  - light.upstairs_bathroom_mirror
-  - light.upstairs_bathroom_shower

@@ -1,6 +1,0 @@
-name: Master bedroom lights
-
-platform: group
-
-entities:
-  - light.master_bedroom_bedroom
