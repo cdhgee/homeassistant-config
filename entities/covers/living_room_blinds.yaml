@@ -1,7 +1,0 @@
-name: Living room blinds
-
-platform: group
-
-entities:
-  - cover.living_room_blinds_left
-  - cover.living_room_blinds_right

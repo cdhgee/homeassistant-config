@@ -1,7 +1,0 @@
-name: Kitchen blinds
-
-platform: group
-
-entities:
-  - cover.kitchen_blinds_left
-  - cover.kitchen_blinds_right
