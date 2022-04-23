@@ -10,4 +10,5 @@ conditions:
 sequence:
   - service: scene.turn_on
     target:
-      entity_id: scene.daytime_weekday
+      - entity_id: scene.daytime_common
+      - entity_id: scene.daytime_weekday
