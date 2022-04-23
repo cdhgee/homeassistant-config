@@ -30,7 +30,7 @@ entities:
     state: "on"
     brightness: 255
     # Yellow
-    rgb_color:
+    rgb_color: &yellow
       - 255
       - 191
       - 0
@@ -38,39 +38,30 @@ entities:
     state: "on"
     brightness: 255
     # Orange
-    rgb_color:
+    rgb_color: &yellow
       - 255
       - 127
       - 0
   light.family_room_lamps_left_top:
     state: "on"
     brightness: 255
-    # Pink
-    rgb_color:
+    # Red
+    rgb_color:  &red
       - 255
       - 0
       - 63
   light.family_room_lamps_right_bottom:
     state: "on"
     brightness: 255
-    # Pink
-    rgb_color:
-      - 255
-      - 0
-      - 63
+    # Red
+    rgb_color: *red
   light.family_room_lamps_right_middle:
     state: "on"
     brightness: 255
     # Yellow
-    rgb_color:
-      - 255
-      - 191
-      - 0
+    rgb_color: *yellow
   light.family_room_lamps_right_top:
     state: "on"
     brightness: 255
     # Orange
-    rgb_color:
-      - 255
-      - 127
-      - 0
+    rgb_color: *orange

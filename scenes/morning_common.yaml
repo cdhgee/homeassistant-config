@@ -9,7 +9,7 @@ entities:
     state: "on"
     brightness: 255
     # Pink
-    rgb_color:
+    rgb_color: &pink
       - 191
       - 0
       - 255
@@ -17,7 +17,7 @@ entities:
     state: "on"
     brightness: 255
     # Blue
-    rgb_color:
+    rgb_color: &blue
       - 0
       - 0
       - 255
@@ -25,7 +25,7 @@ entities:
     state: "on"
     brightness: 255
     # Purple
-    rgb_color:
+    rgb_color: &purple
       - 127
       - 0
       - 255
@@ -33,26 +33,17 @@ entities:
     state: "on"
     brightness: 255
     # Blue
-    rgb_color:
-      - 0
-      - 0
-      - 255
+    rgb_color: *blue
   light.family_room_lamps_right_middle:
     state: "on"
     brightness: 255
     # Purple
-    rgb_color:
-      - 127
-      - 0
-      - 255
+    rgb_color: *purple
   light.family_room_lamps_right_top:
     state: "on"
     brightness: 255
     # Pink
-    rgb_color:
-      - 191
-      - 0
-      - 255
+    rgb_color: *pink
   light.living_room_christmas_tree:
     state: "on"
     # No brightness because it's really a switch
