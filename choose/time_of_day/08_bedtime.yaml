@@ -1,0 +1,9 @@
+conditions:
+  - condition: trigger
+    id: bedtime
+
+sequence:
+  - service: script.lock_up
+  - service: input_boolean.turn_off
+    target:
+      entity_id: input_boolean.outside_mode

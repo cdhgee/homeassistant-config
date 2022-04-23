@@ -1,15 +1,8 @@
-alias: Sunrise
-id: 823e0ae7-8900-4fb5-aa3c-3e9b104e8e08
-description: Open blinds at sunrise
+conditions:
+  - condition: trigger
+    id: sunrise
 
-mode: single
-
-trigger:
-  - platform: state
-    entity_id: sun.sun
-    to: above_horizon
-
-action:
+sequence:
   - service: cover.open_cover
     target:
       entity_id:

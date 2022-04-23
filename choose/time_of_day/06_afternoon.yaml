@@ -1,0 +1,8 @@
+conditions:
+  - condition: trigger
+    id: afternoon
+
+sequence:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.evening

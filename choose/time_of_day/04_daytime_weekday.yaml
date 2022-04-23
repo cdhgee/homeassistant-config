@@ -1,0 +1,13 @@
+conditions:
+  - condition: and
+    conditions:
+      - condition: trigger
+        id: daytime
+      - condition: state
+        entity_id: binary_sensor.workday
+        state: "on"
+
+sequence:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.daytime_weekday
