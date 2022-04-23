@@ -22,7 +22,7 @@ action:
           brightness: 255
         light.kitchen_counter_lightstrip:
           state: >
-            {{ ((is_state("light.kitchen_skylight", "on")) or ((state_attr("sun.sun", "elevation") < 7.5) and is_state("input_boolean.nighttime_mode", "off")) | iif("on", "off") }}
+            {{ ((is_state("light.kitchen_skylight", "on")) or ((state_attr("sun.sun", "elevation") < 7.5) and is_state("input_boolean.nighttime_mode", "off"))) | iif("on", "off") }}
           rgb_color:
             - 255
             - 146
