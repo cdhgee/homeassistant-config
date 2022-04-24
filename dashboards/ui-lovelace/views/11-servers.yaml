@@ -21,7 +21,7 @@ cards:
                     template:
                       - base
                       - binary-entity
-                    entity: switch.pihole_a
+                    entity: switch.pi_hole
           - type: custom:decluttering-card
             template: auto-entities-graph
             variables:
