@@ -1,5 +1,0 @@
-name: Kitchen
-
-platform: generic
-
-stream_source: !secret security_camera_kitchen_stream_source

@@ -1,6 +1,0 @@
-name: Stairs
-
-platform: generic
-
-stream_source: !secret security_camera_stairs_stream_source
-still_image_url: notused

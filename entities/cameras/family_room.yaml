@@ -1,5 +1,0 @@
-name: Family room
-
-platform: generic
-
-stream_source: !secret security_camera_family_room_stream_source
