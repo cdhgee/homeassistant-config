@@ -13,3 +13,6 @@ sequence:
       entity_id:
         - scene.morning_common
         - scene.morning_weekday
+  - service: input_boolean.turn_off
+    target:
+      entity_id: input_boolean.nighttime_mode
