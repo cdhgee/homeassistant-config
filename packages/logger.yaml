@@ -1,0 +1,6 @@
+logger:
+  default: warning
+  logs:
+    homeassistant.components.pi_hole: debug
+    homeassistant.components.unifi: debug
+    hole: debug
