@@ -1,0 +1,13 @@
+alias: Outside mode on
+id: 44bb74bb-a9e7-4429-b14d-6d4faf2f00a7
+description: Lock or unlock when outside mode turned off/on
+
+mode: single
+
+trigger:
+  - platform: state
+    entity_id: input_boolean.outside_mode
+
+action:
+  - service: >
+      {{ is_state("input_boolean.outside_mode", "on") | iif("script.open_up", "script.lock_up") }}
