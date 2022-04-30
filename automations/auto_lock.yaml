@@ -6,22 +6,20 @@ description: Lock the front door and close the garage after ten minutes
 mode: restart
 
 trigger:
-  - platform: state
-    entity_id: lock.front_door_lock
-    to: unlocked
-  - platform: state
-    entity_id: cover.garage_door
-    to: open
-  - platform: state
-    entity_id: binary_sensor.living_room_front_door
-    to: "off"
-
-condition:
-  - condition: state
-    entity_id: input_boolean.outside_mode
-    state: "off"
+  - platform: "template"
+    # Only fire if outside mode is off, front door is closed, and
+    # either front door is unlocked or garage door is open
+    value_template: >
+      {{
+        is_state('input_boolean.outside_mode', 'off') and
+        is_state('binary_sensor.living_room_front_door', 'off') and
+        (
+          is_state('lock.front_door_lock', 'unlocked') or
+          is_state('cover.garage_door', 'open')
+        )
+      }}
+    for:
+      minutes: 10
 
 action:
-  - delay:
-      minutes: 10
   - service: script.lock_up
