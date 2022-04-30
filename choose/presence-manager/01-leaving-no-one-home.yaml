@@ -3,9 +3,8 @@ conditions:
   - condition: and
     conditions:
       - condition: state
-        entity_id: sensor.people_home
-        state:
-          - no-one
+        entity_id: zone.home
+        state: 0
       - condition: template
         value_template: >
           {{
@@ -19,6 +18,9 @@ sequence:
   - service: input_boolean.turn_off
     target:
       entity_id: input_boolean.outside_mode
+  - condition: state
+    entity_id: input_boolean.babysitter_mode
+    state: "off"
   - service: light.turn_off
     target:
       entity_id: light.all_main_lights

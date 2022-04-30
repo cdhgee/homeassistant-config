@@ -1,11 +1,6 @@
 conditions:
   - condition: and
     conditions:
-      - condition: state
-        entity_id: sensor.people_home
-        state:
-          - someone
-          - everyone
       - condition: template
         value_template: >
           {{
