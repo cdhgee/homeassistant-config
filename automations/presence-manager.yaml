@@ -8,13 +8,23 @@ trigger:
   - platform: state
     entity_id: zone.home
 
+# Only trigger for legit changes (ignore unavailable),
+# and do not trigger during the night or when away
 condition:
-  - condition: template
-    value_template: >
-      {{
-        not(trigger.from_state.state == "unavailable") and
-        not(trigger.to_state.state == "unavailable")
-      }}
+  - condition: and
+    conditions:
+      - condition: template
+        value_template: >
+          {{ trigger.from_state.state != "unavailable" }}
+      - condition: state
+        value_template: >
+          {{ trigger.to_state.state != "unavailable" }}
+      - condition: state
+        entity_id: input_boolean.nighttime_mode
+        state: "off"
+      - condition: state
+        entity_id: input_boolean.away_mode
+        state: "off"
 
 action:
   - variables:
