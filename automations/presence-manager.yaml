@@ -16,7 +16,7 @@ condition:
       - condition: template
         value_template: >
           {{ trigger.from_state.state != "unavailable" }}
-      - condition: state
+      - condition: template
         value_template: >
           {{ trigger.to_state.state != "unavailable" }}
       - condition: state
