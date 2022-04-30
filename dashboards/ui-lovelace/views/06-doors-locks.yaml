@@ -11,15 +11,15 @@ cards:
           - type: custom:button-card
             entity: lock.front_door_lock
             template:
-              - base
+              - generic-entity
               - binary-entity
           - type: custom:button-card
             entity: binary_sensor.living_room_front_door
             template:
-              - base
+              - generic-entity
               - binary-entity
           - type: custom:button-card
             entity: cover.garage_door
             template:
-              - base
+              - generic-entity
               - binary-entity
