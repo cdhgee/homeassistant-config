@@ -4,7 +4,7 @@ conditions:
     conditions:
       - condition: state
         entity_id: zone.home
-        state: 0
+        state: "0"
       - condition: template
         value_template: >
           {{
