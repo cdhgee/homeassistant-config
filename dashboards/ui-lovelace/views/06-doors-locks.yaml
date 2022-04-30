@@ -1,0 +1,25 @@
+icon: mdi:lock
+title: Doors & locks
+path: doors-locks
+type: panel
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: multi-outer-grid
+    variables:
+      - cards:
+          - type: custom:button-card
+            entity: lock.front_door_lock
+            template:
+              - base
+              - binary-entity
+          - type: custom:button-card
+            entity: binary_sensor.living_room_front_door
+            template:
+              - base
+              - binary-entity
+          - type: custom:button-card
+            entity: cover.garage_door
+            template:
+              - base
+              - binary-entity
