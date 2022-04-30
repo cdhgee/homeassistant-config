@@ -55,12 +55,6 @@ cards:
           - type: custom:decluttering-card
             template: nav-button
             variables:
-              - name: Garage door
-              - icon: mdi:garage
-              - path: garage
-          - type: custom:decluttering-card
-            template: nav-button
-            variables:
               - name: Heating & cooling
               - icon: mdi:thermometer
               - path: heating-cooling
