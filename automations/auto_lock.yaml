@@ -10,7 +10,7 @@ trigger:
     # Only fire if front door is closed, and
     # either front door is unlocked or garage door is open
     entity_id: binary_sensor.auto_lock
-    to: "off"
+    to: "on"
     for:
       minutes: 10
 
