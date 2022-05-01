@@ -33,11 +33,14 @@ entities:
   light.master_bedroom_david_s_bedside:
     state: "on"
     brightness: 127
-    color_name: teal
+    rgb_color: &teal
+      - 61
+      - 255
+      - 255
   light.master_bedroom_monica_s_bedside:
     state: "on"
     brightness: 127
-    color_name: teal
+    rgb_color: *teal
   light.master_bedroom_fairy_lights:
     state: "off"
   # Upstairs bathroom
