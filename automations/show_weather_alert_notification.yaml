@@ -8,17 +8,19 @@ trigger:
   entity_id: sensor.weather_alert_count
 
 action:
-    # Dismiss any current alert so the UI isn't filled up with these if
-    # there are more than one. Only show the latest alert.
+  # Dismiss any current alert so the UI isn"t filled up with these if
+  # there are more than one. Only show the latest alert.
   - service: persistent_notification.dismiss
     data:
       notification_id: weather_alert
     ## Create a new persistant notification in the UI for a new alert
-  - service_template: >
-      {% if states('sensor.weather_alert_event') != 'None' %}
-        persistent_notification.create
-      {% endif %}
+  - condition: template
+    value_template: >
+      {{ not is_state("sensor.weather_alert_event", "None") }}
+  - service: persistent_notification.create
     data_template:
       notification_id: weather_alert
-      message: "{{ state_attr('sensor.weather_alert_event', 'features')[0].properties.description }}"
-      title: "{{ states('sensor.weather_alert_event') }}"
+      message: >
+        {{ state_attr("sensor.weather_alert_event", "features")[0].properties.description }}
+      title: >
+        {{ states("sensor.weather_alert_event") }}
