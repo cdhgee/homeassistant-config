@@ -1,8 +1,8 @@
 name: Mode controls
 
 entities:
+  - input_boolean.away_mode
   - input_boolean.babysitter_mode
-  - input_boolean.guest_mode
   - input_boolean.nighttime_mode
   - input_boolean.outside_mode
   - input_boolean.party_mode
