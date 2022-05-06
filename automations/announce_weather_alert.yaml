@@ -8,8 +8,7 @@ trigger:
     entity_id: sensor.weather_alert_count
 
 condition:
-  condition: and
-  conditions:
+  and:
     - condition: numeric_state
       entity_id: sensor.weather_alert_count
       above: 0
