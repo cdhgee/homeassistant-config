@@ -9,29 +9,4 @@ trigger:
     entity_id: light.kitchen_skylight
 
 action:
-  - service: scene.apply
-    data:
-      entities:
-        light.kitchen_bar:
-          state: >
-            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
-          brightness: 255
-        light.kitchen_counter:
-          state: >
-            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
-          brightness: 255
-        light.kitchen_counter_lightstrip:
-          state: >
-            {{ ((is_state("light.kitchen_skylight", "on")) or ((state_attr("sun.sun", "elevation") < 7.5) and is_state("input_boolean.nighttime_mode", "off"))) | iif("on", "off") }}
-          rgb_color:
-            - 255
-            - 146
-            - 255
-          color_temp: 325
-          brightness: 255
-          color_mode: >
-            {{ ((state_attr("sun.sun", "elevation") < 7.5) and (is_state("light.kitchen_skylight", "off"))) | iif("rgb", "color_temp") }}
-        light.kitchen_sink:
-          state: >
-            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
-          brightness: 255
+  - choose: !include_dir_list ../choose/kitchen-lights

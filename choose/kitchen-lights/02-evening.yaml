@@ -1,0 +1,32 @@
+conditions:
+  - condition: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    below: 7.5
+
+sequence:
+  - service: scene.apply
+    data:
+      entities:
+        light.kitchen_bar:
+          state: >
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+          brightness: 255
+        light.kitchen_counter:
+          state: >
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+          brightness: 255
+        light.kitchen_counter_lightstrip:
+          state: "on"
+          rgb_color:
+            - 255
+            - 146
+            - 255
+          color_temp: 325
+          brightness: 255
+          color_mode: >
+            {{ is_state("light.kitchen_skylight", "off") | iif("rgb", "color_temp") }}
+        light.kitchen_sink:
+          state: >
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+          brightness: 255

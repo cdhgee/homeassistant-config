@@ -1,0 +1,32 @@
+# Lock up when leaving if no-one (or babysitter) home
+conditions:
+  - condition: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    above: 0
+
+sequence:
+  - service: scene.apply
+    data:
+      entities:
+        light.kitchen_bar:
+          state: >
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+          brightness: 255
+        light.kitchen_counter:
+          state: >
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+          brightness: 255
+        light.kitchen_counter_lightstrip:
+          state: >
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+          rgb_color:
+            - 255
+            - 146
+            - 255
+          brightness: 255
+          color_mode: rgb
+        light.kitchen_sink:
+          state: >
+            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+          brightness: 255

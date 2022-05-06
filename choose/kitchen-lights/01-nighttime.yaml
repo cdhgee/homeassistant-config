@@ -1,0 +1,7 @@
+conditions:
+  - condition: state
+    entity_id: input_boolean.nighttime_mode
+    state: "on"
+
+# Don't sync lights during the night
+sequence: []
