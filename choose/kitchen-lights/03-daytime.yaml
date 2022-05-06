@@ -11,15 +11,15 @@ sequence:
       entities:
         light.kitchen_bar:
           state: >
-            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+            {{ light_state }}
           brightness: 255
         light.kitchen_counter:
           state: >
-            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+            {{ light_state }}
           brightness: 255
         light.kitchen_counter_lightstrip:
           state: >
-            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+            {{ light_state }}
           rgb_color:
             - 255
             - 146
@@ -28,5 +28,5 @@ sequence:
           color_mode: rgb
         light.kitchen_sink:
           state: >
-            {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+            {{ light_state }}
           brightness: 255

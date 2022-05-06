@@ -9,4 +9,9 @@ trigger:
     entity_id: light.kitchen_skylight
 
 action:
+  - variables:
+      light_state: >
+        {{ is_state("light.kitchen_skylight", "on") | iif("on", "off") }}
+      color_mode: >
+        {{ is_state("light.kitchen_skylight", "off") | iif("rgb", "color_temp") }}
   - choose: !include_dir_list ../choose/kitchen-lights
