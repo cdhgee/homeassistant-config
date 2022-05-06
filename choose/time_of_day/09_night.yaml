@@ -1,6 +1,5 @@
 conditions:
-  - condition: and
-    conditions:
+  - and:
       - condition: trigger
         id: night
       - condition: state

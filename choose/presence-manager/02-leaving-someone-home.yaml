@@ -1,7 +1,6 @@
 # Lock up when leaving if someone is still home
 conditions:
-  - condition: and
-    conditions:
+  - and:
       - condition: numeric_state
         entity_id: zone.home
         above: 0

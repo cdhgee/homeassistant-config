@@ -11,8 +11,7 @@ trigger:
 # Only trigger for legit changes (ignore unavailable),
 # and do not trigger during the night or when away
 condition:
-  - condition: and
-    conditions:
+  - and:
       - condition: template
         value_template: >
           {{ trigger.from_state.state != "unavailable" }}

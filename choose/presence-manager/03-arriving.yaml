@@ -1,11 +1,9 @@
 conditions:
-  - condition: and
-    conditions:
-      - condition: template
-        value_template: >
-          {{
-            arriving == true
-          }}
+  - condition: template
+    value_template: >
+      {{
+        arriving == true
+      }}
 sequence:
   - service: script.open_up
   - condition: numeric_state

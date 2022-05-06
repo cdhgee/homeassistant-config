@@ -1,7 +1,6 @@
 # Lock up when leaving if no-one (or babysitter) home
 conditions:
-  - condition: and
-    conditions:
+  - and:
       - condition: state
         entity_id: zone.home
         state: "0"
