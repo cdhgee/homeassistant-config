@@ -1,11 +1,10 @@
 alias: "Open up"
 
 sequence:
-  - alias: "Open the garage door"
-    service: script.turn_on
-    target:
-      entity_id: script.open_garage
-  - alias: "Unlock the front door"
-    service: lock.unlock
-    target:
-      entity_id: lock.front_door_lock
+  - parallel:
+      - alias: "Open the garage door"
+        service: script.open_garage
+      - alias: "Unlock the front door"
+        service: lock.unlock
+        target:
+          entity_id: lock.front_door_lock
