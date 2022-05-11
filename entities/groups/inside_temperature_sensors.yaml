@@ -5,5 +5,6 @@ entities:
   - sensor.julia_s_bedroom_temperature
   - sensor.family_room_temperature
   - sensor.hallway_temperature
+  - sensor.hallway_humidity
   - sensor.living_room_temperature
   - sensor.basement_temperature
