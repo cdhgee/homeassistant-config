@@ -1,0 +1,23 @@
+icon: mdi:weather-cloudy
+title: Weather
+path: weather
+type: panel
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: multi-outer-grid
+    variables:
+      - columns: 1fr 1fr
+      - mediaquery:
+          "(max-width: 800px)":
+            grid-template-columns: 1fr
+      - cards:
+          - type: custom:weather-card
+            entity: weather.hallway
+            number_of_forecasts: "5"
+          - type: picture-glance
+            camera_image: camera.regional_radar
+            entities: []
+          - type: picture-glance
+            camera_image: camera.local_radar
+            entities: []

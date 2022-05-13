@@ -1,0 +1,21 @@
+icon: mdi:thermometer
+title: Heating & cooling
+path: heating-cooling
+type: panel
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: multi-outer-grid
+    variables:
+      - columns: 1fr 1fr
+      - mediaquery:
+          "(max-width: 800px)":
+            grid-template-columns: 1fr
+      - cards:
+          - type: thermostat
+            entity: climate.hallway
+      - type: custom:decluttering-card
+        template: auto-entities-graph
+        variables:
+          - filter-criteria: group
+          - filter-value: group.inside_temperature_sensors

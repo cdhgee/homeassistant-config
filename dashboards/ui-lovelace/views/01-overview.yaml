@@ -55,6 +55,12 @@ cards:
           - type: custom:decluttering-card
             template: nav-button
             variables:
+              - name: Cameras
+              - icon: mdi:cctv
+              - path: cameras
+          - type: custom:decluttering-card
+            template: nav-button
+            variables:
               - name: Heating & cooling
               - icon: mdi:thermometer
               - path: heating-cooling
@@ -67,15 +73,15 @@ cards:
           - type: custom:decluttering-card
             template: nav-button
             variables:
-              - name: Cameras
-              - icon: mdi:cctv
-              - path: cameras
+              - name: Batteries
+              - icon: mdi:battery-70
+              - path: batteries
           - type: custom:decluttering-card
             template: nav-button
             variables:
-              - name: Modes
-              - icon: mdi:order-bool-ascending-variant
-              - path: modes
+              - name: Servers
+              - icon: mdi:server
+              - path: servers
           - type: custom:decluttering-card
             template: nav-button
             variables:
@@ -85,6 +91,6 @@ cards:
           - type: custom:decluttering-card
             template: nav-button
             variables:
-              - name: Servers
-              - icon: mdi:server
-              - path: servers
+              - name: Modes
+              - icon: mdi:order-bool-ascending-variant
+              - path: modes
