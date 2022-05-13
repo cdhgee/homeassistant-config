@@ -1,5 +1,6 @@
 icon: mdi:battery-70
 title: Batteries
+path: batteries
 type: panel
 cards:
   - type: custom:decluttering-card
