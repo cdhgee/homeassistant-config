@@ -1,0 +1,25 @@
+conditions:
+  - and:
+      - condition: trigger
+        id: morning
+
+sequence:
+  - if:
+      - condition: state
+        entity_id: binary_sensor.workday
+        state: "off"
+    then:
+      - service: scene.turn_on
+        target:
+          entity_id:
+            - scene.morning_common
+            - scene.morning_weekend
+    else:
+      - service: scene.turn_on
+        target:
+          entity_id:
+            - scene.morning_common
+            - scene.morning_weekday
+  - service: input_boolean.turn_off
+    target:
+      entity_id: input_boolean.nighttime_mode
