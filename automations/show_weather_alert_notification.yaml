@@ -14,13 +14,15 @@ action:
     data:
       notification_id: weather_alert
     ## Create a new persistant notification in the UI for a new alert
-  - condition: template
-    value_template: >
-      {{ not is_state("sensor.weather_alert_event", "None") }}
-  - service: persistent_notification.create
-    data_template:
-      notification_id: weather_alert
-      message: >
-        {{ state_attr("sensor.weather_alert_event", "features")[0].properties.description }}
-      title: >
-        {{ states("sensor.weather_alert_event") }}
+  - if:
+      - condition: numeric_state
+        entity_id: sensor.weather_alert_count
+        above: 0
+    then:
+      - service: persistent_notification.create
+        data_template:
+          notification_id: weather_alert
+          message: >
+            {{ state_attr("sensor.weather_alert_event", "features")[0].properties.description }}
+          title: >
+            {{ states("sensor.weather_alert_event") }}
