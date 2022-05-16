@@ -4,4 +4,15 @@ conditions:
     state: "on"
 
 # Don't sync lights during the night
-sequence: []
+sequence:
+  - service: scene.apply
+    data:
+      entities:
+        light.kitchen_bar:
+          state: "off"
+        light.kitchen_counter:
+          state: "off"
+        light.kitchen_counter_lightstrip:
+          state: "off"
+        light.kitchen_sink:
+          state: "off"
