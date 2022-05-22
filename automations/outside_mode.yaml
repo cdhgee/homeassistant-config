@@ -15,5 +15,8 @@ action:
         state: "on"
     then:
       - service: script.open_up
+      - service: timer.cancel
+        target:
+          entity_id: timer.auto_lock
     else:
       - service: script.lock_up

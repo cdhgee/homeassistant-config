@@ -11,9 +11,13 @@ trigger:
 
 action:
   - if:
-      - condition: state
-        entity_id: binary_sensor.auto_lock
-        state: "on"
+      - and:
+          - condition: state
+            entity_id: binary_sensor.auto_lock
+            state: "on"
+          - condition: state
+            entity_id: input_boolean.outside_mode
+            state: "off"
     then:
       - service: timer.start
         target:

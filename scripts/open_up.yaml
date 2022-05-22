@@ -8,7 +8,3 @@ sequence:
         service: lock.unlock
         target:
           entity_id: lock.front_door_lock
-      - alias: Start auto-lock timer
-        service: timer.start
-        target:
-          entity_id: timer.auto_lock
