@@ -1,24 +1,15 @@
 alias: Auto lock
 id: 7d8eb4e1-f63f-4bed-a5f1-1b7134bfaf7a
-description: Lock the front door and close the garage after ten minutes
+description: Auto-lock when timer expires
 
 # If any of the triggers occurs again during the delay, restart
-mode: restart
+mode: single
 
 trigger:
-  - platform: state
-    # Only fire if front door is closed, and
-    # either front door is unlocked or garage door is open
-    entity_id: binary_sensor.auto_lock
-    to: "on"
-    for:
-      minutes: 10
-
-# Only continue if outside mode is off
-condition:
-  - condition: state
-    entity_id: input_boolean.outside_mode
-    state: "off"
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.auto_lock
 
 action:
   - service: script.lock_up

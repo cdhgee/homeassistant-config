@@ -2,8 +2,13 @@ alias: "Lock up"
 
 sequence:
   - parallel:
-      - service: script.close_garage
-      - alias: "Lock the front door"
+      - alias: Close the garage door
+        service: script.close_garage
+      - alias: Lock the front door
         service: lock.lock
         target:
           entity_id: lock.front_door_lock
+      - alias: Cancel auto-lock timer
+        service: timer.cancel
+        target:
+          entity_id: timer.auto_lock

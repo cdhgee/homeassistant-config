@@ -6,10 +6,10 @@ binary_sensor:
     # True if at the deck door is open for more than one minute
     state: >
       {{
-        (is_state('binary_sensor.living_room_front_door', 'off')) and
+        (is_state("binary_sensor.living_room_front_door", "off")) and
         (
-          is_state('lock.front_door_lock', 'unlocked') or
-          is_state('cover.garage_door', 'open')
+          is_state("lock.front_door_lock", "unlocked") or
+          is_state("cover.garage_door", "open")
         )
       }}
     icon: mdi:lock-reset
