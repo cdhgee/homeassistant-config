@@ -1,0 +1,18 @@
+alias: Auto lock timer
+id: 34e1224e-2026-4f18-bd9f-0217227a033c
+description: Start auto-lock timer
+
+# If any of the triggers occurs again during the delay, restart
+mode: restart
+
+trigger:
+  - platform: state
+    # Only fire if front door is closed, and
+    # either front door is unlocked or garage door is open
+    entity_id: binary_sensor.auto_lock
+    to: "on"
+
+action:
+  - service: timer.start
+    target:
+      entity_id: timer.auto_lock
