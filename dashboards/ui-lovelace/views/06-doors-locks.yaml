@@ -23,3 +23,7 @@ cards:
             template:
               - generic-entity
               - binary-entity
+          - type: custom:button-card
+            entity: timer.auto_lock
+            template:
+              - generic-entity
