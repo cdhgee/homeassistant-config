@@ -6,9 +6,13 @@ sequence:
   # If party mode is off, close all blinds
   # If party mode is on, close all blinds except the deck door blinds
   - if:
-      - condition: state
-        entity_id: input_boolean.party_mode
-        state: "on"
+      - or:
+          - condition: state
+            entity_id: input_boolean.party_mode
+            state: "on"
+          - condition: state
+            entity_id: binary_sensor.family_room_deck_door
+            state: open
     then:
       - service: cover.close_cover
         target:
