@@ -27,3 +27,8 @@ cards:
             entity: timer.auto_lock
             template:
               - generic-entity
+          - type: custom:button-card
+            entity: binary_sensor.family_room_deck_door
+            template:
+              - generic-entity
+              - binary-entity
