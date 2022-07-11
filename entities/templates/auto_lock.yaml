@@ -12,7 +12,7 @@ binary_sensor:
     #  {{
     #    (is_state("binary_sensor.living_room_front_door", "off")) and
     #    (
-    #      is_state("lock.front_door_lock", "unlocked") or
+    #      is_state("lock.front_door", "unlocked") or
     #      is_state("cover.garage_door", "open")
     #    )
     #  }}

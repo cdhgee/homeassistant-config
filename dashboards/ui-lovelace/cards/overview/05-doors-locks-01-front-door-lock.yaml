@@ -2,4 +2,4 @@ type: custom:button-card
 template:
   - base
   - door-or-lock
-entity: lock.front_door_lock
+entity: lock.front_door

@@ -2,11 +2,12 @@ unique_id: 45be6554-301c-4a60-99c3-85cc229e6960
 
 binary_sensor:
   - name: Front door unlocked
-    unique_id: 2d6db9ea-9fed-49cd-8e7c-11162eac127e
+    unique_id:
+      2d6db9ea-9fed-49cd-8e7c-11162eac127e
       # True if the front door is open for more than one minute
     state: >
       {{
-        is_state('lock.front_door_lock', 'unlocked') and
+        is_state('lock.front_door', 'unlocked') and
         (is_state('input_boolean.outside_mode', 'off') or is_state('binary_sensor.no_one_home', 'on'))
       }}
     icon: mdi:lock-open

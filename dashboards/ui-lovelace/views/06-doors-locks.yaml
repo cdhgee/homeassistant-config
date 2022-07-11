@@ -9,7 +9,7 @@ cards:
     variables:
       - cards:
           - type: custom:button-card
-            entity: lock.front_door_lock
+            entity: lock.front_door
             template:
               - generic-entity
               - binary-entity
