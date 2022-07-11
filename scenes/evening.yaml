@@ -1,32 +1,32 @@
 name: Evening
 
 entities:
-  light.living_room_window:
+  light.hallway_lamp:
     state: "on"
     brightness: 255
     color_temp: 454
-  light.kitchen_counter:
-    state: "on"
-  light.kitchen_counter_lightstrip:
-    state: "on"
-    brightness: 255
-    # Red  -orange
-    rgb_color:
-      - 255
-      - 65
-      - 0
-  light.family_room_garden:
-    state: "on"
-    brightness: 255
-  light.family_room_curio_lamp:
-    state: "on"
-    brightness: 255
-  light.family_room_curio_light:
-    state: "on"
-    brightness: 255
-  light.master_bedroom_fairy_lights:
-    state: "on"
-  light.family_room_lamps_left_bottom:
+  #light.kitchen_counter:
+  #  state: "on"
+  #light.kitchen_counter_lightstrip:
+  #  state: "on"
+  #  brightness: 255
+  #  # Red  -orange
+  #  rgb_color:
+  #    - 255
+  #    - 65
+  #    - 0
+  #light.family_room_garden:
+  #  state: "on"
+  #  brightness: 255
+  #light.family_room_curio_lamp:
+  #  state: "on"
+  #  brightness: 255
+  #light.family_room_curio_light:
+  #  state: "on"
+  #  brightness: 255
+  #light.master_bedroom_fairy_lights:
+  #  state: "on"
+  light.master_bedroom_lamp_bottom:
     state: "on"
     brightness: 255
     # Yellow
@@ -34,7 +34,7 @@ entities:
       - 255
       - 191
       - 0
-  light.family_room_lamps_left_middle:
+  light.master_bedroom_lamp_middle:
     state: "on"
     brightness: 255
     # Orange
@@ -42,7 +42,7 @@ entities:
       - 255
       - 127
       - 0
-  light.family_room_lamps_left_top:
+  light.master_bedroom_lamp_top:
     state: "on"
     brightness: 255
     # Red
@@ -50,17 +50,17 @@ entities:
       - 255
       - 0
       - 63
-  light.family_room_lamps_right_bottom:
+  light.great_room_lamp_bottom:
     state: "on"
     brightness: 255
     # Red
     rgb_color: *red
-  light.family_room_lamps_right_middle:
+  light.great_room_lamp_middle:
     state: "on"
     brightness: 255
     # Yellow
     rgb_color: *yellow
-  light.family_room_lamps_right_top:
+  light.great_room_lamp_top:
     state: "on"
     brightness: 255
     # Orange
