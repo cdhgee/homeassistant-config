@@ -7,6 +7,8 @@ lovelace:
       type: module
     - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
       type: module
+    - url: /hacsfiles/lovelace-fold-entity-row/fold-entity-row.js
+      type: module
     - url: /hacsfiles/lovelace-layout-card/layout-card.js
       type: module
     - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
@@ -19,8 +21,8 @@ lovelace:
   dashboards:
     front-door-lock: # Needs to contain a hyphen (-)
       mode: yaml
-      filename: dashboards/keymaster/dashboard.yaml
+      filename: dashboards/keymaster/front_door.yaml
       title: Front door
-      icon: mdi:tools
+      icon: mdi:lock
       show_in_sidebar: true
       require_admin: true
