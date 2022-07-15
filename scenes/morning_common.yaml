@@ -1,11 +1,9 @@
 name: Morning - common
 
 entities:
-  light.living_room_window:
-    state: "on"
-    brightness: 255
-    color_temp: 153
-  light.family_room_lamps_left_bottom:
+  light.hallway_lamp:
+    state: "off"
+  light.great_room_lamp_bottom:
     state: "on"
     brightness: 255
     # Pink
@@ -13,7 +11,7 @@ entities:
       - 191
       - 0
       - 255
-  light.family_room_lamps_left_middle:
+  light.great_room_lamp_middle:
     state: "on"
     brightness: 255
     # Blue
@@ -21,7 +19,7 @@ entities:
       - 0
       - 0
       - 255
-  light.family_room_lamps_left_top:
+  light.great_room_lamp_top:
     state: "on"
     brightness: 255
     # Purple
@@ -29,21 +27,3 @@ entities:
       - 127
       - 0
       - 255
-  light.family_room_lamps_right_bottom:
-    state: "on"
-    brightness: 255
-    # Blue
-    rgb_color: *blue
-  light.family_room_lamps_right_middle:
-    state: "on"
-    brightness: 255
-    # Purple
-    rgb_color: *purple
-  light.family_room_lamps_right_top:
-    state: "on"
-    brightness: 255
-    # Pink
-    rgb_color: *pink
-  light.living_room_christmas_tree:
-    state: "on"
-    # No brightness because it's really a switch
