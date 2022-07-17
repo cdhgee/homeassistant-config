@@ -1,6 +1,6 @@
 type: custom:button-card
 template:
   - climate-summary
-entity: climate.hallway
+entity: climate.ground_floor
 tap_action:
   navigation_path: /lovelace/comfort

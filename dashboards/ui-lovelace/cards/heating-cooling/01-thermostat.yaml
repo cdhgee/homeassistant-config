@@ -1,2 +1,2 @@
 type: thermostat
-entity: climate.hallway
+entity: climate.ground_floor

@@ -13,7 +13,7 @@ sequence:
   - service: script.lock_up
   - service: ecobee.resume_program
     data:
-      entity_id: climate.hallway
+      entity_id: climate.ground_floor
   - service: input_boolean.turn_off
     target:
       entity_id: input_boolean.outside_mode
