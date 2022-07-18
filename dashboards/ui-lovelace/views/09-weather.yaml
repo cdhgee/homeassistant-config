@@ -13,7 +13,7 @@ cards:
             grid-template-columns: 1fr
       - cards:
           - type: custom:weather-card
-            entity: weather.hallway
+            entity: weather.home
             number_of_forecasts: "5"
           - type: picture-glance
             camera_image: camera.regional_radar
