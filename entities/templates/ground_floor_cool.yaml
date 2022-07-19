@@ -1,0 +1,10 @@
+unique_id: b6fb9fcc-5f97-4506-8181-9815897882c0
+
+binary_sensor:
+  - name: Ground floor cool on
+    unique_id: 7f5ea8a3-4241-4f69-84d6-b820eed9d635
+    state: >
+      {{
+        is_state_attr("climate.ground_floor", "hvac_action", "cooling")
+      }}
+    icon: mdi:thermometer
