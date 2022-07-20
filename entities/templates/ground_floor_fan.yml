@@ -1,8 +1,8 @@
-unique_id: 90fecc83-1f1a-4ad9-8878-d9c2f9341499
+unique_id: 2d8ab5df-6e6c-4338-8a4b-56dbbc4b44c9
 
 binary_sensor:
   - name: Ground floor fan on
-    unique_id: f0de2f9c-9d15-46ab-876b-3d43375d3e4f
+    unique_id: a0138b85-e98b-44cd-ad32-5f8bfd75e185
     state: >
       {{
         is_state_attr("climate.ground_floor", "fan", "on")
