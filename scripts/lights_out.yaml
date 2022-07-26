@@ -7,6 +7,12 @@ sequence:
   - service: input_boolean.turn_off
     target:
       entity_id: input_boolean.babysitter_mode
-  - service: scene.turn_on
+  - service: light.turn_off
     target:
-      entity_id: scene.lights_out
+      entity_id: >
+        {%
+          set exclusion = expand("light.lights_out_exclusion") | map(attribute = "entity_id") | list
+        %}
+        {{
+          expand(states.light) | rejectattr("entity_id", "in", exclusion) | map(attribute = "entity_id") | list
+        }}
