@@ -11,4 +11,5 @@ trigger:
 action:
   - service: frontend.set_theme
     data:
-      name: waves-dark
+      name: waves
+      mode: dark
