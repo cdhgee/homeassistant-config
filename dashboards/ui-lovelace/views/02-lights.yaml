@@ -23,4 +23,4 @@ cards:
           - type: custom:decluttering-card
             template: light-group
             variables:
-              - group: light.all_outside_main_lights
+              - group: light.all_exterior_main_lights
