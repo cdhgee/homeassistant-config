@@ -2,7 +2,6 @@ scene:
   template:
     - base
     - name-only
-  icon: mdi:palette
   tap_action:
     action: call-service
     service: scene.turn_on
