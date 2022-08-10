@@ -14,6 +14,8 @@ cards:
       - cards:
           - type: thermostat
             entity: climate.ground_floor
+          - type: thermostat
+            entity: climate.upstairs
           - type: custom:decluttering-card
             template: auto-entities-graph
             variables:
