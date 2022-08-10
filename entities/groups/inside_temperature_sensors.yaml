@@ -1,4 +1,6 @@
 name: Inside temperature sensors
 
 entities:
+  - sensor.hallway_temperature
   - sensor.sunroom_temperature
+  - sensor.loft_temperature
