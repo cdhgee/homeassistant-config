@@ -1,0 +1,9 @@
+unique_id: 34de987d-7f0d-4712-89bc-334a7ca44d88
+
+sensor:
+  - name: Hallway temperature
+    unique_id: 2bf26d28-b76f-4c37-bfd9-ae22531d90cf
+    state: >
+      {{ state_attr("climate.ground_floor", "current_temperature") }}
+    device_class: temperature
+    unit_of_measurement: °F
