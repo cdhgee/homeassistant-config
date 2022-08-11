@@ -6,3 +6,4 @@ entities:
   - input_boolean.nighttime_mode
   - input_boolean.outside_mode
   - input_boolean.party_mode
+  - input_boolean.stairwell_lights_auto_off
