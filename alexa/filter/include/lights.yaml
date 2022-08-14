@@ -1,23 +1,7 @@
-# Main lights
-
-- light.basement_office
-- light.basement_piano
-- light.crawlspace
-- light.family_room_fireplace
-- light.family_room_overhead
-- light.julia_s_bedroom_ceiling_light
-- light.kitchen_skylight
-- light.living_room_entry
-- light.living_room_sun
-- light.master_bedroom_bedroom
-- light.upstairs_bathroom_mirror
-- light.upstairs_bathroom_shower
-- light.upstairs_hallway_landing
-
-# Ambient lights
-
-- light.family_room_lamps
-- light.master_bedroom_closet
-- light.master_bedroom_david_s_bedside
-- light.master_bedroom_fairy_lights
-- light.master_bedroom_monica_s_bedside
+- light.dining_room_chandelier
+- light.great_room_fireplace
+- light.great_room_greenhouse_windows
+- light.kitchen_island
+- light.kitchen_nook
+- light.stairwell_upper
+- light.sunroom_lights
