@@ -1,13 +1,15 @@
 light.dining_room_chandelier:
   name: Dining room
+light.great_room_ceiling_fan:
+  name: Great room ceiling fan
 light.great_room_fireplace:
   name: Fireplace
 light.great_room_greenhouse_windows:
-  name: Greenhouse windows
+  name: Greenhouse
 light.kitchen_island:
-  name: Kitchen island
+  name: Island
 light.kitchen_nook:
-  name: Kitchen nook
+  name: Nook
 light.stairwell_upper:
   name: Stairwell
 light.sunroom_lights:

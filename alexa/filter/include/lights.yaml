@@ -1,7 +1,13 @@
+# Individual lights
 - light.dining_room_chandelier
+- light.great_room_ceiling_fan
 - light.great_room_fireplace
 - light.great_room_greenhouse_windows
 - light.kitchen_island
 - light.kitchen_nook
 - light.stairwell_upper
 - light.sunroom_lights
+
+# Groups of lights
+- light.great_room_lights
+- light.kitchen_lights
