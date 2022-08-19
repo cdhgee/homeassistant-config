@@ -1,7 +1,8 @@
 name: Weather alert event
 
 platform: rest
-
+unique_id: c3812ddc-3591-4c12-a199-ba4bb36edb21
+icon: mdi:cloud-alert
 resource: https://api.weather.gov/alerts/active?zone=ILZ013,ILC043
 value_template: >
   {{
