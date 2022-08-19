@@ -22,12 +22,3 @@ sequence:
           | map(attribute = "entity_id")
           | list
         }}
-
-
-{% set exclusions = expand("light.lights_out_exclusions") | map(attribute = "entity_id") | list %}
-
-{{
-
-  states.light | rejectattr("entity_id", "in", exclusions) | rejectattr("attributes.entity_id", "defined") | rejectattr("state", "eq", "unavailable") | map(attribute = "entity_id") | list
-
-}}
