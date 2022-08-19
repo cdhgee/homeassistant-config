@@ -1,0 +1,7 @@
+unique_id: da207e02-7ff4-410c-aad2-ecfe237f7fac
+
+sensor:
+  - name: Weather alert count
+    unique_id: 2c018c60-0b43-4f3e-926e-0b3a176166e6
+    state: >
+      {{ state_attr("sensor.weather_alert_event", "features") | length }}
