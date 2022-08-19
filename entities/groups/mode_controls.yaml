@@ -1,6 +1,7 @@
 name: Mode controls
 
 entities:
+  - input_boolean.auto_cool
   - input_boolean.away_mode
   - input_boolean.babysitter_mode
   - input_boolean.nighttime_mode
