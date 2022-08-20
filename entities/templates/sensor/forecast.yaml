@@ -10,7 +10,7 @@ sensor:
     icon: >
       {%
         set icons = {
-          "partlycloudy": "mdi:weather-partly-cloudy"
+          "partlycloudy": "mdi:weather-partly-cloudy",
           "cloudy": "mdi:weather-cloudy"
         }
       %}
