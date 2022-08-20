@@ -13,8 +13,11 @@ cards:
             grid-template-columns: 1fr
       - cards:
           - type: custom:weather-card
-            entity: weather.home
+            entity: weather.ground_floor
             number_of_forecasts: "5"
+            hourly_forecast: false
+            forecast: true
+            current: true
           - type: picture-glance
             camera_image: camera.regional_radar
             entities: []
