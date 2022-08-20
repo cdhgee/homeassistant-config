@@ -1,0 +1,12 @@
+unique_id: 85b482fc-b5bb-44e3-a494-3c3de43f2b6c
+
+binary_sensor:
+  - name: Auto cool trigger
+    unique_id: d19e025e-6d30-4e0d-ac3f-0caf42bc80ba
+    # True if at the deck door is open for more than one minute
+    state: >
+      {% set setpoint = state_attr("climate.ground_floor", "temperature") | int %}
+      {% set inside = state_attr("climate.ground_floor", "current_temperature") | int %}
+      {% set outside = state_attr("weather.ground_floor", "temperature") | int %}
+      {{ min(setpoint, inside) - outside > 2 }}
+    icon: mdi:fan-auto
