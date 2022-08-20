@@ -10,8 +10,8 @@ sensor:
     icon: >
       {%
         set icons = {
-          "partlycloudy" = "mdi:weather-partly-cloudy"
-          "cloudy" = "mdi:weather-cloudy"
+          "partlycloudy": "mdi:weather-partly-cloudy"
+          "cloudy": "mdi:weather-cloudy"
         }
       %}
       {{ icons[state_attr("weather.ground_floor", "forecast")[0].condition] }}
