@@ -1,0 +1,18 @@
+{%
+  set icons = {
+    "partlycloudy" = "mdi:weather-partly-cloudy"
+    "cloudy" = "mdi:weather-cloudy"
+  }
+%}
+
+unique_id: feac2b2d-28fc-4322-95b6-7334fadc384d
+
+sensor:
+  - name: Forecast - day 1
+    unique_id: 05e1f61e-36bd-4185-bc5c-4ee4a23003d8
+    state: >
+      {{ state_attr("weather.ground_floor", "forecast")[0].temperature }}
+    device_class: temperature
+    unit_of_measurement: °F
+    icon: >
+      {{ icons[state_attr("weather.ground_floor", "forecast")[0].condition] }}
