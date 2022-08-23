@@ -1,5 +1,0 @@
-conditions:
-  - condition: template
-    value_template: "{{ action_name == 'KeyPressed' and property_key == '002'}}"
-sequence:
-  - service: script.lights_out
