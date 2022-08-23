@@ -5,8 +5,13 @@ binary_sensor:
     unique_id: d19e025e-6d30-4e0d-ac3f-0caf42bc80ba
     # True if at the deck door is open for more than one minute
     state: >
-      {% set setpoint = state_attr("climate.ground_floor", "temperature") | int %}
-      {% set inside = state_attr("climate.ground_floor", "current_temperature") | int %}
-      {% set outside = state_attr("weather.ground_floor", "temperature") | int %}
+      {% set setpoint = state_attr("climate.ground_floor", "temperature") | int(-999) %}
+      {% set inside = state_attr("climate.ground_floor", "current_temperature") | int(-999) %}
+      {% set outside = state_attr("weather.ground_floor", "temperature") | int(-999) %}
       {{ min(setpoint, inside) - outside > 2 }}
+    availability: >
+      {% set setpoint = state_attr("climate.ground_floor", "temperature") | int(-999) %}
+      {% set inside = state_attr("climate.ground_floor", "current_temperature") | int(-999) %}
+      {% set outside = state_attr("weather.ground_floor", "temperature") | int(-999) %}
+      {{ min(setpoint, inside, outside) != -999 }}
     icon: mdi:fan-auto
