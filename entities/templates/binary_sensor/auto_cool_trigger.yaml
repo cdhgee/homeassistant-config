@@ -8,7 +8,7 @@ binary_sensor:
       {% set setpoint = states("input_number.previous_setpoint") | int(-999) %}
       {% set inside = state_attr("climate.ground_floor", "current_temperature") | int(-999) %}
       {% set outside = state_attr("weather.ground_floor", "temperature") | int(-999) %}
-      {{ min(setpoint, inside) - outside) > 2 }}
+      {{ min(setpoint, inside) - outside > 2 }}
     availability: >
       {% set inside = state_attr("climate.ground_floor", "current_temperature") | int(-999) %}
       {% set outside = state_attr("weather.ground_floor", "temperature") | int(-999) %}
