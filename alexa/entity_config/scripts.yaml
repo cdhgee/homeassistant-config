@@ -1,0 +1,4 @@
+script.time_of_day_06_bedtime:
+  name: Bedtime
+script.time_of_day_07_night:
+  name: Lights out
