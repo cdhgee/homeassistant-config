@@ -7,7 +7,7 @@ binary_sensor:
       # True if the front door is open for more than one minute
     state: >
       {{
-        is_state('binary_sensor.front_door_open', 'open') and
+        is_state("binary_sensor.front_door_open", "on") and
         (now() - states.binary_sensor.front_door_open.last_changed > timedelta(minutes = 1))
       }}
     icon: mdi:door-open
