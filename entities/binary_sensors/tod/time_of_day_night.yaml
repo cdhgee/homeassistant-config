@@ -1,6 +1,0 @@
-name: Time of day - night
-
-platform: tod
-
-after: 00:00
-before: sunrise
