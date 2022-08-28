@@ -1,6 +1,6 @@
 name: "Front door open"
 title: "Door open"
-message: "Front door open for {{ relative_time(states.binary_sensor.living_room_front_door.last_changed) }}"
+message: "Front door open for {{ relative_time(states.binary_sensor.front_door_open.last_changed) }}"
 done_message: "Front door closed"
 entity_id: binary_sensor.front_door_open
 state: "on"
