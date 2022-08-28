@@ -3,5 +3,5 @@ name: all_mobile_devices
 platform: group
 
 services:
-  - service: notify.mobile_app_baller
-  - service: notify.mobile_app_s21
+  - service: mobile_app_baller
+  - service: mobile_app_s21
