@@ -14,7 +14,7 @@ cards:
               - generic-entity
               - binary-entity
           - type: custom:button-card
-            entity: binary_sensor.living_room_front_door
+            entity: binary_sensor.front_door_open
             template:
               - generic-entity
               - binary-entity
