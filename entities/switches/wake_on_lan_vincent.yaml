@@ -6,4 +6,4 @@ switches:
     value_template: >
       {{ is_state("binary_sensor.ping_vincent", "on") }}
     unique_id: 3fc1e6a2-ef05-4071-be63-895e35a4cbe6
-    display_name: Wake-on-LAN - vincent
+    name: Wake-on-LAN - vincent
