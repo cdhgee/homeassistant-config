@@ -10,12 +10,6 @@ cards:
     variables:
       - cards:
           - type: custom:decluttering-card
-            template: nav-button
-            variables:
-              - name: Ground floor
-              - icon: mdi:lightbulb-group
-              - path: lights-ground-floor
-          - type: custom:decluttering-card
             template: light-group
             variables:
               - group: light.all_ground_floor_main_lights
