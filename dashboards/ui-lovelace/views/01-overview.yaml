@@ -11,15 +11,31 @@ cards:
           - type: custom:decluttering-card
             template: nav-entity
             variables:
-              - name: Lights
-              - entity: sensor.number_of_lights_on
+              - name: Lights - ground floor
+              - entity: sensor.number_of_ground_floor_lights_on
               - icon: mdi:lightbulb-group
               - path: lights-ground-floor
-              - hold:
-                  action: call-service
-                  service: light.turn_off
-                  service_data:
-                    entity_id: light.all_main_lights
+          - type: custom:decluttering-card
+            template: nav-entity
+            variables:
+              - name: Lights - second floor
+              - entity: sensor.number_of_second_floor_lights_on
+              - icon: mdi:lightbulb-group
+              - path: lights-second-floor
+          - type: custom:decluttering-card
+            template: nav-entity
+            variables:
+              - name: Lights - basement
+              - entity: sensor.number_of_basement_lights_on
+              - icon: mdi:lightbulb-group
+              - path: lights-basement
+          - type: custom:decluttering-card
+            template: nav-entity
+            variables:
+              - name: Lights - exterior
+              - entity: sensor.number_of_exterior_lights_on
+              - icon: mdi:lightbulb-group
+              - path: lights-exterior
           - type: custom:decluttering-card
             template: nav-entity
             variables:

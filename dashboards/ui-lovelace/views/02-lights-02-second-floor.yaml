@@ -1,6 +1,6 @@
 icon: mdi:lightbulb-group
-title: Lights - ground floor
-path: lights-ground-floor
+title: Lights - second floor
+path: lights-second-floor
 type: panel
 subview: true
 badges: []
@@ -12,8 +12,8 @@ cards:
           - type: custom:decluttering-card
             template: light-group
             variables:
-              - group: light.all_ground_floor_main_lights
+              - group: light.all_second_floor_main_lights
           - type: custom:decluttering-card
             template: light-group
             variables:
-              - group: light.all_ground_floor_ambient_lights
+              - group: light.all_second_floor_ambient_lights
