@@ -14,7 +14,7 @@ cards:
               - name: Lights
               - entity: sensor.number_of_lights_on
               - icon: mdi:lightbulb-group
-              - path: lights
+              - path: lights-ground-floor
               - hold:
                   action: call-service
                   service: light.turn_off
