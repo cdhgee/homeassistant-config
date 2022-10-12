@@ -1,0 +1,14 @@
+unique_id: ceec36b2-1cfa-4c1f-b3b1-8f9d95e984de
+
+sensor:
+  - name: Number of second floor lights on
+    unique_id: 4a047132-0bf0-4d21-aeb1-31abdd528672
+    state: >
+      {%
+        set lights_on = expand('light.all_second_floor_lights') |
+        selectattr('state', 'eq', 'on') |
+        list |
+        count
+      %}
+      {{ iif(lights_on == 0, 'All off', lights_on | string + ' on') }}
+    icon: mdi:lightbulb-group

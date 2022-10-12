@@ -1,18 +1,12 @@
 unique_id: cf05ec3d-9171-49cf-bf40-7064e9a770fe
 
 sensor:
-  - name: Number of lights on
+  - name: Number of ground floor lights on
     unique_id: a8a09b3c-d7cc-4c7d-9d20-cf026a9a2d9a
     state: >
       {%
-        set lights = expand('light.all_main_lights') |
-        map(attribute='entity_id') |
-        list
-      %}
-      {%
-        set lights_on = states.light |
+        set lights_on = expand('light.all_ground_floor_lights') |
         selectattr('state', 'eq', 'on') |
-        selectattr('entity_id', 'in', lights) |
         list |
         count
       %}

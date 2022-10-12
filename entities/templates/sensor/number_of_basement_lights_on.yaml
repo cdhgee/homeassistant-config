@@ -1,0 +1,14 @@
+unique_id: b86ab17c-4ee1-4c6e-9265-0b5ddc203228
+
+sensor:
+  - name: Number of basement lights on
+    unique_id: d543ef4c-9a8d-4e77-8d8a-58fd181b3ba5
+    state: >
+      {%
+        set lights_on = expand('light.all_exterior_lights') |
+        selectattr('state', 'eq', 'on') |
+        list |
+        count
+      %}
+      {{ iif(lights_on == 0, 'All off', lights_on | string + ' on') }}
+    icon: mdi:lightbulb-group
