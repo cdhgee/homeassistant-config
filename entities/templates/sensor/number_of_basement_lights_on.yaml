@@ -5,7 +5,7 @@ sensor:
     unique_id: d543ef4c-9a8d-4e77-8d8a-58fd181b3ba5
     state: >
       {%
-        set lights_on = expand('light.all_exterior_lights') |
+        set lights_on = expand('light.all_basement_lights') |
         selectattr('state', 'eq', 'on') |
         list |
         count
