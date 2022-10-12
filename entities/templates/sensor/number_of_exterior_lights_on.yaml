@@ -1,7 +1,7 @@
 unique_id: 7138979d-1ce4-4067-914e-53fb06ec7165
 
 sensor:
-  - name: Number of basement lights on
+  - name: Number of exterior lights on
     unique_id: d8b51152-8194-4675-a435-55147d393b5d
     state: >
       {%
