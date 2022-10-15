@@ -51,103 +51,103 @@ cards:
                               - name: Cameras
                               - icon: mdi:cctv
                               - path: ground-floor-cameras
-      - type: custom:decluttering-card
-        template: standard-grid
-        variables:
-          - type: inner
-          - cards:
-              - type: custom:decluttering-card
-                template: nav-entity
-                variables:
-                  - name: Lights - second floor
-                  - entity: sensor.number_of_second_floor_lights_on
-                  - icon: mdi:lightbulb-group
-                  - path: lights-second-floor
-              - type: custom:decluttering-card
-                template: nav-entity
-                variables:
-                  - name: Lights - basement
-                  - entity: sensor.number_of_basement_lights_on
-                  - icon: mdi:lightbulb-group
-                  - path: lights-basement
-              - type: custom:decluttering-card
-                template: nav-entity
-                variables:
-                  - name: Lights - exterior
-                  - entity: sensor.number_of_exterior_lights_on
-                  - icon: mdi:lightbulb-group
-                  - path: lights-exterior
-              - type: custom:decluttering-card
-                template: nav-entity
-                variables:
-                  - name: Ambient lights
-                  - entity: sensor.number_of_ambient_lights_on
-                  - icon: mdi:string-lights
-                  - path: ambient-lights
-                  - hold:
-                      action: call-service
-                      service: light.turn_off
-                      service_data:
-                        entity_id: light.all_ambient_lights
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Scenes
-                  - icon: mdi:palette
-                  - path: scenes
-              - type: custom:decluttering-card
-                template: nav-entity
-                variables:
-                  - name: Blinds
-                  - entity: sensor.number_of_blinds_open
-                  - icon: mdi:window-open
-                  - path: blinds
-              - type: custom:decluttering-card
-                template: nav-button
-                name: Doors & locks
-                variables:
-                  - name: Doors & locks
-                  - icon: mdi:lock
-                  - path: doors-locks
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Cameras
-                  - icon: mdi:cctv
-                  - path: cameras
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Heating & cooling
-                  - icon: mdi:thermometer
-                  - path: heating-cooling
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Weather
-                  - icon: mdi:weather-cloudy
-                  - path: weather
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Batteries
-                  - icon: mdi:battery-70
-                  - path: batteries
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Servers
-                  - icon: mdi:server
-                  - path: servers
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Updates
-                  - icon: mdi:arrow-up-bold-box
-                  - path: updates
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Modes
-                  - icon: mdi:order-bool-ascending-variant
-                  - path: modes
+          - type: custom:decluttering-card
+            template: standard-grid
+            variables:
+              - type: inner
+              - cards:
+                  - type: custom:decluttering-card
+                    template: nav-entity
+                    variables:
+                      - name: Lights - second floor
+                      - entity: sensor.number_of_second_floor_lights_on
+                      - icon: mdi:lightbulb-group
+                      - path: lights-second-floor
+                  - type: custom:decluttering-card
+                    template: nav-entity
+                    variables:
+                      - name: Lights - basement
+                      - entity: sensor.number_of_basement_lights_on
+                      - icon: mdi:lightbulb-group
+                      - path: lights-basement
+                  - type: custom:decluttering-card
+                    template: nav-entity
+                    variables:
+                      - name: Lights - exterior
+                      - entity: sensor.number_of_exterior_lights_on
+                      - icon: mdi:lightbulb-group
+                      - path: lights-exterior
+                  - type: custom:decluttering-card
+                    template: nav-entity
+                    variables:
+                      - name: Ambient lights
+                      - entity: sensor.number_of_ambient_lights_on
+                      - icon: mdi:string-lights
+                      - path: ambient-lights
+                      - hold:
+                          action: call-service
+                          service: light.turn_off
+                          service_data:
+                            entity_id: light.all_ambient_lights
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Scenes
+                      - icon: mdi:palette
+                      - path: scenes
+                  - type: custom:decluttering-card
+                    template: nav-entity
+                    variables:
+                      - name: Blinds
+                      - entity: sensor.number_of_blinds_open
+                      - icon: mdi:window-open
+                      - path: blinds
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    name: Doors & locks
+                    variables:
+                      - name: Doors & locks
+                      - icon: mdi:lock
+                      - path: doors-locks
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Cameras
+                      - icon: mdi:cctv
+                      - path: cameras
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Heating & cooling
+                      - icon: mdi:thermometer
+                      - path: heating-cooling
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Weather
+                      - icon: mdi:weather-cloudy
+                      - path: weather
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Batteries
+                      - icon: mdi:battery-70
+                      - path: batteries
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Servers
+                      - icon: mdi:server
+                      - path: servers
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Updates
+                      - icon: mdi:arrow-up-bold-box
+                      - path: updates
+                  - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Modes
+                      - icon: mdi:order-bool-ascending-variant
+                      - path: modes
