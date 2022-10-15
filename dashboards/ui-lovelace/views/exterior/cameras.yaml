@@ -1,0 +1,17 @@
+icon: mdi:cctv
+title: Exterior - cameras
+path: exterior-cameras
+type: panel
+subview: true
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: onecol-grid
+    variables:
+      - type: outer
+      - cards:
+          - type: custom:decluttering-card
+            template: auto-entities-camera
+            variables:
+              - filter-criteria: group
+              - filter-value: group.exterior_cameras

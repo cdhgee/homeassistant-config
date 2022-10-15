@@ -1,0 +1,6 @@
+name: Exterior cameras
+
+entities:
+  - camera.exterior_north
+  - camera.exterior_west
+  - camera.exterior_east
