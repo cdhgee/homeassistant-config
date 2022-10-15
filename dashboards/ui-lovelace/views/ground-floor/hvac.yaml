@@ -8,10 +8,12 @@ cards:
   - type: custom:decluttering-card
     template: twocol-grid
     variables:
+      - type: outer
       - cards:
           - type: custom:decluttering-card
             template: onecol-grid
             variables:
+              - typer: inner
               - cards:
                   - type: thermostat
                     entity: climate.ground_floor
