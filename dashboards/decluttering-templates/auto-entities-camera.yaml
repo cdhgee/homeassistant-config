@@ -19,7 +19,7 @@ auto-entities-camera:
             type: picture-entity
             show_state: false
             show_name: true
-            camera_view: auto
+            camera_view: live
             entity: this.entity_id
       exclude:
         - state: unavailable
