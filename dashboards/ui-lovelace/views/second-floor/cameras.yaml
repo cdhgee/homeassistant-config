@@ -1,0 +1,17 @@
+icon: mdi:cctv
+title: Second floor - cameras
+path: second-floor-cameras
+type: panel
+subview: true
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: onecol-grid
+    variables:
+      - type: outer
+      - cards:
+          - type: custom:decluttering-card
+            template: auto-entities-camera
+            variables:
+              - filter-criteria: group
+              - filter-value: group.second_floor_cameras

@@ -1,0 +1,20 @@
+icon: mdi:lightbulb-group
+title: Second floor - lights
+path: second-floor-lights
+type: panel
+subview: true
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: onecol-grid
+    variables:
+      - type: outer
+      - cards:
+          - type: custom:decluttering-card
+            template: light-group
+            variables:
+              - group: light.all_second_floor_main_lights
+          - type: custom:decluttering-card
+            template: light-group
+            variables:
+              - group: light.all_second_floor_ambient_lights
