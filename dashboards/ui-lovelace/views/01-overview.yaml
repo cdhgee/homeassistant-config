@@ -25,10 +25,17 @@ cards:
                   - type: custom:decluttering-card
                     template: nav-entity
                     variables:
-                      - name: Lights - ground floor
+                      - name: Lights
                       - entity: sensor.number_of_ground_floor_lights_on
                       - icon: mdi:lightbulb-group
-                      - path: lights-ground-floor
+                      - path: ground-floor-lights
+                  - type: custom:decluttering-card
+                    template: nav-entity
+                    variables:
+                      - name: Heating & cooling
+                      - entity: climate.ground_floor
+                      - icon: mdi:lightbulb-group
+                      - path: ground-floor-hvac
                   - type: custom:decluttering-card
                     template: nav-entity
                     variables:

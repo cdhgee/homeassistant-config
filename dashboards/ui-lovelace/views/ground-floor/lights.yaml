@@ -1,13 +1,14 @@
 icon: mdi:lightbulb-group
-title: Lights - ground floor
-path: lights-ground-floor
+title: Ground floor - lights
+path: ground-floor-lights
 type: panel
 subview: true
 badges: []
 cards:
   - type: custom:decluttering-card
-    template: single-outer-grid
+    template: standard-grid
     variables:
+      - type: outer
       - cards:
           - type: custom:decluttering-card
             template: light-group
