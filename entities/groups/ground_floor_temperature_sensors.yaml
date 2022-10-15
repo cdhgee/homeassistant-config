@@ -1,0 +1,5 @@
+name: Ground floor temperature sensors
+
+entities:
+  - sensor.hallway_temperature
+  - sensor.master_bedroom_temperature
