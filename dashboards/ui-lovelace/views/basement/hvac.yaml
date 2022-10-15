@@ -1,0 +1,24 @@
+icon: mdi:thermometer
+title: Basement - heeating & cooling
+path: basement-hvac
+type: panel
+subview: true
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: twocol-grid
+    variables:
+      - type: outer
+      - cards:
+          - type: custom:decluttering-card
+            template: onecol-grid
+            variables:
+              - type: inner
+              - cards:
+                  - type: thermostat
+                    entity: climate.basement
+          - type: custom:decluttering-card
+            template: auto-entities-graph
+            variables:
+              - filter-criteria: group
+              - filter-value: group.basement_temperature_sensors
