@@ -181,18 +181,6 @@ cards:
                   - type: custom:decluttering-card
                     template: nav-button
                     variables:
-                      - name: Cameras
-                      - icon: mdi:cctv
-                      - path: cameras
-                  - type: custom:decluttering-card
-                    template: nav-button
-                    variables:
-                      - name: Heating & cooling
-                      - icon: mdi:thermometer
-                      - path: heating-cooling
-                  - type: custom:decluttering-card
-                    template: nav-button
-                    variables:
                       - name: Weather
                       - icon: mdi:weather-cloudy
                       - path: weather
