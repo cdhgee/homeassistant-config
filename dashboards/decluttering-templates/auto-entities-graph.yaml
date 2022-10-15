@@ -1,4 +1,6 @@
 auto-entities-graph:
+  default:
+    entities: []
   card:
     type: custom:auto-entities
     card:
@@ -12,6 +14,7 @@ auto-entities-graph:
         margin: 0
         card_margin: 4px
     card_param: cards
+    entities: "[[entities]]"
     filter:
       include:
         - "[[filter-criteria]]": "[[filter-value]]"
