@@ -37,6 +37,12 @@ cards:
                       - icon: mdi:thermometer
                       - path: ground-floor-hvac
                   - type: custom:decluttering-card
+                    template: nav-button
+                    variables:
+                      - name: Cameras
+                      - icon: mdi:cctv
+                      - path: ground-floor-cameras
+                  - type: custom:decluttering-card
                     template: nav-entity
                     variables:
                       - name: Lights - second floor

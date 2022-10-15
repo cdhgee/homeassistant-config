@@ -1,0 +1,28 @@
+auto-entities-camera:
+  card:
+    type: custom:auto-entities
+    card:
+      type: custom:layout-card
+      layout_type: custom:grid-layout
+      layout:
+        grid-template-columns: 1fr 1fr
+        mediaquery:
+          "(max-width: 800px)":
+            grid-template-columns: 1fr
+        margin: 0
+        card_margin: 4px
+    card_param: cards
+    filter:
+      include:
+        - "[[filter-criteria]]": "[[filter-value]]"
+          options:
+            type: picture-entity
+            show_state: false
+            show_name: true
+            camera_view: auto
+            entity: this.entity_id
+      exclude:
+        - state: unavailable
+    sort:
+      method: "[[sort]]"
+      ignore_case: true

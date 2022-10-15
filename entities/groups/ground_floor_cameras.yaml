@@ -1,0 +1,5 @@
+name: Ground floor cameras
+
+entities:
+  - camera.great_room
+  - camera.sunroom
