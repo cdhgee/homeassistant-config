@@ -20,5 +20,6 @@ cards:
           - type: custom:decluttering-card
             template: auto-entities-graph
             variables:
-              - filter-criteria: group
-              - filter-value: group.inside_temperature_sensors
+              - entities:
+                  - sensor.hallway_temperature
+                  - sensor.master_bedroom_temperature
