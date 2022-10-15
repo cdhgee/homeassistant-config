@@ -1,0 +1,6 @@
+name: Basement cameras
+
+entities:
+  - camera.stairwell
+  - camera.garage
+  - camera.greenhouse
