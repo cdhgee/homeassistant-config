@@ -12,6 +12,7 @@ auto-entities-graph:
           "(max-width: 800px)":
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
         margin: 0
+        padding: 4px 4px 0 4px
         card_margin: 4px
     card_param: cards
     entities: "[[entities]]"

@@ -10,6 +10,7 @@ auto-entities-camera:
           "(max-width: 800px)":
             grid-template-columns: 1fr
         margin: 0
+        padding: 4px 4px 0 4px
         card_margin: 4px
     card_param: cards
     filter:

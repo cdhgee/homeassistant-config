@@ -11,5 +11,5 @@ outer-grid:
       - cards: "[[cards]]"
       - columns: "[[columns]]"
       - mediaquery: "[[mediaquery]]"
-      - padding: 4px
+      - padding: 0
       - card-margin: 0
