@@ -12,6 +12,8 @@ cards:
       - mediaquery:
           "(max-width: 800px)":
             grid-template-columns: 1fr
+          "(max-width: 1900px)":
+            grid-template-columns: 1fr 1fr
       - cards:
           - type: custom:decluttering-card
             template: onecol-grid
@@ -164,51 +166,11 @@ cards:
               - type: inner
               - cards:
                   - type: custom:decluttering-card
-                    template: nav-entity
-                    variables:
-                      - name: Lights - second floor
-                      - entity: sensor.number_of_second_floor_lights_on
-                      - icon: mdi:lightbulb-group
-                      - path: lights-second-floor
-                  - type: custom:decluttering-card
-                    template: nav-entity
-                    variables:
-                      - name: Lights - basement
-                      - entity: sensor.number_of_basement_lights_on
-                      - icon: mdi:lightbulb-group
-                      - path: lights-basement
-                  - type: custom:decluttering-card
-                    template: nav-entity
-                    variables:
-                      - name: Lights - exterior
-                      - entity: sensor.number_of_exterior_lights_on
-                      - icon: mdi:lightbulb-group
-                      - path: lights-exterior
-                  - type: custom:decluttering-card
-                    template: nav-entity
-                    variables:
-                      - name: Ambient lights
-                      - entity: sensor.number_of_ambient_lights_on
-                      - icon: mdi:string-lights
-                      - path: ambient-lights
-                      - hold:
-                          action: call-service
-                          service: light.turn_off
-                          service_data:
-                            entity_id: light.all_ambient_lights
-                  - type: custom:decluttering-card
                     template: nav-button
                     variables:
                       - name: Scenes
                       - icon: mdi:palette
                       - path: scenes
-                  - type: custom:decluttering-card
-                    template: nav-entity
-                    variables:
-                      - name: Blinds
-                      - entity: sensor.number_of_blinds_open
-                      - icon: mdi:window-open
-                      - path: blinds
                   - type: custom:decluttering-card
                     template: nav-button
                     name: Doors & locks
