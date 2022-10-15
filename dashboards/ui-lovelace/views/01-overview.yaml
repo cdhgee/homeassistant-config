@@ -5,8 +5,9 @@ type: panel
 badges: []
 cards:
   - type: custom:decluttering-card
-    template: multi-outer-grid
+    template: standard-grid
     variables:
+      - type: combined
       - cards:
           - type: custom:decluttering-card
             template: nav-entity
