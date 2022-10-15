@@ -1,0 +1,14 @@
+threecol-grid:
+  default:
+    - type: outer
+  card:
+    type: custom:decluttering-card
+    template: "[[type]]-grid"
+    variables:
+      - cards: "[[cards]]"
+      - columns: 1fr 1fr 1fr
+      - mediaquery:
+          "(max-width: 1200px)":
+            grid-template-columns: 1fr 1fr
+          "(max-width: 800px)":
+            grid-template-columns: 1fr
