@@ -1,0 +1,4 @@
+name: Second floor cameras
+
+entities:
+  - camera.loft
