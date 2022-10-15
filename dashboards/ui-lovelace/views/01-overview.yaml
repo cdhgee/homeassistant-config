@@ -34,7 +34,7 @@ cards:
                     variables:
                       - name: Heating & cooling
                       - entity: climate.ground_floor
-                      - icon: mdi:lightbulb-group
+                      - icon: mdi:thermometer
                       - path: ground-floor-hvac
                   - type: custom:decluttering-card
                     template: nav-entity
