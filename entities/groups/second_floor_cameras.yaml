@@ -2,3 +2,4 @@ name: Second floor cameras
 
 entities:
   - camera.loft
+  - camera.julias_crib
