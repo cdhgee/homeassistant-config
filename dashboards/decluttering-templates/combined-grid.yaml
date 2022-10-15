@@ -1,0 +1,10 @@
+combined-grid:
+  card:
+    type: custom:decluttering-card
+    template: generic-grid
+    variables:
+      - cards: "[[cards]]"
+      - columns: "[[columns]]"
+      - mediaquery: "[[mediaquery]]"
+      - padding: 4px
+      - card-margin: 4px

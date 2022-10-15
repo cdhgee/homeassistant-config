@@ -1,0 +1,11 @@
+generic-grid:
+  card:
+    type: custom:layout-card
+    layout_type: custom:grid-layout
+    layout:
+      grid-template-columns: "[[columns]]"
+      mediaquery: "[[mediaquery]]"
+      margin: 0
+      padding: "[[padding]]"
+      card_margin: "[[card-margin]]"
+    cards: "[[cards]]"

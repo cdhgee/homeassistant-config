@@ -1,0 +1,10 @@
+onecol-grid:
+  default:
+    - type: outer
+  card:
+    type: custom:decluttering-card
+    template: "[[type]]-grid"
+    variables:
+      - cards: "[[cards]]"
+      - columns: 1fr
+      - mediaquery: ""

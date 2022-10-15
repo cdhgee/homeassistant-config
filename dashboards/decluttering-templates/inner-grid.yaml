@@ -1,0 +1,10 @@
+inner-grid:
+  card:
+    type: custom:decluttering-card
+    template: generic-grid
+    variables:
+      - cards: "[[cards]]"
+      - columns: "[[columns]]"
+      - mediaquery: "[[mediaquery]]"
+      - padding: 0
+      - card-margin: 4px
