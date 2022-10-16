@@ -201,7 +201,7 @@ cards:
                             variables:
                               - name: Pi-hole
                               - icon: mdi:pi-hole
-                              - path: servers-pi3
+                              - path: servers-pihole
           - type: custom:decluttering-card
             template: standard-grid
             variables:
