@@ -11,7 +11,8 @@ cards:
       - type: outer
       - cards:
           - type: custom:decluttering-card
-            template: auto-entities-camera
+            template: auto-entities-graph
             variables:
               - filter-criteria: entity_id
-              - filter-value: /^sensor.pi0_
+              - filter-value: /^sensor.pi0_/
+              - sort: name
