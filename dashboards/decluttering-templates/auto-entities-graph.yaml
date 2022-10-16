@@ -1,31 +1,13 @@
 auto-entities-graph:
-  default:
-    entities: []
   card:
-    type: custom:auto-entities
-    card:
-      type: custom:layout-card
-      layout_type: custom:grid-layout
-      layout:
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
-        mediaquery:
-          "(max-width: 800px)":
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
-        margin: 0
-        padding: 4px 4px 0 4px
-        card_margin: 4px
-    card_param: cards
-    entities: "[[entities]]"
-    filter:
-      include:
-        - "[[filter-criteria]]": "[[filter-value]]"
-          options:
-            type: custom:mini-graph-card
-            entities:
-              - this.entity_id
-            points_per_hour: 1
-      exclude:
-        - state: unavailable
-    sort:
-      method: "[[sort]]"
-      ignore_case: true
+    type: custom:decluttering-card
+    template: auto-entities
+    variables:
+      - filter-criteria: "[[filter-criteria]]"
+      - filter-value: "[[filter-value]]"
+      - sort: "[[sort]]"
+      - card-options:
+          type: custom:mini-graph-card
+          entities:
+            - this.entity_id
+          points_per_hour: 1

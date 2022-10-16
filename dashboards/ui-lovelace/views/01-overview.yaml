@@ -196,6 +196,12 @@ cards:
                               - name: pi3
                               - icon: mdi:server
                               - path: servers-pi3
+                          - type: custom:decluttering-card
+                            template: nav-button
+                            variables:
+                              - name: Pi-hole
+                              - icon: mdi:pi-hole
+                              - path: servers-pi3
           - type: custom:decluttering-card
             template: standard-grid
             variables:
