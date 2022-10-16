@@ -1,0 +1,4 @@
+switch:
+  template:
+    - generic-entity
+    - binary-entity
