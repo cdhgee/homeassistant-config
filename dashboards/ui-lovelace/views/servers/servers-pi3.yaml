@@ -1,0 +1,18 @@
+icon: mdi:pi-hole
+title: Servers - pi3
+path: servers-pi3
+type: panel
+subview: true
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: onecol-grid
+    variables:
+      - type: outer
+      - cards:
+          - type: custom:decluttering-card
+            template: auto-entities-graph
+            variables:
+              - filter-criteria: entity_id
+              - filter-value: /^sensor.pi3_/
+              - sort: name
