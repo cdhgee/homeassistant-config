@@ -4,3 +4,4 @@ entities:
   - camera.stairwell
   - camera.garage
   - camera.greenhouse
+  - camera.basement_dining_room
