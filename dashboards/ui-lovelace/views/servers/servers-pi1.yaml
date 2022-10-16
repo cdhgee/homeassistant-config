@@ -1,0 +1,18 @@
+icon: mdi:server
+title: Servers - pi1
+path: servers-pi1
+type: panel
+subview: true
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: onecol-grid
+    variables:
+      - type: outer
+      - cards:
+          - type: custom:decluttering-card
+            template: auto-entities-graph
+            variables:
+              - filter-criteria: entity_id
+              - filter-value: /^sensor.pi1_/
+              - sort: name
