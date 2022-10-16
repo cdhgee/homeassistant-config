@@ -1,0 +1,5 @@
+name: Second floor temperature sensors
+
+entities:
+  - sensor.julias_bedroom_temperature
+  - sensor.loft_temperature
