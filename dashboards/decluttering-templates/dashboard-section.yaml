@@ -11,7 +11,7 @@ dashboard-section:
               - type: inner
               - cards:
                   - type: markdown
-                    content: "# [[section-title]]"
+                    content: "# [[title]]"
           - type: custom:decluttering-card
             template: standard-grid
             variables:
