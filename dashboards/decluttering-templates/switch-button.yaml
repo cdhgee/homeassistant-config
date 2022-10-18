@@ -2,6 +2,6 @@ switch-button:
   card:
     type: custom:button-card
     template:
-      - base
+      - generic-entity
       - binary-entity
     entity: "[[entity_id]]"

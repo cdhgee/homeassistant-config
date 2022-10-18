@@ -4,30 +4,18 @@ variables:
   - title: Security
   - cards:
       - type: custom:decluttering-card
-        template: nav-button
+        template: switch-button
         variables:
-          - name: pi0
-          - icon: mdi:server
-          - path: servers-pi0
-      - type: custom:decluttering-card
-        template: nav-button
-        variables:
-          - name: pi1
-          - icon: mdi:server
-          - path: servers-pi1
-      - type: custom:decluttering-card
-        template: nav-button
-        variables:
-          - name: pi3
-          - icon: mdi:server
-          - path: servers-pi3
-      - type: custom:decluttering-card
-        template: nav-button
-        variables:
-          - name: Pi-hole
-          - icon: mdi:pi-hole
-          - path: servers-pihole
+          - entity_id: lock.front_door
       - type: custom:decluttering-card
         template: switch-button
         variables:
-          - entity_id: switch.wake_on_lan_vincent
+          - entity_id: binary_sensor.front_door_open
+      - type: custom:decluttering-card
+        template: switch-button
+        variables:
+          - entity_id: cover.garage_door
+      - type: custom:button-card
+        entity: timer.auto_lock
+        template:
+          - generic-entity
