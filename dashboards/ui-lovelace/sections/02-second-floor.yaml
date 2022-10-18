@@ -1,0 +1,38 @@
+type: custom:decluttering-card
+template: onecol-grid
+variables:
+  - type: outer
+  - cards:
+      - type: custom:decluttering-card
+        template: onecol-grid
+        variables:
+          - type: inner
+          - cards:
+              - type: markdown
+                content: |
+                  # Second floor
+      - type: custom:decluttering-card
+        template: standard-grid
+        variables:
+          - type: inner
+          - cards:
+              - type: custom:decluttering-card
+                template: nav-entity
+                variables:
+                  - name: Lights
+                  - entity: sensor.number_of_second_floor_lights_on
+                  - icon: mdi:lightbulb-group
+                  - path: second-floor-lights
+              - type: custom:decluttering-card
+                template: nav-entity
+                variables:
+                  - name: Heating & cooling
+                  - entity: climate.second_floor
+                  - icon: mdi:thermometer
+                  - path: second-floor-hvac
+              - type: custom:decluttering-card
+                template: nav-button
+                variables:
+                  - name: Cameras
+                  - icon: mdi:cctv
+                  - path: second-floor-cameras

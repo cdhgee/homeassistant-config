@@ -1,0 +1,38 @@
+type: custom:decluttering-card
+template: onecol-grid
+variables:
+  - type: outer
+  - cards:
+      - type: custom:decluttering-card
+        template: onecol-grid
+        variables:
+          - type: inner
+          - cards:
+              - type: markdown
+                content: |
+                  # Ground floor
+      - type: custom:decluttering-card
+        template: standard-grid
+        variables:
+          - type: inner
+          - cards:
+              - type: custom:decluttering-card
+                template: nav-entity
+                variables:
+                  - name: Lights
+                  - entity: sensor.number_of_ground_floor_lights_on
+                  - icon: mdi:lightbulb-group
+                  - path: ground-floor-lights
+              - type: custom:decluttering-card
+                template: nav-entity
+                variables:
+                  - name: Heating & cooling
+                  - entity: climate.ground_floor
+                  - icon: mdi:thermometer
+                  - path: ground-floor-hvac
+              - type: custom:decluttering-card
+                template: nav-button
+                variables:
+                  - name: Cameras
+                  - icon: mdi:cctv
+                  - path: ground-floor-cameras
