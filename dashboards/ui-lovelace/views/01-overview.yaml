@@ -202,6 +202,10 @@ cards:
                               - name: Pi-hole
                               - icon: mdi:pi-hole
                               - path: servers-pihole
+                          - type: custom:decluttering-card
+                            template: switch-button
+                            variables:
+                              - entity_id: switch.wake_on_lan_vincent
           - type: custom:decluttering-card
             template: standard-grid
             variables:

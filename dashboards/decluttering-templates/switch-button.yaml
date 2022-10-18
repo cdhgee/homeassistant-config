@@ -1,0 +1,7 @@
+switch-button:
+  card:
+    type: custom:button-card
+    template:
+      - base
+      - binary-entity
+    entity: "[[entity_id]]"
