@@ -1,0 +1,19 @@
+dashboard-section:
+  card:
+    type: custom:decluttering-card
+    template: onecol-grid
+    variables:
+      - type: outer
+      - cards:
+          - type: custom:decluttering-card
+            template: onecol-grid
+            variables:
+              - type: inner
+              - cards:
+                  - type: markdown
+                    content: "# [[section-title]]"
+          - type: custom:decluttering-card
+            template: standard-grid
+            variables:
+              - type: inner
+              - cards: "[[cards]]"
