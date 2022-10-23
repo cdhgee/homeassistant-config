@@ -11,13 +11,6 @@ variables:
           - path: scenes
       - type: custom:decluttering-card
         template: nav-button
-        name: Doors & locks
-        variables:
-          - name: Doors & locks
-          - icon: mdi:lock
-          - path: doors-locks
-      - type: custom:decluttering-card
-        template: nav-button
         variables:
           - name: Weather
           - icon: mdi:weather-cloudy
@@ -28,12 +21,6 @@ variables:
           - name: Batteries
           - icon: mdi:battery-70
           - path: batteries
-      - type: custom:decluttering-card
-        template: nav-button
-        variables:
-          - name: Servers
-          - icon: mdi:server
-          - path: servers
       - type: custom:decluttering-card
         template: nav-button
         variables:

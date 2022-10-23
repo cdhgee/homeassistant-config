@@ -1,0 +1,12 @@
+type: custom:decluttering-card
+template: dashboard-section
+variables:
+  - title: Weather
+  - grid-type: onecol-grid
+  - cards:
+      - type: custom:weather-card
+        entity: weather.ground_floor
+        number_of_forecasts: "5"
+        hourly_forecast: false
+        forecast: true
+        current: true

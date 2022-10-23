@@ -1,4 +1,6 @@
 dashboard-section:
+  default:
+    - grid-type: standard-grid
   card:
     type: custom:decluttering-card
     template: onecol-grid
@@ -13,7 +15,7 @@ dashboard-section:
                   - type: markdown
                     content: "# [[title]]"
           - type: custom:decluttering-card
-            template: standard-grid
+            template: "[[grid-type]]"
             variables:
               - type: inner
               - cards: "[[cards]]"
