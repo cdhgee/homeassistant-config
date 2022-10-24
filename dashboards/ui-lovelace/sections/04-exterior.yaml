@@ -1,31 +1,18 @@
 type: custom:decluttering-card
-template: onecol-grid
+template: dashboard-section
 variables:
-  - type: outer
+  - title: Exterior
   - cards:
       - type: custom:decluttering-card
-        template: onecol-grid
+        template: nav-entity
         variables:
-          - type: inner
-          - cards:
-              - type: markdown
-                content: |
-                  # Exterior
+          - name: Lights
+          - entity: sensor.number_of_exterior_lights_on
+          - icon: mdi:lightbulb-group
+          - path: exterior-lights
       - type: custom:decluttering-card
-        template: standard-grid
+        template: nav-button
         variables:
-          - type: inner
-          - cards:
-              - type: custom:decluttering-card
-                template: nav-entity
-                variables:
-                  - name: Lights
-                  - entity: sensor.number_of_exterior_lights_on
-                  - icon: mdi:lightbulb-group
-                  - path: exterior-lights
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Cameras
-                  - icon: mdi:cctv
-                  - path: exterior-cameras
+          - name: Cameras
+          - icon: mdi:cctv
+          - path: exterior-cameras

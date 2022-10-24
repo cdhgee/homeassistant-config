@@ -1,38 +1,25 @@
 type: custom:decluttering-card
-template: onecol-grid
+template: dashboard-section
 variables:
-  - type: outer
+  - title: Basement
   - cards:
       - type: custom:decluttering-card
-        template: onecol-grid
+        template: nav-entity
         variables:
-          - type: inner
-          - cards:
-              - type: markdown
-                content: |
-                  # Basement
+          - name: Lights
+          - entity: sensor.number_of_basement_lights_on
+          - icon: mdi:lightbulb-group
+          - path: basement-lights
       - type: custom:decluttering-card
-        template: standard-grid
+        template: nav-entity
         variables:
-          - type: inner
-          - cards:
-              - type: custom:decluttering-card
-                template: nav-entity
-                variables:
-                  - name: Lights
-                  - entity: sensor.number_of_basement_lights_on
-                  - icon: mdi:lightbulb-group
-                  - path: basement-lights
-              - type: custom:decluttering-card
-                template: nav-entity
-                variables:
-                  - name: Heating & cooling
-                  - entity: climate.basement
-                  - icon: mdi:thermometer
-                  - path: basement-hvac
-              - type: custom:decluttering-card
-                template: nav-button
-                variables:
-                  - name: Cameras
-                  - icon: mdi:cctv
-                  - path: basement-cameras
+          - name: Heating & cooling
+          - entity: climate.basement
+          - icon: mdi:thermometer
+          - path: basement-hvac
+      - type: custom:decluttering-card
+        template: nav-button
+        variables:
+          - name: Cameras
+          - icon: mdi:cctv
+          - path: basement-cameras

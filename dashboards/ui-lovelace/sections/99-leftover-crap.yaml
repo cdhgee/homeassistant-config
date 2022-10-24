@@ -12,12 +12,6 @@ variables:
       - type: custom:decluttering-card
         template: nav-button
         variables:
-          - name: Weather
-          - icon: mdi:weather-cloudy
-          - path: weather
-      - type: custom:decluttering-card
-        template: nav-button
-        variables:
           - name: Batteries
           - icon: mdi:battery-70
           - path: batteries
