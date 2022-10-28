@@ -6,7 +6,7 @@ subview: true
 badges: []
 cards:
   - type: custom:decluttering-card
-    template: two-grid
+    template: onecol-grid
     variables:
       - type: outer
       - cards:
@@ -14,10 +14,10 @@ cards:
             template: auto-entities-buttons
             variables:
               - filter-criteria: entity_id
-              - filter-value: /^(switch|sensor)\\\\.pihole_a/
+              - filter-value: /^switch\\\\.pihole/
               - button-template: switch
           - type: custom:decluttering-card
             template: auto-entities-graph
             variables:
               - filter-criteria: entity_id
-              - filter-value: /^(switch|sensor)\\\\.pihole_b/
+              - filter-value: /^sensor\\\\.pihole/
