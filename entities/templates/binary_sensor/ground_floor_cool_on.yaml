@@ -5,6 +5,7 @@ binary_sensor:
     unique_id: 7f5ea8a3-4241-4f69-84d6-b820eed9d635
     state: >
       {{
+        is_state("climate.ground_floor", "cool") and
         is_state_attr("climate.ground_floor", "hvac_action", "cooling")
       }}
     icon: mdi:thermometer
