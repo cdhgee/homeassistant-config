@@ -1,10 +1,20 @@
 config:
 
+conversation:
+
+counter:
+
 energy:
+
+hardware:
 
 history:
 
+homeassistant_alerts:
+
 logbook:
+
+map:
 
 mobile_app:
 
