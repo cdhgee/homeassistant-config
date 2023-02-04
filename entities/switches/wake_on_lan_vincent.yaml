@@ -1,7 +1,0 @@
-name: Wake-on-LAN - Vincent
-
-platform: wake_on_lan
-
-mac: !secret wake_on_lan_vincent_mac
-host: !secret wake_on_lan_vincent_host
-broadcast_address: !secret wake_on_lan_vincent_broadcast_address

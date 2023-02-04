@@ -1,8 +1,0 @@
-platform: command_line
-
-switches:
-  vincent_keep_alive:
-    command_on: >
-      ssh -i /config/id_ed25519 homeassistant@vincent.home.gee-family.net 'sleep infinity  &'
-    command_off: >
-      ssh -i /config/id_ed25519 homeassistant@vincent.home.gee-family.net 'killall -u homeassistant'
