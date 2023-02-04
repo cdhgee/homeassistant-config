@@ -1,13 +1,2 @@
 homeassistant:
-  name: Home
-  latitude: !secret homeassistant_latitude
-  longitude: !secret homeassistant_longitude
-  elevation: !secret homeassistant_elevation
-  unit_system: us_customary
-  temperature_unit: F
-  time_zone: America_Chicago
-  internal_url: !secret homeassistant_internal_url
-  language: en
-  country: US
-  currency: USD
   customize: !include_dir_merge_named ../customizations/entities
