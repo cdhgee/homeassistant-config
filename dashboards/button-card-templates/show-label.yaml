@@ -1,7 +1,7 @@
 show-label:
   show_label: true
-  show_state: false
   styles:
     grid:
       - grid-template-areas: |
           "i n" "i l"
+      - grid-template-rows: 1fr 1fr

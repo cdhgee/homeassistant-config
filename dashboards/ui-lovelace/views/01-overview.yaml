@@ -1,17 +1,13 @@
 icon: mdi:home
 title: Overview
 path: overview
-type: panel
+type: custom:grid-layout
+layout:
+  grid-template-columns: repeat(auto-fill, minmax(300, 1fr))
 badges: []
 cards:
   - type: custom:decluttering-card
-    template: custom-grid
+    template: nav-button
     variables:
-      - type: outer
-      - columns: repeat(4, 1fr)
-      - mediaquery:
-          "(max-width: 800px)":
-            grid-template-columns: 1fr
-          "(max-width: 1900px)":
-            grid-template-columns: 1fr 1fr
-      - cards: !include_dir_list ../sections
+      - name: lights
+      - path: ground-floor-lights

@@ -2,7 +2,7 @@ nav-button:
   card:
     type: custom:button-card
     template:
-      - nav
+      - new-button
     icon: "[[icon]]"
     name: "[[name]]"
     tap_action:
