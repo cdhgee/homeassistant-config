@@ -27,6 +27,7 @@ light:
       - margin-bottom: 0
       - padding-left: 0px
       - padding-right: 10px
+      - color: var(--button-card-light-color)
     state:
       - justify-self: start
       - padding-left: 0px
