@@ -9,6 +9,6 @@ cards:
   - type: custom:decluttering-card
     template: nav-button
     variables:
-      - name: lights
+      - name: Lights
       - icon: mdi:lightbulb-group
       - path: ground-floor-lights

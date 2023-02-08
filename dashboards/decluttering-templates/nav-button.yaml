@@ -9,4 +9,5 @@ nav-button:
       name:
         - margin-bottom: auto
     tap_action:
+      action: navigate
       navigation_path: "[[path]]"
