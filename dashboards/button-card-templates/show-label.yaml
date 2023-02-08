@@ -1,6 +1,6 @@
 show-label:
   show_label: true
-  show_state: true
+  show_state: false
   styles:
     grid:
       - grid-template-areas: |

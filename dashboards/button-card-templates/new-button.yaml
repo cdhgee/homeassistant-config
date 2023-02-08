@@ -4,6 +4,8 @@ new-button:
     action: more-info
   color: auto
   color_type: icon
+  show_state: true
+  show_label: false
   styles:
     grid:
       - grid-template-areas: |
