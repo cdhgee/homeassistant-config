@@ -11,4 +11,10 @@ cards:
     variables:
       - name: Lights
       - icon: mdi:lightbulb-group
-      - path: ground-floor-lights
+      - path: lights
+  - type: custom:decluttering-card
+    template: nav-button
+    variables:
+      - name: Automatic lights
+      - icon: mdi:lightbulb-group
+      - path: auto-lights

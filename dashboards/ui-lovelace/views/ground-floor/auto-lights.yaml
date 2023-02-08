@@ -1,6 +1,6 @@
 icon: mdi:lightbulb-group
-title: Lights
-path: lights
+title: Automatic lights
+path: auto-lights
 type: panel
 subview: true
 badges: []
@@ -8,4 +8,4 @@ cards:
   - type: custom:decluttering-card
     template: light-group
     variables:
-      - group: group.managed_lights
+      - group: group.managed_auto_lights
