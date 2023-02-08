@@ -6,15 +6,6 @@ subview: true
 badges: []
 cards:
   - type: custom:decluttering-card
-    template: onecol-grid
+    template: light-group
     variables:
-      - type: outer
-      - cards:
-          - type: custom:decluttering-card
-            template: light-group
-            variables:
-              - group: light.all_ground_floor_main_lights
-          - type: custom:decluttering-card
-            template: light-group
-            variables:
-              - group: light.all_ground_floor_ambient_lights
+      - group: light.all_ground_floor_main_lights
