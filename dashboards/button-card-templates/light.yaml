@@ -1,45 +1,15 @@
 light:
-  aspect_ratio: 4/1
-  hold_action:
-    action: more-info
-  color: auto
-  color_type: icon
-  show_label: true
+  template:
+    - new-button
+    - show-label
   label: |
     [[[
       if(null != entity.attributes.brightness) return Math.round(100 * entity.attributes.brightness/255) + "%";
       else return entity.state[0].toUpperCase() + entity.state.substr(1);
     ]]]
   styles:
-    grid:
-      - grid-template-areas: |
-          "i n" "i l"
-      - grid-template-columns: 60px 1fr
-      - grid-template-rows: 1fr 1fr
-    img_cell:
-      - align-self: start
-      - text-align: start
-    icon:
-      - width: 70%
     name:
-      - justify-self: start
-      - margin-top: auto
-      - margin-bottom: 0
-      - padding-left: 0px
-      - padding-right: 10px
       - color: var(--button-card-light-color)
-    state:
-      - justify-self: start
-      - padding-left: 0px
-      - padding-right: 10px
-      - font-size: 80%
-    label:
-      - justify-self: start
-      - padding-left: 0px
-      - padding-right: 10px
-      - font-size: 80%
-      - margin-top: 3px
-      - margin-bottom: auto
   state:
     - value: "off"
       styles: &inactive_styles

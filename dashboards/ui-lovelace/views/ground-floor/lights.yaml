@@ -8,4 +8,4 @@ cards:
   - type: custom:decluttering-card
     template: light-group
     variables:
-      - group: light.managed_lights
+      - group: group.managed_lights
