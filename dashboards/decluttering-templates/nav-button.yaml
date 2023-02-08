@@ -5,5 +5,8 @@ nav-button:
       - new-button
     icon: "[[icon]]"
     name: "[[name]]"
+    styles:
+      name:
+        - margin-bottom: auto
     tap_action:
       navigation_path: "[[path]]"
