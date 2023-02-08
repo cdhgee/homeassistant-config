@@ -2,7 +2,7 @@ icon: mdi:home
 title: Overview
 path: overview
 type: custom:grid-layout
-layout:
+view_layout:
   grid-template-columns: repeat(auto-fill, minmax(300, 1fr))
 badges: []
 cards:
@@ -10,4 +10,5 @@ cards:
     template: nav-button
     variables:
       - name: lights
+      - icon: mdi:lightbulb-group
       - path: ground-floor-lights
