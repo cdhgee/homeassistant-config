@@ -4,13 +4,11 @@ light.great_room_ceiling_fan:
   name: Ceiling fan
 light.great_room_fireplace:
   name: Fireplace
-light.great_room_piano:
+light.great_room_windows:
   name: Piano
 light.kitchen_island:
   name: Island
 light.kitchen_nook:
   name: Nook
-light.stairwell_upper:
-  name: Stairwell
-light.sunroom_lights:
+light.sunroom_ceiling_lights:
   name: Sunroom

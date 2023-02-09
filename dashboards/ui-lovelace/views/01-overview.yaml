@@ -18,3 +18,11 @@ cards:
       - name: Automatic lights
       - icon: mdi:lightbulb-group
       - path: auto-lights
+  - type: custom:decluttering-card
+    template: switch-button
+    variables:
+      - entity: lock.front_door
+  - type: custom:decluttering-card
+    template: switch-button
+    variables:
+      - entity: cover.garage_door
