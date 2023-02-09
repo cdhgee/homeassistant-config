@@ -8,6 +8,10 @@ light:
       if(null != entity.attributes.brightness) return Math.round(100 * entity.attributes.brightness/255) + "%";
       else return entity.state[0].toUpperCase() + entity.state.substr(1);
     ]]]
-  styles:
-    name:
-      - color: var(--button-card-light-color)
+  state:
+    - id: "on"
+      styles:
+        name:
+          - color: var(--button-card-light-color)
+        icon:
+          - color: var(--button-card-light-color)

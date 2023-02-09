@@ -7,6 +7,7 @@ binary-entity:
           - color: var(--paper-item-icon-active-color)
         icon:
           - color: var(--paper-item-icon-active-color)
+      id: "on"
     - operator: ==
       value: open
       styles: *active_styles
