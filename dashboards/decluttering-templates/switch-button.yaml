@@ -4,4 +4,4 @@ switch-button:
     template:
       - new-button
       - show-state
-    entity: "[[entity_id]]"
+    entity: "[[entity]]"
