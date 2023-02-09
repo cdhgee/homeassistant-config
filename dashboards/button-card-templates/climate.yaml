@@ -4,7 +4,7 @@ climate:
     - show-label
   label: |
     [[[
-      var current_action = entity.attributes.hvac_action == "idle" ? "idle" : entity.attributes.hvac_action + "ing";
+      var current_action = entity.attributes.hvac_action == "idle" ? "idle" : entity.attributes.hvac_action;
       switch(entity.state){
 
         case "heat":
