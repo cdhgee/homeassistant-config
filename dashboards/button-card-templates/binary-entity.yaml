@@ -19,6 +19,8 @@ binary-entity:
           - opacity: 50%
         label:
           - opacity: 50%
+        state:
+          - opacity: 50%
         icon:
           - opacity: 50%
   tap_action:
