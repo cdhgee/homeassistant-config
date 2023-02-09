@@ -22,7 +22,17 @@ cards:
     template: climate-nav
     variables:
       - entity: climate.ground_floor
-      - path: ground-floor
+      - path: hvac-ground-floor
+  - type: custom:decluttering-card
+    template: climate-nav
+    variables:
+      - entity: climate.second_floor
+      - path: hvac-second-floor
+  - type: custom:decluttering-card
+    template: climate-nav
+    variables:
+      - entity: climate.basement
+      - path: hvac-basement
   - type: custom:decluttering-card
     template: switch-button
     variables:
