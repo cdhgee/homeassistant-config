@@ -1,4 +1,4 @@
-show-label:
+show-state:
   show_state: true
   styles:
     grid:
