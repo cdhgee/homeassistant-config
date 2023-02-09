@@ -13,7 +13,8 @@ binary-entity:
     - operator: ==
       value: unlocked
       styles: *active_styles
-    - operator: default
+    - operator: ==
+      value: unavailable
       styles:
         name:
           - opacity: 50%
