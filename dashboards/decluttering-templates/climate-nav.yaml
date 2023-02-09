@@ -1,7 +1,8 @@
 climate-nav:
   card:
     type: custom:button-card
-    template: climate
+    template:
+      - climate
     entity: "[[entity]]"
     tap_action:
       action: navigate
