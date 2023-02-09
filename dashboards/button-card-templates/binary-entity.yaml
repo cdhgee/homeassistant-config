@@ -2,37 +2,24 @@ binary-entity:
   state:
     - operator: ==
       value: "on"
-      styles: &styles
+      styles: &active_styles
         name:
-          - color: var(--secondary-background-color)
-        state:
-          - color: var(--secondary-background-color)
-        label:
-          - color: var(--secondary-background-color)
+          - color: var(--paper-item-icon-active-color)
         icon:
-          - color: var(--secondary-background-color)
-        card:
-          - background-color: var(--light-primary-color)
+          - color: var(--paper-item-icon-active-color)
     - operator: ==
       value: open
-      styles: *styles
+      styles: *active_styles
     - operator: ==
       value: unlocked
-      styles: *styles
-    - operator: ==
-      value: unavailable
+      styles: *active_styles
+    - default:
       styles:
         name:
-          - color: var(--secondary-background-color)
-        state:
-          - color: var(--secondary-background-color)
+          - opacity: 50%
         label:
-          - color: var(--secondary-background-color)
+          - opacity: 50%
         icon:
-          - color: var(--secondary-background-color)
-        card:
-          - background-color: rgba(206, 206, 206, 0.33)
+          - opacity: 50%
   tap_action:
     action: toggle
-  hold_action:
-    action: more-info

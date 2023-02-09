@@ -2,6 +2,7 @@ light:
   template:
     - new-button
     - show-label
+    - binary-entity
   label: |
     [[[
       if(null != entity.attributes.brightness) return Math.round(100 * entity.attributes.brightness/255) + "%";
@@ -10,14 +11,3 @@ light:
   styles:
     name:
       - color: var(--button-card-light-color)
-  state:
-    - value: "off"
-      styles: &inactive_styles
-        name:
-          - opacity: 50%
-        label:
-          - opacity: 50%
-        icon:
-          - opacity: 50%
-    - value: unavailable
-      styles: *inactive_styles
