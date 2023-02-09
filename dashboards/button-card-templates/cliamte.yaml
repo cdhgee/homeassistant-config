@@ -1,0 +1,36 @@
+climate:
+  card:
+    type: custom:button-card
+    template:
+      - new-button
+      - show-label
+    label: |
+      [[[
+        var current_action = entity.attributes.hvac_action == "idle" ? "idle" : entity.attributes.hvac_action + "ing";
+        switch(entity.state){
+
+          case "heat":
+            return "Heat set to " + entity.attributes.temperature + ", " + current_action;
+            break;
+
+          case "cool":
+            return "Heat set to " + entity.attributes.temperature + ", " + current_action;
+            break;
+
+          case "off":
+            return "Off";
+
+        }
+      ]]]
+    state:
+      - operator: ==
+        value: heat
+        styles:
+          name: &heat_color
+            - color: var(--state-climate-heat-color)
+          icon: *heat_color
+      - operator: ==
+        value: cool
+        styles:
+          name: &cool_color
+            - color: var(--state-climate-cool-color)
