@@ -18,6 +18,7 @@ cards:
       - name: Automatic lights
       - icon: mdi:lightbulb-group
       - path: auto-lights
+  - type: custom:layout-break
   - type: custom:decluttering-card
     template: climate-nav
     variables:
