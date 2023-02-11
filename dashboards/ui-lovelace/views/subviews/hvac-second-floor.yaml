@@ -16,6 +16,6 @@ cards:
     entities:
       - entity: climate.second_floor
         attribute: current_temperature
-        name: Hallway
+        name: Loft
       - entity: sensor.julias_bedroom_temperature
         color: red
