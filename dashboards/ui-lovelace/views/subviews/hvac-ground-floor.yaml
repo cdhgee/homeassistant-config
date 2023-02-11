@@ -1,0 +1,21 @@
+icon: mdi:lightbulb-group
+title: Heating & cooling - ground floor
+path: hvac-ground-floor
+type: custom:grid-layout
+view_layout:
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr))
+subview: true
+badges: []
+cards:
+  - type: thermostat
+    entity: climate.ground_floor
+  - type: custom:mini-graph-card
+    name: Ground floor
+    line_width: 2
+    hour24: true
+    entities:
+      - entity: climate.ground_floor
+        attribute: current_temperature
+        name: Hallway
+      - entity: sensor.master_bedroom_temperature
+        color: red
