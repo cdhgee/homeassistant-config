@@ -9,14 +9,13 @@ badges: []
 cards:
   - type: thermostat
     entity: climate.second_floor
-  - type: custom:mini-graph-card
-    name: Second floor
-    line_width: 2
-    hour24: true
-    unit: °F
-    entities:
-      - entity: climate.second_floor
-        attribute: current_temperature
-        name: Loft
-      - entity: sensor.julias_bedroom_temperature
-        color: red
+  - type: custom:decluttering-card
+    template: temperature-graph
+    variables:
+      - name: Second floor
+      - entities:
+          - entity: climate.second_floor
+            attribute: current_temperature
+            name: Loft
+          - entity: sensor.julias_bedroom_temperature
+            color: red

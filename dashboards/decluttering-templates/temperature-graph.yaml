@@ -1,0 +1,9 @@
+temperature-graph:
+  card:
+    type: custom:mini-graph-card
+    name: "[[name]]"
+    line_width: 2
+    points_per_hour: 1
+    hour24: true
+    unit: °F
+    entities: "[[entities]]"

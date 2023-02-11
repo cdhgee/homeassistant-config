@@ -9,16 +9,15 @@ badges: []
 cards:
   - type: thermostat
     entity: climate.basement
-  - type: custom:mini-graph-card
-    name: Basement
-    line_width: 2
-    hour24: true
-    unit: °F
-    entities:
-      - entity: climate.basement
-        attribute: current_temperature
-        name: Dining room
-      - entity: sensor.den_temperature
-        color: red
-      - entity: sensor.library_temperature
-        color: orange
+  - type: custom:decluttering-card
+    template: temperature-graph
+    variables:
+      - name: Basement
+      - entities:
+          - entity: climate.basement
+            attribute: current_temperature
+            name: Dining room
+          - entity: sensor.den_temperature
+            color: red
+          - entity: sensor.library_temperature
+            color: orange
