@@ -13,6 +13,7 @@ cards:
     name: Basement
     line_width: 2
     hour24: true
+    unit: °F
     entities:
       - entity: climate.basement
         attribute: current_temperature

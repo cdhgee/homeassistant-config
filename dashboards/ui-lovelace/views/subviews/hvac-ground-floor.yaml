@@ -13,6 +13,7 @@ cards:
     name: Ground floor
     line_width: 2
     hour24: true
+    unit: °F
     entities:
       - entity: climate.ground_floor
         attribute: current_temperature

@@ -13,6 +13,7 @@ cards:
     name: Second floor
     line_width: 2
     hour24: true
+    unit: °F
     entities:
       - entity: climate.second_floor
         attribute: current_temperature
