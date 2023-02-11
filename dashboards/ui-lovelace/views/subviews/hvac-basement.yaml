@@ -1,0 +1,23 @@
+icon: mdi:lightbulb-group
+title: Heating & cooling - basement
+path: hvac-basement
+type: custom:grid-layout
+view_layout:
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr))
+subview: true
+badges: []
+cards:
+  - type: thermostat
+    entity: climate.basement
+  - type: custom:mini-graph-card
+    name: Basement
+    line_width: 2
+    hour24: true
+    entities:
+      - entity: climate.basement
+        attribute: current_temperature
+        name: Dining room
+      - entity: sensor.den_temperature
+        color: red
+      - entity: sensor.library_temperature
+        color: orange
