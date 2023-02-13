@@ -19,3 +19,7 @@ cards:
             name: Hallway
           - entity: sensor.master_bedroom_temperature
             color: red
+          - entity: sensor.great_room_temperature
+            color: orange
+          - entity: sensor.kitchen_temperature
+            color: purple
