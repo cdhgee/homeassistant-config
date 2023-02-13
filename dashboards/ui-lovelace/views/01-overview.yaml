@@ -46,3 +46,23 @@ cards:
     template: switch-button
     variables:
       - entity: switch.pi_hole
+  - type: custom:decluttering-card
+    template: switch-button
+    variables:
+      - entity: input_boolean.babysitter_mode
+  - type: custom:decluttering-card
+    template: switch-button
+    variables:
+      - entity: input_boolean.babysitter_mode
+  - type: custom:decluttering-card
+    template: switch-button
+    variables:
+      - entity: input_boolean.nighttime_mode
+  - type: custom:decluttering-card
+    template: switch-button
+    variables:
+      - entity: input_boolean.away_mode
+  - type: custom:decluttering-card
+    template: switch-button
+    variables:
+      - entity: input_boolean.outside_mode
