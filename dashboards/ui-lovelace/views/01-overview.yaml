@@ -62,3 +62,7 @@ cards:
     template: switch-button
     variables:
       - entity: input_boolean.outside_mode
+  - type: custom:decluttering-card
+    template: switch-button
+    variables:
+      - entity: input_boolean.stairwell_auto_lights
