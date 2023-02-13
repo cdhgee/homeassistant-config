@@ -53,10 +53,6 @@ cards:
   - type: custom:decluttering-card
     template: switch-button
     variables:
-      - entity: input_boolean.babysitter_mode
-  - type: custom:decluttering-card
-    template: switch-button
-    variables:
       - entity: input_boolean.nighttime_mode
   - type: custom:decluttering-card
     template: switch-button
