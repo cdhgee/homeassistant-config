@@ -1,8 +1,0 @@
-name: Stairwell motion sensor occupancy
-
-platform: group
-device_class: motion
-
-entities:
-  - binary_sensor.stairwell_upper_motion_sensor_occupancy
-  - binary_sensor.stairwell_lower_motion_sensor_occupancy
