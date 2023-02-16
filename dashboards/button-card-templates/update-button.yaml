@@ -1,12 +1,10 @@
 update-button:
-  card:
-    type: custom:button-card
-    template:
-      - new-button
-      - show-label
-      - binary-entity
-    entity: "[[entity]]"
-    label: |
-      [[[
-        return entity.state === "on" ? "Update to " + entity.attributes.latest_version + " available" : "Up-to-date"
-      ]]]
+  template:
+    - new-button
+    - show-label
+    - binary-entity
+  entity: "[[entity]]"
+  label: |
+    [[[
+      return entity.state === "on" ? "Update to " + entity.attributes.latest_version + " available" : "Up-to-date"
+    ]]]
