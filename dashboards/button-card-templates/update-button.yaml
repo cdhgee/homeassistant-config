@@ -8,3 +8,5 @@ update-button:
     [[[
       return entity.state === "on" ? "Update to " + entity.attributes.latest_version + " available" : "Up-to-date"
     ]]]
+  hold_action:
+    action: more-info
