@@ -75,7 +75,6 @@ cards:
       - entity: update.home_assistant_core_update
         state: "on"
     card:
-      type: custom:decluttering-card
-      template: switch-button
-      variables:
-        - entity: update.home_assistant_core_update
+      type: custom:button-card
+      template: update-button
+      entity: update.home_assistant_core_update
