@@ -35,39 +35,43 @@ cards:
       - entity: climate.basement
       - path: hvac-basement
   - type: custom:decluttering-card
-    template: switch-button
+    template: switch
     variables:
       - entity: lock.front_door
   - type: custom:decluttering-card
-    template: switch-button
+    template: binary_sensor
+    variables:
+      - entity: binary_sensor.front_door_open
+  - type: custom:decluttering-card
+    template: switch
     variables:
       - entity: cover.garage_door
   - type: custom:decluttering-card
-    template: switch-button
+    template: switch
     variables:
       - entity: switch.pi_hole
   - type: custom:decluttering-card
-    template: switch-button
+    template: switch
     variables:
       - entity: input_boolean.babysitter_mode
   - type: custom:decluttering-card
-    template: switch-button
+    template: switch
     variables:
       - entity: input_boolean.nighttime_mode
   - type: custom:decluttering-card
-    template: switch-button
+    template: switch
     variables:
       - entity: input_boolean.away_mode
   - type: custom:decluttering-card
-    template: switch-button
+    template: switch
     variables:
       - entity: input_boolean.outside_mode
   - type: custom:decluttering-card
-    template: switch-button
+    template: switch
     variables:
       - entity: input_boolean.stairwell_auto_lights
   - type: custom:decluttering-card
-    template: switch-button
+    template: switch
     variables:
       - entity: input_boolean.hrv_auto_mode
   - type: conditional

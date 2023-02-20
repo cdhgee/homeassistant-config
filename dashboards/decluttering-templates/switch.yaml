@@ -1,0 +1,9 @@
+switch:
+  card:
+    type: custom:button-card
+    template:
+      - new-button
+      - show-state
+      - binary-entity
+      - toggle
+    entity: "[[entity]]"

@@ -1,4 +1,4 @@
-switch-button:
+binary_sensor:
   card:
     type: custom:button-card
     template:
