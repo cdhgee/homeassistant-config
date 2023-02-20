@@ -3,7 +3,7 @@ title: Heating & cooling - basement
 path: hvac-basement
 type: custom:grid-layout
 view_layout:
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr))
+  grid-template-columns: repeat(auto-fill, minmax(minmax(600px, 1fr), 100vw))
 subview: true
 badges: []
 cards:
