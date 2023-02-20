@@ -3,7 +3,10 @@ title: Heating & cooling - second floor
 path: hvac-second-floor
 type: custom:grid-layout
 view_layout:
-  grid-template-columns: repeat(auto-fill, minmax(minmax(600px, 1fr), 100vw))
+  grid-template-columns: 1fr 1fr
+  mediaquery:
+    "(max-width: 600px)":
+      grid-template-columns: 1fr
 subview: true
 badges: []
 cards:
