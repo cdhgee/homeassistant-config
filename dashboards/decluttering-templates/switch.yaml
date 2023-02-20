@@ -5,5 +5,4 @@ switch:
       - new-button
       - show-state
       - binary-entity
-      - toggler
     entity: "[[entity]]"
