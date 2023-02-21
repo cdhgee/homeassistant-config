@@ -24,6 +24,6 @@ cards:
             color: red
   - type: history-graph
     entities:
-      - entity: climate.ground_floor
+      - entity: climate.second_floor
     hours_to_show: 24
     title: 24-hour history
