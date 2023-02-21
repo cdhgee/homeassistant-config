@@ -22,3 +22,8 @@ cards:
             name: Loft
           - entity: sensor.julias_bedroom_temperature
             color: red
+  - type: history-graph
+    entities:
+      - entity: climate.ground_floor
+    hours_to_show: 24
+    title: 24-hour history

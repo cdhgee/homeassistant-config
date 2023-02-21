@@ -26,3 +26,8 @@ cards:
             color: orange
           - entity: sensor.kitchen_temperature
             color: purple
+  - type: history-graph
+    entities:
+      - entity: climate.ground_floor
+    hours_to_show: 24
+    title: 24-hour history

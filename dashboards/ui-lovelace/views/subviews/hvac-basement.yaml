@@ -24,3 +24,8 @@ cards:
             color: red
           - entity: sensor.library_temperature
             color: orange
+  - type: history-graph
+    entities:
+      - entity: climate.basement
+    hours_to_show: 24
+    title: 24-hour history
