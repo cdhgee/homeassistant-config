@@ -3,6 +3,7 @@ title: Overview
 path: overview
 type: custom:grid-layout
 view_layout:
+  card_margin: 4px
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 badges: []
 cards:

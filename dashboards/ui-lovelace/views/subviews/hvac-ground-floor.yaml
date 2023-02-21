@@ -3,6 +3,7 @@ title: Heating & cooling - ground floor
 path: hvac-ground-floor
 type: custom:grid-layout
 view_layout:
+  card_margin: 4px
   grid-template-columns: 1fr 1fr
   mediaquery:
     "(max-width: 600px)":
