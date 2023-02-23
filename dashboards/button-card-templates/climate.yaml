@@ -24,11 +24,12 @@ climate:
     - operator: ==
       value: heat
       styles:
-        name: &heat_color
+        label: &heat_color
           - color: var(--state-climate-heat-color)
         icon: *heat_color
     - operator: ==
       value: cool
       styles:
-        name: &cool_color
+        label: &cool_color
           - color: var(--state-climate-cool-color)
+        icon: *cool_color
