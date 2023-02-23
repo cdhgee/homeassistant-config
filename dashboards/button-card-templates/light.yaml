@@ -11,7 +11,7 @@ light:
   state:
     - id: "on"
       styles:
-        name:
+        label:
           - color: var(--button-card-light-color)
         icon:
           - color: var(--button-card-light-color)
