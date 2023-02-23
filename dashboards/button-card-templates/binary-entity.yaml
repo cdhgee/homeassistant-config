@@ -3,7 +3,9 @@ binary-entity:
     - operator: ==
       value: "on"
       styles: &active_styles
-        name:
+        state:
+          - color: var(--paper-item-icon-active-color)
+        label:
           - color: var(--paper-item-icon-active-color)
         icon:
           - color: var(--paper-item-icon-active-color)
