@@ -1,4 +1,4 @@
-light:
+timer:
   template:
     - new-button
     - show-state
