@@ -24,6 +24,8 @@ cards:
     variables:
       - entity: climate.ground_floor
       - path: hvac-ground-floor
+    view_layout:
+      column: 1
   - type: custom:decluttering-card
     template: climate-nav
     variables:
