@@ -1,0 +1,14 @@
+light:
+  template:
+    - new-button
+    - show-state
+  state:
+    - operator: ==
+      value: idle
+      styles: []
+    - operator: default
+      styles:
+        state:
+          - color: var(--paper-item-icon-active-color)
+        icon:
+          - color: var(--paper-item-icon-active-color)
