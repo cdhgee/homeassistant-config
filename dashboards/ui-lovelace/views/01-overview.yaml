@@ -40,6 +40,8 @@ cards:
     template: switch
     variables:
       - entity: lock.front_door
+    view_layout:
+      grid-column: 1
   - type: custom:decluttering-card
     template: binary_sensor
     variables:
@@ -47,18 +49,20 @@ cards:
   - type: custom:decluttering-card
     template: switch
     variables:
-      - entity: cover.garage_door
+      - entity: input_boolean.auto_lock_front_door
+  - type: custom:button-card
+    template: timer
+    entity: timer.auto_lock_front_door
   - type: custom:decluttering-card
     template: switch
     variables:
-      - entity: input_boolean.auto_lock_front_door
+      - entity: cover.garage_door
+    view_layout:
+      grid-column: 1
   - type: custom:decluttering-card
     template: switch
     variables:
       - entity: input_boolean.auto_close_garage_door
-  - type: custom:button-card
-    template: timer
-    entity: timer.auto_lock_front_door
   - type: custom:button-card
     template: timer
     entity: timer.auto_close_garage_door
