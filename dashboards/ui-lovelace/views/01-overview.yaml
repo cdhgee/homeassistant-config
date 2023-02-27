@@ -49,6 +49,24 @@ cards:
   - type: custom:decluttering-card
     template: switch
     variables:
+      - entity: input_boolean.auto_lock_front_door
+  - type: custom:decluttering-card
+    template: switch
+    variables:
+      - entity: input_boolean.auto_close_garage_door
+  - type: custom:button-card
+    template:
+      - new-button
+      - show-state
+    entity: timer.auto_lock_front_door
+  - type: custom:button-card
+    template:
+      - new-button
+      - show-state
+    entity: timer.auto_close_garage_door
+  - type: custom:decluttering-card
+    template: switch
+    variables:
       - entity: switch.pi_hole
   - type: custom:decluttering-card
     template: switch
@@ -62,10 +80,6 @@ cards:
     template: switch
     variables:
       - entity: input_boolean.away_mode
-  - type: custom:decluttering-card
-    template: switch
-    variables:
-      - entity: input_boolean.auto_lock_front_door
   - type: custom:decluttering-card
     template: switch
     variables:
