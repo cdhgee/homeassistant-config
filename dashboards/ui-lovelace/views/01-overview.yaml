@@ -78,6 +78,8 @@ cards:
     template: switch
     variables:
       - entity: switch.pi_hole
+    view_layout:
+      grid-column: 1
   - type: custom:decluttering-card
     template: switch
     variables:
@@ -91,13 +93,11 @@ cards:
     variables:
       - entity: input_boolean.away_mode
   - type: custom:decluttering-card
-    template: switch
-    variables:
-      - entity: input_boolean.outside_mode
-  - type: custom:decluttering-card
     template: binary_sensor
     variables:
       - entity: person.david_gee
+    view_layout:
+      grid-column: 1
   - type: custom:decluttering-card
     template: binary_sensor
     variables:
@@ -110,3 +110,5 @@ cards:
       type: custom:button-card
       template: update-button
       entity: update.home_assistant_core_update
+    view_layout:
+      grid-column: 1
