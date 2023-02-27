@@ -20,6 +20,10 @@ cards:
       - icon: mdi:lightbulb-group
       - path: auto-lights
   - type: custom:decluttering-card
+    template: switch
+    variables:
+      - entity: input_boolean.stairwell_auto_lights
+  - type: custom:decluttering-card
     template: climate-nav
     variables:
       - entity: climate.ground_floor
@@ -36,6 +40,10 @@ cards:
     variables:
       - entity: climate.basement
       - path: hvac-basement
+  - type: custom:decluttering-card
+    template: switch
+    variables:
+      - entity: input_boolean.hrv_auto_mode
   - type: custom:decluttering-card
     template: switch
     variables:
@@ -86,14 +94,6 @@ cards:
     template: switch
     variables:
       - entity: input_boolean.outside_mode
-  - type: custom:decluttering-card
-    template: switch
-    variables:
-      - entity: input_boolean.stairwell_auto_lights
-  - type: custom:decluttering-card
-    template: switch
-    variables:
-      - entity: input_boolean.hrv_auto_mode
   - type: custom:decluttering-card
     template: binary_sensor
     variables:
