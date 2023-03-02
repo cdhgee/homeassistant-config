@@ -105,7 +105,17 @@ cards:
   - type: custom:decluttering-card
     template: sensor
     variables:
-      - entity: sensor.ecowater_ac000w026318040_days_until_out_of_salt
+      - entity: sensor.water_softener_days_until_out_of_salt
+    view_layout:
+      grid-column: 1
+  - type: custom:decluttering-card
+    template: sensor
+    variables:
+      - entity: sensor.water_softener_water_used_per_day_average
+  - type: custom:decluttering-card
+    template: sensor
+    variables:
+      - entity: sensor.water_softener_water_used_today
   - type: conditional
     conditions:
       - entity: update.home_assistant_core_update
