@@ -102,7 +102,10 @@ cards:
     template: binary_sensor
     variables:
       - entity: person.monica_gee
-  - type:
+  - type: custom:decluttering-card
+    template: sensor
+    variables:
+      - entity: sensor.ecowater_ac000w026318040_days_until_out_of_salt
   - type: conditional
     conditions:
       - entity: update.home_assistant_core_update

@@ -1,0 +1,7 @@
+sensor:
+  card:
+    type: custom:button-card
+    template:
+      - new-button
+      - show-state
+    entity: "[[entity]]"

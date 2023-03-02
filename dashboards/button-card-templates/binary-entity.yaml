@@ -29,5 +29,3 @@ binary-entity:
           - opacity: 50%
         icon:
           - opacity: 50%
-  tap_action:
-    action: toggle
