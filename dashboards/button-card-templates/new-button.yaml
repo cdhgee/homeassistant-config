@@ -1,5 +1,7 @@
 new-button:
   aspect_ratio: 4/1
+  tap_action:
+    action: none
   hold_action:
     action: more-info
   color: auto

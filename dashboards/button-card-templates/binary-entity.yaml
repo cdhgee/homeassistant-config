@@ -1,4 +1,6 @@
 binary-entity:
+  tap_action:
+    action: toggle
   state:
     - operator: ==
       value: "on"

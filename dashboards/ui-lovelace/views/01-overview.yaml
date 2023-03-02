@@ -102,6 +102,7 @@ cards:
     template: binary_sensor
     variables:
       - entity: person.monica_gee
+  - type:
   - type: conditional
     conditions:
       - entity: update.home_assistant_core_update
