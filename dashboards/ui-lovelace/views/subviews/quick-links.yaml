@@ -1,0 +1,28 @@
+icon: mdi:lightbulb-group
+title: Quick links
+path: quick-links
+type: custom:grid-layout
+view_layout:
+  card_margin: 4px
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+subview: true
+badges: []
+cards:
+  - type: custom:decluttering-card
+    template: nav-button
+    variables:
+      - name: Integrations
+      - icon: mdi:devices
+      - path: /config/integrations
+  - type: custom:decluttering-card
+    template: nav-button
+    variables:
+      - name: Helpers
+      - icon: mdi:handshake-outline
+      - path: /config/helpers
+  - type: custom:decluttering-card
+    template: nav-button
+    variables:
+      - name: Automations
+      - icon: mdi:robot
+      - path: /config/automation/dashboard

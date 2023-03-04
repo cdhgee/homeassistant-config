@@ -126,3 +126,9 @@ cards:
       entity: update.home_assistant_core_update
     view_layout:
       grid-column: 1
+  - type: custom:decluttering-card
+    template: nav-button
+    variables:
+      - name: Quick links
+      - icon: mdi:link-variant
+      - path: quick-links
