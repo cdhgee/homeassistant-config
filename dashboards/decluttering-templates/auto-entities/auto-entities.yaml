@@ -16,8 +16,6 @@ auto-entities:
       include:
         - "[[filter-criteria]]": "[[filter-value]]"
           options: "[[card-options]]"
-      exclude:
-        - state: unavailable
     sort:
       method: "[[sort]]"
       ignore_case: true
