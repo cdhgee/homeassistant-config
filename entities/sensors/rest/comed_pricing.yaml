@@ -6,10 +6,11 @@ unique_id: dd7372d1-0079-4846-91ef-b2994aecf32b
 resource: https://hourlypricing.comed.com/api?type=5minutefeed
 value_template: >
   {{
-    value_json[0].price
+    value_json[0].price / 100
   }}
 json_attributes:
   - features
+unit_of_measurement: USD/kWh
 headers:
   User-Agent: Homeassistant
   Accept: application/json
