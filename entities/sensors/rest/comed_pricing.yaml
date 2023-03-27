@@ -8,8 +8,7 @@ value_template: >
   {{
     (value_json[0].price | float) / 100
   }}
-json_attributes:
-  - value_json
+json_attributes_path: $.*.price
 unit_of_measurement: USD/kWh
 headers:
   User-Agent: Homeassistant
