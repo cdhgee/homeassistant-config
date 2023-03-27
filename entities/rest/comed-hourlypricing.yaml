@@ -1,0 +1,10 @@
+resource: https://hourlypricing.comed.com/api?type=5minutefeed
+scan_interval: 300
+headers:
+  User-Agent: Homeassistant
+  Accept: application/json
+sensor:
+  - name: ComEd five-minute price
+    value_template: >
+      {{ (value_json[0].price | float) / 100 }}
+    unit_of_measurement: USD/kWh
