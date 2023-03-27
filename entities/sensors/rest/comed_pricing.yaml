@@ -9,7 +9,7 @@ value_template: >
     (value_json[0].price | float) / 100
   }}
 json_attributes:
-  - features
+  - value_json
 unit_of_measurement: USD/kWh
 headers:
   User-Agent: Homeassistant
