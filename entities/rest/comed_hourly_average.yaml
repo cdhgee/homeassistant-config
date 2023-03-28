@@ -6,5 +6,5 @@ headers:
 sensor:
   - name: ComEd hourly average price
     value_template: >
-      {{ (value_json.price | float) / 100 }}
+      {{ (value_json[0].price | float) / 100 }}
     unit_of_measurement: USD/kWh
