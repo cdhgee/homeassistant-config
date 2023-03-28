@@ -5,6 +5,7 @@ headers:
   Accept: application/json
 sensor:
   - name: ComEd hourly average price
+    unique_id: f17e4852-96d0-4cd7-af2f-fae7c9c1d879
     value_template: >
       {{ (value_json[0].price | float) / 100 }}
     unit_of_measurement: USD/kWh

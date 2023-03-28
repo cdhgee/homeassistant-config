@@ -5,6 +5,7 @@ headers:
   Accept: application/json
 sensor:
   - name: ComEd five-minute price
+    unique_id: 2ebafa44-22c4-4159-94d8-5e448d2c71cc
     value_template: >
       {{ (value_json[0].price | float) / 100 }}
     unit_of_measurement: USD/kWh
