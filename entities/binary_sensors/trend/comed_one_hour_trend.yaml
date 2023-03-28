@@ -7,7 +7,7 @@
 #    max_samples: 12
 #    sample_duration: 7200
 
-name: ComEd one-hour trend
+friendly_name: ComEd one-hour trend
 
 platform: trend
 
