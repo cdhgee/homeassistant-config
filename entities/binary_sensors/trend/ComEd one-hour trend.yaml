@@ -1,0 +1,8 @@
+platform: trend
+
+sensors:
+  comed_five_minute_price:
+    entity_id: sensor.comed_five_minute_price
+    friendly_name: ComEd one-hour trend
+    max_samples: 12
+    sample_duration: 7200
