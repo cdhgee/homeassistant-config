@@ -10,8 +10,6 @@ sensor:
       {% set zeroeight_thirty = today_at("08:30") %}
       {% set twentytwo_hundred = today_at("22:00") %}
       {% set time_now = now() %}
-      {% set rising = is_state_attr("sun.sun", "rising", true) %}
-      {% set elevation = state_attr("sun.sun", "elevation") | float %}
       {% set time_map = {
         midnight <= time_now < zeroseven_hundred: "Nighttime",
         zeroseven_hundred <= time_now < zeroeight_thirty: "Morning",
