@@ -1,0 +1,23 @@
+unique_id: b49b7cf2-9d30-41ed-826b-a9cc05c6c3b7
+
+sensor:
+  - name: Time of day
+    unique_id: 093f0e55-3242-422b-8502-91f65a0a7d77
+    state: >
+      {% set midnight = today_at("00:00") %}
+      {% set midnight_tomorrow = midnight + timedelta(days = 1) %}
+      {% set seven_am = today_at("07:00") %}
+      {% set eight_thirty = today_at("08:30") %}
+      {% set time_now = now() %}
+      {% set rising = is_state_attr("sun.sun", "rising", true) %}
+      {% set elevation = state_attr("sun.sun", "elevation") | float %}
+      {% set map = {
+        midnight <= time_now < seven_am: "Night",
+        seven_am <= time_now < eight_thirty: "Morning",
+        eight_thirty <= time_now < midnight_tomorrow and rising == true: "Daytime",
+        eight_thirty <= time_now < midnight_tomorrow + timedelta(days = 1) and rising == false and elevation > 7.5: "Daytime",
+        eight_thirty <= time_now < midnight_tomorrow + timedelta(days = 1) and rising == false and elevation <= 7.5 and elevation > 0: "Pre-sunset",
+        eight_thirty <= time_now < midnight_tomorrow + timedelta(days = 1) and elevation <= 0: "Sunset"
+      }
+      %}
+      {{ map.get(True) }}
