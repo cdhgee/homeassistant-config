@@ -34,29 +34,3 @@ sensor:
       }
       %}
       {{ time_map.get(True) }}
-
-select:
-  - name: Time of day - time-based
-    unique_id: 42551777-fe22-42b4-8a4b-b57bf807e716
-    state: >
-      {% set midnight = today_at("00:00") %}
-      {% set midnight_tomorrow = midnight + timedelta(days = 1) %}
-      {% set zeroseven_hundred = today_at("07:00") %}
-      {% set zeroeight_thirty = today_at("08:30") %}
-      {% set twentytwo_hundred = today_at("22:00") %}
-      {% set time_now = now() %}
-      {% set rising = is_state_attr("sun.sun", "rising", true) %}
-      {% set elevation = state_attr("sun.sun", "elevation") | float %}
-      {% set time_map = {
-        midnight <= time_now < zeroseven_hundred: "Nighttime",
-        zeroseven_hundred <= time_now < zeroeight_thirty: "Morning",
-        zeroeight_thirty <= time_now < twentytwo_hundred: "Daytime",
-        twentytwo_hundred <= time_now < midnight_tomorrow: "Bedtime"
-      }
-      %}
-      {{ time_map.get(True) }}
-    options:
-      - Nighttime
-      - Morning
-      - Daytime
-      - Bedtime
