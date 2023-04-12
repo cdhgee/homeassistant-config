@@ -1,7 +1,7 @@
 unique_id: b49b7cf2-9d30-41ed-826b-a9cc05c6c3b7
 
 sensor:
-  - name: Time of day - time-based
+  - name: Time of day
     unique_id: 093f0e55-3242-422b-8502-91f65a0a7d77
     state: >
       {% set midnight = today_at("00:00") %}
@@ -17,20 +17,6 @@ sensor:
         zeroseven_hundred <= time_now < zeroeight_thirty: "Morning",
         zeroeight_thirty <= time_now < twentytwo_hundred: "Daytime",
         twentytwo_hundred <= time_now < midnight_tomorrow: "Bedtime"
-      }
-      %}
-      {{ time_map.get(True) }}
-  - name: Time of day - sun-based
-    unique_id: cf0b9b63-1645-491b-9e8f-4c6eeaa1eb05
-    state: >
-      {% set time_now = now() %}
-      {% set rising = is_state_attr("sun.sun", "rising", true) %}
-      {% set elevation = state_attr("sun.sun", "elevation") | float %}
-      {% set time_map = {
-        elevation <= 0: "Sunset",
-        elevation > 0 and elevation <= 7.5 and rising == true: "Sunrise",
-        elevation > 7.5: "Sunrise",
-        elevation > 0 and elevation <= 7.5 and rising == false: "Pre-sunset",
       }
       %}
       {{ time_map.get(True) }}
