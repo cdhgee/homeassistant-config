@@ -6,18 +6,20 @@ sensor:
     state: >
       {% set midnight = today_at("00:00") %}
       {% set midnight_tomorrow = midnight + timedelta(days = 1) %}
-      {% set seven_am = today_at("07:00") %}
-      {% set eight_thirty = today_at("08:30") %}
+      {% set zeroseven_hundred = today_at("07:00") %}
+      {% set zeroeight_thirty = today_at("08:30") %}
+      {% set twentytwo_hundred = today_at("22:00") %}
       {% set time_now = now() %}
       {% set rising = is_state_attr("sun.sun", "rising", true) %}
       {% set elevation = state_attr("sun.sun", "elevation") | float %}
-      {% set map = {
-        midnight <= time_now < seven_am: "Night",
-        seven_am <= time_now < eight_thirty: "Morning",
-        eight_thirty <= time_now < midnight_tomorrow and rising == true: "Daytime",
-        eight_thirty <= time_now < midnight_tomorrow + timedelta(days = 1) and rising == false and elevation > 7.5: "Daytime",
-        eight_thirty <= time_now < midnight_tomorrow + timedelta(days = 1) and rising == false and elevation <= 7.5 and elevation > 0: "Pre-sunset",
-        eight_thirty <= time_now < midnight_tomorrow + timedelta(days = 1) and elevation <= 0: "Sunset"
+      {% set time_map = {
+        midnight <= time_now < zeroseven_hundred: "Nighttime",
+        zeroseven_hundred <= time_now < zeroeight_thirty: "Morning",
+        zeroeight_thirty <= time_now < twentytwo_hundred and rising == true: "Daytime",
+        zeroeight_thirty <= time_now < twentytwo_hundred and rising == false and elevation > 7.5: "Daytime",
+        zeroeight_thirty <= time_now < twentytwo_hundred and rising == false and elevation <= 7.5 and elevation > 0: "Pre-sunset",
+        zeroeight_thirty <= time_now < twentytwo_hundred and elevation <= 0: "Sunset",
+        twentytwo_hundred <= time_now < midnight_tomorrow and elevation <= 0: "Bedtime"
       }
       %}
-      {{ map.get(True) }}
+      {{ time_map.get(True) }}
