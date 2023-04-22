@@ -8,6 +8,7 @@ sensor:
       {% set midnight_tomorrow = midnight + timedelta(days = 1) %}
       {% set zeroseven_hundred = today_at("07:00") %}
       {% set zeroeight_thirty = today_at("08:30") %}
+      {% set sunset = as_timestamp(state_attr("sun.sun", "next_setting")) %}
       {% set twentytwo_hundred = today_at("22:00") %}
       {% set time_now = now() %}
       {% set time_map = {

@@ -1,0 +1,9 @@
+unique_id: ea2d4a4a-6ed5-4c13-bcda-3916c688c328
+
+binary_sensor:
+  - name: Babysitter
+    unique_id: 205f9669-9c4d-47ae-ad4a-61d062011a8b
+    # True if at the deck door is open for more than one minute
+    state: >
+      {{ is_state("input_boolean.babysitter_mode", "on") }}
+    device_class: presence
