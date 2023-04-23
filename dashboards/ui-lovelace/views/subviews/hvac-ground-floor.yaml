@@ -34,10 +34,10 @@ cards:
     title: 24-hour history
   - type: custom:button-card
     template: new-button
-    label: "Resume program"
+    name: "Resume program"
     tap_action:
       action: call-service
-      service: climate.resum
+      service: ecobee.resume_program
       data:
         resume_all: false
         entity_id: climate.ground_floor
