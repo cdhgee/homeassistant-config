@@ -32,3 +32,12 @@ cards:
       - entity: climate.ground_floor
     hours_to_show: 24
     title: 24-hour history
+  - type: custom:button-card
+    template: new-button
+    label: "Resume program"
+    tap_action:
+      action: call-service
+      service: climate.resum
+      data:
+        resume_all: false
+        entity_id: climate.ground_floor
