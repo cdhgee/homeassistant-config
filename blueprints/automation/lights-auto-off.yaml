@@ -14,9 +14,8 @@ blueprint:
     light:
       name: Light to automatically turn off
       selector:
-        target:
-          entity:
-            domain: light
+        entity:
+          domain: light
 trigger:
   - platform: state
     entity_id: !input light
@@ -25,4 +24,5 @@ trigger:
       minutes: !input delay
 action:
   - service: light.turn_off
-    target: !input light
+    target:
+      entity_id: !input light
