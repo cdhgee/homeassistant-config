@@ -25,5 +25,4 @@ trigger:
       minutes: !input delay
 action:
   - service: light.turn_off
-    target:
-      entity_id: !input light
+    target: !input light
