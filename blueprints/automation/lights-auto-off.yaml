@@ -1,0 +1,27 @@
+blueprint:
+  name: Lights auto-off
+  domain: automation
+  input:
+    delay:
+      default: 10
+      name: Auto-off delay (minutes)
+      selector:
+        number:
+          min: 1
+          step: 1
+          mode: slider
+    light:
+      name: Light to automatically turn off
+      selector:
+        target:
+          entity:
+            domain: light
+trigger:
+  - platform: state
+    entity_id: !input light
+    to: "on"
+    for:
+      minutes: !input delay
+action:
+  - service: light.turn_off
+    entity_id: !input light
