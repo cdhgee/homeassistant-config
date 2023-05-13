@@ -8,15 +8,18 @@ climate:
       switch(entity.state){
 
         case "heat":
-          return "Heat set to " + entity.attributes.temperature + ", " + current_action;
+          return "Set to " + entity.attributes.temperature + ", " + current_action;
           break;
 
         case "cool":
-          return "Heat set to " + entity.attributes.temperature + ", " + current_action;
+          return "Set to " + entity.attributes.temperature + ", " + current_action;
           break;
 
         case "off":
           return "Off";
+
+        default:
+          return entity.state;
 
       }
     ]]]
