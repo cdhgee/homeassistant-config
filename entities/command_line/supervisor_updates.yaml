@@ -1,0 +1,9 @@
+# Sensor to track available updates for supervisor & addons
+binary_sensor:
+  name: Supervisor updates
+  unique_id: f69cec8f-9a3a-47c6-b923-06bf9ab5cb57
+  command: >
+    curl http://supervisor/supervisor/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq '.data.update_available'
+  device_class: update
+  payload_on: "true"
+  payload_off: "false"

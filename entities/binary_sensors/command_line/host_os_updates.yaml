@@ -1,9 +1,0 @@
-name: Host OS updates
-
-platform: command_line
-
-command: >
-  curl http://supervisor/os/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq '.data.update_available'
-device_class: update
-payload_on: "true"
-payload_off: "false"

@@ -1,0 +1,8 @@
+binary_sensor:
+  name: Host OS updates
+  unique_id: 5638e0bd-adaf-4900-b410-1420f0a16ce8
+  command: >
+    curl http://supervisor/os/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq '.data.update_available'
+  device_class: update
+  payload_on: "true"
+  payload_off: "false"

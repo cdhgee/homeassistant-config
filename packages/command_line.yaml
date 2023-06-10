@@ -1,0 +1,1 @@
+command_line: !include_dir_list ../entities/command_line
