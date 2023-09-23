@@ -1,0 +1,8 @@
+push-button:
+  template:
+    - new-button
+  show_state: false
+  show_label: false
+  styles:
+    icon:
+      - color: var(--state-light-off-color, var(--state-light-inactive-color, var(--state-inactive-color)))
