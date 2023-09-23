@@ -1,0 +1,31 @@
+binary-entity:
+  tap_action:
+    action: toggle
+  state:
+    - operator: ==
+      value: "on"
+      styles: &active_styles
+        state:
+          - color: var(--paper-item-icon-active-color)
+        label:
+          - color: var(--paper-item-icon-active-color)
+        icon:
+          - color: var(--paper-item-icon-active-color)
+      id: "on"
+    - operator: ==
+      value: open
+      styles: *active_styles
+    - operator: ==
+      value: unlocked
+      styles: *active_styles
+    - operator: ==
+      value: unavailable
+      styles:
+        name:
+          - opacity: 50%
+        label:
+          - opacity: 50%
+        state:
+          - opacity: 50%
+        icon:
+          - opacity: 50%

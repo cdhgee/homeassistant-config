@@ -1,0 +1,18 @@
+new-light:
+  template:
+    - new-button
+    - binary-entity
+  state_display: |
+    [[[
+      if(null != entity.attributes.brightness) return Math.round(100 * entity.attributes.brightness/255) + "%";
+      else return entity.state[0].toUpperCase() + entity.state.substr(1);
+    ]]]
+  state:
+    - id: "on"
+      styles:
+        icon:
+          - color: var(--button-card-light-color)
+        card:
+          - background-color: white
+        name: 
+          - filter: brightness(60%)

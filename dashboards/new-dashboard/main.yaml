@@ -1,0 +1,4 @@
+title: Overview
+button_card_templates: !include_dir_merge_named button-card-templates
+decluttering_templates: !include_dir_merge_named decluttering-card-templates
+views: !include_dir_list views

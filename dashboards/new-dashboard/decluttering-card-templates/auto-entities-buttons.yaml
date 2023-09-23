@@ -1,0 +1,13 @@
+auto-entities-buttons:
+  card:
+    type: custom:decluttering-card
+    template: auto-entities
+    variables:
+      - filter-criteria: "[[filter-criteria]]"
+      - filter-value: "[[filter-value]]"
+      - sort: "[[sort]]"
+      - card-options:
+          type: custom:button-card
+          entity: this.entity_id
+          template:
+            - new-light
