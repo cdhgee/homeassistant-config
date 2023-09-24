@@ -5,6 +5,10 @@ binary-entity:
     - operator: ==
       value: "on"
       styles: &active_styles
+        card:
+          - background-color: white
+        name:
+          - filter: brightness(60%)
         state:
           - color: var(--paper-item-icon-active-color)
         label:
