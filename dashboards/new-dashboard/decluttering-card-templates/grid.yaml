@@ -1,0 +1,17 @@
+grid:
+  default:
+    - columns: 2
+  card:
+    type: custom:mod-card
+    card_mod:
+      style:
+        hui-grid-card:
+          $: |
+            .card-header {
+              padding: 10px 0 10px 0 !important;
+            }
+    card:
+      type: grid
+      columns: "[[columns]]"
+      title: "[[title]]"
+      cards: "[[cards]]"
