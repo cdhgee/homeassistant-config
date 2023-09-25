@@ -12,29 +12,6 @@ room:
       type: vertical-stack
       title: "[[room-name]]"
       cards:
-        - type: grid
-          columns: 2
-          cards:
-            - type: custom:button-card
-              entity: "[[lights]]"
-              name: All on
-              tap_action: 
-                action: call-service
-                service: light.turn_on
-                data:
-                  entity_id: "[[lights]]"
-              template:
-                - push-button
-            - type: custom:button-card
-              entity: "[[lights]]"
-              name: All off
-              tap_action:
-                action: call-service
-                service: light.turn_off
-                data:
-                  entity_id: "[[lights]]"
-              template:
-                - push-button
         - type: custom:decluttering-card
           template: auto-entities-buttons
           variables:
